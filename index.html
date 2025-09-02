@@ -1,17 +1,856 @@
 <html>
     <head>
         <!-- Static Info and Links-->
-        <title></title>
         <meta charset="UTF-8">
         <meta name="description" content="Gabriel Putnam Resume and Curriculum Vitae">
         <meta name="keywords"    content="Gabriel, Putnam, Resume, Curriculum, Vitae">
         <meta name="author"      content="Gabriel Putnam">
-        <meta name="viewport"    content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" type="text/css" href="">
-        <script type="text/javascript">
-        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gabriel Putnam: araes, araesmojo</title>
+        <link rel="stylesheet" type="text/css" href="css/Google_Material_3.css">
     </head>
-    <body onLoad="main()" onmousedown="" onmouseup="" onmousemove="">
-    </body>
+    <body>
+    <header>
+      <h1>Gabriel Putnam</h1>
+      <div class="nv_hdr">
+        <label for="nv_pltt_tgl">
+          <div class="icon_cntnr_g"><span class="material-symbols-rounded">palette</span></div>
+        </label>
+        <label for="nv_pltt_img_dflt_tgl">
+          <div class="icon_cntnr_g"><span class="material-symbols-rounded">palette</span></div>
+        </label>
+        <div id="nv_hdr_drpdn_pltt" class="nv_drpdn">
+          <label for="rd_inpt_m3_baseline" class="nv_drpdn_pltt_lbl thm_m3_baseline">
+            <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Baseline</span>
+          </label>
+          <label for="rd_inpt_m3_indigo" class="nv_drpdn_pltt_lbl thm_indigo">
+            <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Indigo</span>
+          </label>
+          <label for="rd_inpt_m3_blue" class="nv_drpdn_pltt_lbl thm_blue">
+            <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Blue</span>
+          </label>
+          <label for="rd_inpt_m3_teal" class="nv_drpdn_pltt_lbl thm_teal">
+            <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Teal</span>
+          </label>
+          <label for="rd_inpt_m3_green" class="nv_drpdn_pltt_lbl thm_green">
+            <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Green</span>
+          </label>
+          <label for="rd_inpt_m3_yellow" class="nv_drpdn_pltt_lbl thm_yellow">
+            <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Yellow</span>
+          </label>
+          <label for="rd_inpt_m3_orange" class="nv_drpdn_pltt_lbl thm_orange">
+            <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Orange</span>
+          </label>
+          <label for="rd_inpt_m3_deep_orange" class="nv_drpdn_pltt_lbl thm_deep_orange">
+            <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Deep Orange</span>
+          </label>
+          <label for="rd_inpt_m3_pink" class="nv_drpdn_pltt_lbl thm_pink">
+            <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Pink</span>
+          </label>
+          <label for="rd_inpt_www_indigo" class="nv_drpdn_pltt_lbl thm_www_indigo"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Indigo</span></label>
+          <label for="rd_inpt_www_purple" class="nv_drpdn_pltt_lbl thm_www_purple"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Purple</span></label>
+          <label for="rd_inpt_www_darkmagenta" class="nv_drpdn_pltt_lbl thm_www_darkmagenta"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkmagenta</span></label>
+          <label for="rd_inpt_www_darkviolet" class="nv_drpdn_pltt_lbl thm_www_darkviolet"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkviolet</span></label>
+          <label for="rd_inpt_www_darkslateblue" class="nv_drpdn_pltt_lbl thm_www_darkslateblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkslateblue</span></label>
+          <label for="rd_inpt_www_blueviolet" class="nv_drpdn_pltt_lbl thm_www_blueviolet"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Blueviolet</span></label>
+          <label for="rd_inpt_www_darkorchid" class="nv_drpdn_pltt_lbl thm_www_darkorchid"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkorchid</span></label>
+          <label for="rd_inpt_www_fuchsia" class="nv_drpdn_pltt_lbl thm_www_fuchsia"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Fuchsia</span></label>
+          <label for="rd_inpt_www_magenta" class="nv_drpdn_pltt_lbl thm_www_magenta"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Magenta</span></label>
+          <label for="rd_inpt_www_slateblue" class="nv_drpdn_pltt_lbl thm_www_slateblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Slateblue</span></label>
+          <label for="rd_inpt_www_mediumslateblue" class="nv_drpdn_pltt_lbl thm_www_mediumslateblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumslateblue</span></label>
+          <label for="rd_inpt_www_mediumorchid" class="nv_drpdn_pltt_lbl thm_www_mediumorchid"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumorchid</span></label>
+          <label for="rd_inpt_www_mediumpurple" class="nv_drpdn_pltt_lbl thm_www_mediumpurple"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumpurple</span></label>
+          <label for="rd_inpt_www_orchid" class="nv_drpdn_pltt_lbl thm_www_orchid"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Orchid</span></label>
+          <label for="rd_inpt_www_violet" class="nv_drpdn_pltt_lbl thm_www_violet"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Violet</span></label>
+          <label for="rd_inpt_www_plum" class="nv_drpdn_pltt_lbl thm_www_plum"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Plum</span></label>
+          <label for="rd_inpt_www_thistle" class="nv_drpdn_pltt_lbl thm_www_thistle"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Thistle</span></label>
+          <label for="rd_inpt_www_lavender" class="nv_drpdn_pltt_lbl thm_www_lavender"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lavender</span></label>
+
+          <label for="rd_inpt_www_midnightblue" class="nv_drpdn_pltt_lbl thm_www_midnightblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Midnightblue</span></label>
+          <label for="rd_inpt_www_navy" class="nv_drpdn_pltt_lbl thm_www_navy"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Navy</span></label>
+          <label for="rd_inpt_www_darkblue" class="nv_drpdn_pltt_lbl thm_www_darkblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkblue</span></label>
+          <label for="rd_inpt_www_mediumblue" class="nv_drpdn_pltt_lbl thm_www_mediumblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumblue</span></label>
+          <label for="rd_inpt_www_blue" class="nv_drpdn_pltt_lbl thm_www_blue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Blue</span></label>
+          <label for="rd_inpt_www_royalblue" class="nv_drpdn_pltt_lbl thm_www_royalblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Royalblue</span></label>
+          <label for="rd_inpt_www_steelblue" class="nv_drpdn_pltt_lbl thm_www_steelblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Steelblue</span></label>
+          <label for="rd_inpt_www_dodgerblue" class="nv_drpdn_pltt_lbl thm_www_dodgerblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Dodgerblue</span></label>
+          <label for="rd_inpt_www_deepskyblue" class="nv_drpdn_pltt_lbl thm_www_deepskyblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Deepskyblue</span></label>
+          <label for="rd_inpt_www_cornflowerblue" class="nv_drpdn_pltt_lbl thm_www_cornflowerblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Cornflowerblue</span></label>
+          <label for="rd_inpt_www_skyblue" class="nv_drpdn_pltt_lbl thm_www_skyblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Skyblue</span></label>
+          <label for="rd_inpt_www_lightskyblue" class="nv_drpdn_pltt_lbl thm_www_lightskyblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightskyblue</span></label>
+          <label for="rd_inpt_www_lightsteelblue" class="nv_drpdn_pltt_lbl thm_www_lightsteelblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightsteelblue</span></label>
+          <label for="rd_inpt_www_lightblue" class="nv_drpdn_pltt_lbl thm_www_lightblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightblue</span></label>
+          <label for="rd_inpt_www_powderblue" class="nv_drpdn_pltt_lbl thm_www_powderblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Powderblue</span></label>
+
+          <label for="rd_inpt_www_teal" class="nv_drpdn_pltt_lbl thm_www_teal"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Teal</span></label>
+          <label for="rd_inpt_www_darkcyan" class="nv_drpdn_pltt_lbl thm_www_darkcyan"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkcyan</span></label>
+          <label for="rd_inpt_www_lightseagreen" class="nv_drpdn_pltt_lbl thm_www_lightseagreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightseagreen</span></label>
+          <label for="rd_inpt_www_cadetblue" class="nv_drpdn_pltt_lbl thm_www_cadetblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Cadetblue</span></label>
+          <label for="rd_inpt_www_darkturquoise" class="nv_drpdn_pltt_lbl thm_www_darkturquoise"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkturquoise</span></label>
+          <label for="rd_inpt_www_mediumturquoise" class="nv_drpdn_pltt_lbl thm_www_mediumturquoise"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumturquoise</span></label>
+          <label for="rd_inpt_www_turquoise" class="nv_drpdn_pltt_lbl thm_www_turquoise"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Turquoise</span></label>
+          <label for="rd_inpt_www_aqua" class="nv_drpdn_pltt_lbl thm_www_aqua"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Aqua</span></label>
+          <label for="rd_inpt_www_cyan" class="nv_drpdn_pltt_lbl thm_www_cyan"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Cyan</span></label>
+          <label for="rd_inpt_www_aquamarine" class="nv_drpdn_pltt_lbl thm_www_aquamarine"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Aquamarine</span></label>
+          <label for="rd_inpt_www_paleturquoise" class="nv_drpdn_pltt_lbl thm_www_paleturquoise"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Paleturquoise</span></label>
+          <label for="rd_inpt_www_lightcyan" class="nv_drpdn_pltt_lbl thm_www_lightcyan"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightcyan</span></label>
+
+          <label for="rd_inpt_www_darkgreen" class="nv_drpdn_pltt_lbl thm_www_darkgreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkgreen</span></label>
+          <label for="rd_inpt_www_green" class="nv_drpdn_pltt_lbl thm_www_green"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Green</span></label>
+          <label for="rd_inpt_www_darkolivegreen" class="nv_drpdn_pltt_lbl thm_www_darkolivegreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkolivegreen</span></label>
+          <label for="rd_inpt_www_forestgreen" class="nv_drpdn_pltt_lbl thm_www_forestgreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Forestgreen</span></label>
+          <label for="rd_inpt_www_seagreen" class="nv_drpdn_pltt_lbl thm_www_seagreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Seagreen</span></label>
+          <label for="rd_inpt_www_olive" class="nv_drpdn_pltt_lbl thm_www_olive"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Olive</span></label>
+          <label for="rd_inpt_www_olivedrab" class="nv_drpdn_pltt_lbl thm_www_olivedrab"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Olivedrab</span></label>
+          <label for="rd_inpt_www_mediumseagreen" class="nv_drpdn_pltt_lbl thm_www_mediumseagreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumseagreen</span></label>
+          <label for="rd_inpt_www_limegreen" class="nv_drpdn_pltt_lbl thm_www_limegreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Limegreen</span></label>
+          <label for="rd_inpt_www_lime" class="nv_drpdn_pltt_lbl thm_www_lime"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lime</span></label>
+          <label for="rd_inpt_www_springgreen" class="nv_drpdn_pltt_lbl thm_www_springgreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Springgreen</span></label>
+          <label for="rd_inpt_www_mediumspringgreen" class="nv_drpdn_pltt_lbl thm_www_mediumspringgreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumspringgreen</span></label>
+          <label for="rd_inpt_www_darkseagreen" class="nv_drpdn_pltt_lbl thm_www_darkseagreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkseagreen</span></label>
+          <label for="rd_inpt_www_mediumaquamarine" class="nv_drpdn_pltt_lbl thm_www_mediumaquamarine"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumaquamarine</span></label>
+          <label for="rd_inpt_www_yellowgreen" class="nv_drpdn_pltt_lbl thm_www_yellowgreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Yellowgreen</span></label>
+          <label for="rd_inpt_www_lawngreen" class="nv_drpdn_pltt_lbl thm_www_lawngreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lawngreen</span></label>
+          <label for="rd_inpt_www_chartreuse" class="nv_drpdn_pltt_lbl thm_www_chartreuse"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Chartreuse</span></label>
+          <label for="rd_inpt_www_lightgreen" class="nv_drpdn_pltt_lbl thm_www_lightgreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightgreen</span></label>
+          <label for="rd_inpt_www_greenyellow" class="nv_drpdn_pltt_lbl thm_www_greenyellow"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Greenyellow</span></label>
+          <label for="rd_inpt_www_palegreen" class="nv_drpdn_pltt_lbl thm_www_palegreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Palegreen</span></label>
+
+          <label for="rd_inpt_www_darkkhaki" class="nv_drpdn_pltt_lbl thm_www_darkkhaki"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkkhaki</span></label>
+          <label for="rd_inpt_www_gold" class="nv_drpdn_pltt_lbl thm_www_gold"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Gold</span></label>
+          <label for="rd_inpt_www_khaki" class="nv_drpdn_pltt_lbl thm_www_khaki"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Khaki</span></label>
+          <label for="rd_inpt_www_peachpuff" class="nv_drpdn_pltt_lbl thm_www_peachpuff"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Peachpuff</span></label>
+          <label for="rd_inpt_www_yellow" class="nv_drpdn_pltt_lbl thm_www_yellow"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Yellow</span></label>
+          <label for="rd_inpt_www_palegoldenrod" class="nv_drpdn_pltt_lbl thm_www_palegoldenrod"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Palegoldenrod</span></label>
+          <label for="rd_inpt_www_moccasin" class="nv_drpdn_pltt_lbl thm_www_moccasin"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Moccasin</span></label>
+          <label for="rd_inpt_www_papayawhip" class="nv_drpdn_pltt_lbl thm_www_papayawhip"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Papayawhip</span></label>
+          <label for="rd_inpt_www_lightgoldenrodyellow" class="nv_drpdn_pltt_lbl thm_www_lightgoldenrodyellow"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightgoldenrodyellow</span></label>
+          <label for="rd_inpt_www_lemonchiffon" class="nv_drpdn_pltt_lbl thm_www_lemonchiffon"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lemonchiffon</span></label>
+          <label for="rd_inpt_www_lightyellow" class="nv_drpdn_pltt_lbl thm_www_lightyellow"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightyellow</span></label>
+
+          <label for="rd_inpt_www_orangered" class="nv_drpdn_pltt_lbl thm_www_orangered"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Orangered</span></label>
+          <label for="rd_inpt_www_tomato" class="nv_drpdn_pltt_lbl thm_www_tomato"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Tomato</span></label>
+          <label for="rd_inpt_www_darkorange" class="nv_drpdn_pltt_lbl thm_www_darkorange"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkorange</span></label>
+          <label for="rd_inpt_www_coral" class="nv_drpdn_pltt_lbl thm_www_coral"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Coral</span></label>
+          <label for="rd_inpt_www_orange" class="nv_drpdn_pltt_lbl thm_www_orange"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Orange</span></label>
+
+          <label for="rd_inpt_www_maroon" class="nv_drpdn_pltt_lbl thm_www_maroon"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Maroon</span></label>
+          <label for="rd_inpt_www_brown" class="nv_drpdn_pltt_lbl thm_www_brown"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Brown</span></label>
+          <label for="rd_inpt_www_saddlebrown" class="nv_drpdn_pltt_lbl thm_www_saddlebrown"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Saddlebrown</span></label>
+          <label for="rd_inpt_www_sienna" class="nv_drpdn_pltt_lbl thm_www_sienna"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Sienna</span></label>
+          <label for="rd_inpt_www_chocolate" class="nv_drpdn_pltt_lbl thm_www_chocolate"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Chocolate</span></label>
+          <label for="rd_inpt_www_darkgoldenrod" class="nv_drpdn_pltt_lbl thm_www_darkgoldenrod"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkgoldenrod</span></label>
+          <label for="rd_inpt_www_peru" class="nv_drpdn_pltt_lbl thm_www_peru"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Peru</span></label>
+          <label for="rd_inpt_www_rosybrown" class="nv_drpdn_pltt_lbl thm_www_rosybrown"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Rosybrown</span></label>
+          <label for="rd_inpt_www_goldenrod" class="nv_drpdn_pltt_lbl thm_www_goldenrod"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Goldenrod</span></label>
+          <label for="rd_inpt_www_sandybrown" class="nv_drpdn_pltt_lbl thm_www_sandybrown"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Sandybrown</span></label>
+          <label for="rd_inpt_www_tan" class="nv_drpdn_pltt_lbl thm_www_tan"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Tan</span></label>
+          <label for="rd_inpt_www_burlywood" class="nv_drpdn_pltt_lbl thm_www_burlywood"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Burlywood</span></label>
+          <label for="rd_inpt_www_wheat" class="nv_drpdn_pltt_lbl thm_www_wheat"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Wheat</span></label>
+          <label for="rd_inpt_www_navajowhite" class="nv_drpdn_pltt_lbl thm_www_navajowhite"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Navajowhite</span></label>
+          <label for="rd_inpt_www_bisque" class="nv_drpdn_pltt_lbl thm_www_bisque"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Bisque</span></label>
+          <label for="rd_inpt_www_blanchedalmond" class="nv_drpdn_pltt_lbl thm_www_blanchedalmond"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Blanchedalmond</span></label>
+          <label for="rd_inpt_www_cornsilk" class="nv_drpdn_pltt_lbl thm_www_cornsilk"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Cornsilk</span></label>
+
+          <label for="rd_inpt_www_mediumvioletred" class="nv_drpdn_pltt_lbl thm_www_mediumvioletred"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumvioletred</span></label>
+          <label for="rd_inpt_www_deeppink" class="nv_drpdn_pltt_lbl thm_www_deeppink"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Deeppink</span></label>
+          <label for="rd_inpt_www_palevioletred" class="nv_drpdn_pltt_lbl thm_www_palevioletred"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Palevioletred</span></label>
+          <label for="rd_inpt_www_hotpink" class="nv_drpdn_pltt_lbl thm_www_hotpink"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Hotpink</span></label>
+          <label for="rd_inpt_www_lightpink" class="nv_drpdn_pltt_lbl thm_www_lightpink"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightpink</span></label>
+          <label for="rd_inpt_www_pink" class="nv_drpdn_pltt_lbl thm_www_pink"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Pink</span></label>
+
+          <label for="rd_inpt_www_darkred" class="nv_drpdn_pltt_lbl thm_www_darkred"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkred</span></label>
+          <label for="rd_inpt_www_red" class="nv_drpdn_pltt_lbl thm_www_red"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Red</span></label>
+          <label for="rd_inpt_www_firebrick" class="nv_drpdn_pltt_lbl thm_www_firebrick"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Firebrick</span></label>
+          <label for="rd_inpt_www_crimson" class="nv_drpdn_pltt_lbl thm_www_crimson"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Crimson</span></label>
+          <label for="rd_inpt_www_indianred" class="nv_drpdn_pltt_lbl thm_www_indianred"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Indianred</span></label>
+          <label for="rd_inpt_www_lightcoral" class="nv_drpdn_pltt_lbl thm_www_lightcoral"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightcoral</span></label>
+          <label for="rd_inpt_www_salmon" class="nv_drpdn_pltt_lbl thm_www_salmon"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Salmon</span></label>
+          <label for="rd_inpt_www_darksalmon" class="nv_drpdn_pltt_lbl thm_www_darksalmon"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darksalmon</span></label>
+          <label for="rd_inpt_www_lightsalmon" class="nv_drpdn_pltt_lbl thm_www_lightsalmon"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightsalmon</span></label>
+
+          <label for="rd_inpt_www_mistyrose" class="nv_drpdn_pltt_lbl thm_www_mistyrose"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mistyrose</span></label>
+          <label for="rd_inpt_www_antiquewhite" class="nv_drpdn_pltt_lbl thm_www_antiquewhite"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Antiquewhite</span></label>
+          <label for="rd_inpt_www_linen" class="nv_drpdn_pltt_lbl thm_www_linen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Linen</span></label>
+          <label for="rd_inpt_www_beige" class="nv_drpdn_pltt_lbl thm_www_beige"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Beige</span></label>
+          <label for="rd_inpt_www_whitesmoke" class="nv_drpdn_pltt_lbl thm_www_whitesmoke"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Whitesmoke</span></label>
+          <label for="rd_inpt_www_lavenderblush" class="nv_drpdn_pltt_lbl thm_www_lavenderblush"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lavenderblush</span></label>
+          <label for="rd_inpt_www_oldlace" class="nv_drpdn_pltt_lbl thm_www_oldlace"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Oldlace</span></label>
+          <label for="rd_inpt_www_aliceblue" class="nv_drpdn_pltt_lbl thm_www_aliceblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Aliceblue</span></label>
+          <label for="rd_inpt_www_seashell" class="nv_drpdn_pltt_lbl thm_www_seashell"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Seashell</span></label>
+          <label for="rd_inpt_www_ghostwhite" class="nv_drpdn_pltt_lbl thm_www_ghostwhite"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Ghostwhite</span></label>
+          <label for="rd_inpt_www_honeydew" class="nv_drpdn_pltt_lbl thm_www_honeydew"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Honeydew</span></label>
+          <label for="rd_inpt_www_floralwhite" class="nv_drpdn_pltt_lbl thm_www_floralwhite"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Floralwhite</span></label>
+          <label for="rd_inpt_www_azure" class="nv_drpdn_pltt_lbl thm_www_azure"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Azure</span></label>
+          <label for="rd_inpt_www_mintcream" class="nv_drpdn_pltt_lbl thm_www_mintcream"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mintcream</span></label>
+          <label for="rd_inpt_www_snow" class="nv_drpdn_pltt_lbl thm_www_snow"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Snow</span></label>
+          <label for="rd_inpt_www_ivory" class="nv_drpdn_pltt_lbl thm_www_ivory"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Ivory</span></label>
+          <label for="rd_inpt_www_white" class="nv_drpdn_pltt_lbl thm_www_white"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">White</span></label>
+
+          <label for="rd_inpt_www_black" class="nv_drpdn_pltt_lbl thm_www_black"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Black</span></label>
+          <label for="rd_inpt_www_darkslategray" class="nv_drpdn_pltt_lbl thm_www_darkslategray"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkslategray</span></label>
+          <label for="rd_inpt_www_dimgray" class="nv_drpdn_pltt_lbl thm_www_dimgray"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Dimgray</span></label>
+          <label for="rd_inpt_www_slategray" class="nv_drpdn_pltt_lbl thm_www_slategray"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Slategray</span></label>
+          <label for="rd_inpt_www_gray" class="nv_drpdn_pltt_lbl thm_www_gray"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Gray</span></label>
+          <label for="rd_inpt_www_lightslategray" class="nv_drpdn_pltt_lbl thm_www_lightslategray"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightslategray</span></label>
+          <label for="rd_inpt_www_darkgray" class="nv_drpdn_pltt_lbl thm_www_darkgray"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkgray</span></label>
+          <label for="rd_inpt_www_silver" class="nv_drpdn_pltt_lbl thm_www_silver"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Silver</span></label>
+          <label for="rd_inpt_www_lightgray" class="nv_drpdn_pltt_lbl thm_www_lightgray"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightgray</span></label>
+          <label for="rd_inpt_www_gainsboro" class="nv_drpdn_pltt_lbl thm_www_gainsboro"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Gainsboro</span></label>
+        </div>
+        <label for="nv_img_tgl">
+          <div class="icon_cntnr_g"><span class="material-symbols-rounded">image</span></div>
+        </label>
+        <label for="nv_pltt_img_dflt_tgl">
+          <div class="icon_cntnr_g"><span class="material-symbols-rounded">image</span></div>
+        </label>
+        <div id="nv_hdr_drpdn_img" class="nv_drpdn">
+          <label for="rd_inpt_m3_leaves" class="thm_leaves">
+            <span class="img_icon_cntnr_g"><img src="icons/leaves.png"><span class="nv_drpdn_img_nm">M3 Leaves</span></span>
+          </label>
+          <label for="rd_inpt_m3_peonies" class="thm_peonies">
+            <span class="img_icon_cntnr_g"><img src="icons/peonies.png"><span class="nv_drpdn_img_nm">M3 Peonies</span></span>
+          </label>
+          <label for="rd_inpt_m3_bubbles" class="thm_bubbles">
+            <span class="img_icon_cntnr_g"><img src="icons/bubbles.png"><span class="nv_drpdn_img_nm">M3 Bubbles</span></span>
+          </label>
+          <label for="rd_inpt_m3_seaweed" class="thm_seaweed">
+            <span class="img_icon_cntnr_g"><img src="icons/seaweed.png"><span class="nv_drpdn_img_nm">M3 Seaweed</span></span>
+          </label>
+          <label for="rd_inpt_m3_sea_grapes" class="thm_sea_grapes">
+            <span class="img_icon_cntnr_g"><img src="icons/sea_grapes.png"><span class="nv_drpdn_img_nm">M3 Sea&nbsp;Grapes</span></span>
+          </label>
+          <label for="rd_inpt_m3_petals" class="thm_petals">
+            <span class="img_icon_cntnr_g"><img src="icons/petals.png"><span class="nv_drpdn_img_nm">M3 Petals</span></span>
+          </label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div>
+        <input type="radio" id="rd_inpt_main"     name="intrfc_panel" value="Main"     class="rd_btn_hide" checked>
+        <input type="radio" id="rd_inpt_resume"   name="intrfc_panel" value="Resume"   class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_projects" name="intrfc_panel" value="Projects" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_hobby"    name="intrfc_panel" value="Hobby"    class="rd_btn_hide">
+        
+        <input id="brtn_tgl" type="checkbox" class="radio_sngl_chc_hide" checked>
+        
+        <input id="mtrl_tgl" type="checkbox" class="radio_sngl_chc_hide" checked>
+        
+        <input type="radio" id="rd_inpt_m3_baseline" name="thm_color" value="M3_Baseline" class="rd_btn_hide" checked>
+        <input type="radio" id="rd_inpt_m3_indigo" name="thm_color" value="Indigo" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_m3_blue" name="thm_color" value="Blue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_m3_teal" name="thm_color" value="Teal" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_m3_green" name="thm_color" value="Green" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_m3_yellow" name="thm_color" value="Yellow" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_m3_orange" name="thm_color" value="Orange" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_m3_deep_orange" name="thm_color" value="Deep_Orange" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_m3_pink" name="thm_color" value="Pink" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_m3_leaves" name="thm_color" value="Leaves" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_m3_peonies" name="thm_color" value="Peonies" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_m3_bubbles" name="thm_color" value="Bubbles" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_m3_seaweed" name="thm_color" value="Leaves" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_m3_sea_grapes" name="thm_color" value="Sea_Grapes" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_m3_petals" name="thm_color" value="Petals" class="rd_btn_hide">
+        
+        <input type="radio" id="rd_inpt_www_indigo" name="thm_color" value="WWW_Indigo" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_purple" name="thm_color" value="WWW_Purple" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_darkmagenta" name="thm_color" value="WWW_Darkmagenta" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_darkviolet" name="thm_color" value="WWW_Darkviolet" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_darkslateblue" name="thm_color" value="WWW_Darkslateblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_blueviolet" name="thm_color" value="WWW_Blueviolet" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_darkorchid" name="thm_color" value="WWW_Darkorchid" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_fuchsia" name="thm_color" value="WWW_Fuchsia" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_magenta" name="thm_color" value="WWW_Magenta" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_slateblue" name="thm_color" value="WWW_Slateblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_mediumslateblue" name="thm_color" value="WWW_Mediumslateblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_mediumorchid" name="thm_color" value="WWW_Mediumorchid" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_mediumpurple" name="thm_color" value="WWW_Mediumpurple" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_orchid" name="thm_color" value="WWW_Orchid" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_violet" name="thm_color" value="WWW_Violet" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_plum" name="thm_color" value="WWW_Plum" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_thistle" name="thm_color" value="WWW_Thistle" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lavender" name="thm_color" value="WWW_Lavender" class="rd_btn_hide">
+
+        <input type="radio" id="rd_inpt_www_midnightblue" name="thm_color" value="WWW_Midnightblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_navy" name="thm_color" value="WWW_Navy" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_darkblue" name="thm_color" value="WWW_Darkblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_mediumblue" name="thm_color" value="WWW_Mediumblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_blue" name="thm_color" value="WWW_Blue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_royalblue" name="thm_color" value="WWW_Royalblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_steelblue" name="thm_color" value="WWW_Steelblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_dodgerblue" name="thm_color" value="WWW_Dodgerblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_deepskyblue" name="thm_color" value="WWW_Deepskyblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_cornflowerblue" name="thm_color" value="WWW_Cornflowerblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_skyblue" name="thm_color" value="WWW_Skyblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lightskyblue" name="thm_color" value="WWW_Lightskyblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lightsteelblue" name="thm_color" value="WWW_Lightsteelblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lightblue" name="thm_color" value="WWW_Lightblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_powderblue" name="thm_color" value="WWW_Powderblue" class="rd_btn_hide">
+
+        <input type="radio" id="rd_inpt_www_teal" name="thm_color" value="WWW_Teal" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_darkcyan" name="thm_color" value="WWW_Darkcyan" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lightseagreen" name="thm_color" value="WWW_Lightseagreen" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_cadetblue" name="thm_color" value="WWW_Cadetblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_darkturquoise" name="thm_color" value="WWW_Darkturquoise" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_mediumturquoise" name="thm_color" value="WWW_Mediumturquoise" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_turquoise" name="thm_color" value="WWW_Turquoise" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_aqua" name="thm_color" value="WWW_Aqua" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_cyan" name="thm_color" value="WWW_Cyan" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_aquamarine" name="thm_color" value="WWW_Aquamarine" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_paleturquoise" name="thm_color" value="WWW_Paleturquoise" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lightcyan" name="thm_color" value="WWW_Lightcyan" class="rd_btn_hide">
+
+        <input type="radio" id="rd_inpt_www_darkgreen" name="thm_color" value="WWW_Darkgreen" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_green" name="thm_color" value="WWW_Green" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_darkolivegreen" name="thm_color" value="WWW_Darkolivegreen" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_forestgreen" name="thm_color" value="WWW_Forestgreen" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_seagreen" name="thm_color" value="WWW_Seagreen" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_olive" name="thm_color" value="WWW_Olive" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_olivedrab" name="thm_color" value="WWW_Olivedrab" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_mediumseagreen" name="thm_color" value="WWW_Mediumseagreen" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_limegreen" name="thm_color" value="WWW_Limegreen" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lime" name="thm_color" value="WWW_Lime" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_springgreen" name="thm_color" value="WWW_Springgreen" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_mediumspringgreen" name="thm_color" value="WWW_Mediumspringgreen" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_darkseagreen" name="thm_color" value="WWW_Darkseagreen" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_mediumaquamarine" name="thm_color" value="WWW_Mediumaquamarine" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_yellowgreen" name="thm_color" value="WWW_Yellowgreen" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lawngreen" name="thm_color" value="WWW_Lawngreen" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_chartreuse" name="thm_color" value="WWW_Chartreuse" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lightgreen" name="thm_color" value="WWW_Lightgreen" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_greenyellow" name="thm_color" value="WWW_Greenyellow" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_palegreen" name="thm_color" value="WWW_Palegreen" class="rd_btn_hide">
+
+        <input type="radio" id="rd_inpt_www_darkkhaki" name="thm_color" value="WWW_Darkkhaki" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_gold" name="thm_color" value="WWW_Gold" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_khaki" name="thm_color" value="WWW_Khaki" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_peachpuff" name="thm_color" value="WWW_Peachpuff" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_yellow" name="thm_color" value="WWW_Yellow" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_palegoldenrod" name="thm_color" value="WWW_Palegoldenrod" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_moccasin" name="thm_color" value="WWW_Moccasin" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_papayawhip" name="thm_color" value="WWW_Papayawhip" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lightgoldenrodyellow" name="thm_color" value="WWW_Lightgoldenrodyellow" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lemonchiffon" name="thm_color" value="WWW_Lemonchiffon" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lightyellow" name="thm_color" value="WWW_Lightyellow" class="rd_btn_hide">
+
+        <input type="radio" id="rd_inpt_www_orangered" name="thm_color" value="WWW_Orangered" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_tomato" name="thm_color" value="WWW_Tomato" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_darkorange" name="thm_color" value="WWW_Darkorange" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_coral" name="thm_color" value="WWW_Coral" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_orange" name="thm_color" value="WWW_Orange" class="rd_btn_hide">
+
+        <input type="radio" id="rd_inpt_www_maroon" name="thm_color" value="WWW_Maroon" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_brown" name="thm_color" value="WWW_Brown" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_saddlebrown" name="thm_color" value="WWW_Saddlebrown" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_sienna" name="thm_color" value="WWW_Sienna" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_chocolate" name="thm_color" value="WWW_Chocolate" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_darkgoldenrod" name="thm_color" value="WWW_Darkgoldenrod" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_peru" name="thm_color" value="WWW_Peru" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_rosybrown" name="thm_color" value="WWW_Rosybrown" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_goldenrod" name="thm_color" value="WWW_Goldenrod" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_sandybrown" name="thm_color" value="WWW_Sandybrown" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_tan" name="thm_color" value="WWW_Tan" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_burlywood" name="thm_color" value="WWW_Burlywood" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_wheat" name="thm_color" value="WWW_Wheat" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_navajowhite" name="thm_color" value="WWW_Navajowhite" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_bisque" name="thm_color" value="WWW_Bisque" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_blanchedalmond" name="thm_color" value="WWW_Blanchedalmond" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_cornsilk" name="thm_color" value="WWW_Cornsilk" class="rd_btn_hide">
+
+        <input type="radio" id="rd_inpt_www_mediumvioletred" name="thm_color" value="WWW_Mediumvioletred" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_deeppink" name="thm_color" value="WWW_Deeppink" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_palevioletred" name="thm_color" value="WWW_Palevioletred" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_hotpink" name="thm_color" value="WWW_Hotpink" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lightpink" name="thm_color" value="WWW_Lightpink" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_pink" name="thm_color" value="WWW_Pink" class="rd_btn_hide">
+
+        <input type="radio" id="rd_inpt_www_darkred" name="thm_color" value="WWW_Darkred" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_red" name="thm_color" value="WWW_Red" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_firebrick" name="thm_color" value="WWW_Firebrick" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_crimson" name="thm_color" value="WWW_Crimson" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_indianred" name="thm_color" value="WWW_Indianred" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lightcoral" name="thm_color" value="WWW_Lightcoral" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_salmon" name="thm_color" value="WWW_Salmon" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_darksalmon" name="thm_color" value="WWW_Darksalmon" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lightsalmon" name="thm_color" value="WWW_Lightsalmon" class="rd_btn_hide">
+
+        <input type="radio" id="rd_inpt_www_mistyrose" name="thm_color" value="WWW_Mistyrose" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_antiquewhite" name="thm_color" value="WWW_Antiquewhite" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_linen" name="thm_color" value="WWW_Linen" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_beige" name="thm_color" value="WWW_Beige" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_whitesmoke" name="thm_color" value="WWW_Whitesmoke" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lavenderblush" name="thm_color" value="WWW_Lavenderblush" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_oldlace" name="thm_color" value="WWW_Oldlace" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_aliceblue" name="thm_color" value="WWW_Aliceblue" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_seashell" name="thm_color" value="WWW_Seashell" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_ghostwhite" name="thm_color" value="WWW_Ghostwhite" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_honeydew" name="thm_color" value="WWW_Honeydew" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_floralwhite" name="thm_color" value="WWW_Floralwhite" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_azure" name="thm_color" value="WWW_Azure" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_mintcream" name="thm_color" value="WWW_Mintcream" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_snow" name="thm_color" value="WWW_Snow" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_ivory" name="thm_color" value="WWW_Ivory" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_white" name="thm_color" value="WWW_White" class="rd_btn_hide">
+
+        <input type="radio" id="rd_inpt_www_black" name="thm_color" value="WWW_Black" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_darkslategray" name="thm_color" value="WWW_Darkslategray" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_dimgray" name="thm_color" value="WWW_Dimgray" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_slategray" name="thm_color" value="WWW_Slategray" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_gray" name="thm_color" value="WWW_Gray" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lightslategray" name="thm_color" value="WWW_Lightslategray" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_darkgray" name="thm_color" value="WWW_Darkgray" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_silver" name="thm_color" value="WWW_Silver" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_lightgray" name="thm_color" value="WWW_Lightgray" class="rd_btn_hide">
+        <input type="radio" id="rd_inpt_www_gainsboro" name="thm_color" value="WWW_Gainsboro" class="rd_btn_hide">
+        
+        <input type="radio" id="nv_pltt_img_dflt_tgl" name="clr_chc_drpdn" class="radio_sngl_chc_hide" checked>
+        <input type="radio" id="nv_pltt_tgl"          name="clr_chc_drpdn" class="radio_sngl_chc_hide">
+        <input type="radio" id="nv_img_tgl"           name="clr_chc_drpdn" class="radio_sngl_chc_hide">
+      </div>
+      <nav class="nv_side_cntnt">
+        <div class="intrfc_pnl_cntr">
+          <form class="intrfc_pnl_frm">
+            <div class="intrfc_pnl_chc_cntr">
+              <label for="rd_inpt_main">
+                <span class="icon_cntnr_g"><span class="material-symbols-rounded">widgets</span></span>
+                <div class="hide_mid_screen intrfc_pnl_lbl_nm">Main</div>
+              </label>
+            </div>
+            <div class="intrfc_pnl_chc_cntr">
+              <label for="rd_inpt_resume">
+                <span class="icon_cntnr_g"><span class="material-symbols-rounded">news</span></span>
+                <div class="hide_mid_screen intrfc_pnl_lbl_nm">Resume</div>
+              </label>
+            </div>
+            <div class="intrfc_pnl_chc_cntr">
+              <label for="rd_inpt_projects">
+                <span class="icon_cntnr_g"><span class="material-symbols-rounded">kid_star</span></span>
+                <div class="hide_mid_screen intrfc_pnl_lbl_nm">Projects</div>
+              </label>
+            </div>
+            <div class="intrfc_pnl_chc_cntr">
+              <label for="rd_inpt_hobby">
+                <span class="icon_cntnr_g"><span class="material-symbols-rounded">invert_colors</span></span>
+                <span class="icon_cntnr_g"><span class="material-symbols-rounded">humidity_mid</span></span>
+                <div class="hide_mid_screen intrfc_pnl_lbl_nm">Hobby</div>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="brtn_mtrl_clr_cntr">
+          <hr class="hide_mid_screen">
+          <form>
+            <div class="show_mid_screen">
+              <label for="nv_pltt_tgl">
+                <div class="icon_cntnr_g"><span class="material-symbols-rounded">palette</span></div>
+              </label>
+              <label for="nv_pltt_img_dflt_tgl">
+                <div class="icon_cntnr_g"><span class="material-symbols-rounded">palette</span></div>
+              </label>
+              <div id="nv_side_drpdn_pltt" class="nv_drpdn">
+                <label for="rd_inpt_m3_baseline" class="nv_drpdn_pltt_lbl thm_m3_baseline">
+                  <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Baseline</span>
+                </label>
+                <label for="rd_inpt_m3_indigo" class="nv_drpdn_pltt_lbl thm_indigo">
+                  <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Indigo</span>
+                </label>
+                <label for="rd_inpt_m3_blue" class="nv_drpdn_pltt_lbl thm_blue">
+                  <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Blue</span>
+                </label>
+                <label for="rd_inpt_m3_teal" class="nv_drpdn_pltt_lbl thm_teal">
+                  <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Teal</span>
+                </label>
+                <label for="rd_inpt_m3_green" class="nv_drpdn_pltt_lbl thm_green">
+                  <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Green</span>
+                </label>
+                <label for="rd_inpt_m3_yellow" class="nv_drpdn_pltt_lbl thm_yellow">
+                  <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Yellow</span>
+                </label>
+                <label for="rd_inpt_m3_orange" class="nv_drpdn_pltt_lbl thm_orange">
+                  <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Orange</span>
+                </label>
+                <label for="rd_inpt_m3_deep_orange" class="nv_drpdn_pltt_lbl thm_deep_orange">
+                  <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Deep Orange</span>
+                </label>
+                <label for="rd_inpt_m3_pink" class="nv_drpdn_pltt_lbl thm_pink">
+                  <span class="material-symbols-rounded">palette</span><span class="nv_drpdn_nm">M3 Pink</span>
+                </label>
+                <label for="rd_inpt_www_indigo" class="nv_drpdn_pltt_lbl thm_www_indigo"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Indigo</span></label>
+                <label for="rd_inpt_www_purple" class="nv_drpdn_pltt_lbl thm_www_purple"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Purple</span></label>
+                <label for="rd_inpt_www_darkmagenta" class="nv_drpdn_pltt_lbl thm_www_darkmagenta"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkmagenta</span></label>
+                <label for="rd_inpt_www_darkviolet" class="nv_drpdn_pltt_lbl thm_www_darkviolet"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkviolet</span></label>
+                <label for="rd_inpt_www_darkslateblue" class="nv_drpdn_pltt_lbl thm_www_darkslateblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkslateblue</span></label>
+                <label for="rd_inpt_www_blueviolet" class="nv_drpdn_pltt_lbl thm_www_blueviolet"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Blueviolet</span></label>
+                <label for="rd_inpt_www_darkorchid" class="nv_drpdn_pltt_lbl thm_www_darkorchid"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkorchid</span></label>
+                <label for="rd_inpt_www_fuchsia" class="nv_drpdn_pltt_lbl thm_www_fuchsia"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Fuchsia</span></label>
+                <label for="rd_inpt_www_magenta" class="nv_drpdn_pltt_lbl thm_www_magenta"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Magenta</span></label>
+                <label for="rd_inpt_www_slateblue" class="nv_drpdn_pltt_lbl thm_www_slateblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Slateblue</span></label>
+                <label for="rd_inpt_www_mediumslateblue" class="nv_drpdn_pltt_lbl thm_www_mediumslateblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumslateblue</span></label>
+                <label for="rd_inpt_www_mediumorchid" class="nv_drpdn_pltt_lbl thm_www_mediumorchid"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumorchid</span></label>
+                <label for="rd_inpt_www_mediumpurple" class="nv_drpdn_pltt_lbl thm_www_mediumpurple"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumpurple</span></label>
+                <label for="rd_inpt_www_orchid" class="nv_drpdn_pltt_lbl thm_www_orchid"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Orchid</span></label>
+                <label for="rd_inpt_www_violet" class="nv_drpdn_pltt_lbl thm_www_violet"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Violet</span></label>
+                <label for="rd_inpt_www_plum" class="nv_drpdn_pltt_lbl thm_www_plum"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Plum</span></label>
+                <label for="rd_inpt_www_thistle" class="nv_drpdn_pltt_lbl thm_www_thistle"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Thistle</span></label>
+                <label for="rd_inpt_www_lavender" class="nv_drpdn_pltt_lbl thm_www_lavender"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lavender</span></label>
+
+                <label for="rd_inpt_www_midnightblue" class="nv_drpdn_pltt_lbl thm_www_midnightblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Midnightblue</span></label>
+                <label for="rd_inpt_www_navy" class="nv_drpdn_pltt_lbl thm_www_navy"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Navy</span></label>
+                <label for="rd_inpt_www_darkblue" class="nv_drpdn_pltt_lbl thm_www_darkblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkblue</span></label>
+                <label for="rd_inpt_www_mediumblue" class="nv_drpdn_pltt_lbl thm_www_mediumblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumblue</span></label>
+                <label for="rd_inpt_www_blue" class="nv_drpdn_pltt_lbl thm_www_blue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Blue</span></label>
+                <label for="rd_inpt_www_royalblue" class="nv_drpdn_pltt_lbl thm_www_royalblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Royalblue</span></label>
+                <label for="rd_inpt_www_steelblue" class="nv_drpdn_pltt_lbl thm_www_steelblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Steelblue</span></label>
+                <label for="rd_inpt_www_dodgerblue" class="nv_drpdn_pltt_lbl thm_www_dodgerblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Dodgerblue</span></label>
+                <label for="rd_inpt_www_deepskyblue" class="nv_drpdn_pltt_lbl thm_www_deepskyblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Deepskyblue</span></label>
+                <label for="rd_inpt_www_cornflowerblue" class="nv_drpdn_pltt_lbl thm_www_cornflowerblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Cornflowerblue</span></label>
+                <label for="rd_inpt_www_skyblue" class="nv_drpdn_pltt_lbl thm_www_skyblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Skyblue</span></label>
+                <label for="rd_inpt_www_lightskyblue" class="nv_drpdn_pltt_lbl thm_www_lightskyblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightskyblue</span></label>
+                <label for="rd_inpt_www_lightsteelblue" class="nv_drpdn_pltt_lbl thm_www_lightsteelblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightsteelblue</span></label>
+                <label for="rd_inpt_www_lightblue" class="nv_drpdn_pltt_lbl thm_www_lightblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightblue</span></label>
+                <label for="rd_inpt_www_powderblue" class="nv_drpdn_pltt_lbl thm_www_powderblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Powderblue</span></label>
+
+                <label for="rd_inpt_www_teal" class="nv_drpdn_pltt_lbl thm_www_teal"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Teal</span></label>
+                <label for="rd_inpt_www_darkcyan" class="nv_drpdn_pltt_lbl thm_www_darkcyan"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkcyan</span></label>
+                <label for="rd_inpt_www_lightseagreen" class="nv_drpdn_pltt_lbl thm_www_lightseagreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightseagreen</span></label>
+                <label for="rd_inpt_www_cadetblue" class="nv_drpdn_pltt_lbl thm_www_cadetblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Cadetblue</span></label>
+                <label for="rd_inpt_www_darkturquoise" class="nv_drpdn_pltt_lbl thm_www_darkturquoise"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkturquoise</span></label>
+                <label for="rd_inpt_www_mediumturquoise" class="nv_drpdn_pltt_lbl thm_www_mediumturquoise"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumturquoise</span></label>
+                <label for="rd_inpt_www_turquoise" class="nv_drpdn_pltt_lbl thm_www_turquoise"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Turquoise</span></label>
+                <label for="rd_inpt_www_aqua" class="nv_drpdn_pltt_lbl thm_www_aqua"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Aqua</span></label>
+                <label for="rd_inpt_www_cyan" class="nv_drpdn_pltt_lbl thm_www_cyan"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Cyan</span></label>
+                <label for="rd_inpt_www_aquamarine" class="nv_drpdn_pltt_lbl thm_www_aquamarine"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Aquamarine</span></label>
+                <label for="rd_inpt_www_paleturquoise" class="nv_drpdn_pltt_lbl thm_www_paleturquoise"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Paleturquoise</span></label>
+                <label for="rd_inpt_www_lightcyan" class="nv_drpdn_pltt_lbl thm_www_lightcyan"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightcyan</span></label>
+
+                <label for="rd_inpt_www_darkgreen" class="nv_drpdn_pltt_lbl thm_www_darkgreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkgreen</span></label>
+                <label for="rd_inpt_www_green" class="nv_drpdn_pltt_lbl thm_www_green"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Green</span></label>
+                <label for="rd_inpt_www_darkolivegreen" class="nv_drpdn_pltt_lbl thm_www_darkolivegreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkolivegreen</span></label>
+                <label for="rd_inpt_www_forestgreen" class="nv_drpdn_pltt_lbl thm_www_forestgreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Forestgreen</span></label>
+                <label for="rd_inpt_www_seagreen" class="nv_drpdn_pltt_lbl thm_www_seagreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Seagreen</span></label>
+                <label for="rd_inpt_www_olive" class="nv_drpdn_pltt_lbl thm_www_olive"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Olive</span></label>
+                <label for="rd_inpt_www_olivedrab" class="nv_drpdn_pltt_lbl thm_www_olivedrab"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Olivedrab</span></label>
+                <label for="rd_inpt_www_mediumseagreen" class="nv_drpdn_pltt_lbl thm_www_mediumseagreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumseagreen</span></label>
+                <label for="rd_inpt_www_limegreen" class="nv_drpdn_pltt_lbl thm_www_limegreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Limegreen</span></label>
+                <label for="rd_inpt_www_lime" class="nv_drpdn_pltt_lbl thm_www_lime"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lime</span></label>
+                <label for="rd_inpt_www_springgreen" class="nv_drpdn_pltt_lbl thm_www_springgreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Springgreen</span></label>
+                <label for="rd_inpt_www_mediumspringgreen" class="nv_drpdn_pltt_lbl thm_www_mediumspringgreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumspringgreen</span></label>
+                <label for="rd_inpt_www_darkseagreen" class="nv_drpdn_pltt_lbl thm_www_darkseagreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkseagreen</span></label>
+                <label for="rd_inpt_www_mediumaquamarine" class="nv_drpdn_pltt_lbl thm_www_mediumaquamarine"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumaquamarine</span></label>
+                <label for="rd_inpt_www_yellowgreen" class="nv_drpdn_pltt_lbl thm_www_yellowgreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Yellowgreen</span></label>
+                <label for="rd_inpt_www_lawngreen" class="nv_drpdn_pltt_lbl thm_www_lawngreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lawngreen</span></label>
+                <label for="rd_inpt_www_chartreuse" class="nv_drpdn_pltt_lbl thm_www_chartreuse"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Chartreuse</span></label>
+                <label for="rd_inpt_www_lightgreen" class="nv_drpdn_pltt_lbl thm_www_lightgreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightgreen</span></label>
+                <label for="rd_inpt_www_greenyellow" class="nv_drpdn_pltt_lbl thm_www_greenyellow"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Greenyellow</span></label>
+                <label for="rd_inpt_www_palegreen" class="nv_drpdn_pltt_lbl thm_www_palegreen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Palegreen</span></label>
+
+                <label for="rd_inpt_www_darkkhaki" class="nv_drpdn_pltt_lbl thm_www_darkkhaki"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkkhaki</span></label>
+                <label for="rd_inpt_www_gold" class="nv_drpdn_pltt_lbl thm_www_gold"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Gold</span></label>
+                <label for="rd_inpt_www_khaki" class="nv_drpdn_pltt_lbl thm_www_khaki"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Khaki</span></label>
+                <label for="rd_inpt_www_peachpuff" class="nv_drpdn_pltt_lbl thm_www_peachpuff"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Peachpuff</span></label>
+                <label for="rd_inpt_www_yellow" class="nv_drpdn_pltt_lbl thm_www_yellow"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Yellow</span></label>
+                <label for="rd_inpt_www_palegoldenrod" class="nv_drpdn_pltt_lbl thm_www_palegoldenrod"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Palegoldenrod</span></label>
+                <label for="rd_inpt_www_moccasin" class="nv_drpdn_pltt_lbl thm_www_moccasin"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Moccasin</span></label>
+                <label for="rd_inpt_www_papayawhip" class="nv_drpdn_pltt_lbl thm_www_papayawhip"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Papayawhip</span></label>
+                <label for="rd_inpt_www_lightgoldenrodyellow" class="nv_drpdn_pltt_lbl thm_www_lightgoldenrodyellow"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightgoldenrodyellow</span></label>
+                <label for="rd_inpt_www_lemonchiffon" class="nv_drpdn_pltt_lbl thm_www_lemonchiffon"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lemonchiffon</span></label>
+                <label for="rd_inpt_www_lightyellow" class="nv_drpdn_pltt_lbl thm_www_lightyellow"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightyellow</span></label>
+
+                <label for="rd_inpt_www_orangered" class="nv_drpdn_pltt_lbl thm_www_orangered"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Orangered</span></label>
+                <label for="rd_inpt_www_tomato" class="nv_drpdn_pltt_lbl thm_www_tomato"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Tomato</span></label>
+                <label for="rd_inpt_www_darkorange" class="nv_drpdn_pltt_lbl thm_www_darkorange"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkorange</span></label>
+                <label for="rd_inpt_www_coral" class="nv_drpdn_pltt_lbl thm_www_coral"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Coral</span></label>
+                <label for="rd_inpt_www_orange" class="nv_drpdn_pltt_lbl thm_www_orange"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Orange</span></label>
+
+                <label for="rd_inpt_www_maroon" class="nv_drpdn_pltt_lbl thm_www_maroon"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Maroon</span></label>
+                <label for="rd_inpt_www_brown" class="nv_drpdn_pltt_lbl thm_www_brown"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Brown</span></label>
+                <label for="rd_inpt_www_saddlebrown" class="nv_drpdn_pltt_lbl thm_www_saddlebrown"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Saddlebrown</span></label>
+                <label for="rd_inpt_www_sienna" class="nv_drpdn_pltt_lbl thm_www_sienna"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Sienna</span></label>
+                <label for="rd_inpt_www_chocolate" class="nv_drpdn_pltt_lbl thm_www_chocolate"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Chocolate</span></label>
+                <label for="rd_inpt_www_darkgoldenrod" class="nv_drpdn_pltt_lbl thm_www_darkgoldenrod"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkgoldenrod</span></label>
+                <label for="rd_inpt_www_peru" class="nv_drpdn_pltt_lbl thm_www_peru"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Peru</span></label>
+                <label for="rd_inpt_www_rosybrown" class="nv_drpdn_pltt_lbl thm_www_rosybrown"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Rosybrown</span></label>
+                <label for="rd_inpt_www_goldenrod" class="nv_drpdn_pltt_lbl thm_www_goldenrod"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Goldenrod</span></label>
+                <label for="rd_inpt_www_sandybrown" class="nv_drpdn_pltt_lbl thm_www_sandybrown"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Sandybrown</span></label>
+                <label for="rd_inpt_www_tan" class="nv_drpdn_pltt_lbl thm_www_tan"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Tan</span></label>
+                <label for="rd_inpt_www_burlywood" class="nv_drpdn_pltt_lbl thm_www_burlywood"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Burlywood</span></label>
+                <label for="rd_inpt_www_wheat" class="nv_drpdn_pltt_lbl thm_www_wheat"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Wheat</span></label>
+                <label for="rd_inpt_www_navajowhite" class="nv_drpdn_pltt_lbl thm_www_navajowhite"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Navajowhite</span></label>
+                <label for="rd_inpt_www_bisque" class="nv_drpdn_pltt_lbl thm_www_bisque"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Bisque</span></label>
+                <label for="rd_inpt_www_blanchedalmond" class="nv_drpdn_pltt_lbl thm_www_blanchedalmond"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Blanchedalmond</span></label>
+                <label for="rd_inpt_www_cornsilk" class="nv_drpdn_pltt_lbl thm_www_cornsilk"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Cornsilk</span></label>
+
+                <label for="rd_inpt_www_mediumvioletred" class="nv_drpdn_pltt_lbl thm_www_mediumvioletred"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mediumvioletred</span></label>
+                <label for="rd_inpt_www_deeppink" class="nv_drpdn_pltt_lbl thm_www_deeppink"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Deeppink</span></label>
+                <label for="rd_inpt_www_palevioletred" class="nv_drpdn_pltt_lbl thm_www_palevioletred"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Palevioletred</span></label>
+                <label for="rd_inpt_www_hotpink" class="nv_drpdn_pltt_lbl thm_www_hotpink"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Hotpink</span></label>
+                <label for="rd_inpt_www_lightpink" class="nv_drpdn_pltt_lbl thm_www_lightpink"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightpink</span></label>
+                <label for="rd_inpt_www_pink" class="nv_drpdn_pltt_lbl thm_www_pink"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Pink</span></label>
+
+                <label for="rd_inpt_www_darkred" class="nv_drpdn_pltt_lbl thm_www_darkred"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkred</span></label>
+                <label for="rd_inpt_www_red" class="nv_drpdn_pltt_lbl thm_www_red"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Red</span></label>
+                <label for="rd_inpt_www_firebrick" class="nv_drpdn_pltt_lbl thm_www_firebrick"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Firebrick</span></label>
+                <label for="rd_inpt_www_crimson" class="nv_drpdn_pltt_lbl thm_www_crimson"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Crimson</span></label>
+                <label for="rd_inpt_www_indianred" class="nv_drpdn_pltt_lbl thm_www_indianred"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Indianred</span></label>
+                <label for="rd_inpt_www_lightcoral" class="nv_drpdn_pltt_lbl thm_www_lightcoral"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightcoral</span></label>
+                <label for="rd_inpt_www_salmon" class="nv_drpdn_pltt_lbl thm_www_salmon"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Salmon</span></label>
+                <label for="rd_inpt_www_darksalmon" class="nv_drpdn_pltt_lbl thm_www_darksalmon"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darksalmon</span></label>
+                <label for="rd_inpt_www_lightsalmon" class="nv_drpdn_pltt_lbl thm_www_lightsalmon"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightsalmon</span></label>
+
+                <label for="rd_inpt_www_mistyrose" class="nv_drpdn_pltt_lbl thm_www_mistyrose"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mistyrose</span></label>
+                <label for="rd_inpt_www_antiquewhite" class="nv_drpdn_pltt_lbl thm_www_antiquewhite"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Antiquewhite</span></label>
+                <label for="rd_inpt_www_linen" class="nv_drpdn_pltt_lbl thm_www_linen"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Linen</span></label>
+                <label for="rd_inpt_www_beige" class="nv_drpdn_pltt_lbl thm_www_beige"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Beige</span></label>
+                <label for="rd_inpt_www_whitesmoke" class="nv_drpdn_pltt_lbl thm_www_whitesmoke"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Whitesmoke</span></label>
+                <label for="rd_inpt_www_lavenderblush" class="nv_drpdn_pltt_lbl thm_www_lavenderblush"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lavenderblush</span></label>
+                <label for="rd_inpt_www_oldlace" class="nv_drpdn_pltt_lbl thm_www_oldlace"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Oldlace</span></label>
+                <label for="rd_inpt_www_aliceblue" class="nv_drpdn_pltt_lbl thm_www_aliceblue"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Aliceblue</span></label>
+                <label for="rd_inpt_www_seashell" class="nv_drpdn_pltt_lbl thm_www_seashell"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Seashell</span></label>
+                <label for="rd_inpt_www_ghostwhite" class="nv_drpdn_pltt_lbl thm_www_ghostwhite"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Ghostwhite</span></label>
+                <label for="rd_inpt_www_honeydew" class="nv_drpdn_pltt_lbl thm_www_honeydew"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Honeydew</span></label>
+                <label for="rd_inpt_www_floralwhite" class="nv_drpdn_pltt_lbl thm_www_floralwhite"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Floralwhite</span></label>
+                <label for="rd_inpt_www_azure" class="nv_drpdn_pltt_lbl thm_www_azure"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Azure</span></label>
+                <label for="rd_inpt_www_mintcream" class="nv_drpdn_pltt_lbl thm_www_mintcream"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Mintcream</span></label>
+                <label for="rd_inpt_www_snow" class="nv_drpdn_pltt_lbl thm_www_snow"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Snow</span></label>
+                <label for="rd_inpt_www_ivory" class="nv_drpdn_pltt_lbl thm_www_ivory"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Ivory</span></label>
+                <label for="rd_inpt_www_white" class="nv_drpdn_pltt_lbl thm_www_white"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">White</span></label>
+
+                <label for="rd_inpt_www_black" class="nv_drpdn_pltt_lbl thm_www_black"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Black</span></label>
+                <label for="rd_inpt_www_darkslategray" class="nv_drpdn_pltt_lbl thm_www_darkslategray"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkslategray</span></label>
+                <label for="rd_inpt_www_dimgray" class="nv_drpdn_pltt_lbl thm_www_dimgray"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Dimgray</span></label>
+                <label for="rd_inpt_www_slategray" class="nv_drpdn_pltt_lbl thm_www_slategray"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Slategray</span></label>
+                <label for="rd_inpt_www_gray" class="nv_drpdn_pltt_lbl thm_www_gray"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Gray</span></label>
+                <label for="rd_inpt_www_lightslategray" class="nv_drpdn_pltt_lbl thm_www_lightslategray"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightslategray</span></label>
+                <label for="rd_inpt_www_darkgray" class="nv_drpdn_pltt_lbl thm_www_darkgray"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Darkgray</span></label>
+                <label for="rd_inpt_www_silver" class="nv_drpdn_pltt_lbl thm_www_silver"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Silver</span></label>
+                <label for="rd_inpt_www_lightgray" class="nv_drpdn_pltt_lbl thm_www_lightgray"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Lightgray</span></label>
+                <label for="rd_inpt_www_gainsboro" class="nv_drpdn_pltt_lbl thm_www_gainsboro"><span class="material-symbols-rounded">language</span><span class="nv_drpdn_nm">Gainsboro</span></label>
+              </div>
+            </div>
+            <table class="mrgn_tbl hide_mid_screen">
+              <tr>
+                <td><label for="rd_inpt_m3_baseline" class="material-symbols-rounded radio_button_g thm_m3_baseline">radio_button_unchecked</label></td>
+                <td><label for="rd_inpt_m3_indigo" class="material-symbols-rounded radio_button_g thm_indigo">radio_button_unchecked</label></td>
+                <td><label for="rd_inpt_m3_blue" class="material-symbols-rounded radio_button_g thm_blue">radio_button_unchecked</label></td>
+              </tr>
+              <tr>
+                <td><label for="rd_inpt_m3_teal" class="material-symbols-rounded radio_button_g thm_teal">radio_button_unchecked</label></td>
+                <td><label for="rd_inpt_m3_green" class="material-symbols-rounded radio_button_g thm_green">radio_button_unchecked</label></td>
+                <td><label for="rd_inpt_m3_yellow" class="material-symbols-rounded radio_button_g thm_yellow">radio_button_unchecked</label></td>
+              </tr>
+              <tr>
+                <td><label for="rd_inpt_m3_orange" class="material-symbols-rounded radio_button_g thm_orange">radio_button_unchecked</label></td>
+                <td><label for="rd_inpt_m3_deep_orange" class="material-symbols-rounded radio_button_g thm_deep_orange">radio_button_unchecked</label></td>
+                <td><label for="rd_inpt_m3_pink" class="material-symbols-rounded radio_button_g thm_pink">radio_button_unchecked</label></td>
+              </tr>
+            </table>
+            <hr class="hide_mid_screen">
+            <div class="show_mid_screen">
+              <label for="nv_img_tgl">
+                <div class="icon_cntnr_g"><span class="material-symbols-rounded">image</span></div>
+              </label>
+              <label for="nv_pltt_img_dflt_tgl">
+                <div class="icon_cntnr_g"><span class="material-symbols-rounded">image</span></div>
+              </label>
+              <div id="nv_side_drpdn_img" class="nv_drpdn">
+                <label for="rd_inpt_m3_leaves" class="thm_leaves">
+                  <span class="img_icon_cntnr_g"><img src="icons/leaves.png"><span class="nv_drpdn_img_nm">M3 Leaves</span></span>
+                </label>
+                <label for="rd_inpt_m3_peonies" class="thm_peonies">
+                  <span class="img_icon_cntnr_g"><img src="icons/peonies.png"><span class="nv_drpdn_img_nm">M3 Peonies</span></span>
+                </label>
+                <label for="rd_inpt_m3_bubbles" class="thm_bubbles">
+                  <span class="img_icon_cntnr_g"><img src="icons/bubbles.png"><span class="nv_drpdn_img_nm">M3 Bubbles</span></span>
+                </label>
+                <label for="rd_inpt_m3_seaweed" class="thm_seaweed">
+                  <span class="img_icon_cntnr_g"><img src="icons/seaweed.png"><span class="nv_drpdn_img_nm">M3 Seaweed</span></span>
+                </label>
+                <label for="rd_inpt_m3_sea_grapes" class="thm_sea_grapes">
+                  <span class="img_icon_cntnr_g"><img src="icons/sea_grapes.png"><span class="nv_drpdn_img_nm">M3 Sea&nbsp;Grapes</span></span>
+                </label>
+                <label for="rd_inpt_m3_petals" class="thm_petals">
+                  <span class="img_icon_cntnr_g"><img src="icons/petals.png"><span class="nv_drpdn_img_nm">M3 Petals</span></span>
+                </label>
+              </div>
+            </div>
+            <table class="mrgn_tbl hide_mid_screen">
+              <tr>
+                <td><label for="rd_inpt_m3_leaves"><div class="img_icon_cntnr_g thm_leaves"><img src="icons/leaves.png"></div></label></td>
+                <td><label for="rd_inpt_m3_peonies"><div class="img_icon_cntnr_g thm_peonies"><img src="icons/peonies.png"></div></label></td>
+                <td><label for="rd_inpt_m3_bubbles"><div class="img_icon_cntnr_g thm_bubbles"><img src="icons/bubbles.png"></div></label></td>
+              </tr>
+              <tr>
+                <td><label for="rd_inpt_m3_seaweed"><div class="img_icon_cntnr_g thm_seaweed"><img src="icons/seaweed.png"></div></label></td>
+                <td><label for="rd_inpt_m3_sea_grapes"><div class="img_icon_cntnr_g thm_sea_grapes"><img src="icons/sea_grapes.png"></div></label></td>
+                <td><label for="rd_inpt_m3_petals"><div class="img_icon_cntnr_g thm_petals"><img src="icons/petals.png"></div></label></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </nav>
+      <section id="section_main">
+        <div class="artcl_cntnt">
+          <div class="artcl">
+            <div class="panel_full_screen">
+              <span>Placeholder Main</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section_resume">
+        <div class="artcl_cntnt">
+          <div class="artcl">
+            <div class="panel_full_screen">
+              <span>Placeholder Resume</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section_projects">
+        <div class="artcl_cntnt">
+          <div class="artcl">
+            <div class="panel">
+              <div class="navigation_cntnr nav_bar">
+                <div class="bttn_icn_cntnr bdg_cntnr">
+                  <input type="radio" id="nav_projects_software_tgl"  name="nav_projects_tgl" value="Software"  class="rd_btn_hide" checked>
+                  <label for="nav_projects_software_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">terminal</span></label>
+                  <label for="nav_projects_software_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">terminal</span></label>
+                  <div class="bttn_lbl">Software</div>
+                </div>
+                <div class="bttn_icn_cntnr bdg_cntnr">
+                  <input type="radio" id="nav_projects_nasa_tgl"  name="nav_projects_tgl" value="NASA"  class="rd_btn_hide">
+                  <label for="nav_projects_nasa_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">rocket_launch</span></label>
+                  <label for="nav_projects_nasa_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">rocket_launch</span></label>
+                  <div class="bttn_lbl">NASA</div>
+                </div>
+                <div class="bttn_icn_cntnr bdg_cntnr">
+                  <input type="radio" id="nav_projects_volunteer_tgl" name="nav_projects_tgl" value="Volunteer" class="rd_btn_hide">
+                  <label for="nav_projects_volunteer_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">volunteer_activism</span></label>
+                  <label for="nav_projects_volunteer_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">volunteer_activism</span></label>
+                  <div class="bttn_lbl">Volunteer</div>
+                </div>
+                <div class="bttn_icn_cntnr bdg_cntnr">
+                  <input type="radio" id="nav_projects_publications_tgl" name="nav_projects_tgl" value="Publications" class="rd_btn_hide">
+                  <label for="nav_projects_publications_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">docs</span></label>
+                  <label for="nav_projects_publications_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">docs</span></label>
+                  <div class="bttn_lbl">Publications</div>
+                </div>
+                <div class="bttn_icn_cntnr bdg_cntnr">
+                  <input type="radio" id="nav_projects_photos_tgl" name="nav_projects_tgl" value="Photos" class="rd_btn_hide">
+                  <label for="nav_projects_photos_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">photo</span></label>
+                  <label for="nav_projects_photos_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">photo</span></label>
+                  <div class="bttn_lbl">Photos</div>
+                </div>
+              </div>
+            </div>
+            <div class="panel_full_screen" id="panel_projects_software">
+              <span>Placeholder Software Content</span>
+            </div>
+            <div class="panel_full_screen" id="panel_projects_nasa">
+              <span>Placeholder NASA Content</span>
+            </div>
+            <div class="panel_full_screen" id="panel_projects_volunteer">
+              <span>Placeholder Volunteer Content</span>
+            </div>
+            <div class="panel_full_screen" id="panel_projects_publications">
+              <span>Placeholder Publications Content</span>
+            </div>
+            <div class="panel_full_screen" id="panel_projects_photos">
+              <span>Placeholder Photos Content</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section_hobby">
+        <div class="artcl_cntnt">
+          <div class="artcl">
+            <div class="panel">
+              <div class="navigation_cntnr nav_bar">
+                <div class="bttn_icn_cntnr bdg_cntnr">
+                  <input type="radio" id="nav_hobby_photos_tgl"  name="nav_hobby_tgl" value="Photos"  class="rd_btn_hide">
+                  <label for="nav_hobby_photos_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">photo</span></label>
+                  <label for="nav_hobby_photos_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">photo</span></label>
+                  <div class="bttn_lbl">Photos</div>
+                </div>
+                <div class="bttn_icn_cntnr bdg_cntnr">
+                  <input type="radio" id="nav_hobby_writing_tgl" name="nav_hobby_tgl" value="Text" class="rd_btn_hide">
+                  <label for="nav_hobby_writing_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">docs</span></label>
+                  <label for="nav_hobby_writing_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">docs</span></label>
+                  <div class="bttn_lbl">Writing</div>
+                </div>
+                <div class="bttn_icn_cntnr bdg_cntnr">
+                  <input type="radio" id="nav_hobby_roleplaying_tgl" name="nav_hobby_tgl" value="Text" class="rd_btn_hide">
+                  <label for="nav_hobby_roleplaying_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">deployed_code</span></label>
+                  <label for="nav_hobby_roleplaying_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">deployed_code</span></label>
+                  <div class="bttn_lbl">Roleplaying</div>
+                </div>
+                <div class="bttn_icn_cntnr bdg_cntnr">
+                  <input type="radio" id="nav_hobby_files_tgl" name="nav_hobby_tgl" value="Files" class="rd_btn_hide">
+                  <label for="nav_hobby_files_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">home_storage</span></label>
+                  <label for="nav_hobby_files_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">home_storage</span></label>
+                  <div class="bttn_lbl">Files</div>
+                </div>
+                <div class="bttn_icn_cntnr bdg_cntnr">
+                  <input type="radio" id="nav_hobby_videos_tgl"  name="nav_hobby_tgl" value="Video"  class="rd_btn_hide" checked>
+                  <label for="nav_hobby_videos_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">videocam</span></label>
+                  <label for="nav_hobby_videos_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">videocam</span></label>
+                  <div class="bttn_lbl">Video</div>
+                </div>
+                <div class="bttn_icn_cntnr bdg_cntnr">
+                  <input type="radio" id="nav_hobby_audio_tgl" name="nav_hobby_tgl" value="Audio" class="rd_btn_hide">
+                  <label for="nav_hobby_audio_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">music_note</span></label>
+                  <label for="nav_hobby_audio_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">music_note</span></label>
+                  <div class="bttn_lbl">Audio</div>
+                </div>
+              </div>
+            </div>
+            <div class="panel_full_screen" id="panel_hobby_photos">
+              <span>Placeholder Photos Content</span>
+            </div>
+            <div class="panel_full_screen" id="panel_hobby_writing">
+              <span>Placeholder Writing Content</span>
+            </div>
+            <div class="panel_full_screen" id="panel_hobby_roleplaying">
+              <span>Placeholder Roleplaying Content</span>
+            </div>
+            <div class="panel_full_screen" id="panel_hobby_files">
+              <span>Placeholder Files Content</span>
+            </div>
+            <div class="panel_full_screen" id="panel_hobby_videos">
+              <span>Placeholder Video Content</span>
+            </div>
+            <div class="panel_full_screen" id="panel_hobby_audio">
+              <span>Placeholder Audio Content</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_pnl_lbls">
+          <div class="intrfc_pnl_chc_cntr">
+            <label for="rd_inpt_main">
+              <span class="icon_cntnr_g"><span class="material-symbols-rounded">widgets</span></span>
+            </label>
+          </div>
+          <div class="intrfc_pnl_chc_cntr">
+            <label for="rd_inpt_resume">
+              <span class="icon_cntnr_g"><span class="material-symbols-rounded">news</span></span>
+            </label>
+          </div>
+          <div class="intrfc_pnl_chc_cntr">
+            <label for="rd_inpt_projects">
+              <span class="icon_cntnr_g"><span class="material-symbols-rounded">kid_star</span></span>
+            </label>
+          </div>
+          <div class="intrfc_pnl_chc_cntr">
+            <label for="rd_inpt_hobby">
+              <span class="icon_cntnr_g"><span class="material-symbols-rounded">invert_colors</span></span>
+              <span class="icon_cntnr_g"><span class="material-symbols-rounded">humidity_mid</span></span>
+            </label>
+          </div>
+      </div>
+    </footer>
+  </body>
 </html>
