@@ -986,6 +986,12 @@ body:has( #nav_hobby_files_tgl:not(:checked)       ) #panel_hobby_files       { 
 body:has( #nav_hobby_videos_tgl:not(:checked)      ) #panel_hobby_videos      { display: none }
 body:has( #nav_hobby_audio_tgl:not(:checked)       ) #panel_hobby_audio       { display: none }
 
+body:has( #rsm_main_img_tgl:not(:checked)   ) #rsm_main_img   { display: none }
+body:has( #rsm_email_img_tgl:not(:checked)  ) #rsm_email_img  { display: none }
+body:has( #rsm_so_img_tgl:not(:checked)     ) #rsm_so_img     { display: none }
+body:has( #rsm_hn_img_tgl:not(:checked)     ) #rsm_hn_img     { display: none }
+body:has( #rsm_gh_img_tgl:not(:checked)     ) #rsm_gh_img     { display: none }
+
 .icon_cntnr_g {
   display: inline-block;
   text-align: center;
@@ -2221,6 +2227,16 @@ td    { border-collapse: collapse; }
   border-radius: 1.25em;
   padding: 0.5em;
   display: block;
+}
+
+.bttn_inline {
+  border-radius: 1.25em;
+  padding: 0.5em;
+  display: inline-block;
+}
+
+.bttn_left {
+  text-align: left;
 }
 
 .bttn_icn_cntnr {
