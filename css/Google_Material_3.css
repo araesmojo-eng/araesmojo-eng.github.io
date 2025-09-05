@@ -1539,9 +1539,21 @@ h3.clsl { font-size: 3.188em; }
   100% { text-shadow:  0em  0em   0em rgb(255,0,0),    0em    0em   0em rgb(0,255,0),  0em    0em   0em rgb(0,0,255); }
 }
 
+.shdBOPG_05_hv:hover {
+  animation-name: shadow_blue_orange_purple_green_05_anim;
+  animation-duration: 1s;
+}
+
 .shdBOPG_hv:hover {
   animation-name: shadow_blue_orange_purple_green_anim;
   animation-duration: 1s;
+}
+
+@keyframes shadow_blue_orange_purple_green_05_anim {
+  0%   { text-shadow:  0em    0em    0em    rgb(0, 13, 255),  0em     0em   0em rgb(255, 166, 0),  0em     0em    0em    rgb(255, 0, 251),  0em    0em    0em rgb(170, 255, 0); }
+  33%  { text-shadow:  0.5em -0.15em 0.05em rgb(0, 13, 255), -0.15em  0.3em 0em rgb(255, 166, 0),  0.15em  0.5em  0.05em rgb(255, 0, 251), -0.3em -0.15em 0em rgb(170, 255, 0); }
+  66%  { text-shadow: -0.5em  0.15em 0.05em rgb(0, 13, 255),  0.15em -0.3em 0em rgb(255, 166, 0), -0.15em -0.5em  0.05em rgb(255, 0, 251),  0.3em  0.15em 0em rgb(170, 255, 0); }
+  100% { text-shadow:  0em    0em    0em    rgb(0, 13, 255),  0em     0em   0em rgb(255, 166, 0),  0em     0em    0em    rgb(255, 0, 251),  0em    0em    0em rgb(170, 255, 0); }
 }
 
 @keyframes shadow_blue_orange_purple_green_anim {
@@ -1551,9 +1563,21 @@ h3.clsl { font-size: 3.188em; }
   100% { text-shadow:  0em  0em   0em   rgb(0, 13, 255),  0em    0em   0em rgb(255, 166, 0),  0em    0em  0em   rgb(255, 0, 251),  0em    0em   0em rgb(170, 255, 0); }
 }
 
+.shd5clr_05_hv:hover {
+  animation-name: shadow_penta_05_anim;
+  animation-duration: 1s;
+}
+
 .shd5clr_hv:hover {
   animation-name: shadow_pentadic_anim;
   animation-duration: 1s;
+}
+
+@keyframes shadow_penta_05_anim {
+  0%   { text-shadow:  0em     0em   0em    rgb(0,255,174),  0em    0em    0em rgb(94,255,0),  0em    0em    0em    rgb(255,89,0),  0em     0em    0em rgb(255,0,153),  0em     0em     0em rgb(0,43,255); }
+  33%  { text-shadow:  0.15em  0.5em 0.05em rgb(0,255,174),  0.5em  0.15em 0em rgb(94,255,0),  0.1em -0.45em 0.05em rgb(255,89,0), -0.25em -0.25em 0em rgb(255,0,153), -0.41em  0.285em 0em rgb(0,43,255); }
+  66%  { text-shadow: -0.25em -0.5em 0.05em rgb(0,255,174), -0.5em -0.05em 0em rgb(94,255,0), -0.1em  0.35em 0.05em rgb(255,89,0),  0.25em  0.35em 0em rgb(255,0,153),  0.31em -0.185em 0em rgb(0,43,255); }
+  100% { text-shadow:  0em     0em   0em    rgb(0,255,174),  0em    0em    0em rgb(94,255,0),  0em    0em    0em    rgb(255,89,0),  0em     0em    0em rgb(255,0,153),  0em     0em     0em rgb(0,43,255); }
 }
 
 @keyframes shadow_pentadic_anim {
