@@ -724,19 +724,587 @@
                 </div>
               </div>
               <div class="navigation_cntnr nav_bttm_app_bar">
-                <div>
-                  <input type="radio" id="rsm_skills_tgl"  name="rsm_content_tgl" value="Skills"  class="rd_btn_hide" checked>
-                  <label for="rsm_skills_tgl" class="bttn bttn_left bttn_icn"><span class="lg">Skills:</span></label>
-                  <input type="radio" id="rsm_work_tgl"  name="rsm_content_tgl" value="Work Experience"  class="rd_btn_hide">
-                  <label for="rsm_work_tgl" class="bttn bttn_left bttn_icn"><span class="lg">Work<br>Experience:</span></label>
-                  <input type="radio" id="rsm_education_tgl"  name="rsm_content_tgl" value="Education"  class="rd_btn_hide">
-                  <label for="rsm_education_tgl" class="bttn bttn_left bttn_icn"><span class="lg">Education:</span></label>
-                  <input type="radio" id="rsm_publications_tgl"  name="rsm_content_tgl" value="Publications"  class="rd_btn_hide">
-                  <label for="rsm_publications_tgl" class="bttn bttn_left bttn_icn"><span class="lg">Publications:</span></label>
-                  <input type="radio" id="rsm_professsional_awards_tgl"  name="rsm_content_tgl" value="Professional Awards"  class="rd_btn_hide">
-                  <label for="rsm_professsional_awards_tgl" class="bttn bttn_left bttn_icn"><span class="lg">Professional<br>Awards:</span></label>
-                  <input type="radio" id="rsm_academic_awards_tgl"  name="rsm_content_tgl" value="Academic Awards"  class="rd_btn_hide">
-                  <label for="rsm_academic_awards_tgl" class="bttn bttn_left bttn_icn"><span class="lg">Academic<br>Awards:</span></label>
+                <div class="navigation_cntnr nav_rl">
+                  <div class="navigation_icn_cntnr">
+                    <div class="bttn_icn_cntnr bdg_cntnr shdBOPG_hv anm_800ms">
+                      <input type="radio" id="rsm_cntnt_skills_tgl"    name="rsm_cntnt_tgl" value="Skills"     class="rd_btn_hide" checked>
+                      <label for="rsm_cntnt_skills_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">person_play</span></label>
+                      <label for="rsm_cntnt_skills_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">person_play</span></label>
+                      <span class="bttn_lbl">Skills</span>
+                    </div>
+                    <div class="bttn_icn_cntnr bdg_cntnr shdBOPG_hv anm_800ms">
+                      <input type="radio" id="rsm_cntnt_work_tgl"   name="rsm_cntnt_tgl" value="Work Experience"    class="rd_btn_hide">
+                      <label for="rsm_cntnt_work_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">work</span></label>
+                      <label for="rsm_cntnt_work_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">work</span></label>
+                      <span class="bttn_lbl">Work<br>Experience</span>
+                    </div>
+                    <div class="bttn_icn_cntnr bdg_cntnr shdBOPG_hv anm_800ms">
+                      <input type="radio" id="rsm_cntnt_publications_tgl" name="rsm_cntnt_tgl" value="Publications" class="rd_btn_hide">
+                      <label for="rsm_cntnt_publications_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">history_edu</span></label>
+                      <label for="rsm_cntnt_publications_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">history_edu</span></label>
+                      <span class="bttn_lbl">Publications</span>
+                    </div>
+                    <div class="bttn_icn_cntnr bdg_cntnr shdBOPG_hv anm_800ms">
+                      <input type="radio" id="rsm_cntnt_education_tgl"    name="rsm_cntnt_tgl" value="Education"     class="rd_btn_hide">
+                      <label for="rsm_cntnt_education_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">school</span></label>
+                      <label for="rsm_cntnt_education_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">school</span></label>
+                      <span class="bttn_lbl">Education</span>
+                    </div>
+                    <div class="bttn_icn_cntnr bdg_cntnr shdBOPG_hv anm_800ms">
+                      <input type="radio" id="rsm_cntnt_prof_awards_tgl"    name="rsm_cntnt_tgl" value="Professional Awards"     class="rd_btn_hide">
+                      <label for="rsm_cntnt_prof_awards_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">trophy</span></label>
+                      <label for="rsm_cntnt_prof_awards_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">trophy</span></label>
+                      <span class="bttn_lbl">Professional<br>Awards</span>
+                    </div>
+                    <div class="bttn_icn_cntnr bdg_cntnr shdBOPG_hv anm_800ms">
+                      <input type="radio" id="rsm_cntnt_academic_awards_tgl"    name="rsm_cntnt_tgl" value="Academic Awards"     class="rd_btn_hide">
+                      <label for="rsm_cntnt_academic_awards_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">book_ribbon</span></label>
+                      <label for="rsm_cntnt_academic_awards_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">book_ribbon</span></label>
+                      <span class="bttn_lbl">Academic<br>Awards</span>
+                    </div>
+                    <div class="bttn_icn_cntnr bdg_cntnr shdBOPG_hv anm_800ms">
+                      <input type="radio" id="rsm_cntnt_languages_tgl"    name="rsm_cntnt_tgl" value="Languages"     class="rd_btn_hide">
+                      <label for="rsm_cntnt_languages_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng">translate</span></label>
+                      <label for="rsm_cntnt_languages_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng">translate</span></label>
+                      <span class="bttn_lbl">Languages</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav_rl_content_cntnr">
+                  <div class="navigation_cntnr nav_drwr">
+                    <div id="rsm_skills_drwr_cntnr" class="nav_cntnr_drwr_cntnr">
+                      <h3>Skills</h3>
+                      <div class="rsm_drwr_item_cntnr">
+                        <div class="bttn_icn_cntnr bdg_cntnr rsm_drwr_item_label shd5clr_hv anm_800ms">
+                          <input type="radio" id="rsm_drwr_management_tgl"    name="rsm_drwr_tgl" value="Management"     class="rd_btn_hide" checked>
+                          <label for="rsm_drwr_management_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">groups</span><span class="bttn_lbl"><b>Management</b></span>
+                          </label>
+                          <label for="rsm_drwr_management_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">groups</span><span class="bttn_lbl"><b>Management</b></span>
+                          </label>
+                        </div>
+                        <span class="rsm_drwr_item_blurb">Contract Leadership, Project Leadership, Contract Board Seat</span>
+                      </div>
+                      <div class="rsm_drwr_item_summary">
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> NASA MSFC Contractor Lead, 30+ person contract</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">supervisor_account</span> NASA Project Lead, 2-50+ person, Liftoff Debris Risk</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">business_center</span> Board seat on ESTS and ESSSA contracts (NASA MSFC, 1500-2000 employees)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">diversity_2</span> Headed NASA working groups</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">rocket_launch</span> Shuttle and SLS management briefings on vehicle risk</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">crisis_alert</span> Systems Engineering and risk assessment / management / buyoff</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">group_search</span> Employee Hire / Fire</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">stacks</span> Multi-layer .gov projects (Agency / Program / Project / Team interactions)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">account_balance</span> US .gov Bid / Proposals</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">contract_edit</span> US .gov Grants / Proposals / SAM.gov / UEI</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr">
+                        <div class="bttn_icn_cntnr bdg_cntnr rsm_drwr_item_label shd5clr_hv anm_800ms">
+                          <input type="radio" id="rsm_drwr_software_tgl"   name="rsm_drwr_tgl" value="Software"    class="rd_btn_hide">
+                          <label for="rsm_drwr_software_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">terminal</span><span class="bttn_lbl"><b>Software</b></span>
+                          </label>
+                          <label for="rsm_drwr_software_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">terminal</span><span class="bttn_lbl"><b>Software</b></span>
+                          </label>
+                        </div>
+                        <span class="rsm_drwr_item_blurb">Open GL, HTML/CSS, Javascript, Perl, Java, C++, Fortran</span>
+                      </div>
+                      <div class="rsm_drwr_item_summary">
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm rtn_180">brightness_3</span> OpenGL / GLSL / Shaders / DirectX / HLSL</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">shield</span> HTML / CSS</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">data_object</span> Javascript</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">regular_expression</span> Perl</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">local_cafe</span> Java</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">android</span> Android (SDK/NDK) / Google Play / Billing Client</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">terminal</span> C++ / WinRT / C</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">currency_franc</span> Fortran</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">storage</span> Linux Mainframe (HPC/Supercomputing, PBS, Map/Reduce, qsub)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">computer</span> Linux Workstation (Ubuntu / Redhat)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">terminal</span> Awk</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">attach_money</span>_ (c|tc|ba)sh</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">nest_true_radiant</span> Python</li>
+                          <li><span class="material-symbols-rounded icn_sng">php</span> PHP</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">landscape</span> Matlab</li>
+                          <li><span class="material-symbols-rounded icn_sng sm rtn_225">wifi</span> JQuery</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">manufacturing</span> Assembly</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">database</span> SQL</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">account_tree</span> LabView</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">settings</span> G-Code</li>
+                          <li><span class="material-symbols-rounded icn_sng sm rtn_315">diamond</span> Ruby</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">function</span> LaTeX</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr">
+                        <div class="bttn_icn_cntnr bdg_cntnr rsm_drwr_item_label shd5clr_hv anm_800ms">
+                          <input type="radio" id="rsm_drwr_disciplines_tgl" name="rsm_drwr_tgl" value="Disciplines" class="rd_btn_hide">
+                          <label for="rsm_drwr_disciplines_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">hub</span><span class="bttn_lbl"><b>Disciplines</b></span>
+                          </label>
+                          <label for="rsm_drwr_disciplines_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">hub</span><span class="bttn_lbl"><b>Disciplines</b></span>
+                          </label>
+                        </div>
+                        <span class="rsm_drwr_item_blurb">CFD, Acoustics, Aerospace, Graphics, Linux, Supercomputing, USGov., Procedural Content, Android/Apps</span>
+                      </div>
+                      <div class="rsm_drwr_item_summary">
+                        <div>Competent:</div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">air</span> Computational Fluid Dynamics (CFD) (Coding, CAD, Setup, Vis, ect..)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">infrared</span> Acoustics (Non-linear, CAA, High Intensity (launch vehicles), Acoustic Photogrammetry, Particle Velocimetry, Vis)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">rocket_launch</span> Aerospace (NASA/Space Shuttle/SLS, planning, design, contracting, assembly, test, validation, ops, propulsion / acoustics / vib / aero / thermal, in-space (chemical, electrical, nuclear, solar, micro))</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">deployed_code</span> Graphics Rendering (OpenGL/GLSL/WebGL/DirectX)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">terminal</span> Unix/Linux</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">storage</span> HPC/Supercomputing/qsub/PBS</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">database</span> Big Data / Data Vis (Full STS launch pad, 100 million cell, billion+ particle, reactive chemistry, moving body, liftoff simulations)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">stylus_note</span> 3D printing (PP/PLA/ABS extrude, StereoLitho, Grain Bed Laser Sinter)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">graph_3</span> Procedural Content Generation</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">real_estate_agent</span> Hardware (selection, purchase, assembly, manufacture, test, validate)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">memory_alt</span> Micro-controllers (Arduino)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">precision_manufacturing</span> Control Systems (Linear, Arms, Walking, Ballistics)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm rtn_270">copyright</span> Unreal Engine</li>
+                        </ul>
+                        <div>Familiar:</div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">video_camera_back</span> After Effects / Imagery and Video Post-Processing</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">robot_2</span> Probabilistic Learning (Super/unsuper, tiered, NN, distributed N-body analogs)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">shield_lock</span> Crypto (One Time, Integer Factor, Discrete Log, Elliptic Curve, Attacks (brute, various plaintexts, side-channel (machine power/computation statistics, leaks, metadata, pattern recognition)))</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr">
+                        <div class="bttn_icn_cntnr bdg_cntnr rsm_drwr_item_label shd5clr_hv anm_800ms">
+                          <input type="radio" id="rsm_drwr_tech_tgl"    name="rsm_drwr_tgl" value="Tech"     class="rd_btn_hide">
+                          <label for="rsm_drwr_tech_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">check_box</span><span class="bttn_lbl"><b>Tech</b></span>
+                          </label>
+                          <label for="rsm_drwr_tech_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">check_box</span><span class="bttn_lbl"><b>Tech</b></span>
+                          </label>
+                        </div>
+                        <span class="rsm_drwr_item_blurb">Imagery, CFD, Video, Office, CAD/CAM, OS</span>
+                      </div>
+                      <div class="rsm_drwr_item_summary">
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">visibility</span> Photoshop (5.0-CS5)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">rocket_launch</span> Loci/CHEM</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">video_camera_back</span> FFMpeg</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">dual_screen</span> Office Suite (Word/Excel/PPT)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm rtn_270">waterfall_chart</span> MSProject/Sharepoint</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">architecture</span> Solidworks</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">architecture</span> Pro/E</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">architecture</span> Autocad</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">terminal</span> Ubuntu / Redhat Linux</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">window</span> Windows</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">video_camera_back</span> Flash (AS 1.0-3.0)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">landscape</span> MATLAB</div></li>
+                        </ul>
+                    </div>
+                    <div id="rsm_work_drwr_cntnr"  class="nav_cntnr_drwr_cntnr">
+                      <h3>Work Experience</h3>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_forsako_tgl" name="rsm_drwr_tgl" value="Forsako" class="rd_btn_hide">
+                          <label for="rsm_drwr_forsako_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Forsako</span>
+                          </label>
+                          <label for="rsm_drwr_forsako_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Forsako</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr">10/2020 - Present</div>
+                      </div>
+                      <div class="rsm_drwr_item_summary">
+                        <span>Founder / Owner / Personal Business</span>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">android</span> Developed three Android Apps from concept to production deployment on the Google Play store along with all advertising videos and promotional materials.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">location_city</span> Retro style (Gameboy) tile based rendering engine city builder in Java / OpenGL with GPU accelerated user interface and pan, zoom, multi-touch map interaction, and Google Play Billing 4.1 integration with InApp and Subscription purchases.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">photo_camera_front</span> Photo editor and accessory visualizer with feature recognition, automatic accessory positioning using machine learning, skin tone editing, makeup editing, effects, and stickers. Built using Google’s ML Kit technology.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">music_cast</span> Metronome, flash, and frequency pulse source generator with continuous flashlight; metronomes of sound, light, or vibration; randomized sources of variable distribution functions; doppler strobes with adjustable delay and phase amplitude; and morse code pulses in ITU standard with variable speed.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">account_balance</span> Library of Congress Friends' Choice Civics Video Game Challenge - American Cities</li>
+                          <li>USDA Proposal - Vertical Farming</li>
+                          <li>Army Proposal - Ground Penetrating Radar</li>
+                          <li>NASA Proposal - Antenna Balloons</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_niac_tgl" name="rsm_drwr_tgl" value="NIAC" class="rd_btn_hide">
+                          <label for="rsm_drwr_niac_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">NASA Innovative Advanced Concepts (NIAC)</span>
+                          </label>
+                          <label for="rsm_drwr_niac_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">NASA Innovative Advanced Concepts (NIAC)</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr">8/2020 - 10/2021</div>
+                      </div>
+                      <div class="rsm_drwr_item_summary">
+                        <span>Concept Review Panelist</span>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">contract_edit</span> Created and submitted seven proposals for consideration to NIAC on topics such as digital contacts, actuatorless avionics, economical gas gun cargo transport, and variable frame rate DSP.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">grading</span> Based on the proposals, selected as concept evaluator for further NIAC phases.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">rubric</span> Reviewed and evaluated proposals for the NASA Innovative Advanced Concepts (NIAC) program to determine innovation, credibility, eligibility, feasibility, and value to the government.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">diversity_2</span> Participated in working groups to downselect proposals for funding and determine recipients of $175,000 funding grants.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">rate_review</span> Wrote full length reviews as primary reviewer for multiple proposals while also contributing as secondary author and review panelist to numerous further proposals.</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_project_hope_tgl" name="rsm_drwr_tgl" value="Project Hope" class="rd_btn_hide">
+                          <label for="rsm_drwr_project_hope_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Project Hope (Nablus Palestine), Sabbatical</span>
+                          </label>
+                          <label for="rsm_drwr_project_hope_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Project Hope (Nablus Palestine), Sabbatical</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr">10/2015 - 03/2019</div>
+                      </div>
+                      <div class="rsm_drwr_item_summary">
+                        <span>Volunteer Teacher</span>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">co_present</span> Simultaneously taught six classes in business, engineering, photography, computer programming, economics, and drawing to students at Project Hope in Nablus, Palestine to classes of between 5-20 students including preparing coursework, lesson plans, daily activities, & learning questions.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">volunteer_activism</span> Volunteered in Palestine, Jordan, and the nearby refugee areas (community outreach, repairs, cleaning, beautifying)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">hiking</span> Engaged in solo walk across Northern Africa, Europe, the Middle East, India, Nepal, South America, Central America, and North America.</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_nasa_tgl" name="rsm_drwr_tgl" value="Project Hope" class="rd_btn_hide">
+                          <label for="rsm_drwr_nasa_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">All Points Logistics / NASA</span>
+                          </label>
+                          <label for="rsm_drwr_nasa_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">All Points Logistics / NASA</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr">09/2007 - 10/2014</div>
+                      </div>
+                      <div class="rsm_drwr_item_summary">
+                        <span>Program Manager / Lead Engineer</span>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> Program manager for engineering services contract worth approx. $5 million / year. Established policy, objectives, labor / budget estimates, and task priorities for a team of thirty on-site engineers in support of NASA mission at Marshall Space Flight Center (MFSC). Liaised with customers and teammates to negotiate resource allocation, contract goals / objectives, and performance timeframes. Analyzed contract performance, recruited highly skilled workforce of subject matter experts, and developed proposals for future work.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">business_center</span> Board seat on larger umbrella contracts (ESTS and ESSSA) for engineering and technical services worth approx. $150,000,000 / year. Provided contract policy guidance; worked with multi-corporate team to establish yearly, monthly and weekly overarching contract objectives; negotiated with teammates for labor, budget, and support efforts; and directly worked integrated onsite with federal customer at NASA MSFC.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">supervisor_account</span> Lead engineer for NASA’s debris analysis team and head of the debris working group for the Space Launch System (SLS). Guided the technical efforts of 10 immediate representatives from SLS elements (Booster, Core, ect..) and linked programs (Ground Systems/KSC, Orion/MPCV), and by extension the work of their associated support teams. Identified, tracked, and mitigated debris risks to the new vehicle by guiding analysis, tests, and redesigns of affected hardware. Out-briefed status and plans to all levels of management including SLS program head and chief engineer for SLS.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">storage</span> Principal Investigator for supercomputing and analysis tasks for fluid dynamics & acoustics in support of the Space Launch System program worth $5 million / year. Integrated with users, computing administrators, and NASA customers to prioritize investigations, plan usage, administrate resource access, negotiate conflicts, analyze performance, and develop projections for future allocations & work. Coordinated release of results to wider audience and user participation in relevant conferences to distribute results.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">connect_without_contact</span> Lead developer and liaison to external contractors for efforts to improve modeling and simulation capabilities of fluid dynamics, debris, and acoustics modeling software for Space Launch System and Space Shuttle support. Guided efforts to research new methods of simulation, to disseminate those methods through the greater scientific community with publications / conferences, and to incorporate those improved methods into production code under constant use on Space Launch System and Space Shuttle programs.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">trophy</span> Honored eight times with performance awards including two agency level awards for reduction of real risk to the Space Shuttle vehicle.</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_forsako_studio_tgl" name="rsm_drwr_tgl" value="Forsako Studio" class="rd_btn_hide">
+                          <label for="rsm_drwr_forsako_studio_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Forsako Studio</span>
+                          </label>
+                          <label for="rsm_drwr_forsako_studio_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Forsako Studio</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr">08/2006 - 08/2007</div>
+                      </div>
+                      <div class="rsm_drwr_item_summary">
+                        <span>Founder / Owner / Personal Business</span>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">add_business</span> Founded a small business venture and created a software product to procedurally generate 3D content for use in digital entertainment and mapping applications. Researched requirements of potential market, established software architecture, planned development effort, and synthesized a functional software application to generate procedural landscapes or recreate terrain from known map coordinates in 3D.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">altitude</span> Incorporated level of detail, texture generation, procedural foliage, and Geographic Information Service integration into synthetic 3D environments.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">finance_mode</span> Developed market survey, financial prospectus, intellectual property outlook, and overall business plan for marketing of application to potential investors.</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_georgia_tech_tgl" name="rsm_drwr_tgl" value="Forsako Studio" class="rd_btn_hide">
+                          <label for="rsm_drwr_georgia_tech_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Georgia Tech Lorraine, France</span>
+                          </label>
+                          <label for="rsm_drwr_georgia_tech_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Georgia Tech Lorraine, France</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr">08/2004 - 08/2006</div>
+                      </div>
+                      <div class="rsm_drwr_item_summary">
+                        <span>Post Graduate Researcher</span>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">graphic_eq</span> Formed analytical models to represent new breeds of electrostatic foam transducers from experimental vibration mode and audio data collection. Set research goals, planned experimental activities, and coordinated activities of undergraduate associates to achieve goals.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">experiment</span> Developed and performed experimental tests of electrostatic materials to characterize response and anchor analytic work.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">delivery_truck_speed</span> Coordinated international delivery and purchasing of both research equipment and supplies for creation of an acoustics research laboratory.</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_manning_applied_tech_tgl" name="rsm_drwr_tgl" value="Forsako Studio" class="rd_btn_hide">
+                          <label for="rsm_drwr_manning_applied_tech_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Manning Applied Technologies</span>
+                          </label>
+                          <label for="rsm_drwr_manning_applied_tech_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Manning Applied Technologies</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr">10/1999 - 08/2002</div>
+                      </div>
+                      <div class="rsm_drwr_item_summary">
+                        <span>Senior Design Engineer</span>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> Managed teams of up to five to fulfill project goals across fields of electronics, software, production, quality testing, and advertising.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">military_tech</span> Led effort which developed successful prototype of high precision bio-agent detection system for US military utilizing standoff infrared spectrometry and integrated digital signal processing.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">polymer</span> Created polymer modulation and testing system for use in thermal extremes which incorporated adaptive temperature control, sample modulation, and tensioning. Collaborated with the Department of Defense, industry customers, and external vendors to establish product goals, assure final deliverable quality, and generate lead time projections.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="rsm_publications_drwr_cntnr"  class="nav_cntnr_drwr_cntnr">
+                      <h3>Publications</h3>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_pub_launch_pad_model_tgl" name="rsm_drwr_tgl" value="Publication Launch Pad Modeling" class="rd_btn_hide">
+                          <label for="rsm_drwr_pub_launch_pad_model_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Development of modeling capabilities for launch pad acoustics and ignition transient environment prediction</span>
+                          </label>
+                          <label for="rsm_drwr_pub_launch_pad_model_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Development of modeling capabilities for launch pad acoustics and ignition transient environment prediction</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr">2012</div>
+                      </div>
+                      <div>J. West, L. Strutzenberg, G. C. Putnam, P. Liever, and B. Williams.  <i>18th AIAA/CEAS Aeroacoustics Conference (33rd AIAA Aeroacoustics Conference)</i>, p. 2094.</div>
+                      <div class="rsm_drwr_item_summary">
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> J. West, L. Strutzenberg, G. C. Putnam, P. Liever, and B. Williams.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">newsstand</span> <i>18th AIAA/CEAS Aeroacoustics Conference (33rd AIAA Aeroacoustics Conference)</i></li>
+                          <li><span class="material-symbols-rounded icn_sng sm">book_ribbon</span> p. 2094.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">calendar_clock</span> June 4th, 2012</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> This paper presents the development effort to establish modeling capabilities for launch vehicle liftoff acoustics and ignition transient environment predictions. Peak acoustic loads experienced by the launch vehicle occur during liftoff with strong interaction between the vehicle and the launch facility. Acoustic prediction engineering tools based on empirical models are of limited value in efforts to proactively design and optimize launch vehicles and launch facility configurations for liftoff acoustics. Modeling approaches are needed that capture the important details of the plume flow environment including the ignition transient, identify the noise generation sources and allow assessment of the effects of launch pad geometric details and acoustic mitigation measures such as water injection. This paper will present a status of the CFD tools developed by the Marshall Space Flight Center (MSFC) Fluid Dynamics Branch featuring relevant advanced multi-physics modeling capabilities and related efforts to establish a hybrid acoustic environment modeling capability combining CFD with a Boundary Element Method (BEM) acoustic field propagation model.</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_pub_plume_modeling_tgl" name="rsm_drwr_tgl" value="Publication Solid Rocket Plume Modeling" class="rd_btn_hide">
+                          <label for="rsm_drwr_pub_plume_modeling_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span>Numerical modeling of solid rocket motor plumes<span class="bttn_lbl"></span>
+                          </label>
+                          <label for="rsm_drwr_pub_plume_modeling_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span>Numerical modeling of solid rocket motor plumes<span class="bttn_lbl"></span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr">2012</div>
+                      </div>
+                      <div>M Mehta, B Williams, GC Putnam, SD Smith, <i>2012 Thermal and Fluids Workshop, Pasadena, CA</i></div>
+                      <div class="rsm_drwr_item_summary">
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> M. Mehta, B. Williams, G. C. Putnam, S. D. Smith</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">newsstand</span> <i>2012 Thermal and Fluids Workshop, Pasadena, CA</i></li>
+                          <li><span class="material-symbols-rounded icn_sng sm">book_ribbon</span> p. 38</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">calendar_clock</span> August 2012</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> In support of prediction of the launch pad plume deflector environments during solid rocket booster derived NASA STS (Space Shuttle) vehicle ascent, the solid rocket motor plumes have been successfully modeled and analyzed with the Loci-CHEM Navier-Stokes computational fluid dynamics (CFD) code - Lagrangian Model at a steady-state approximation. Three main areas have been addressed in this paper: (1) sensitivity study of the Loci-CHEM-Lagrangian model with various other Loci-CHEM modeling approaches; (2) in-depth analysis of the aerophysics associated with solid rocket motor plumes; (3) comparison studies between the CFD numerical simulations and flight data and an independent engineering code, Reacting and Multi-Phase Program (RAMP2). The reusable solid rocket motor plumes are a multi-phase flow which contains both plume gases and ~16% solid aluminum oxide particles by mass. This contribution of solid particles is shown to have a large impact on the aerophysics of the plume gases and the environments of the launch pad plume deflector. The Loci-CHEM–Lagrangian model shows the best overall agreement with plume deflector flight data and the RAMP2 engineering code. These modeling approaches are being implemented to conduct higher fidelity numerical simulations for the Space Launch System ascent and launch pad environments.</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_pub_curved_waveguide_tgl" name="rsm_drwr_tgl" value="Publication Curved Waveguide" class="rd_btn_hide">
+                          <label for="rsm_drwr_pub_curved_waveguide_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Curved Waveguide Based Nuclear Fission for Small, Lightweight Reactors</span>
+                          </label>
+                          <label for="rsm_drwr_pub_curved_waveguide_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Curved Waveguide Based Nuclear Fission for Small, Lightweight Reactors</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr">2012</div>
+                      </div>
+                      <div>R Coker, G Putnam, <i>19th Advanced Space Propulsion Workshop </i>, NASA George C. Marshall Space Flight Center, Huntsville, AL, no. M12-2257.</div>
+                      <div class="rsm_drwr_item_summary">
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> R. Coker, G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">newsstand</span> <i>19th Advanced Space Propulsion Workshop </i></li>
+                          <li><span class="material-symbols-rounded icn_sng sm">book_ribbon</span> no. M12-2257.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">calendar_clock</span> November 27th, 2012</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> The focus of the presented work is on the creation of a system of grazing incidence, supermirror waveguides for the capture and reuse of fission sourced neutrons. Within research reactors, neutron guides are a well known tool for directing neutrons from the confined and hazardous central core to a more accessible testing or measurement location. Typical neutron guides have rectangular, hollow cross sections, which are crafted as thin, mirrored waveguides plated with metal (commonly nickel). Under glancing angles with incoming neutrons, these waveguides can achieve nearly lossless transport of neutrons to distant instruments. Furthermore, recent developments have created supermirror surfaces which can accommodate neutron grazing angles up to four times as steep as nickel. A completed system will form an enclosing ring or spherical resonator system to a coupled neutron source for the purpose of capturing and reusing free neutrons to sustain and/or accelerate fission. While grazing incidence mirrors are a known method of directing and safely using neutrons, no method has been disclosed for capture and reuse of neutrons or sustainment of fission using a circular waveguide structure. The presented work is in the process of fabricating a functional, highly curved, neutron supermirror using known methods of Ni-Ti layering capable of achieving incident reflection angles up to four times steeper than nickel alone. Parallel work is analytically investigating future geometries, mirror compositions, and sources for enabling sustained fission with applicability to the propulsion and energy goals of NASA and other agencies. Should research into this concept prove feasible, it would lead to development of a high energy density, low mass power source potentially capable of sustaining fission with a fraction of the standard critical mass for a given material and a broadening of feasible materials due to reduced rates of release, absorption, and non-fission for neutrons. This advance could be applied to direct propulsion through guided fission products or as a secondary energy source for high impulse electric propulsion. It would help meet national needs for highly efficient energy sources with limited dependence on fossil fuels or conflict materials, and it would improve the use of low grade fissile materials which would help reduce national stockpiles and waste.</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_pub_asmat_val_tgl" name="rsm_drwr_tgl" value="Publication ASMAT Validation" class="rd_btn_hide">
+                          <label for="rsm_drwr_pub_asmat_val_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Validation and Simulation of ARES I Scale Model Acoustic Test-1-Pathfinder Development</span>
+                          </label>
+                          <label for="rsm_drwr_pub_asmat_val_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Validation and Simulation of ARES I Scale Model Acoustic Test-1-Pathfinder Development</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr">2011</div>
+                      </div>
+                      <div>G. C. Putnam, <i>JANNAF 8th Modeling and Simulation Subcommittee Meeting</i>, NASA George C. Marshall Space Flight Center, Huntsville, AL, no. M11-0635.</div>
+                      <div class="rsm_drwr_item_summary">
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">newsstand</span> <i>JANNAF 8th Modeling and Simulation Subcommittee Meeting</i></li>
+                          <li><span class="material-symbols-rounded icn_sng sm">book_ribbon</span> no. M11-0635.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">calendar_clock</span> December 5th, 2011</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> The Ares I Scale Model Acoustics Test (ASMAT) is a series of live-fire tests of scaled rocket motors meant to simulate the conditions of the Ares I launch configuration. These tests have provided a well documented set of high fidelity measurements useful for validation including data taken over a range of test conditions and containing phenomena like Ignition Over-Pressure and water suppression of acoustics. To take advantage of this data, a digital representation of the ASMAT test setup has been constructed and test firings of the motor have been simulated using the Loci/CHEM computational fluid dynamics software. Within this first of a series of papers, results from ASMAT simulations with the rocket in a held down configuration and without water suppression have then been compared to acoustic data collected from similar live-fire tests to assess the accuracy of the simulations. Detailed evaluations of the mesh features, mesh length scales relative to acoustic signals, Courant-Friedrichs-Lewy numbers, and spatial residual sources have been performed to support this assessment. Results of acoustic comparisons have shown good correlation with the amplitude and temporal shape of pressure features and reasonable spectral accuracy up to approximately 1000 Hz. Major plume and acoustic features have been well captured including the plume shock structure, the igniter pulse transient, and the ignition overpressure. Finally, acoustic propagation patterns illustrated a previously unconsidered issue of tower placement inline with the high intensity overpressure propagation path.</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_pub_asmat_sim_tgl" name="rsm_drwr_tgl" value="Publication ASMAT Simulation" class="rd_btn_hide">
+                          <label for="rsm_drwr_pub_asmat_sim_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Simulation of Ares Scale Model Acoustic Test Overpressure Transients Using Computational Fluid Dynamics</span>
+                          </label>
+                          <label for="rsm_drwr_pub_asmat_sim_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Simulation of Ares Scale Model Acoustic Test Overpressure Transients Using Computational Fluid Dynamics</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr"></div>
+                      </div>
+                      <div>G. C. Putnam, <i>162nd Acoustical Society of America (ASA) Meeting, San Diego, CA</i>, Paper M11, Volume 1226</div>
+                      <div class="rsm_drwr_item_summary">
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">newsstand</span> <i>162nd Acoustical Society of America (ASA) Meeting, San Diego, CA</i></li>
+                          <li><span class="material-symbols-rounded icn_sng sm">book_ribbon</span> Paper M11, Volume 1226</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">calendar_clock</span> November 3rd, 2011</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> Outline • Introduction – Overview of the Ares Scale Model Acoustic Test (ASMAT) – Simulation goal and procedure • Case Progression – Initial Attempt at Elevation 0’ (Pathfinder) – Ignition Transient and Throat Plug Release – Model Refinement • Conclusions / Future Work 2 Page 3 Introduction : ASMAT Overview • Ares Scale Model Acoustic Test – Tests of 5% scale model of Ares I vehicle – Addressed vibration / acoustic risks from Constellation Program. • Physical Test Setup – Scale model powered by Rocket Assisted Take-Off (RATO) motor – Vehicle at point of, or just after, lift-off – Stationary in space during firing – 100+ pressure transducers on the launch structure and vehicle (locations later) • Simulation Interest – Well documented set of high fidelity measurements for CFD validation – Demonstration of CFD capability for IOP prediction …</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_pub__tgl" name="rsm_drwr_tgl" value="Publication " class="rd_btn_hide">
+                          <label for="rsm_drwr_pub__tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">To Profit or Not: Economic Considerations of Long Term Organizations</span>
+                          </label>
+                          <label for="rsm_drwr_pub__tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">To Profit or Not: Economic Considerations of Long Term Organizations</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr">2011</div>
+                      </div>
+                      <div>G. C. Putnam, <i>Defense Advanced Research Projects Agency: 100 Year Starship Symposium</i>, Education, Society, Legal and Economic Panel, 2:45</div>
+                      <div class="rsm_drwr_item_summary">
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">newsstand</span> <i>Defense Advanced Research Projects Agency: 100 Year Starship Symposium</i></li>
+                          <li><span class="material-symbols-rounded icn_sng sm">book_ribbon</span> Education, Society, Legal and Economic Panel, 2:45</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">calendar_clock</span> October 1st, 2011</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> ESELC Summary: Education as a mission, Who goes, who stays, To profit or not, Economies in space, Communications back to Earth, Political ramifications, Round-trip legacy investments – assets left behind</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_pub_asmat_acoustics_tgl" name="rsm_drwr_tgl" value="Publication ASMAT Acoustics" class="rd_btn_hide">
+                          <label for="rsm_drwr_pub_asmat_acoustics_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Simulation of acoustics for Ares I scale model acoustic tests</span>
+                          </label>
+                          <label for="rsm_drwr_pub_asmat_acoustics_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Simulation of acoustics for Ares I scale model acoustic tests</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr"></div>
+                      </div>
+                      <div>G. C. Putnam, L. L. Strutzenburg, <i>The Journal of the Acoustical Society of America</i>, Volume 130, Issue 4, p. 2543-2543</div>
+                      <div class="rsm_drwr_item_summary">
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam, L. L. Strutzenburg</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">newsstand</span> <i>The Journal of the Acoustical Society of America</i></li>
+                          <li><span class="material-symbols-rounded icn_sng sm">book_ribbon</span> Volume 130, Issue 4, p. 2543-2543</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">calendar_clock</span> October, 2011</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> The Ares I scale model acoustics test (ASMAT) is a series of live-fire tests of scaled rocket motors meant to simulate the conditions of the Ares I launch configuration. These tests have provided a well documented set of high fidelity acoustic measurements useful for validation including data taken over a range of test conditions and containing phenomena like ignition over-pressure and water suppression of acoustics. To take advantage of this data, a digital representation of the ASMAT test setup has been constructed and test firings of the motor have been simulated using the Loci/CHEM computational fluid dynamics software. Results from ASMAT simulations with the rocket in both held down and elevated configurations, as well as with and without water suppression have been compared to acoustic data collected from similar live-fire tests. Results of acoustic comparisons have shown good correlation with the amplitude and temporal shape of pressure features and reasonable spectral accuracy up to approximately 1000 Hz. Major plume and acoustic features have been well captured including the plume shock structure, the igniter pulse transient, and the ignition overpressure.</li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_pub__tgl" name="rsm_drwr_tgl" value="Publication " class="rd_btn_hide">
+                          <label for="rsm_drwr_pub__tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl"></span>
+                          </label>
+                          <label for="rsm_drwr_pub__tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl"></span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr"></div>
+                      </div>
+                      <div></div>
+                      <div class="rsm_drwr_item_summary">
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> </li>
+                          <li><span class="material-symbols-rounded icn_sng sm">newsstand</span> <i></i></li>
+                          <li><span class="material-symbols-rounded icn_sng sm">book_ribbon</span> </li>
+                          <li><span class="material-symbols-rounded icn_sng sm">calendar_clock</span> </li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> </li>
+                        </ul>
+                      </div>
+                      <div class="rsm_drwr_item_cntnr flex_spc_btwn shd5clr_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="rsm_drwr_pub__tgl" name="rsm_drwr_tgl" value="Publication " class="rd_btn_hide">
+                          <label for="rsm_drwr_pub__tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl"></span>
+                          </label>
+                          <label for="rsm_drwr_pub__tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl"></span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr"></div>
+                      </div>
+                      <div></div>
+                      <div class="rsm_drwr_item_summary">
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> </li>
+                          <li><span class="material-symbols-rounded icn_sng sm">newsstand</span> <i></i></li>
+                          <li><span class="material-symbols-rounded icn_sng sm">book_ribbon</span> </li>
+                          <li><span class="material-symbols-rounded icn_sng sm">calendar_clock</span> </li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="rsm_education_drwr_cntnr"  class="nav_cntnr_drwr_cntnr">
+                      <h3>Education</h3>
+                      <div class="bttn_icn_cntnr bdg_cntnr">
+                        <input type="radio" id="rsm_drwr_temporary_tgl" name="rsm_drwr_tgl" value="Temporary" class="rd_btn_hide">
+                        <label for="rsm_drwr_temporary_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                          <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Temporary</span>
+                        </label>
+                        <label for="rsm_drwr_temporary_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                          <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Temporary</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div id="rsm_prof_awards_drwr_cntnr"  class="nav_cntnr_drwr_cntnr">
+                      <h3>Professional Awards</h3>
+                      <div class="bttn_icn_cntnr bdg_cntnr">
+                        <input type="radio" id="rsm_drwr_temporary_tgl" name="rsm_drwr_tgl" value="Temporary" class="rd_btn_hide">
+                        <label for="rsm_drwr_temporary_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                          <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Temporary</span>
+                        </label>
+                        <label for="rsm_drwr_temporary_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                          <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Temporary</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div id="rsm_academic_awards_drwr_cntnr"  class="nav_cntnr_drwr_cntnr">
+                      <h3>Academic Awards</h3>
+                      <div class="bttn_icn_cntnr bdg_cntnr">
+                        <input type="radio" id="rsm_drwr_temporary_tgl" name="rsm_drwr_tgl" value="Temporary" class="rd_btn_hide">
+                        <label for="rsm_drwr_temporary_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                          <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Temporary</span>
+                        </label>
+                        <label for="rsm_drwr_temporary_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                          <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Temporary</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div id="rsm_languages_drwr_cntnr"  class="nav_cntnr_drwr_cntnr">
+                      <h3>Languages</h3>
+                      <div class="bttn_icn_cntnr bdg_cntnr">
+                        <input type="radio" id="rsm_drwr_temporary_tgl" name="rsm_drwr_tgl" value="Temporary" class="rd_btn_hide">
+                        <label for="rsm_drwr_temporary_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                          <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Temporary</span>
+                        </label>
+                        <label for="rsm_drwr_temporary_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                          <span class="material-symbols-rounded icn_sng">bookmark</span><span class="bttn_lbl">Temporary</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
