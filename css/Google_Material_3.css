@@ -992,6 +992,14 @@ body:has( #rsm_so_img_tgl:not(:checked)     ) #rsm_so_img     { display: none }
 body:has( #rsm_hn_img_tgl:not(:checked)     ) #rsm_hn_img     { display: none }
 body:has( #rsm_gh_img_tgl:not(:checked)     ) #rsm_gh_img     { display: none }
 
+body:has( #rsm_cntnt_skills_tgl:not(:checked)          ) #rsm_skills_drwr_cntnr          { display: none }
+body:has( #rsm_cntnt_work_tgl:not(:checked)            ) #rsm_work_drwr_cntnr            { display: none }
+body:has( #rsm_cntnt_publications_tgl:not(:checked)    ) #rsm_publications_drwr_cntnr    { display: none }
+body:has( #rsm_cntnt_education_tgl:not(:checked)       ) #rsm_education_drwr_cntnr       { display: none }
+body:has( #rsm_cntnt_prof_awards_tgl:not(:checked)     ) #rsm_prof_awards_drwr_cntnr     { display: none }
+body:has( #rsm_cntnt_academic_awards_tgl:not(:checked) ) #rsm_academic_awards_drwr_cntnr { display: none }
+body:has( #rsm_cntnt_languages_tgl:not(:checked)       ) #rsm_languages_drwr_cntnr       { display: none }
+
 .icon_cntnr_g {
   display: inline-block;
   text-align: center;
@@ -1889,6 +1897,18 @@ h3.clsl { font-size: 3.188em; }
 .anm_out    {animation-timing-function: ease-out;}
 .anm_in_out {animation-timing-function: ease-in-out;}
 
+.rtn_30 { transform: rotate(30deg); }
+.rtn_45 { transform: rotate(45deg); }
+.rtn_60 { transform: rotate(60deg); }
+.rtn_90 { transform: rotate(90deg); }
+.rtn_135 { transform: rotate(135deg); }
+.rtn_180 { transform: rotate(180deg); }
+.rtn_225 { transform: rotate(225deg); }
+.rtn_270 { transform: rotate(270deg); }
+.rtn_300 { transform: rotate(300deg); }
+.rtn_315 { transform: rotate(315deg); }
+.rtn_330 { transform: rotate(330deg); }
+
 table { border-collapse: collapse; }
 th    { border-collapse: collapse; }
 td    { border-collapse: collapse; }
@@ -2263,6 +2283,31 @@ td    { border-collapse: collapse; }
   -webkit-transform: translateY(0.167em);
   transform: translateY(0.167em);
   margin-top: -0.25em;
+}
+
+.icn_sng.rtn_90 {
+  -webkit-transform: translateY(0.167em) rotate(90deg);
+  transform: translateY(0.167em) rotate(90deg);
+}
+
+.icn_sng.rtn_180 {
+  -webkit-transform: translateY(0.167em) rotate(180deg);
+  transform: translateY(0.167em) rotate(180deg);
+}
+
+.icn_sng.rtn_225 {
+  -webkit-transform: translateY(0.167em) rotate(225deg);
+  transform: translateY(0.167em) rotate(225deg);
+}
+
+.icn_sng.rtn_270 {
+  -webkit-transform: translateY(0.167em) rotate(270deg);
+  transform: translateY(0.167em) rotate(270deg);
+}
+
+.icn_sng.rtn_315 {
+  -webkit-transform: translateY(0.167em) rotate(315deg);
+  transform: translateY(0.167em) rotate(315deg);
 }
 
 .bttn_clndr_cntnr { padding: 0.375em 0.75em; margin: 0.25em; }
@@ -2984,7 +3029,7 @@ flbr {
 
 .navigation_cntnr.nav_drwr {
    flex-direction: column;
-   padding: 10px 0px 10px 90px;
+   padding: 10px 0px 10px 20px;
 }
 
 .nav_cntnr_drwr_cntnr {
@@ -3014,6 +3059,50 @@ flbr {
   font-size: 1em;
   padding-left: 10px;
 }
+
+.rsm_drwr_item_cntnr {
+  display: flex;
+  align-items: center;
+}
+
+.rsm_drwr_item_cntnr.flex_spc_btwn {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.rsm_drwr_item_label {
+  flex-shrink: 0;
+}
+
+.rsm_drwr_item_label  > label > .bttn_lbl {
+  -webkit-transform: translateY(-10%);
+  transform: translateY(-10%);
+  display: inline-block;
+}
+
+.rsm_drwr_item_blurb {
+  padding-left: 20px;
+  margin: 10px 0px;
+}
+
+.rsm_drwr_item_summary {
+  display: none;
+}
+
+.rsm_drwr_item_summary > ul {
+  list-style-type: none;
+}
+
+.rsm_drwr_item_summary > ul > li {
+  margin-bottom: 0.375em;
+}
+
+.rsm_drwr_item_summary > ul > li > .icn_sng {
+  color: var( --ifc-lgt-color );
+}
+
+.rsm_drwr_item_cntnr:has( .rd_btn_hide:checked ) ~ .rsm_drwr_item_summary{ display: inline-block; }
+.rsm_drwr_item_cntnr:has( .rd_btn_hide:checked ) ~ .rsm_drwr_item_summary ~ .rsm_drwr_item_summary{ display: none; }
 
 .modal_navigation_drawer_g:popover-open {
   display: flex;
@@ -3059,7 +3148,8 @@ flbr {
   justify-content: initial;
 }
 
-.nav_rl_menu_cntnr {
+.nav_rl_content_cntnr {
+  width: calc( 100% - 85px );
 }
 
 .nav_rl .bttn_lbl { display: none; }
