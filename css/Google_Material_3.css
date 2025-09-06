@@ -1078,12 +1078,12 @@ header {
 }
 
 #nv_hdr_drpdn_pltt {
-  left: 50px;
+  left: -80px;
   top: 35px;
 }
 
 #nv_hdr_drpdn_img {
-  left: 50px;
+  left: -80px;
   top: 35px;
 }
 
@@ -3092,6 +3092,10 @@ flbr {
 .rsm_drwr_item_cntnr.flex_spc_btwn {
   width: 100%;
   justify-content: space-between;
+}
+
+.rsm_drwr_item_date {
+  margin-left: 1em;
 }
 
 .rsm_drwr_item_label {
