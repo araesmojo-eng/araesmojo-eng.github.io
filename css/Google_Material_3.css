@@ -3000,6 +3000,13 @@ flbr {
   justify-content: space-between;
 }
 
+.dialog_publications {
+  padding: 0px;
+  width: 90%;
+  height: 90%;
+  max-width: 90%;
+}
+
 .navigation_cntnr.nav_bttm_app_bar {
   justify-content: space-between;
 }
