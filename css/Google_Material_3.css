@@ -2962,10 +2962,10 @@ flbr {
 .dialog_window_g:popover-open {
   position: relative;
   width: calc( 100%-80px );
-  max-width: 1000px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 23px;
+  padding: 10px;
   background: var( --ifc-color );
   color: var( --fnt-lgt-color );
   border-radius: 25px;
@@ -3000,11 +3000,18 @@ flbr {
   justify-content: space-between;
 }
 
-.dialog_publications {
+.dialog_publications:popover-open {
+  position: relative;
   padding: 0px;
   width: 90%;
   height: 90%;
   max-width: 90%;
+  background: var( --ifc-color );
+  color: var( --fnt-lgt-color );
+}
+
+.dlg_img {
+  max-width: 100%;
 }
 
 .navigation_cntnr.nav_bttm_app_bar {
