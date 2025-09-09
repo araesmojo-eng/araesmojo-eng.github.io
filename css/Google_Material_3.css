@@ -3085,7 +3085,7 @@ flbr {
 
 .nav_cntnr_drwr_cntnr .bdg_cntnr {
   margin-left: -15px;
-  margin-right: -15px;
+  margin-right: 0px;
   align-self: initial;
 }
 
@@ -3202,7 +3202,7 @@ flbr {
 }
 
 .nav_rl_content_cntnr {
-  width: calc( 100% - 85px );
+  width: calc( 100% - 90px );
 }
 
 .nav_rl .bttn_lbl { display: none; }
