@@ -3128,6 +3128,7 @@ flbr {
 .drwr_item_blurb {
   padding-left: 20px;
   margin: 10px 0px;
+  text-align: right;
 }
 
 .drwr_item_summary {
