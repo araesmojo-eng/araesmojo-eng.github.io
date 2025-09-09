@@ -973,18 +973,18 @@ body:has( #rd_inpt_resume:not(:checked)   ) #section_resume   { display: none }
 body:has( #rd_inpt_projects:not(:checked) ) #section_projects { display: none }
 body:has( #rd_inpt_hobby:not(:checked)    ) #section_hobby    { display: none }
 
-body:has( #nav_projects_software_tgl:not(:checked)     ) #panel_projects_software     { display: none }
-body:has( #nav_projects_nasa_tgl:not(:checked)         ) #panel_projects_nasa         { display: none }
-body:has( #nav_projects_volunteer_tgl:not(:checked)    ) #panel_projects_volunteer    { display: none }
-body:has( #nav_projects_publications_tgl:not(:checked) ) #panel_projects_publications { display: none }
-body:has( #nav_projects_photos_tgl:not(:checked)       ) #panel_projects_photos       { display: none }
+body:has( #nav_projects_software_tgl:not(:checked)     ) #cntnr_projects_software     { display: none }
+body:has( #nav_projects_nasa_tgl:not(:checked)         ) #cntnr_projects_nasa         { display: none }
+body:has( #nav_projects_volunteer_tgl:not(:checked)    ) #cntnr_projects_volunteer    { display: none }
+body:has( #nav_projects_publications_tgl:not(:checked) ) #cntnr_projects_publications { display: none }
+body:has( #nav_projects_photos_tgl:not(:checked)       ) #cntnr_projects_photos       { display: none }
 
-body:has( #nav_hobby_photos_tgl:not(:checked)      ) #panel_hobby_photos      { display: none }
-body:has( #nav_hobby_writing_tgl:not(:checked)     ) #panel_hobby_writing     { display: none }
-body:has( #nav_hobby_roleplaying_tgl:not(:checked) ) #panel_hobby_roleplaying { display: none }
-body:has( #nav_hobby_files_tgl:not(:checked)       ) #panel_hobby_files       { display: none }
-body:has( #nav_hobby_videos_tgl:not(:checked)      ) #panel_hobby_videos      { display: none }
-body:has( #nav_hobby_audio_tgl:not(:checked)       ) #panel_hobby_audio       { display: none }
+body:has( #nav_hobby_photos_tgl:not(:checked)      ) #cntnr_hobby_photos      { display: none }
+body:has( #nav_hobby_writing_tgl:not(:checked)     ) #cntnr_hobby_writing     { display: none }
+body:has( #nav_hobby_roleplaying_tgl:not(:checked) ) #cntnr_hobby_roleplaying { display: none }
+body:has( #nav_hobby_files_tgl:not(:checked)       ) #cntnr_hobby_files       { display: none }
+body:has( #nav_hobby_videos_tgl:not(:checked)      ) #cntnr_hobby_videos      { display: none }
+body:has( #nav_hobby_audio_tgl:not(:checked)       ) #cntnr_hobby_audio       { display: none }
 
 body:has( #rsm_main_img_tgl:not(:checked)   ) #rsm_main_img   { display: none }
 body:has( #rsm_email_img_tgl:not(:checked)  ) #rsm_email_img  { display: none }
