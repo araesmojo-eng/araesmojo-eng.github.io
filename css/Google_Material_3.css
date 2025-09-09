@@ -2402,7 +2402,7 @@ flbr {
   color: var( --fnt-lgt-color );
   background: var( --ifc-artcl-color );
   margin: 10px 0px;
-  padding: 10px;
+  padding: 0px;
 }
 
 .bdg_cntnr {
@@ -3016,6 +3016,7 @@ flbr {
 
 .navigation_cntnr.nav_bttm_app_bar {
   justify-content: space-between;
+  padding: 10px 0px;
 }
 
 .dropdown {
@@ -3063,6 +3064,11 @@ flbr {
 .navigation_icn_cntnr {
   display: flex;
   justify-content: space-around;
+}
+
+.nav_bar {
+  padding: 10px;
+  margin: 0px;
 }
 
 .navigation_cntnr.nav_drwr {
@@ -3187,6 +3193,7 @@ flbr {
   min-width: 85px;
   min-height: 450px;
   align-items: center;
+  margin: 0px;
 }
 
 .nav_rl .navigation_icn_cntnr {
