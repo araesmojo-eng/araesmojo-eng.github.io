@@ -6,7 +6,7 @@ Live website can be accessed at: https://araesmojo-eng.github.io/
 
 Completed areas include:
 
-**Resume:**
+***Resume:***
 - Skills
 - Work
 - Publications
@@ -15,7 +15,7 @@ Completed areas include:
 - Academic Awards
 - Languages
 
-**Projects** (and skills documation with evidence)
+***Projects*** (and skills documation with evidence)
 - Software
   - OpenGL
     - (25) Twenty five example projects demonstrating moving from initially drawing nother more than a simple triangle to rendering a fully lighted scene, with physics based rendering, forward and deferred lighting, particle systems, signed distance field fonts (per Valve 2007), directional shadow mapping, point source shadow mapping, and paraboloid shadow mapping.
