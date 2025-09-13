@@ -93,6 +93,8 @@ body {
   --lghtn-m-yyy: 0.07282014579671127;
   
   --hue: 256;
+  --hue-link: calc( ( var( --hue ) + 125 ) / 1.5 );
+  --hue-link-visit: calc( var( --hue-link ) + 40 );
 
   /* Calculations for saturations and lightness using multipliers on the base values rather than direct calculation */
   --hue-pct:  calc( var( --hue ) / 360.0 );
@@ -302,6 +304,8 @@ body {
   --bg-color:          hsl( var( --hue ), calc( var( --satur-bg ) ),  calc( var( --lghtn-bg ) ) );
   --bg-mid-drk-color:  hsl( var( --hue ), calc( var( --satur-bg ) ),  calc( var( --lghtn-bg ) * 0.7 ) );
   --bg-drk-color:      hsl( var( --hue ), calc( var( --satur-bg ) * 0.5 ),  calc( var( --lghtn-bg ) * 0.4 ) );
+  --link-color:        hsl( var( --hue-link ),       calc( var( --satur-prm ) ), 50% );
+  --link-visit-color:  hsl( var( --hue-link-visit ), calc( var( --satur-prm ) ), 50% );
   --err-color:         hsl( 4, 94%, 85% );
   
   /* Variables for the current day, month, and year registered by whatever method is used to get the current time */
@@ -940,16 +944,6 @@ body:has( #rd_inpt_www_gainsboro:checked ) { --thm-www-gainsboro-on: 1; --hue: 0
 body:has( #rd_inpt_www_gainsboro:checked ) label[ for="rd_inpt_www_gainsboro" ]{ font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
 body:has( #rd_inpt_www_gainsboro:checked ) label[ for="rd_inpt_www_gainsboro" ] > span.icon_cntnr_g { background-color: var( --ifc-color ); }
 
-/* Portions to connect labels from different parts of the page together so they trigger the same checkboxes */
-body:has( #rd_inpt_main:checked     ) label[ for="rd_inpt_main"     ]{ font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
-body:has( #rd_inpt_main:checked     ) label[ for="rd_inpt_main"     ] > span.icon_cntnr_g { background-color: var( --ifc-color ); }
-body:has( #rd_inpt_resume:checked   ) label[ for="rd_inpt_resume"   ]{ font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
-body:has( #rd_inpt_resume:checked   ) label[ for="rd_inpt_resume"   ] > span.icon_cntnr_g { background-color: var( --ifc-color ); }
-body:has( #rd_inpt_projects:checked ) label[ for="rd_inpt_projects" ]{ font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
-body:has( #rd_inpt_projects:checked ) label[ for="rd_inpt_projects" ] > span.icon_cntnr_g { background-color: var( --ifc-color ); }
-body:has( #rd_inpt_hobby:checked    ) label[ for="rd_inpt_hobby"    ]{ font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
-body:has( #rd_inpt_hobby:checked    ) label[ for="rd_inpt_hobby"    ] > span.icon_cntnr_g { background-color: var( --ifc-color ); }
-
 /* Portion of having multiple swapping labels to enable No Choice radio input behavior */
 /* From: https://stackoverflow.com/a/52990834 by StackOverflow user SamGoody */
 /* Modified to use distant hidden input selectors */
@@ -964,14 +958,45 @@ body:has( #nv_img_tgl:not(:checked) ) label[ for="nv_img_tgl" ] + label{ display
 body:has( #nv_pltt_tgl:checked ) label[ for="nv_pltt_tgl" ] + label + .nv_drpdn{ display: flex; }
 body:has( #nv_img_tgl:checked  ) label[ for="nv_img_tgl"  ] + label + .nv_drpdn{ display: flex; }
 
-/* Sub-portion for the elevation */
-body:has( #rd_inpt_hobby:checked       ) label[ for="rd_inpt_hobby" ] > span:first-child{ display: none }
-body:has( #rd_inpt_hobby:not(:checked) ) label[ for="rd_inpt_hobby" ] > span:first-child + span{ display: none }
+/* Portions to connect labels from different parts of the page together so they trigger the same checkboxes */
+/* body:has( #rd_inpt_main:checked     ) label[ for="rd_inpt_main"     ]{ font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
+body:has( #rd_inpt_main:checked     ) label[ for="rd_inpt_main"     ] > span.icon_cntnr_g { background-color: var( --ifc-color ); }
+body:has( #rd_inpt_resume:checked   ) label[ for="rd_inpt_resume"   ]{ font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
+body:has( #rd_inpt_resume:checked   ) label[ for="rd_inpt_resume"   ] > span.icon_cntnr_g { background-color: var( --ifc-color ); }
+body:has( #rd_inpt_projects:checked ) label[ for="rd_inpt_projects" ]{ font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
+body:has( #rd_inpt_projects:checked ) label[ for="rd_inpt_projects" ] > span.icon_cntnr_g { background-color: var( --ifc-color ); }
+body:has( #rd_inpt_hobby:checked    ) label[ for="rd_inpt_hobby"    ]{ font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
+body:has( #rd_inpt_hobby:checked    ) label[ for="rd_inpt_hobby"    ] > span.icon_cntnr_g { background-color: var( --ifc-color ); } */
 
-body:has( #rd_inpt_main:not(:checked)     ) #section_main     { display: none }
+.subpage_main_target_link { font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
+.subpage_main_target_link > span.icon_cntnr_g { background-color: var( --ifc-color ); }
+body:has( #section_resume:target, #section_projects:target, #section_hobby:target ) .subpage_main_target_link { font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
+body:has( #section_resume:target, #section_projects:target, #section_hobby:target ) .subpage_main_target_link > span.icon_cntnr_g { background-color: transparent; }
+
+body:has( #section_resume:target   ) .subpage_resume_target_link   { font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
+body:has( #section_resume:target   ) .subpage_resume_target_link   > span.icon_cntnr_g { background-color: var( --ifc-color ); }
+body:has( #section_projects:target ) .subpage_projects_target_link { font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
+body:has( #section_projects:target ) .subpage_projects_target_link > span.icon_cntnr_g { background-color: var( --ifc-color ); }
+body:has( #section_hobby:target    ) .subpage_hobby_target_link    { font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
+body:has( #section_hobby:target    ) .subpage_hobby_target_link    > span.icon_cntnr_g { background-color: var( --ifc-color ); }
+
+body:has( #section_hobby:target       ) .subpage_hobby_target_link > span:first-child{ display: none }
+body:has( #section_hobby:not(:target) ) .subpage_hobby_target_link > span:first-child + span{ display: none }
+/* Sub-portion for the elevation */
+/* body:has( #rd_inpt_hobby:checked       ) label[ for="rd_inpt_hobby" ] > span:first-child{ display: none }
+body:has( #rd_inpt_hobby:not(:checked) ) label[ for="rd_inpt_hobby" ] > span:first-child + span{ display: none } */
+
+/* body:has( #rd_inpt_main:not(:checked)     ) #section_main     { display: none }
 body:has( #rd_inpt_resume:not(:checked)   ) #section_resume   { display: none }
 body:has( #rd_inpt_projects:not(:checked) ) #section_projects { display: none }
-body:has( #rd_inpt_hobby:not(:checked)    ) #section_hobby    { display: none }
+body:has( #rd_inpt_hobby:not(:checked)    ) #section_hobby    { display: none } */
+
+body:has( #section_resume:target         ) #section_main     { display: none }
+body:has( #section_projects:target       ) #section_main     { display: none }
+body:has( #section_hobby:target          ) #section_main     { display: none }
+body:has( #section_resume:not(:target)   ) #section_resume   { display: none }
+body:has( #section_projects:not(:target) ) #section_projects { display: none }
+body:has( #section_hobby:not(:target)    ) #section_hobby    { display: none }
 
 body:has( #nav_projects_software_tgl:not(:checked)     ) #cntnr_projects_software     { display: none }
 body:has( #nav_projects_nasa_tgl:not(:checked)         ) #cntnr_projects_nasa         { display: none }
@@ -999,6 +1024,21 @@ body:has( #rsm_cntnt_education_tgl:not(:checked)       ) #rsm_education_drwr_cnt
 body:has( #rsm_cntnt_prof_awards_tgl:not(:checked)     ) #rsm_prof_awards_drwr_cntnr     { display: none }
 body:has( #rsm_cntnt_academic_awards_tgl:not(:checked) ) #rsm_academic_awards_drwr_cntnr { display: none }
 body:has( #rsm_cntnt_languages_tgl:not(:checked)       ) #rsm_languages_drwr_cntnr       { display: none }
+
+a:link {
+  color: var( --link-color );
+}
+
+a:visited {
+  color: var( --link-visit-color );
+}
+
+  /*
+  --prm-lgt-color
+  --prm-color
+  --prm-mid-drk-color
+  --prm-mid-drk-color
+  */
 
 .icon_cntnr_g {
   display: inline-block;
@@ -1169,6 +1209,11 @@ main {
 .intrfc_pnl_chc_cntr {
   height: 32px;
   margin: 11px 0px;
+}
+
+.intrfc_pnl_chc_cntr a {
+  color:var( --fnt-lgt-color );
+  text-decoration: none;
 }
 
 /* Container for individual choice label names (mostly to shift the text to center) */
@@ -2102,6 +2147,16 @@ td    { border-collapse: collapse; }
   padding: 1em; /* T R B L */
   background: var( --prm-color );
   text-shadow: 1px 1px 3px var( --bg-drk-color );
+}
+
+.actn_bttn.flld {
+  color: var( --ifc-color );
+  background: var( --fnt-lgt-color );
+}
+
+.actn_bttn.flld_tnl {
+  color: var( --fnt-lgt-color );
+  background: var( --ifc-color );
 }
 
 .actn_sm {
