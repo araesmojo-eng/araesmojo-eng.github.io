@@ -1,0 +1,2 @@
+# Miniamlistic robots.txt for araesmojo-eng.github.io specifically
+Sitemap: https://araesmojo-eng.github.io/sitemap.xml
