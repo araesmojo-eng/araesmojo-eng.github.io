@@ -6,7 +6,7 @@ Live website can be accessed at: https://araesmojo-eng.github.io/
 
 Completed areas include:
 
-***Resume:***
+***[Resume](araesmojo-eng_github_io/index.html#section_resume):***
 - Skills
 - Work
 - Publications
@@ -15,7 +15,7 @@ Completed areas include:
 - Academic Awards
 - Languages
 
-***Projects*** (and skills documation with evidence)
+***[Projects](araesmojo-eng_github_io/index.html#section_projects)*** (and skills documation with evidence)
 - Software
   - OpenGL
     - (25) Twenty five example projects
