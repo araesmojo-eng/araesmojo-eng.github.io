@@ -1025,6 +1025,9 @@ body:has( #rsm_cntnt_prof_awards_tgl:not(:checked)     ) #rsm_prof_awards_drwr_c
 body:has( #rsm_cntnt_academic_awards_tgl:not(:checked) ) #rsm_academic_awards_drwr_cntnr { display: none }
 body:has( #rsm_cntnt_languages_tgl:not(:checked)       ) #rsm_languages_drwr_cntnr       { display: none }
 
+body:has( #prj_sftwr_cntnt_opengl_tgl:not(:checked)    ) #prj_sftwr_opengl_drwr_cntnr    { display: none }
+body:has( #prj_sftwr_cntnt_shadertoy_tgl:not(:checked) ) #prj_sftwr_shadertoy_drwr_cntnr { display: none }
+
 a:link {
   color: var( --link-color );
 }
