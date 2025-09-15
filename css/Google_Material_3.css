@@ -1013,6 +1013,7 @@ body:has( #nav_hobby_audio_tgl:not(:checked)       ) #cntnr_hobby_audio       { 
 
 body:has( #rsm_main_img_tgl:not(:checked)   ) #rsm_main_img   { display: none }
 body:has( #rsm_email_img_tgl:not(:checked)  ) #rsm_email_img  { display: none }
+body:has( #rsm_wp_img_tgl:not(:checked)     ) #rsm_wp_img     { display: none }
 body:has( #rsm_so_img_tgl:not(:checked)     ) #rsm_so_img     { display: none }
 body:has( #rsm_hn_img_tgl:not(:checked)     ) #rsm_hn_img     { display: none }
 body:has( #rsm_gh_img_tgl:not(:checked)     ) #rsm_gh_img     { display: none }
