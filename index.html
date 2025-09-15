@@ -431,8 +431,8 @@
             </div>
             <div class="intrfc_pnl_chc_cntr">
               <a href="#section_hobby" class="subpage_hobby_target_link">
-                <span class="icon_cntnr_g"><span class="material-symbols-rounded">invert_colors</span></span>
-                <span class="icon_cntnr_g"><span class="material-symbols-rounded">humidity_mid</span></span>
+                <span class="icon_cntnr_g trg_on"><span class="material-symbols-rounded">invert_colors</span></span>
+                <span class="icon_cntnr_g trg_off"><span class="material-symbols-rounded">humidity_mid</span></span>
                 <div class="hide_mid_screen intrfc_pnl_lbl_nm">Hobby</div>
               </a>
             </div>
@@ -884,6 +884,7 @@
                           <li><span class="material-symbols-rounded icn_sng sm">terminal</span> Unix/Linux</li>
                           <li><span class="material-symbols-rounded icn_sng sm">storage</span> HPC/Supercomputing/qsub/PBS</li>
                           <li><span class="material-symbols-rounded icn_sng sm">database</span> Big Data / Data Vis (Full STS launch pad, 100 million cell, billion+ particle, reactive chemistry, moving body, liftoff simulations)</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">calculate</span> Math, Statistics, and Visualization</li>
                           <li><span class="material-symbols-rounded icn_sng sm">graphic_eq</span> Interferometry</li>
                           <li><span class="material-symbols-rounded icn_sng sm">stylus_note</span> 3D printing (PP/PLA/ABS extrude, StereoLitho, Grain Bed Laser Sinter)</li>
                           <li><span class="material-symbols-rounded icn_sng sm">graph_3</span> Procedural Content Generation</li>
@@ -2069,6 +2070,18 @@
                 <div class="navigation_cntnr nav_rl">
                   <div class="navigation_icn_cntnr">
                     <div class="bttn_icn_cntnr bdg_cntnr shdBOPG_05_hv anm_800ms">
+                      <input type="radio" id="prj_sftwr_cntnt_star_trek_stats_tgl"    name="prj_sftwr_cntnt_tgl" value="Star Trek Statistics"     class="rd_btn_hide" checked>
+                      <label for="prj_sftwr_cntnt_star_trek_stats_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng sm">rocket_launch</span></label>
+                      <label for="prj_sftwr_cntnt_star_trek_stats_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng sm">rocket_launch</span></label>
+                      <span class="bttn_lbl">Statistics<br>of Star Trek</span>
+                    </div>
+                    <div class="bttn_icn_cntnr bdg_cntnr shdBOPG_05_hv anm_800ms">
+                      <input type="radio" id="prj_sftwr_cntnt_star_trek_stats_ds9_tgl"    name="prj_sftwr_cntnt_tgl" value="Star Trek Statistics - DS9"     class="rd_btn_hide" checked>
+                      <label for="prj_sftwr_cntnt_star_trek_stats_ds9_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng sm">planet</span></label>
+                      <label for="prj_sftwr_cntnt_star_trek_stats_ds9_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng sm">planet</span></label>
+                      <span class="bttn_lbl">Statistics<br>of Star Trek<br>DS9</span>
+                    </div>
+                    <div class="bttn_icn_cntnr bdg_cntnr shdBOPG_05_hv anm_800ms">
                       <input type="radio" id="prj_sftwr_cntnt_opengl_tgl"    name="prj_sftwr_cntnt_tgl" value="OpenGL"     class="rd_btn_hide" checked>
                       <label for="prj_sftwr_cntnt_opengl_tgl" class="bttn bttn_icn flld_tnl bttn_on"><span class="material-symbols-rounded icn_sng sm rtn_180">brightness_3</span></label>
                       <label for="prj_sftwr_cntnt_opengl_tgl" class="bttn bttn_icn flld_tnl bttn_off"><span class="material-symbols-rounded icn_sng sm rtn_180">brightness_3</span></label>
@@ -2084,6 +2097,615 @@
                 </div>
                 <div class="nav_rl_content_cntnr">
                   <div class="navigation_cntnr nav_drwr">
+                    <div id="prj_sftwr_star_trek_stats_drwr_cntnr" class="nav_cntnr_drwr_cntnr">
+                      <h3>Statistics of Star Trek</h3>
+                      <ul>
+                        <li>This is a 30+ image album breakdown of the 80's to 90's Star Trek shows, created by me in 2015, based on the user ratings of episodes (TV.com / IMDB), the Nielson ratings of the shows, and the largely user generated episode synopses on TV.com and Wikipedia (looking for word frequency and association with ratings).</li>
+                        <li>After having gone through a rewatch of Trek's high points, and guiding a lot of that watch on the recommendations of social media, I started to be curious how user ratings and commercial ratings like Nielson's interacted with the shows.</li>
+                        <li>Other data looks at: the Nielson's for shows in isolation, Nielson for TNG seasons, ratings by characters (main, support, guest), by settings and plot threads, by directors, and by writers, as well as some other visualizations to show relative ratings of groups.</li>
+                        <li>Original <a href="https://www.reddit.com/r/startrek/comments/32ncqd/statistics_of_star_trek_ratings_and_reactions/">post on Reddit</a></li>
+                        <li>Original <a href="https://imgur.com/gallery/statistics-of-star-trek-ratings-reactions-ieRHR/">post on Imgur</a></li>
+                      </ul>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_user_ratings_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, User Ratings, All Shows" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_user_ratings_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">User Ratings, All Shows&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_user_ratings_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">User Ratings, All Shows&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_User_Ratings_All_Shows"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_User_Ratings_All_Shows.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_User_Ratings_All_Shows" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_User_Ratings_All_Shows.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> This first picture is just a bulk plot of the user ratings for all episodes of all Trek shows from the 80's to 00's era of Star Trek (TNG, DS9, VOY, ENT) with simple curve fits to the rating trends.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_nielson_ratings_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, Nielson Ratings, All Shows" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_nielson_ratings_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">Nielson Ratings, All Shows&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_nielson_ratings_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">Nielson Ratings, All Shows&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_Nielson_Ratings_All_Shows"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_Nielson_Ratings_All_Shows.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_Nielson_Ratings_All_Shows" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_Nielson_Ratings_All_Shows.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> For this particular picture, I'm looking at the lifetime Nielson ratings for the 80' - 00's era of Star Trek (TNG, DS9, VOY, ENT), fitting simple curve fits to the data to look at how its trending, and then trying to highlight some of the data that may have led to shows getting pitched or canned.</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> Notes from Reddit folks:
+                            <ul>
+                              <li>- Many shows were not cancelled, but rather the production crew decided to quit making the show.</li>
+                              <li>- TNG and DS9 were syndicated while VOY and ENT were network</li>
+                              <li>- TNG and DS9 were [possibly stopped] because of the business model in place at the time, wherein a show became more costly to produce in syndication with each new season, thereby making it too expensive to keep on the air after seven seasons.</li>
+                            </ul>
+                          </li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> Responses and Other Observations:
+                            <ul>
+                              <li>- There is a visible trend where each show switches from 2nd order positive curvature (up) to second order negative curvature (down) near the end of their life (maybe why they quit/were canned)</li>
+                              <li>- While TNG and DS9 were both created for syndication, TNG remained flat / up for most of its life while DS9 started with TNG's audience and then dropped off a cliff. It basically went into free-fall and never recovered. If it had kept going, it would have been at VOY / UPN levels.</li>
+                              <li>- Further, VOY then started with audience part way down the slope, and followed nearly the exact-same-path as DS9 in the ratings. By mid-way through their lives they're entwined and look like a helix.</li>
+                              <li>- You could also, without much challenge, make an easy curve fit hitting nearly every show's Nielsens with a single line. That says to me that there's more than just syndication issues going on. That's more like your whole audience base is shifting (possibly TV's greater shift, maybe you just lost the "hot, talked about show" trait.)</li>
+                              <li>- The general shift for network vs not doesn't seem as pronounced as you would think.  The shift honestly looks like about a flat 1-2 Nielsen point bias between syndication vs network if I just compare DS9 to VOY and look at their curves. That's not nearly the story of the woeful performance of the crummy network. That's 4 network vs 5-6 in syndication.</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tos_ratings_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Original Series, Ratings (IMDB, TV.com), All Seasons" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tos_ratings_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Original Series, User Ratings (IMDB, TV.com), All Seasons&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tos_ratings_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Original Series, User Ratings (IMDB, TV.com), All Seasons&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TOS_TV_IMDB_Ratings_All_Seasons"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TOS_TV_IMDB_Ratings_All_Seasons.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TOS_TV_IMDB_Ratings_All_Seasons" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TOS_TV_IMDB_Ratings_All_Seasons.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> User ratings for Star Trek: The Original Series on TV.com and IMDB.  No Nielson ratings could be found.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_ratings_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Ratings (Nielson, IMDB, TV.com), All Seasons" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_ratings_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), All Seasons&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_ratings_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), All Seasons&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ratings_All_Seasons"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_TV_IMDB_Ratings_All_Seasons.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ratings_All_Seasons" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_TV_IMDB_Ratings_All_Seasons.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> User ratings for Star Trek: The Next Generation on TV.com and IMDB along with Nielson ratings.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_ds9_ratings_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, Deep Space Nine, Ratings (Nielson, IMDB, TV.com), All Seasons" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_ds9_ratings_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">Deep Space Nine, Ratings (Nielson, IMDB, TV.com), All Seasons&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_ds9_ratings_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">Deep Space Nine, Ratings (Nielson, IMDB, TV.com), All Seasons&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_DS9_TV_IMDB_Ratings_All_Seasons"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_DS9_TV_IMDB_Ratings_All_Seasons.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_DS9_TV_IMDB_Ratings_All_Seasons" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_DS9_TV_IMDB_Ratings_All_Seasons.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> User ratings for Star Trek: Deep Space Nine on TV.com and IMDB along with Nielson ratings.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_voy_ratings_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, Voyager, Ratings (Nielson, IMDB, TV.com), All Seasons" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_voy_ratings_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">Voyager, Ratings (Nielson, IMDB, TV.com), All Seasons&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_voy_ratings_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">Voyager, Ratings (Nielson, IMDB, TV.com), All Seasons&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_VOY_TV_IMDB_Ratings_All_Seasons"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_VOY_TV_IMDB_Ratings_All_Seasons.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_VOY_TV_IMDB_Ratings_All_Seasons" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_VOY_TV_IMDB_Ratings_All_Seasons.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> User ratings for Star Trek: Voyager on TV.com and IMDB along with Nielson ratings.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_ent_ratings_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, Enterprise, Ratings (Nielson, IMDB, TV.com), All Seasons" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_ent_ratings_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">Enterprise, Ratings (Nielson, IMDB, TV.com), All Seasons&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_ent_ratings_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">Enterprise, Ratings (Nielson, IMDB, TV.com), All Seasons&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_ENT_TV_IMDB_Ratings_All_Seasons"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_ENT_TV_IMDB_Ratings_All_Seasons.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_ENT_TV_IMDB_Ratings_All_Seasons" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_ENT_TV_IMDB_Ratings_All_Seasons.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> User ratings for Star Trek: Enterprise on TV.com and IMDB along with Nielson ratings.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_ratings_s1_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 1" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_ratings_s1_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 1&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_ratings_s1_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 1&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_1"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_1.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_1" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_1.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> Zoomed in view of user ratings for Star Trek: The Next Generation Season 1 on TV.com and IMDB along with Nielson ratings.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_ratings_s2_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 2" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_ratings_s2_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 2&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_ratings_s2_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 2&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_2"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_2.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_2" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_2.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> Zoomed in view of user ratings for Star Trek: The Next Generation Season 2 on TV.com and IMDB along with Nielson ratings.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_ratings_s3_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 3" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_ratings_s3_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 3&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_ratings_s3_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 3&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_3"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_3.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_3" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_3.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> Zoomed in view of user ratings for Star Trek: The Next Generation Season 3 on TV.com and IMDB along with Nielson ratings.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_ratings_s4_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 4" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_ratings_s4_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 4&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_ratings_s4_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 4&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_4"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_4.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_4" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_4.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> Zoomed in view of user ratings for Star Trek: The Next Generation Season 4 on TV.com and IMDB along with Nielson ratings.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_ratings_s5_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 5" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_ratings_s5_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 5&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_ratings_s5_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 5&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_5"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_5.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_5" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_5.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> Zoomed in view of user ratings for Star Trek: The Next Generation Season 5 on TV.com and IMDB along with Nielson ratings.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_ratings_s6_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 6" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_ratings_s6_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 6&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_ratings_s6_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 6&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_6"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_6.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_6" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_6.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> Zoomed in view of user ratings for Star Trek: The Next Generation Season 6 on TV.com and IMDB along with Nielson ratings.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_ratings_s7_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 7" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_ratings_s7_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 7&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_ratings_s7_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Ratings (Nielson, IMDB, TV.com), Season 7&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_7"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_7.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_7" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_TV_IMDB_Ep_Ratings_Season_7.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> Zoomed in view of user ratings for Star Trek: The Next Generation Season 7 on TV.com and IMDB along with Nielson ratings.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_char_rate_vs_ref_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Characters, Antagonists, and Settings - Ratings vs References" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_char_rate_vs_ref_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Characters, Antagonists, and Settings - Ratings vs References&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_char_rate_vs_ref_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Characters, Antagonists, and Settings - Ratings vs References&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Character_References_vs_Ratings_Groupings"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Character_References_vs_Ratings_Groupings.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Character_References_vs_Ratings_Groupings" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Character_References_vs_Ratings_Groupings.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> Plot of the various characters common to TNG and how they rate on average with viewers for their episodes.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_main_ref_per_ssn_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Main Cast References / Season" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_main_ref_per_ssn_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Main Cast References / Season&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_main_ref_per_ssn_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Main Cast References / Season&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Main_Cast_References_Per_Season"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Main_Cast_References_Per_Season.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Main_Cast_References_Per_Season" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Main_Cast_References_Per_Season.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> This plot graphs the number of episodes which directly reference a main cast character in the synopsis on wikipedia or TV.com and then showed how they trend over the seasons of the show.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_main_avg_rate_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Main Cast, Average Appearance User Rating with Deviations" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_main_avg_rate_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Main Cast, Average Appearance User Rating with Deviations&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_main_avg_rate_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Main Cast, Average Appearance User Rating with Deviations&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Main_Cast_Ratings_w_Deviations"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Main_Cast_Ratings_w_Deviations.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Main_Cast_Ratings_w_Deviations" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Main_Cast_Ratings_w_Deviations.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> This plot graphs the average appearance rating for each of the main cast characters.  Episode summaries on Wikipedia, IMDB, and TV.com were searched for a given keyword, in this case, the names of the main cast.  All episodes associated with those words had their ratings averaged, and then that rating is plotted here with the standard deviation up / down.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_support_ref_per_ssn_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Supporting Cast References / Season" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_support_ref_per_ssn_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Supporting Cast References / Season&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_support_ref_per_ssn_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Supporting Cast References / Season&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Support_Cast_References_Per_Season"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Support_Cast_References_Per_Season.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Support_Cast_References_Per_Season" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Support_Cast_References_Per_Season.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> This plot graphs the number of episodes which directly reference a supporting cast character in the synopsis on wikipedia or TV.com and then showed how they trend over the seasons of the show.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_support_avg_rate_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Supporting Cast, Average Appearance User Rating with Deviations" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_support_avg_rate_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Supporting Cast, Average Appearance User Rating with Deviations&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_support_avg_rate_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Supporting Cast, Average Appearance User Rating with Deviations&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Support_Cast_Ratings_w_Deviations"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Support_Cast_Ratings_w_Deviations.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Support_Cast_Ratings_w_Deviations" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Support_Cast_Ratings_w_Deviations.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> This plot graphs the average appearance rating for each of the supporting cast characters.  Episode summaries on Wikipedia, IMDB, and TV.com were searched for a given keyword, in this case, the names of the supporting cast.  All episodes associated with those words had their ratings averaged, and then that rating is plotted here with the standard deviation up / down.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_guest_ref_per_ssn_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Guest Cast References / Season" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_guest_ref_per_ssn_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Guest Cast References / Season&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_guest_ref_per_ssn_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Guest Cast References / Season&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Guest_Cast_References_Per_Season"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Guest_Cast_References_Per_Season.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Guest_Cast_References_Per_Season" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Guest_Cast_References_Per_Season.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> This plot graphs the number of episodes which directly reference a guest cast character in the synopsis on wikipedia or TV.com and then showed how they trend over the seasons of the show.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_guest_avg_rate_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Guest Cast, Average Appearance User Rating with Deviations" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_guest_avg_rate_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Guest Cast, Average Appearance User Rating with Deviations&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_guest_avg_rate_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Guest Cast, Average Appearance User Rating with Deviations&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Guest_Cast_Ratings_w_Deviations"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Guest_Cast_Ratings_w_Deviations.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Guest_Cast_Ratings_w_Deviations" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Guest_Cast_Ratings_w_Deviations.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> This plot graphs the average appearance rating for each of the guest cast characters.  Episode summaries on Wikipedia, IMDB, and TV.com were searched for a given keyword, in this case, the names of the guest cast.  All episodes associated with those words had their ratings averaged, and then that rating is plotted here with the standard deviation up / down.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_setting_ref_per_ssn_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Settings or Antagonist References / Season" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_setting_ref_per_ssn_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Settings or Antagonist References / Season&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_setting_ref_per_ssn_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Settings or Antagonist References / Season&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Setting_or_Antagonist_References_Per_Season"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Setting_or_Antagonist_References_Per_Season.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Setting_or_Antagonist_References_Per_Season" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Setting_or_Antagonist_References_Per_Season.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> This plot graphs the number of episodes which directly reference a settings or antagonist in the synopsis on wikipedia or TV.com and then showed how they trend over the seasons of the show.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_setting_avg_rate_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Settings or Antagonist, Average Appearance User Rating with Deviations" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_setting_avg_rate_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Settings or Antagonist, Average Appearance User Rating with Deviations&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_setting_avg_rate_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Settings or Antagonist, Average Appearance User Rating with Deviations&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Setting_or_Antagonist_Ratings_w_Deviations"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Setting_or_Antagonist_Ratings_w_Deviations.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Setting_or_Antagonist_Ratings_w_Deviations" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Setting_or_Antagonist_Ratings_w_Deviations.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> This plot graphs the average appearance rating for each settings or antagonist.  Episode summaries on Wikipedia, IMDB, and TV.com were searched for a given keyword, in this case, the names of a setting or antagonist.  All episodes associated with those words had their ratings averaged, and then that rating is plotted here with the standard deviation up / down.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_director_ref_per_ssn_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Directors References / Season" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_director_ref_per_ssn_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Directors References / Season&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_director_ref_per_ssn_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Directors References / Season&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Director_References_Per_Season"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Director_References_Per_Season.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Director_References_Per_Season" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Director_References_Per_Season.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> This plot graphs the number of episodes which directly reference a director in the synopsis on wikipedia or TV.com and then showed how they trend over the seasons of the show.  Similar to the character and setting keyword plots above, here I have instead plotted the participation of various directors for TNG as they worked on the show over its 7 seasons.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_director_avg_rate_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Directors, Average Appearance User Rating with Deviations" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_director_avg_rate_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Directors, Average Appearance User Rating with Deviations&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_director_avg_rate_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Directors, Average Appearance User Rating with Deviations&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Director_Ratings_w_Deviations"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Director_Ratings_w_Deviations.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Director_Ratings_w_Deviations" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Director_Ratings_w_Deviations.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> Plotted here are the ratings for the most prolific Star Trek: TNG directors (2+ episodes minimum), with their average, deviations, and total number of episodes.  Episode summaries on Wikipedia, IMDB, and TV.com were searched for a given keyword, in this case, the names of a director.  All episodes associated with those words had their ratings averaged, and then that rating is plotted here with the standard deviation up / down.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_writers_tele_ref_per_ssn_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Writers for Teleplays, References / Season" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_writers_tele_ref_per_ssn_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Writers for Teleplays, References / Season&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_writers_tele_ref_per_ssn_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Writers for Teleplays, References / Season&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Writer_Teleplay_References_Per_Season"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Writer_Teleplay_References_Per_Season.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Writer_Teleplay_References_Per_Season" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Writer_Teleplay_References_Per_Season.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> This plot graphs the number of episodes which directly reference a writer of an episode teleplay in the synopsis on wikipedia or TV.com and then showed how they trend over the seasons of the show.  Like the director appearances, this plot shows the writers of the finished teleplays which made it onto the air by their occurrence over time.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_writers_tele_avg_rate_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Writers for Teleplays, Average Appearance User Rating with Deviations" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_writers_tele_avg_rate_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Writers for Teleplays, Average Appearance User Rating with Deviations&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_writers_tele_avg_rate_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Writers for Teleplays, Average Appearance User Rating with Deviations&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Writer_Teleplay_Ratings_w_Deviations"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Writer_Teleplay_Ratings_w_Deviations.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Writer_Teleplay_Ratings_w_Deviations" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Writer_Teleplay_Ratings_w_Deviations.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> Plotted here are the ratings for the most prolific Star Trek: TNG teleplay writers (2+ episodes minimum), with their average, deviations, and total number of episodes.  Episode summaries on Wikipedia, IMDB, and TV.com were searched for a given keyword, in this case, the names of a teleplay writer.  All episodes associated with those words had their ratings averaged, and then that rating is plotted here with the standard deviation up / down.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_writers_story_ref_per_ssn_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Writers for Story, References / Season" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_writers_story_ref_per_ssn_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Writers for Story, References / Season&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_writers_story_ref_per_ssn_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Writers for Story, References / Season&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Writer_Story_References_Per_Season"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Writer_Story_References_Per_Season.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Writer_Story_References_Per_Season" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Writer_Story_References_Per_Season.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> This plot graphs the number of episodes which directly reference a story writer of an episode in the synopsis on wikipedia or TV.com and then showed how they trend over the seasons of the show. Our near to final plot, this shows the appearance of story writers over the lifetime of Star Trek, The Next Generation.</li>
+                        </ul>
+                      </div>
+                      <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
+                        <div class="bttn_icn_cntnr bdg_cntnr">
+                          <input type="radio" id="prj_sftwr_star_trek_tng_writers_story_avg_rate_tgl" name="prj_sftwr_star_trek_stats_drwr_tgl" value="Star Trek, The Next Generation, Writers for Story, Average Appearance User Rating with Deviations" class="rd_btn_hide">
+                          <label for="prj_sftwr_star_trek_tng_writers_story_avg_rate_tgl" class="bttn bttn_icn flld_tnl bttn_on">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Writers for Story, Average Appearance User Rating with Deviations&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                          <label for="prj_sftwr_star_trek_tng_writers_story_avg_rate_tgl" class="bttn bttn_icn flld_tnl bttn_off">
+                            <span class="material-symbols-rounded icn_sng">multiline_chart</span><span class="bttn_lbl">The Next Generation, Writers for Story, Average Appearance User Rating with Deviations&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">quick_reference</span>
+                          </label>
+                        </div>
+                        <div class="bttn_icn_cntnr drwr_item_blurb">2015</div>
+                      </div>
+                      <div class="drwr_item_summary">
+                        <button class="bttn bttn_no_pad" popovertarget="dialog_window_prj_Star_Trek_TNG_Writer_Story_Ratings_w_Deviations"><img class="bttn bttn_no_pad" src="images/Projects/Statistics_of_Star_Trek/thm_prj_Star_Trek_TNG_Writer_Story_Ratings_w_Deviations.jpg"></button>
+                        <div popover id="dialog_window_prj_Star_Trek_TNG_Writer_Story_Ratings_w_Deviations" class="dialog_window_g"><img class="dlg_img" src="images/Projects/Statistics_of_Star_Trek/prj_Star_Trek_TNG_Writer_Story_Ratings_w_Deviations.jpg"></div>
+                        <ul>
+                          <li><span class="material-symbols-rounded icn_sng sm">groups</span> G. C. Putnam</li>
+                          <li><span class="material-symbols-rounded icn_sng sm">quick_reference</span> Plotted here are the ratings for the most prolific Star Trek: TNG story writers (2+ episodes minimum), with their average, deviations, and total number of episodes.  Episode summaries on Wikipedia, IMDB, and TV.com were searched for a given keyword, in this case, the names of a story writer.  All episodes associated with those words had their ratings averaged, and then that rating is plotted here with the standard deviation up / down.  Very similar to teleplay plots, although several (like Ron Moore) wrote way more teleplays and some like Braga wrote more stories.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="prj_sftwr_star_trek_stats_ds9_drwr_cntnr" class="nav_cntnr_drwr_cntnr">
+                      <h3>Statistics of Star Trek - DS9 Addendum</h3>
+                    </div>
                     <div id="prj_sftwr_opengl_drwr_cntnr" class="nav_cntnr_drwr_cntnr">
                       <h3>OpenGL</h3>
                       <div class="drwr_item_cntnr flex_spc_btwn shd5clr_05_hv anm_800ms">
@@ -2693,10 +3315,10 @@
                         <div class="bttn_icn_cntnr bdg_cntnr">
                           <input type="radio" id="prj_sftwr_shadertoy_terrain_and_erosion_tgl" name="prj_sftwr_shadertoy_drwr_tgl" value="Terrain and Erosion Test" class="rd_btn_hide">
                           <label for="prj_sftwr_shadertoy_terrain_and_erosion_tgl" class="bttn bttn_icn flld_tnl bttn_on">
-                            <span class="material-symbols-rounded icn_sng">grain</span><span class="bttn_lbl">Shadertoy, Terrain and Erosion Test&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">videocam</span><span class="material-symbols-rounded icn_sng">link</span>
+                            <span class="material-symbols-rounded icn_sng">altitude</span><span class="bttn_lbl">Shadertoy, Terrain and Erosion Test&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">videocam</span><span class="material-symbols-rounded icn_sng">link</span>
                           </label>
                           <label for="prj_sftwr_shadertoy_terrain_and_erosion_tgl" class="bttn bttn_icn flld_tnl bttn_off">
-                            <span class="material-symbols-rounded icn_sng">grain</span><span class="bttn_lbl">Shadertoy, Terrain and Erosion Test&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">videocam</span><span class="material-symbols-rounded icn_sng">link</span>
+                            <span class="material-symbols-rounded icn_sng">altitude</span><span class="bttn_lbl">Shadertoy, Terrain and Erosion Test&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">videocam</span><span class="material-symbols-rounded icn_sng">link</span>
                           </label>
                         </div>
                         <div class="bttn_icn_cntnr drwr_item_blurb">2024-2025</div>
@@ -2712,10 +3334,10 @@
                         <div class="bttn_icn_cntnr bdg_cntnr">
                           <input type="radio" id="prj_sftwr_shadertoy_unity_sun_shader_tgl" name="prj_sftwr_shadertoy_drwr_tgl" value="Unity Sun Shader" class="rd_btn_hide">
                           <label for="prj_sftwr_shadertoy_unity_sun_shader_tgl" class="bttn bttn_icn flld_tnl bttn_on">
-                            <span class="material-symbols-rounded icn_sng">grain</span><span class="bttn_lbl">Shadertoy, Unity Sun Shader&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">videocam</span><span class="material-symbols-rounded icn_sng">link</span>
+                            <span class="material-symbols-rounded icn_sng">routine</span><span class="bttn_lbl">Shadertoy, Unity Sun Shader&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">videocam</span><span class="material-symbols-rounded icn_sng">link</span>
                           </label>
                           <label for="prj_sftwr_shadertoy_unity_sun_shader_tgl" class="bttn bttn_icn flld_tnl bttn_off">
-                            <span class="material-symbols-rounded icn_sng">grain</span><span class="bttn_lbl">Shadertoy, Unity Sun Shader&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">videocam</span><span class="material-symbols-rounded icn_sng">link</span>
+                            <span class="material-symbols-rounded icn_sng">routine</span><span class="bttn_lbl">Shadertoy, Unity Sun Shader&nbsp;</span><span class="material-symbols-rounded icn_sng">image</span><span class="material-symbols-rounded icn_sng">videocam</span><span class="material-symbols-rounded icn_sng">link</span>
                           </label>
                         </div>
                         <div class="bttn_icn_cntnr drwr_item_blurb">2024-2025</div>
@@ -2847,8 +3469,8 @@
           </div>
           <div class="intrfc_pnl_chc_cntr">
             <a href="#section_hobby" class="subpage_hobby_target_link">
-              <span class="icon_cntnr_g"><span class="material-symbols-rounded">invert_colors</span></span>
-              <span class="icon_cntnr_g"><span class="material-symbols-rounded">humidity_mid</span></span>
+              <span class="icon_cntnr_g trg_on"><span class="material-symbols-rounded">invert_colors</span></span>
+              <span class="icon_cntnr_g trg_off"><span class="material-symbols-rounded">humidity_mid</span></span>
             </a>
           </div>
       </div>
