@@ -3064,8 +3064,7 @@ flbr {
 .dialog_publications:popover-open {
   position: relative;
   padding: 0px;
-  width: 90%;
-  height: 90%;
+  max-height: 90%;
   max-width: 90%;
   background: var( --ifc-color );
   color: var( --fnt-lgt-color );
