@@ -963,26 +963,123 @@ body:has( #nv_img_tgl:checked  ) label[ for="nv_img_tgl"  ] + label + .nv_drpdn{
 .subpage_main_target_link > span.icon_cntnr_g { background-color: var( --ifc-color ); }
 body:has(                :target   ) .subpage_main_target_link     { font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
 body:has(                :target   ) .subpage_main_target_link     > span.icon_cntnr_g { background-color: transparent; }
-body:has( #section_resume:target   ) .subpage_resume_target_link   { font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
-body:has( #section_resume:target   ) .subpage_resume_target_link   > span.icon_cntnr_g { background-color: var( --ifc-color ); }
-body:has( #section_projects:target ) .subpage_projects_target_link { font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
-body:has( #section_projects:target ) .subpage_projects_target_link > span.icon_cntnr_g { background-color: var( --ifc-color ); }
+body:has( #section_resume:target,
+          #rsm_skills_trg:target,
+          #rsm_work_trg:target,
+          #rsm_publications_trg:target,
+          #rsm_education_trg:target,
+          #rsm_prof_awards_trg:target,
+          #rsm_academic_awards_trg:target,
+          #rsm_languages_trg:target   ) .subpage_resume_target_link   { font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
+body:has( #section_resume:target,
+          #rsm_skills_trg:target,
+          #rsm_work_trg:target,
+          #rsm_publications_trg:target,
+          #rsm_education_trg:target,
+          #rsm_prof_awards_trg:target,
+          #rsm_academic_awards_trg:target,
+          #rsm_languages_trg:target   ) .subpage_resume_target_link   > span.icon_cntnr_g { background-color: var( --ifc-color ); }
+body:has( #section_projects:target,
+          #prj_sftwr_trg:target,
+          #prj_math_trg:target,
+          #prj_nasa_trg:target,
+          #prj_volunteer_trg:target,
+          #prj_publications_trg:target,
+          #prj_math_star_trek_stats_trg:target,
+          #prj_math_star_trek_stats_ds9_trg:target,
+          #prj_sftwr_opengl_trg:target,
+          #prj_sftwr_shadertoy_trg:target ) .subpage_projects_target_link { font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
+body:has( #section_projects:target,
+          #prj_sftwr_trg:target,
+          #prj_math_trg:target,
+          #prj_nasa_trg:target,
+          #prj_volunteer_trg:target,
+          #prj_publications_trg:target,
+          #prj_math_star_trek_stats_trg:target,
+          #prj_math_star_trek_stats_ds9_trg:target,
+          #prj_sftwr_opengl_trg:target,
+          #prj_sftwr_shadertoy_trg:target ) .subpage_projects_target_link > span.icon_cntnr_g { background-color: var( --ifc-color ); }
 body:has( #section_hobby:target    ) .subpage_hobby_target_link    { font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
 body:has( #section_hobby:target    ) .subpage_hobby_target_link    > span.icon_cntnr_g { background-color: var( --ifc-color ); }
 
 body:has( #section_hobby:target       ) .subpage_hobby_target_link > .trg_on{ display: none }
 body:has( #section_hobby:not(:target) ) .subpage_hobby_target_link > .trg_off{ display: none }
 
-body:has(                      :target   ) #section_main     { display: none }
-body:has( #section_resume:not(:target)   ) #section_resume   { display: none }
-body:has( #section_projects:not(:target) ) #section_projects { display: none }
-body:has( #section_hobby:not(:target)    ) #section_hobby    { display: none }
+#section_resume   { display: none }
+#section_projects { display: none }
+#section_hobby    { display: none }
+body:has(                      :target   ) #section_main { display: none }
+body:has( #section_resume:target,
+          #rsm_skills_trg:target,
+          #rsm_work_trg:target,
+          #rsm_publications_trg:target,
+          #rsm_education_trg:target,
+          #rsm_prof_awards_trg:target,
+          #rsm_academic_awards_trg:target,
+          #rsm_languages_trg:target   ) #section_resume { display: flex; }
+body:has( #section_projects:target,
+          #prj_sftwr_trg:target,
+          #prj_math_trg:target,
+          #prj_nasa_trg:target,
+          #prj_volunteer_trg:target,
+          #prj_publications_trg:target,
+          #prj_photos_trg:target,
+          #prj_math_star_trek_stats_trg:target,
+          #prj_math_star_trek_stats_ds9_trg:target,
+          #prj_sftwr_opengl_trg:target,
+          #prj_sftwr_shadertoy_trg:target ) #section_projects { display: flex; }
+body:has( #section_hobby:target    ) #section_hobby    { display: flex; }
 
-body:has( #nav_projects_software_tgl:not(:checked)     ) #cntnr_projects_software     { display: none }
-body:has( #nav_projects_nasa_tgl:not(:checked)         ) #cntnr_projects_nasa         { display: none }
-body:has( #nav_projects_volunteer_tgl:not(:checked)    ) #cntnr_projects_volunteer    { display: none }
-body:has( #nav_projects_publications_tgl:not(:checked) ) #cntnr_projects_publications { display: none }
-body:has( #nav_projects_photos_tgl:not(:checked)       ) #cntnr_projects_photos       { display: none }
+#rsm_skills_drwr          { display: none }
+#rsm_work_drwr            { display: none }
+#rsm_publications_drwr    { display: none }
+#rsm_education_drwr       { display: none }
+#rsm_prof_awards_drwr     { display: none }
+#rsm_academic_awards_drwr { display: none }
+#rsm_languages_drwr       { display: none }
+
+body:has( #rsm_skills_trg:target          ) #rsm_skills_drwr          { display: flex; }
+body:has( #rsm_work_trg:target            ) #rsm_work_drwr            { display: flex; }
+body:has( #rsm_publications_trg:target    ) #rsm_publications_drwr    { display: flex; }
+body:has( #rsm_education_trg:target       ) #rsm_education_drwr       { display: flex; }
+body:has( #rsm_prof_awards_trg:target     ) #rsm_prof_awards_drwr     { display: flex; }
+body:has( #rsm_academic_awards_trg:target ) #rsm_academic_awards_drwr { display: flex; }
+body:has( #rsm_languages_trg:target       ) #rsm_languages_drwr       { display: flex; }
+
+#prj_sftwr_cntnr        { display: none }
+#prj_math_cntnr         { display: none }
+#prj_nasa_cntnr         { display: none }
+#prj_volunteer_cntnr    { display: none }
+#prj_publications_cntnr { display: none }
+
+body:has( #prj_sftwr_trg:target,
+          #prj_sftwr_opengl_trg:target,
+          #prj_sftwr_shadertoy_trg:target ) #prj_sftwr_cntnr         { display: flex; }
+body:has( #prj_math_trg:target,
+          #prj_math_star_trek_stats_trg:target,
+          #prj_math_star_trek_stats_ds9_trg:target ) #prj_math_cntnr { display: flex; }
+body:has( #prj_nasa_trg:target            ) #prj_nasa_cntnr         { display: flex; }
+body:has( #prj_volunteer_trg:target       ) #prj_volunteer_cntnr    { display: flex; }
+body:has( #prj_publications_trg:target    ) #prj_publications_cntnr { display: flex; }
+
+body:has( #prj_sftwr_opengl_trg:target,
+          #prj_sftwr_shadertoy_trg:target ) #prj_sftwr_trg .bttn_off { display:none; }
+body:has( #prj_sftwr_opengl_trg:target,
+          #prj_sftwr_shadertoy_trg:target ) #prj_sftwr_trg .bttn_on { display:inline-block; }
+body:has( #prj_math_star_trek_stats_trg:target,
+          #prj_math_star_trek_stats_ds9_trg:target ) #prj_math_trg .bttn_off { display:none; }
+body:has( #prj_math_star_trek_stats_trg:target,
+          #prj_math_star_trek_stats_ds9_trg:target ) #prj_math_trg .bttn_on { display:inline-block; }
+
+#prj_sftwr_opengl_drwr             { display: none }
+#prj_sftwr_shadertoy_drwr          { display: none }
+#prj_math_star_trek_stats_drwr     { display: none }
+#prj_math_star_trek_stats_ds9_drwr { display: none }
+
+body:has( #prj_sftwr_opengl_trg:target             ) #prj_sftwr_opengl_drwr             { display: flex; }
+body:has( #prj_sftwr_shadertoy_trg:target          ) #prj_sftwr_shadertoy_drwr          { display: flex; }
+body:has( #prj_math_star_trek_stats_trg:target     ) #prj_math_star_trek_stats_drwr     { display: flex; }
+body:has( #prj_math_star_trek_stats_ds9_trg:target ) #prj_math_star_trek_stats_ds9_drwr { display: flex; }
 
 body:has( #nav_hobby_photos_tgl:not(:checked)      ) #cntnr_hobby_photos      { display: none }
 body:has( #nav_hobby_writing_tgl:not(:checked)     ) #cntnr_hobby_writing     { display: none }
@@ -998,20 +1095,6 @@ body:has( #hdr_wp_img_tgl:not(:checked)     ) #hdr_wp_img     { display: none }
 body:has( #hdr_so_img_tgl:not(:checked)     ) #hdr_so_img     { display: none }
 body:has( #hdr_hn_img_tgl:not(:checked)     ) #hdr_hn_img     { display: none }
 body:has( #hdr_gh_img_tgl:not(:checked)     ) #hdr_gh_img     { display: none }
-
-body:has( #rsm_cntnt_skills_tgl:not(:checked)          ) #rsm_skills_drwr_cntnr          { display: none }
-body:has( #rsm_cntnt_work_tgl:not(:checked)            ) #rsm_work_drwr_cntnr            { display: none }
-body:has( #rsm_cntnt_publications_tgl:not(:checked)    ) #rsm_publications_drwr_cntnr    { display: none }
-body:has( #rsm_cntnt_education_tgl:not(:checked)       ) #rsm_education_drwr_cntnr       { display: none }
-body:has( #rsm_cntnt_prof_awards_tgl:not(:checked)     ) #rsm_prof_awards_drwr_cntnr     { display: none }
-body:has( #rsm_cntnt_academic_awards_tgl:not(:checked) ) #rsm_academic_awards_drwr_cntnr { display: none }
-body:has( #rsm_cntnt_languages_tgl:not(:checked)       ) #rsm_languages_drwr_cntnr       { display: none }
-
-body:has( #prj_sftwr_cntnt_star_trek_stats_tgl:not(:checked)     ) #prj_sftwr_star_trek_stats_drwr_cntnr     { display: none }
-body:has( #prj_sftwr_cntnt_star_trek_stats_ds9_tgl:not(:checked) ) #prj_sftwr_star_trek_stats_ds9_drwr_cntnr { display: none }
-body:has( #prj_sftwr_cntnt_opengl_tgl:not(:checked)              ) #prj_sftwr_opengl_drwr_cntnr              { display: none }
-body:has( #prj_sftwr_cntnt_shadertoy_tgl:not(:checked)           ) #prj_sftwr_shadertoy_drwr_cntnr           { display: none }
-body:has( #prj_sftwr_cntnt_html_css_tgl:not(:checked)            ) #prj_sftwr_html_css_drwr_cntnr            { display: none }
 
 a:link {
   color: var( --link-color );
@@ -2326,12 +2409,12 @@ td    { border-collapse: collapse; }
   text-align: left;
 }
 
-.bttn_icn_cntnr {
+:is( .bttn_icn_cntnr, .bttn_icn_trg_ancr ) {
   align-self: center;
   display: inline-block;
 }
 
-.bttn_icn_cntnr .rflct {
+:is( .bttn_icn_cntnr, .bttn_icn_trg_ancr ) .rflct {
   transform: rotateX(180deg) translateY(-0.167em);
   --bttn_icn-gradient: linear-gradient( transparent 10%, rgb(255 255 255 / 40%) 60%, white 100% );
   -webkit-mask-image: var( --bttn_icn-gradient );
@@ -2345,6 +2428,9 @@ td    { border-collapse: collapse; }
 
 .bttn_icn_cntnr:has( input:checked       ) .bttn_off { display:none; }
 .bttn_icn_cntnr:not(:has( input:checked )) .bttn_on  { display:none; }
+
+.bttn_icn_trg_ancr:target       .bttn_off { display:none; }
+.bttn_icn_trg_ancr:not(:target) .bttn_on  { display:none; }
 
 .icn_sng {
   -webkit-transform: translateY(0.167em);
@@ -3248,7 +3334,9 @@ flbr {
 }
 
 .nav_rl .bttn_lbl { display: none; }
+.nav_rl .bttn_lbl.always_vsbl { display: inline; }
 .nav_rl .bttn_icn_cntnr:has( input:checked ) .bttn_lbl { display: inline; }
+.nav_rl .bttn_icn_trg_ancr:target .bttn_lbl { display: inline; }
 
 
 .nav_tabs {
