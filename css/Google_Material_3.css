@@ -989,6 +989,7 @@ body:has( #section_projects:target,
           #prj_math_star_trek_stats_ds9_trg:target,
           #prj_sftwr_opengl_trg:target,
           #prj_sftwr_shadertoy_trg:target,
+          #prj_nasa_asmat_trg:target,
           #prj_nasa_water_trg:target ) .subpage_projects_target_link { font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
 body:has( #section_projects:target,
           #prj_sftwr_trg:target,
@@ -1000,6 +1001,7 @@ body:has( #section_projects:target,
           #prj_math_star_trek_stats_ds9_trg:target,
           #prj_sftwr_opengl_trg:target,
           #prj_sftwr_shadertoy_trg:target,
+          #prj_nasa_asmat_trg:target,
           #prj_nasa_water_trg:target ) .subpage_projects_target_link > span.icon_cntnr_g { background-color: var( --ifc-color ); }
 body:has( #section_hobby:target    ) .subpage_hobby_target_link    { font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48; }
 body:has( #section_hobby:target    ) .subpage_hobby_target_link    > span.icon_cntnr_g { background-color: var( --ifc-color ); }
@@ -1030,6 +1032,7 @@ body:has( #section_projects:target,
           #prj_sftwr_shadertoy_trg:target,
           #prj_math_star_trek_stats_trg:target,
           #prj_math_star_trek_stats_ds9_trg:target,
+          #prj_nasa_asmat_trg:target,
           #prj_nasa_water_trg:target ) #section_projects { display: flex; }
 body:has( #section_hobby:target    ) #section_hobby    { display: flex; }
 
@@ -1062,6 +1065,7 @@ body:has( #prj_math_trg:target,
           #prj_math_star_trek_stats_trg:target,
           #prj_math_star_trek_stats_ds9_trg:target ) #prj_math_cntnr { display: flex; }
 body:has( #prj_nasa_trg:target,
+          #prj_nasa_asmat_trg:target,
           #prj_nasa_water_trg:target ) #prj_nasa_cntnr         { display: flex; }
 body:has( #prj_volunteer_trg:target       ) #prj_volunteer_cntnr    { display: flex; }
 body:has( #prj_publications_trg:target    ) #prj_publications_cntnr { display: flex; }
@@ -1074,19 +1078,23 @@ body:has( #prj_math_star_trek_stats_trg:target,
           #prj_math_star_trek_stats_ds9_trg:target ) #prj_math_trg .bttn_off { display:none; }
 body:has( #prj_math_star_trek_stats_trg:target,
           #prj_math_star_trek_stats_ds9_trg:target ) #prj_math_trg .bttn_on { display:inline-block; }
-body:has( #prj_nasa_water_trg:target ) #prj_nasa_trg .bttn_off { display:none; }
-body:has( #prj_nasa_water_trg:target ) #prj_nasa_trg .bttn_on  { display:inline-block; }
+body:has( #prj_nasa_asmat_trg:target,
+          #prj_nasa_water_trg:target ) #prj_nasa_trg .bttn_off { display:none; }
+body:has( #prj_nasa_asmat_trg:target,
+          #prj_nasa_water_trg:target ) #prj_nasa_trg .bttn_on  { display:inline-block; }
 
 #prj_sftwr_opengl_drwr             { display: none }
 #prj_sftwr_shadertoy_drwr          { display: none }
 #prj_math_star_trek_stats_drwr     { display: none }
 #prj_math_star_trek_stats_ds9_drwr { display: none }
+#prj_nasa_asmat_drwr               { display: none }
 #prj_nasa_water_drwr               { display: none }
 
 body:has( #prj_sftwr_opengl_trg:target             ) #prj_sftwr_opengl_drwr             { display: flex; }
 body:has( #prj_sftwr_shadertoy_trg:target          ) #prj_sftwr_shadertoy_drwr          { display: flex; }
 body:has( #prj_math_star_trek_stats_trg:target     ) #prj_math_star_trek_stats_drwr     { display: flex; }
 body:has( #prj_math_star_trek_stats_ds9_trg:target ) #prj_math_star_trek_stats_ds9_drwr { display: flex; }
+body:has( #prj_nasa_asmat_trg:target               ) #prj_nasa_asmat_drwr               { display: flex; }
 body:has( #prj_nasa_water_trg:target               ) #prj_nasa_water_drwr               { display: flex; }
 
 body:has( #nav_hobby_photos_tgl:not(:checked)      ) #cntnr_hobby_photos      { display: none }
