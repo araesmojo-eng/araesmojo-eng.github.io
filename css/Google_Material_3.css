@@ -3158,6 +3158,15 @@ flbr {
   max-width: 100%;
 }
 
+.dlg_img_caption_cntnr {
+  display:table;
+}
+
+.dlg_img_caption {
+  display:table-caption;
+  caption-side:bottom;
+}
+
 .navigation_cntnr.nav_bttm_app_bar {
   justify-content: space-between;
   padding: 10px 0px;
