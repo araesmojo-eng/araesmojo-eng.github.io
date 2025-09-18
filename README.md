@@ -29,7 +29,7 @@ Completed areas include:
     - Each has movies demonstrating the example project step with the accomplishments or features, in addition to downloads of a working EXE for Windows with resources (everything should be self contained and run in a minimal folder on a system with OpenGL)
   - [ShaderToy](https://araesmojo-eng.github.io/index.html#prj_sftwr_shadertoy_trg)
     - (2) Shaders demonstrating terrain erosion and reverse implementing the Unity skybox shader with modifications for dynamic sun, ground, and sky color along with pausing.
-- [Math / Stats](https://araesmojo-eng.github.io/index.html#prj_math_trg)
+- [Math / Stats](https://araesmojo-eng.github.io/index.html#prj_math_trg) (mostly examples of hobby projects done for fun)
   - [Statistics of Star Trek](https://araesmojo-eng.github.io/index.html#prj_math_star_trek_stats_trg)
     - Set of 30+ charts discussion the Nielson ratings and user reviews (IMDB and TV.com) for Star Trek, with an emphasis on The Next Generation.
     - Looks at correlation of ratings to user reviews, along with character and setting appearances and how they individually or group rated with viewers.
