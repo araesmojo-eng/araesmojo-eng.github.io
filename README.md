@@ -9,8 +9,8 @@ Completed areas include:
 ***[Resume](https://araesmojo-eng.github.io/index.html#section_resume):***
 - [Skills](https://araesmojo-eng.github.io/index.html#rsm_skills_trg)
 - [Work](https://araesmojo-eng.github.io/index.html#rsm_work_trg)
-- [Publications](https://araesmojo-eng.github.io/index.html#publications)
-- [Education](https://araesmojo-eng.github.io/index.html#education)
+- [Publications](https://araesmojo-eng.github.io/index.html#rsm_publications_trg)
+- [Education](https://araesmojo-eng.github.io/index.html#rsm_education_trg)
 - [Professional Awards](https://araesmojo-eng.github.io/index.html#rsm_prof_awards_trg)
 - [Academic Awards](https://araesmojo-eng.github.io/index.html#rsm_academic_awards_trg)
 - [Languages](https://araesmojo-eng.github.io/index.html#rsm_languages_trg)
