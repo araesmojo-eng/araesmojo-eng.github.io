@@ -2550,6 +2550,10 @@ flbr {
   padding: 0px;
 }
 
+.navigation_cntnr.flex_start {
+  justify-content: flex-start;
+}
+
 .bdg_cntnr {
   position: relative;
   text-align: center;
