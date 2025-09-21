@@ -30,6 +30,8 @@ Completed areas include:
   - [ShaderToy](https://araesmojo-eng.github.io/index.html#prj_sftwr_shadertoy_trg)
     - (2) Shaders demonstrating terrain erosion and reverse implementing the Unity skybox shader with modifications for dynamic sun, ground, and sky color along with pausing.
 - [Math / Stats](https://araesmojo-eng.github.io/index.html#prj_math_trg) (mostly examples of hobby projects done for fun)
+  - [Statistics of Magic the Gathering](https://araesmojo-eng.github.io/index.html#prj_math_mtg_stats_trg)
+    - Set of 40+ charts on the state of the card game Magic the Gathering up until 2018.
   - [Statistics of Star Trek](https://araesmojo-eng.github.io/index.html#prj_math_star_trek_stats_trg)
     - Set of 30+ charts discussion the Nielson ratings and user reviews (IMDB and TV.com) for Star Trek, with an emphasis on The Next Generation.
     - Looks at correlation of ratings to user reviews, along with character and setting appearances and how they individually or group rated with viewers.
