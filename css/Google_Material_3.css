@@ -985,6 +985,7 @@ body:has( #section_projects:target,
           #prj_nasa_trg:target,
           #prj_volunteer_trg:target,
           #prj_publications_trg:target,
+          #prj_math_mtg_stats_trg:target,
           #prj_math_star_trek_stats_trg:target,
           #prj_math_star_trek_stats_ds9_trg:target,
           #prj_sftwr_opengl_trg:target,
@@ -998,6 +999,7 @@ body:has( #section_projects:target,
           #prj_nasa_trg:target,
           #prj_volunteer_trg:target,
           #prj_publications_trg:target,
+          #prj_math_mtg_stats_trg:target,
           #prj_math_star_trek_stats_trg:target,
           #prj_math_star_trek_stats_ds9_trg:target,
           #prj_sftwr_opengl_trg:target,
@@ -1032,6 +1034,7 @@ body:has( #section_projects:target,
           #prj_photos_trg:target,
           #prj_sftwr_opengl_trg:target,
           #prj_sftwr_shadertoy_trg:target,
+          #prj_math_mtg_stats_trg:target,
           #prj_math_star_trek_stats_trg:target,
           #prj_math_star_trek_stats_ds9_trg:target,
           #prj_nasa_asmat_trg:target,
@@ -1065,6 +1068,7 @@ body:has( #prj_sftwr_trg:target,
           #prj_sftwr_opengl_trg:target,
           #prj_sftwr_shadertoy_trg:target ) #prj_sftwr_cntnr         { display: flex; }
 body:has( #prj_math_trg:target,
+          #prj_math_mtg_stats_trg:target,
           #prj_math_star_trek_stats_trg:target,
           #prj_math_star_trek_stats_ds9_trg:target ) #prj_math_cntnr { display: flex; }
 body:has( #prj_nasa_trg:target,
@@ -1078,9 +1082,11 @@ body:has( #prj_sftwr_opengl_trg:target,
           #prj_sftwr_shadertoy_trg:target ) #prj_sftwr_trg .bttn_off { display:none; }
 body:has( #prj_sftwr_opengl_trg:target,
           #prj_sftwr_shadertoy_trg:target ) #prj_sftwr_trg .bttn_on { display:inline-block; }
-body:has( #prj_math_star_trek_stats_trg:target,
+body:has( #prj_math_mtg_stats_trg:target,
+          #prj_math_star_trek_stats_trg:target,
           #prj_math_star_trek_stats_ds9_trg:target ) #prj_math_trg .bttn_off { display:none; }
-body:has( #prj_math_star_trek_stats_trg:target,
+body:has( #prj_math_mtg_stats_trg:target,
+          #prj_math_star_trek_stats_trg:target,
           #prj_math_star_trek_stats_ds9_trg:target ) #prj_math_trg .bttn_on { display:inline-block; }
 body:has( #prj_nasa_asmat_trg:target,
           #prj_nasa_water_trg:target ) #prj_nasa_trg .bttn_off { display:none; }
@@ -1091,6 +1097,7 @@ body:has( #prj_volunteer_palestine_trg:target ) #prj_volunteer_trg .bttn_on  { d
 
 #prj_sftwr_opengl_drwr             { display: none }
 #prj_sftwr_shadertoy_drwr          { display: none }
+#prj_math_mtg_stats_drwr           { display: none }
 #prj_math_star_trek_stats_drwr     { display: none }
 #prj_math_star_trek_stats_ds9_drwr { display: none }
 #prj_nasa_asmat_drwr               { display: none }
@@ -1099,6 +1106,7 @@ body:has( #prj_volunteer_palestine_trg:target ) #prj_volunteer_trg .bttn_on  { d
 
 body:has( #prj_sftwr_opengl_trg:target             ) #prj_sftwr_opengl_drwr             { display: flex; }
 body:has( #prj_sftwr_shadertoy_trg:target          ) #prj_sftwr_shadertoy_drwr          { display: flex; }
+body:has( #prj_math_mtg_stats_trg:target           ) #prj_math_mtg_stats_drwr           { display: flex; }
 body:has( #prj_math_star_trek_stats_trg:target     ) #prj_math_star_trek_stats_drwr     { display: flex; }
 body:has( #prj_math_star_trek_stats_ds9_trg:target ) #prj_math_star_trek_stats_ds9_drwr { display: flex; }
 body:has( #prj_nasa_asmat_trg:target               ) #prj_nasa_asmat_drwr               { display: flex; }
