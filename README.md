@@ -32,6 +32,9 @@ Completed areas include:
 - [Math / Stats](https://araesmojo-eng.github.io/index.html#prj_math_trg) (mostly examples of hobby projects done for fun)
   - [Statistics of Magic the Gathering](https://araesmojo-eng.github.io/index.html#prj_math_mtg_stats_trg)
     - Set of 40+ charts on the state of the card game Magic the Gathering up until 2018.
+    - Distribution trends for cards, card types, and keywords.
+    - The value of various card traits in CMC with regression analysis.
+    - Art examination with Perceptual Hash Analysis.
   - [Statistics of Star Trek](https://araesmojo-eng.github.io/index.html#prj_math_star_trek_stats_trg)
     - Set of 30+ charts discussion the Nielson ratings and user reviews (IMDB and TV.com) for Star Trek, with an emphasis on The Next Generation.
     - Looks at correlation of ratings to user reviews, along with character and setting appearances and how they individually or group rated with viewers.
