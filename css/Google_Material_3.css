@@ -3180,6 +3180,21 @@ flbr {
   max-width: 90%;
   background: var( --ifc-color );
   color: var( --fnt-lgt-color );
+  display: flex;
+}
+
+.dlg_cls_full {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+  border: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .dlg_img {
