@@ -3327,6 +3327,10 @@ flbr {
   display: inline-block;
 }
 
+.lbl_link {
+  color: var( --link-color );
+}
+
 .drwr_item_blurb {
   padding-left: 20px;
   margin: 10px 0px;
