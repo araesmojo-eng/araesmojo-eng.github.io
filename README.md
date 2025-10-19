@@ -6,6 +6,8 @@ Live website can be accessed at: https://araesmojo-eng.github.io/
 
 Changes (10/19/2025)
 
+Bunch of change to support mini-games on the webpage with a style like the old 8-bit and 16-bit Zelda games with items that can be picked up and then interacted with on the webpage.
+
 - Added items (lantern, gloves, mallet, shovel, bug net, bombs, bottle, slingshot, bow, boomerang, arrows, slignshot ammo)
 - Added equipable storage (backpacks 1-5)
 - Added item equiping and using
