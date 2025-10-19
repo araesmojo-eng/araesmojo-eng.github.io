@@ -4,6 +4,23 @@ Personal resume and curriculum vitae page for:
 
 Live website can be accessed at: https://araesmojo-eng.github.io/
 
+Changes (10/19/2025)
+
+- Added items (lantern, gloves, mallet, shovel, bug net, bombs, bottle, slingshot, bow, boomerang, arrows, slignshot ammo)
+- Added equipable storage (backpacks 1-5)
+- Added item equiping and using
+  - Item slots that appear with backpacks
+  - Picking up items and storing them
+  - Equiping and using an item
+- Added animated item cursors (above list)
+  - Basic cursor on equiping and using
+  - Cursor upgrades with ammo changes (slingshot and bow)
+  - Cursor change with activity (lantern, gloves)
+- Added item uses on webpage (general categories, lantern, bow and arrow)
+
+Still have a lot of item uses, interactions, and effects to go through before even implementing much that's really complicated.
+Currently just implementing test cases to make sure basic ideas are feasible using only CSS and no javascript.
+
 Completed areas include:
 
 ***[Resume](https://araesmojo-eng.github.io/index.html#section_resume):***
