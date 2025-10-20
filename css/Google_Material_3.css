@@ -2672,8 +2672,13 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
     fireWall2SegSpriteY 2.5s steps(2) 1s infinite;
 }
 
+.fire_src_1 { pointer-events: none; }
+.fire_src_2 { pointer-events: none; }
+.fire_src_2 a:link { pointer-events: auto; }
+
 body:has( #item_use_1:checked ):has( .item_chc_1_chk:checked ) .fire_src { pointer-events: auto;  }
-body:has( #item_use_1:checked ):has( .item_chc_1_chk:checked ):has( #Lntrn_fire_chk_1:checked ) .fire_src { pointer-events: none;  }
+body:has( #item_use_1:checked ):has( .item_chc_1_chk:checked ):has( #Lntrn_fire_chk_1:checked ) .fire_src_1 { pointer-events: none;  }
+body:has( #item_use_1:checked ):has( .item_chc_1_chk:checked ):has( #Lntrn_fire_chk_2:checked ) .fire_src_2 { pointer-events: none;  }
 
 .fire_1 .fire_wall_seg { display: none }
 body:has( #Lntrn_fire_chk_1:checked ) .fire_1 .fire_wall_seg { display: inline-block; }
@@ -2703,13 +2708,29 @@ body:has( #item_use_1:checked ):has( .item_chc_1_chk:checked ) .Lntrn_dtct { dis
 .Lntrn_fnt:has( .Lntrn_dtct:hover ) div { color: var( --fnt-lgt-color ); }
 
 body:has( #Lntrn_fire_chk_2:checked ) .fire_txt {
-  background-image: url('../items/fire_wall.gif');
+  background-image: url('../items/fire_wall_h20px.gif');
 background-position: bottom;
   /* Crucial for masking */
   -webkit-background-clip: text; /* Clip background to text shape (for WebKit browsers) */
   background-clip: text; /* Standard property */
   -webkit-text-fill-color: transparent; /* Make text transparent (for WebKit browsers) */
   color: transparent; /* Standard property */
+  
+  /* Apply the animation */
+  animation-name: background-pan;
+  animation-duration: 64s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Keyframes for the background movement */
+@keyframes background-pan {
+  from {
+    background-position: 0% bottom;
+  }
+  to {
+    background-position: 100% bottom;
+  }
 }
 
 body:has( .item_lctn_1_chk:checked ) {   
