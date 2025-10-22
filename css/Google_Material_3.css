@@ -2003,10 +2003,21 @@ body:has( #item_chc_3:checked ) .item_chc_3 { background-image: linear-gradient(
 body:has( #item_chc_2:checked ) .item_chc_2 { background-image: linear-gradient(45deg, orange, red); }
 body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(45deg, orange, red); }
 
+.webpage_tests_menu {
+  position: relative;
+}
+
+.prj_spcr {
+  width: 50px;
+  height: 10px;
+  display: inline-block;
+}
+
 .projectile_aim {
   position: relative;
   width: 50px;
   height: 50px;
+  display: inline-block;
   --arrow_m: 0px;
   --arrow_n: 0px;
   --pull_len: 0px;
@@ -2050,6 +2061,11 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
   top: 48px;
   display: none;
   z-index: 2;
+}
+
+.projectile_field {
+  display: none;
+  position: absolute;
 }
 
 .projectile_aim:has( .rd_prj_opn:checked ) .aim_cntnr {
@@ -2230,11 +2246,6 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
    "offset-path": path('M##,### L###,## L###,### Z'); is another possibility using SVG path syntax
 */
 
-.projectile_field {
-  display: none;
-  position: absolute;
-}
-
 /* width and height for the prj fields are probably going to need to be property variables --width_fld_1, ect...
    Otherwise, there's still no way to actually sample the actual current width, height
    There's not really css for if width <= 0, height <= 0
@@ -2271,10 +2282,10 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
   --hit_para: calc( ( var(--dist_trg_para)/sqrt( 1 + var(--dist_trg_para) * var(--dist_trg_para) ) + 1 )/2 );
   --hit_perp: calc( ( var(--dist_trg_perp)/sqrt( 1 + var(--dist_trg_perp) * var(--dist_trg_perp) ) + 1 )/2 );
   --hit_trg: calc( var(--hit_para) + var(--hit_perp) );
-  width:  var( --width_fld_1_w_arw );
-  height: var( --height_fld_1_w_arw );
   right: calc( 548px - 100vw );
   top: -150px;
+  width:  var( --width_fld_1_w_arw );
+  height: var( --height_fld_1_w_arw );
 }
 
 
@@ -2299,10 +2310,10 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
   --hit_para: calc( ( var(--dist_trg_para)/sqrt( 1 + var(--dist_trg_para) * var(--dist_trg_para) ) + 1 )/2 );
   --hit_perp: calc( ( var(--dist_trg_perp)/sqrt( 1 + var(--dist_trg_perp) * var(--dist_trg_perp) ) + 1 )/2 );
   --hit_trg: calc( var(--hit_para) + var(--hit_perp) );
-  width:  var( --width_fld_2_w_arw );
-  height: var( --height_fld_2_w_arw );
   right: -100px;
   top: -450px;
+  width:  var( --width_fld_2_w_arw );
+  height: var( --height_fld_2_w_arw );
 }
 
 @property --width_fld_3 {
@@ -2332,10 +2343,10 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
   --hit_para: calc( ( var(--dist_trg_para)/sqrt( 1 + var(--dist_trg_para) * var(--dist_trg_para) ) + 1 )/2 );
   --hit_perp: calc( ( var(--dist_trg_perp)/sqrt( 1 + var(--dist_trg_perp) * var(--dist_trg_perp) ) + 1 )/2 );
   --hit_trg: calc( var(--hit_para) + var(--hit_perp) );
-  width:  var( --width_fld_3_w_arw );
-  height: var( --height_fld_3_w_arw );
   right: -35vw;
   top: -250px;
+  width:  var( --width_fld_3_w_arw );
+  height: var( --height_fld_3_w_arw );
 }
 
 .projectile_trg {
@@ -2675,10 +2686,13 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
 .fire_src_1 { pointer-events: none; }
 .fire_src_2 { pointer-events: none; }
 .fire_src_2 a:link { pointer-events: auto; }
+.fire_src_3 { pointer-events: none; }
+.fire_src_3 a:link { pointer-events: auto; }
 
 body:has( #item_use_1:checked ):has( .item_chc_1_chk:checked ) .fire_src { pointer-events: auto;  }
 body:has( #item_use_1:checked ):has( .item_chc_1_chk:checked ):has( #Lntrn_fire_chk_1:checked ) .fire_src_1 { pointer-events: none;  }
 body:has( #item_use_1:checked ):has( .item_chc_1_chk:checked ):has( #Lntrn_fire_chk_2:checked ) .fire_src_2 { pointer-events: none;  }
+body:has( #item_use_1:checked ):has( .item_chc_1_chk:checked ):has( #Lntrn_fire_chk_3:checked ) .fire_src_3 { pointer-events: none;  }
 
 .fire_1 .fire_wall_seg { display: none }
 body:has( #Lntrn_fire_chk_1:checked ) .fire_1 .fire_wall_seg { display: inline-block; }
@@ -2699,7 +2713,8 @@ body:has( #Lntrn_fire_chk_1:checked ) .fire_1 img { display: none; }
   height: calc( 54px );
   opacity: 0;
   display: none;
-  pointer-events: auto; 
+  pointer-events: auto;
+  z-index: 0;
 }
 
 body:has( #item_use_1:checked ):has( .item_chc_1_chk:checked ) .Lntrn_fnt { user-select: auto; }
@@ -2707,7 +2722,7 @@ body:has( #item_use_1:checked ):has( .item_chc_1_chk:checked ) .Lntrn_dtct { dis
 
 .Lntrn_fnt:has( .Lntrn_dtct:hover ) div { color: var( --fnt-lgt-color ); }
 
-body:has( #Lntrn_fire_chk_2:checked ) .fire_txt {
+.fire_txt:has( input:checked ) {
   background-image: url('../items/fire_wall_h20px.gif');
 background-position: bottom;
   /* Crucial for masking */
@@ -2732,6 +2747,195 @@ background-position: bottom;
     background-position: 100% bottom;
   }
 }
+
+.fire_torch {
+  position: relative;
+  height: 24px;
+  display: inline-block;
+}
+
+.torch1 { width: 10px; }
+.torch2 { width: 24px; }
+.torch3 { width: 25px; }
+.torch4 { width: 15px; }
+.torch5 { width: 21px; }
+.torch6 { width: 26px; }
+.torch7 { width: 32px; }
+.torch8 { width: 16px; }
+
+.fire_torch1 {
+  position: absolute;
+  left: 0px;
+  top: -19px;
+}
+
+.fire_torch2 {
+  position: absolute;
+  left: 0px;
+  top: -17px;
+}
+
+.fire_torch3 {
+  position: absolute;
+  left: 0px;
+  top: -26px;
+}
+
+.fire_torch4 {
+  position: absolute;
+  left: 0px;
+  top: -12px;
+}
+
+.fire_torch5 {
+  position: absolute;
+  left: 0px;
+  top: -15px;
+}
+
+.fire_torch6 {
+  position: absolute;
+  left: 0px;
+  top: -20px;
+}
+
+.fire_torch7 {
+  position: absolute;
+  left: 0px;
+  top: -35px;
+}
+
+.fire_torch8 {
+  position: absolute;
+  left: 0px;
+  top: -15px;
+}
+
+.fire_torch1.trch_sprt {
+  width: 10px;
+  height: 50px;
+  background-image: url('../items/fire_torch1_sprite.png');
+  background-position: 0px 0px;
+  animation: fireTorch1Sprite 0.35s steps(3) infinite; /* 3 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireTorch1Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -30px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_torch2.trch_sprt {
+  position: absolute;
+  width: 24px;
+  height: 53px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url('../items/fire_torch2_sprite.png');
+  background-position: 0px 0px;
+  background-size: 120px 265px; /* 5 columns * 24px, 5 rows * 53px */
+  animation:
+        fireTorch2SpriteX 0.55s steps(5) infinite, /* 1 second to complete one row */
+        fireTorch2SpriteY 2.75s steps(5) infinite;
+  display: none;
+}
+
+@keyframes fireTorch2SpriteX {
+    from { background-position-x: 0; }
+    to { background-position-x: -120px; } /* 5 columns * 24px */
+}
+
+@keyframes fireTorch2SpriteY {
+    from { background-position-y: 0; }
+    to { background-position-y: -265px; } /* 5 rows * 53px */
+}
+
+.fire_torch3.trch_sprt {
+  width: 25px;
+  height: 58px;
+  background-image: url('../items/fire_torch3_sprite.png');
+  background-position: 0px 0px;
+  animation: fireTorch3Sprite 0.7s steps(6) infinite; /* 6 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireTorch3Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -150px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_torch4.trch_sprt {
+  width: 15px;
+  height: 44px;
+  background-image: url('../items/fire_torch4_sprite.png');
+  background-position: 0px 0px;
+  animation: fireTorch4Sprite 0.45s steps(4) infinite; /* 4 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireTorch4Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -60px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_torch5.trch_sprt {
+  width: 21px;
+  height: 46px;
+  background-image: url('../items/fire_torch5_sprite.png');
+  background-position: 0px 0px;
+  animation: fireTorch5Sprite 0.45s steps(4) infinite; /* 4 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireTorch5Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -84px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_torch6.trch_sprt {
+  width: 26px;
+  height: 52px;
+  background-image: url('../items/fire_torch6_sprite.png');
+  background-position: 0px 0px;
+  animation: fireTorch6Sprite 1s steps(9) infinite; /* 9 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireTorch6Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -234px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_torch7.trch_sprt {
+  width: 32px;
+  height: 69px;
+  background-image: url('../items/fire_torch7_sprite.png');
+  background-position: 0px 0px;
+  animation: fireTorch7Sprite 1.1s steps(10) infinite; /* 10 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireTorch7Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -320px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_torch8.trch_sprt {
+  width: 16px;
+  height: 49px;
+  background-image: url('../items/fire_torch8_sprite.png');
+  background-position: 0px 0px;
+  animation: fireTorch8Sprite 0.85s steps(8) infinite; /* 8 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireTorch8Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -128px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_torch:has( input:checked ) .trch_drk { display: none; }
+.fire_torch:has( input:checked ) .trch_sprt { display: inline-block; }
 
 body:has( .item_lctn_1_chk:checked ) {   
   --item_chc_1_checked: 1;
