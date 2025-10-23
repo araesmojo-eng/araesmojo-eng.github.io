@@ -2754,6 +2754,12 @@ background-position: bottom;
   display: inline-block;
 }
 
+.fire_brazier {
+  position: relative;
+  height: 24px;
+  display: inline-block;
+}
+
 .torch1 { width: 10px; }
 .torch2 { width: 24px; }
 .torch3 { width: 25px; }
@@ -2762,6 +2768,18 @@ background-position: bottom;
 .torch6 { width: 26px; }
 .torch7 { width: 32px; }
 .torch8 { width: 16px; }
+.torch9 { width: 20px; }
+
+.brazier1 { width: 38px; }
+.brazier2 { width: 34px; }
+.brazier3 { width: 55px; }
+.brazier4 { width: 32px; }
+.brazier5 { width: 15px; }
+.brazier6 { width: 23px; }
+.brazier7 { width: 21px; }
+.brazier8 { width: 17px; }
+.brazier9 { width: 23px; }
+.brazier10 { width: 43px; }
 
 .fire_torch1 {
   position: absolute;
@@ -2809,6 +2827,72 @@ background-position: bottom;
   position: absolute;
   left: 0px;
   top: -15px;
+}
+
+.fire_torch9 {
+  position: absolute;
+  left: 0px;
+  top: -17px;
+}
+
+.fire_brazier1 {
+  position: absolute;
+  left: 0px;
+  top: -30px;
+}
+
+.fire_brazier2 {
+  position: absolute;
+  left: 0px;
+  top: -36px;
+}
+
+.fire_brazier3 {
+  position: absolute;
+  left: 0px;
+  top: -23px;
+}
+
+.fire_brazier4 {
+  position: absolute;
+  left: 0px;
+  top: -31px;
+}
+
+.fire_brazier5 {
+  position: absolute;
+  left: 0px;
+  top: -23px;
+}
+
+.fire_brazier6 {
+  position: absolute;
+  left: 0px;
+  top: -7px;
+}
+
+.fire_brazier7 {
+  position: absolute;
+  left: 0px;
+  top: -19px;
+}
+
+.fire_brazier8 {
+  position: absolute;
+  left: 0px;
+  top: -15px;
+}
+
+.fire_brazier9 {
+  position: absolute;
+  left: 0px;
+  top: -19px;
+}
+
+.fire_brazier10 {
+  position: absolute;
+  left: 0px;
+  top: -14px;
 }
 
 .fire_torch1.trch_sprt {
@@ -2934,8 +3018,175 @@ background-position: bottom;
   to { background-position: -128px 0px; /* (frame_width * number_of_frames) */ }
 }
 
+.fire_torch9.trch_sprt {
+  position: absolute;
+  width: 20px;
+  height: 54px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url('../items/fire_torch9_sprite.png');
+  background-position: 0px 0px;
+  background-size: 160px 216px; /* 8 columns * 20px, 4 rows * 54px */
+  animation:
+        fireTorch9SpriteX 0.85s steps(8) infinite, /* 1 second to complete one row */
+        fireTorch9SpriteY 3.40s steps(4) infinite;
+  display: none;
+}
+
+@keyframes fireTorch9SpriteX {
+    from { background-position-x: 0; }
+    to { background-position-x: -160px; } /* 8 columns * 20px */
+}
+
+@keyframes fireTorch9SpriteY {
+    from { background-position-y: 0; }
+    to { background-position-y: -216px; } /* 4 rows * 54px */
+}
+
+.fire_brazier1.brzr_sprt {
+  width: 38px;
+  height: 54px;
+  background-image: url('../items/fire_brazier1_sprite.png');
+  background-position: 0px 0px;
+  animation: fireBrazier1Sprite 0.85s steps(8) infinite; /* 8 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireBrazier1Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -304px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_brazier2.brzr_sprt {
+  width: 34px;
+  height: 61px;
+  background-image: url('../items/fire_brazier2_sprite.png');
+  background-position: 0px 0px;
+  animation: fireBrazier2Sprite 1.1s steps(10) infinite; /* 8 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireBrazier2Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -340px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_brazier3.brzr_sprt {
+  width: 55px;
+  height: 47px;
+  background-image: url('../items/fire_brazier3_sprite.png');
+  background-position: 0px 0px;
+  animation: fireBrazier3Sprite 0.45s steps(4) infinite; /* 4 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireBrazier3Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -220px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_brazier4.brzr_sprt {
+  width: 32px;
+  height: 55px;
+  background-image: url('../items/fire_brazier4_sprite.png');
+  background-position: 0px 0px;
+  animation: fireBrazier4Sprite 0.7s steps(6) infinite; /* 6 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireBrazier4Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -192px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_brazier5.brzr_sprt {
+  width: 15px;
+  height: 47px;
+  background-image: url('../items/fire_brazier5_sprite.png');
+  background-position: 0px 0px;
+  animation: fireBrazier5Sprite 0.55s steps(5) infinite; /* 5 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireBrazier5Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -75px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_brazier6.brzr_sprt {
+  width: 23px;
+  height: 31px;
+  background-image: url('../items/fire_brazier6_sprite.png');
+  background-position: 0px 0px;
+  animation: fireBrazier6Sprite 0.7s steps(6) infinite; /* 6 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireBrazier6Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -138px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_brazier7.brzr_sprt {
+  width: 21px;
+  height: 43px;
+  background-image: url('../items/fire_brazier7_sprite.png');
+  background-position: 0px 0px;
+  animation: fireBrazier7Sprite 1.55s steps(13) infinite; /* 6 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireBrazier7Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -273px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_brazier8.brzr_sprt {
+  width: 17px;
+  height: 39px;
+  background-image: url('../items/fire_brazier8_sprite.png');
+  background-position: 0px 0px;
+  animation: fireBrazier8Sprite 0.45s steps(4) infinite; /* 4 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireBrazier8Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -68px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_brazier9.brzr_sprt {
+  width: 23px;
+  height: 43px;
+  background-image: url('../items/fire_brazier9_sprite.png');
+  background-position: 0px 0px;
+  animation: fireBrazier9Sprite 0.85s steps(8) infinite; /* 8 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireBrazier9Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -184px 0px; /* (frame_width * number_of_frames) */ }
+}
+
+.fire_brazier10.brzr_sprt {
+  width: 43px;
+  height: 38px;
+  background-image: url('../items/fire_brazier10_sprite.png');
+  background-position: 0px 0px;
+  animation: fireBrazier10Sprite 0.85s steps(8) infinite; /* 8 frames in the sprite */
+  display: none;
+}
+
+@keyframes fireBrazier10Sprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -344px 0px; /* (frame_width * number_of_frames) */ }
+}
+
 .fire_torch:has( input:checked ) .trch_drk { display: none; }
 .fire_torch:has( input:checked ) .trch_sprt { display: inline-block; }
+.fire_brazier:has( input:checked ) .brzr_drk { display: none; }
+.fire_brazier:has( input:checked ) .brzr_sprt { display: inline-block; }
 
 body:has( .item_lctn_1_chk:checked ) {   
   --item_chc_1_checked: 1;
