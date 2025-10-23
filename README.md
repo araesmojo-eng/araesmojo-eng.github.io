@@ -19,6 +19,8 @@ Bunch of change to support mini-games on the webpage with a style like the old 8
   - Cursor upgrades with ammo changes (slingshot and bow)
   - Cursor change with activity (lantern, gloves)
 - Added item uses on webpage (general categories, lantern, bow and arrow)
+  - Lantern: burnable text, fuel that ligths on fire, interactive torches, interactive braziers
+  - Bow/Arrow: Archery field with targets that can be shot to reveal items
 
 Still have a lot of item uses, interactions, and effects to go through before even implementing much that's really complicated.
 Currently just implementing test cases to make sure basic ideas are feasible using only CSS and no javascript.
