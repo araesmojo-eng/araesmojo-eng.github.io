@@ -27,8 +27,9 @@ Bunch of change to support mini-games on the webpage with a style like the old 8
   - Gauntlet: pushable blocks( multi-step variety, and single click variety), liftable and placeable blocks
     - <img src="items/block_pushable.png">, <img src="items/block_liftable.png">
   - Mallet: breakable rocks, obstruction posts that can be hit into the ground
-    - <img src="items/rock_break.gif">, <img src="items/wooden_post_mallet_3_3.png">
+    - <img src="items/rock_break.gif">, <img src="items/wooden_post_mallet_3_3_hit.gif">
   - Bow/Arrow: Archery field with targets that can be shot to reveal items
+    - <img src="items/chest.gif">
 
 Still have a lot of item uses, interactions, and effects to go through before even implementing much that's really complicated.
 Currently just implementing test cases to make sure basic ideas are feasible using only CSS and no javascript.
