@@ -9,7 +9,7 @@ Changes (10/19/2025)
 Bunch of change to support mini-games on the webpage with a style like the old 8-bit and 16-bit Zelda games with items that can be picked up and then interacted with on the webpage.
 
 - Added items (lantern, gloves, mallet, shovel, bug net, bombs, bottle, slingshot, bow, boomerang, arrows, slignshot ammo)
-  [<img src="items/item_lantern2_icn.png">]
+  - <img src="items/item_lantern2_icn.png">, <img src="items/item_glove2_icn.png">, <img src="items/item_mallet_icn.png">, <img src="items/item_shovel_icn.png">, <img src="items/item_bug_net_icn.png">, <img src="items/item_bomb_icn.png">, <img src="items/item_bottle_icn.png">, <img src="items/item_slingshot_icn.png">, <img src="items/item_bow_icn.png">, <img src="items/item_boomerang_icn.png">, <img src="items/item_arrow_quiver_icn.png">, <img src="items/item_arrow_quiver_fire_icn.png">, <img src="items/item_arrow_quiver_lightning_icn.png">, <img src="items/item_seed_deku_bag_icn.png">, <img src="items/item_seed_gale_bag_icn.png">, <img src="items/item_seed_ember_bag_icn.png">, <img src="items/item_ice_cube_bag_icn.png">
 - Added equipable storage (backpacks 1-5)
 - Added item equiping and using
   - Item slots that appear with backpacks
