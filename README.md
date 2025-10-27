@@ -22,6 +22,8 @@ Bunch of change to support mini-games on the webpage with a style like the old 8
   - Cursor change with activity (lantern, gloves)
 - Added item uses on webpage (general categories, lantern, bow and arrow)
   - Lantern: burnable text, fuel that ligths on fire, interactive torches, interactive braziers
+    - <img src="items/fire_torch1.gif">, <img src="items/fire_torch2.gif">, <img src="items/fire_torch3.gif">, <img src="items/fire_torch4.gif">, <img src="items/fire_torch5.gif">, <img src="items/fire_torch6.gif">, <img src="items/fire_torch7.gif">, <img src="items/fire_torch8.gif">, <img src="items/fire_torch9.gif">
+    - <img src="items/fire_brazier1.gif">, <img src="items/fire_brazier2.gif">, <img src="items/fire_brazier3.gif">, <img src="items/fire_brazier4.gif">, <img src="items/fire_brazier5.gif">, <img src="items/fire_brazier6.gif">, <img src="items/fire_brazier7.gif">, <img src="items/fire_brazier8.gif">, <img src="items/fire_brazier9.gif">, <img src="items/fire_brazier10.gif">
   - Gauntlet: pushable blocks( multi-step variety, and single click variety), liftable and placeable blocks
   - Mallet: breakable rocks, obstruction posts that can be hit into the ground
   - Bow/Arrow: Archery field with targets that can be shot to reveal items
