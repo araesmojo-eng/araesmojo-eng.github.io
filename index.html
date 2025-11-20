@@ -1726,6 +1726,15 @@
                     <img src="items/Color_Multiply_Cursor_Attempt_3.png">
                   </div>
                   <div id="anim_var_test"></div>
+                  <div class="hover_cyclic_var_test"></div>
+                  <div class="indexed_array_test">
+                    <input type="radio" id="sld_rd_00" name="indexed_array" value="00" class="sld_rd_00" checked>
+                    <input type="radio" id="sld_rd_01" name="indexed_array" value="01" class="sld_rd_01">
+                    <input type="radio" id="sld_rd_02" name="indexed_array" value="02" class="sld_rd_02">
+                    <input type="radio" id="sld_rd_03" name="indexed_array" value="03" class="sld_rd_03">
+                    <input type="radio" id="sld_rd_04" name="indexed_array" value="04" class="sld_rd_04"><br>
+                    <div class="play_pause_test"></div>
+                  </div>
                 </details>
                 <details name="lantern_tests_menu">
                   <summary>Lantern Tests Menu</summary>
@@ -3603,6 +3612,240 @@
                     </div>
                     <img class="proj_arrow" src="items/item_arrow_icn.png">
                   </label>
+                </details>
+                <details name="boomerang_tests_menu">
+                  <summary>Boomerang Tests Menu</summary>
+                  <div class="bmrng_cntnr">
+                    <input type="radio" id="bmrg_opn"   name="bmrg_opn_cls" class="bmrg_opn_rd radio_sngl_chc_hide">
+                    <input type="radio" id="bmrg_close" name="bmrg_opn_cls" class="bmrg_cls_rd radio_sngl_chc_hide" checked>
+                    <label for="bmrg_opn" class="bmrg_open">
+                      <div class="material-symbols-rounded clsl rtn_330">brightness_3</div>
+                    </label>
+                    <div class="bmrg_aim_cntnr">
+                      <label for="bmrg_close" class="bmrg_close">
+                        <span class="material-symbols-rounded ggtn">grid_off</span>
+                      </label>
+                      <div class="bmrg_throw_reset">
+                        <input type="radio" id="bmrg_throw"  name="bmrg_throw_reset" class="bmrg_throw_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_reset"  name="bmrg_throw_reset" class="bmrg_reset_rd radio_sngl_chc_hide" checked>
+                        <input type="checkbox" id="bmrg_pause"  name="bmrg_throw_pause" class="bmrg_pause_rd radio_sngl_chc_hide">
+                        <label for="bmrg_throw"><span class="bmrg_throw_slct material-symbols-rounded ggtn">web_traffic</span></label>
+                        <label for="bmrg_reset"><span class="bmrg_reset_slct material-symbols-rounded ggtn">refresh</span></label>
+                        <label for="bmrg_pause" class="bmrg_pause">
+                          <span class="bmrg_pause_pause material-symbols-rounded ggtn">pause</span>
+                          <span class="bmrg_pause_play material-symbols-rounded ggtn">play_arrow</span>
+                        </label>
+                      </div>
+                      <div class="bmrg_throw_lctn_pad">
+                        <input type="radio" id="bmrg_throw_lctn_m_1"  name="bmrg_throw_lctn_m" class="bmrg_throw_m_1_rd radio_sngl_chc_hide" checked>
+                        <input type="radio" id="bmrg_throw_lctn_m_2"  name="bmrg_throw_lctn_m" class="bmrg_throw_m_2_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_m_3"  name="bmrg_throw_lctn_m" class="bmrg_throw_m_3_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_m_4"  name="bmrg_throw_lctn_m" class="bmrg_throw_m_4_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_m_5"  name="bmrg_throw_lctn_m" class="bmrg_throw_m_5_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_m_6"  name="bmrg_throw_lctn_m" class="bmrg_throw_m_6_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_m_7"  name="bmrg_throw_lctn_m" class="bmrg_throw_m_7_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_m_8"  name="bmrg_throw_lctn_m" class="bmrg_throw_m_8_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_m_9"  name="bmrg_throw_lctn_m" class="bmrg_throw_m_9_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_m_10" name="bmrg_throw_lctn_m" class="bmrg_throw_m_10_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_n_1"  name="bmrg_throw_lctn_n" class="bmrg_throw_n_1_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_n_2"  name="bmrg_throw_lctn_n" class="bmrg_throw_n_2_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_n_3"  name="bmrg_throw_lctn_n" class="bmrg_throw_n_3_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_n_4"  name="bmrg_throw_lctn_n" class="bmrg_throw_n_4_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_n_5"  name="bmrg_throw_lctn_n" class="bmrg_throw_n_5_rd radio_sngl_chc_hide" checked>
+                        <input type="radio" id="bmrg_throw_lctn_n_6"  name="bmrg_throw_lctn_n" class="bmrg_throw_n_6_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_n_7"  name="bmrg_throw_lctn_n" class="bmrg_throw_n_7_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_n_8"  name="bmrg_throw_lctn_n" class="bmrg_throw_n_8_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_n_9"  name="bmrg_throw_lctn_n" class="bmrg_throw_n_9_rd radio_sngl_chc_hide">
+                        <input type="radio" id="bmrg_throw_lctn_n_10" name="bmrg_throw_lctn_n" class="bmrg_throw_n_10_rd radio_sngl_chc_hide">
+                        <label for="bmrg_throw_lctn_m_1"  class="bmrg_throw_lctn_L bmrg_lctn_mL_1"><span class="material-symbols-rounded hge">arrow_back</span></label>
+                        <label for="bmrg_throw_lctn_m_2"  class="bmrg_throw_lctn_L bmrg_lctn_mL_2"><span class="material-symbols-rounded hge">arrow_back</span></label>
+                        <label for="bmrg_throw_lctn_m_3"  class="bmrg_throw_lctn_L bmrg_lctn_mL_3"><span class="material-symbols-rounded hge">arrow_back</span></label>
+                        <label for="bmrg_throw_lctn_m_4"  class="bmrg_throw_lctn_L bmrg_lctn_mL_4"><span class="material-symbols-rounded hge">arrow_back</span></label>
+                        <label for="bmrg_throw_lctn_m_5"  class="bmrg_throw_lctn_L bmrg_lctn_mL_5"><span class="material-symbols-rounded hge">arrow_back</span></label>
+                        <label for="bmrg_throw_lctn_m_6"  class="bmrg_throw_lctn_L bmrg_lctn_mL_6"><span class="material-symbols-rounded hge">arrow_back</span></label>
+                        <label for="bmrg_throw_lctn_m_7"  class="bmrg_throw_lctn_L bmrg_lctn_mL_7"><span class="material-symbols-rounded hge">arrow_back</span></label>
+                        <label for="bmrg_throw_lctn_m_8"  class="bmrg_throw_lctn_L bmrg_lctn_mL_8"><span class="material-symbols-rounded hge">arrow_back</span></label>
+                        <label for="bmrg_throw_lctn_m_9"  class="bmrg_throw_lctn_L bmrg_lctn_mL_9"><span class="material-symbols-rounded hge">arrow_back</span></label>
+                        <label for="bmrg_throw_lctn_m_2"  class="bmrg_throw_lctn_R bmrg_lctn_mR_2"><span class="material-symbols-rounded hge">arrow_forward</span></label>
+                        <label for="bmrg_throw_lctn_m_3"  class="bmrg_throw_lctn_R bmrg_lctn_mR_3"><span class="material-symbols-rounded hge">arrow_forward</span></label>
+                        <label for="bmrg_throw_lctn_m_4"  class="bmrg_throw_lctn_R bmrg_lctn_mR_4"><span class="material-symbols-rounded hge">arrow_forward</span></label>
+                        <label for="bmrg_throw_lctn_m_5"  class="bmrg_throw_lctn_R bmrg_lctn_mR_5"><span class="material-symbols-rounded hge">arrow_forward</span></label>
+                        <label for="bmrg_throw_lctn_m_6"  class="bmrg_throw_lctn_R bmrg_lctn_mR_6"><span class="material-symbols-rounded hge">arrow_forward</span></label>
+                        <label for="bmrg_throw_lctn_m_7"  class="bmrg_throw_lctn_R bmrg_lctn_mR_7"><span class="material-symbols-rounded hge">arrow_forward</span></label>
+                        <label for="bmrg_throw_lctn_m_8"  class="bmrg_throw_lctn_R bmrg_lctn_mR_8"><span class="material-symbols-rounded hge">arrow_forward</span></label>
+                        <label for="bmrg_throw_lctn_m_9"  class="bmrg_throw_lctn_R bmrg_lctn_mR_9"><span class="material-symbols-rounded hge">arrow_forward</span></label>
+                        <label for="bmrg_throw_lctn_m_10" class="bmrg_throw_lctn_R bmrg_lctn_mR_10"><span class="material-symbols-rounded hge">arrow_forward</span></label>
+                        <label for="bmrg_throw_lctn_n_1"  class="bmrg_throw_lctn_U bmrg_lctn_mU_1"><span class="material-symbols-rounded hge">arrow_upward</span></label>
+                        <label for="bmrg_throw_lctn_n_2"  class="bmrg_throw_lctn_U bmrg_lctn_mU_2"><span class="material-symbols-rounded hge">arrow_upward</span></label>
+                        <label for="bmrg_throw_lctn_n_3"  class="bmrg_throw_lctn_U bmrg_lctn_mU_3"><span class="material-symbols-rounded hge">arrow_upward</span></label>
+                        <label for="bmrg_throw_lctn_n_4"  class="bmrg_throw_lctn_U bmrg_lctn_mU_4"><span class="material-symbols-rounded hge">arrow_upward</span></label>
+                        <label for="bmrg_throw_lctn_n_5"  class="bmrg_throw_lctn_U bmrg_lctn_mU_5"><span class="material-symbols-rounded hge">arrow_upward</span></label>
+                        <label for="bmrg_throw_lctn_n_6"  class="bmrg_throw_lctn_U bmrg_lctn_mU_6"><span class="material-symbols-rounded hge">arrow_upward</span></label>
+                        <label for="bmrg_throw_lctn_n_7"  class="bmrg_throw_lctn_U bmrg_lctn_mU_7"><span class="material-symbols-rounded hge">arrow_upward</span></label>
+                        <label for="bmrg_throw_lctn_n_8"  class="bmrg_throw_lctn_U bmrg_lctn_mU_8"><span class="material-symbols-rounded hge">arrow_upward</span></label>
+                        <label for="bmrg_throw_lctn_n_9"  class="bmrg_throw_lctn_U bmrg_lctn_mU_9"><span class="material-symbols-rounded hge">arrow_upward</span></label>
+                        <label for="bmrg_throw_lctn_n_2"  class="bmrg_throw_lctn_D bmrg_lctn_mD_2"><span class="material-symbols-rounded hge">arrow_downward</span></label>
+                        <label for="bmrg_throw_lctn_n_3"  class="bmrg_throw_lctn_D bmrg_lctn_mD_3"><span class="material-symbols-rounded hge">arrow_downward</span></label>
+                        <label for="bmrg_throw_lctn_n_4"  class="bmrg_throw_lctn_D bmrg_lctn_mD_4"><span class="material-symbols-rounded hge">arrow_downward</span></label>
+                        <label for="bmrg_throw_lctn_n_5"  class="bmrg_throw_lctn_D bmrg_lctn_mD_5"><span class="material-symbols-rounded hge">arrow_downward</span></label>
+                        <label for="bmrg_throw_lctn_n_6"  class="bmrg_throw_lctn_D bmrg_lctn_mD_6"><span class="material-symbols-rounded hge">arrow_downward</span></label>
+                        <label for="bmrg_throw_lctn_n_7"  class="bmrg_throw_lctn_D bmrg_lctn_mD_7"><span class="material-symbols-rounded hge">arrow_downward</span></label>
+                        <label for="bmrg_throw_lctn_n_8"  class="bmrg_throw_lctn_D bmrg_lctn_mD_8"><span class="material-symbols-rounded hge">arrow_downward</span></label>
+                        <label for="bmrg_throw_lctn_n_9"  class="bmrg_throw_lctn_D bmrg_lctn_mD_9"><span class="material-symbols-rounded hge">arrow_downward</span></label>
+                        <label for="bmrg_throw_lctn_n_10" class="bmrg_throw_lctn_D bmrg_lctn_mD_10"><span class="material-symbols-rounded hge">arrow_downward</span></label>
+                      </div>
+                      <div class="bmrg_st_lctn">
+                        <div class="bmrg_path">
+                        </div>
+                        <div class="boomerang">
+                          <div class="boomerang_img"></div>
+                        </div>
+                      </div>
+                      <div class="bmrg_fld bmrg_fld_1">
+                        <div class="projectile_trg"><span class="material-symbols-rounded clsl">target</span></div>
+                        <div class="projectile_rwd"></div>
+                      </div>
+                      <div class="bmrg_fld bmrg_fld_2">
+                        <div class="projectile_trg"><span class="material-symbols-rounded clsl">target</span></div>
+                        <div class="projectile_rwd"></div>
+                      </div>
+                      <div class="bmrg_fld bmrg_fld_3">
+                        <div class="projectile_trg"><span class="material-symbols-rounded clsl">target</span></div>
+                        <div class="projectile_rwd"></div>
+                      </div>
+                      <div class="bmrg_aim_lyr">
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_01_01" name="bmrg_1" class="col01 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_02_01" name="bmrg_1" class="col02 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_03_01" name="bmrg_1" class="col03 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_04_01" name="bmrg_1" class="col04 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_05_01" name="bmrg_1" class="col05 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_06_01" name="bmrg_1" class="col06 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_07_01" name="bmrg_1" class="col07 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_08_01" name="bmrg_1" class="col08 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_09_01" name="bmrg_1" class="col09 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_10_01" name="bmrg_1" class="col10 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_01_02" name="bmrg_1" class="col01 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_02_02" name="bmrg_1" class="col02 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_03_02" name="bmrg_1" class="col03 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_04_02" name="bmrg_1" class="col04 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_05_02" name="bmrg_1" class="col05 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_06_02" name="bmrg_1" class="col06 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_07_02" name="bmrg_1" class="col07 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_08_02" name="bmrg_1" class="col08 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_09_02" name="bmrg_1" class="col09 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_10_02" name="bmrg_1" class="col10 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_01_03" name="bmrg_1" class="col01 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_02_03" name="bmrg_1" class="col02 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_03_03" name="bmrg_1" class="col03 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_04_03" name="bmrg_1" class="col04 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_05_03" name="bmrg_1" class="col05 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_06_03" name="bmrg_1" class="col06 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_07_03" name="bmrg_1" class="col07 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_08_03" name="bmrg_1" class="col08 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_09_03" name="bmrg_1" class="col09 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_10_03" name="bmrg_1" class="col10 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_01_04" name="bmrg_1" class="col01 row04 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_02_04" name="bmrg_1" class="col02 row04 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_03_04" name="bmrg_1" class="col03 row04 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_04_04" name="bmrg_1" class="col04 row04 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_05_04" name="bmrg_1" class="col05 row04 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_06_04" name="bmrg_1" class="col06 row04 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_07_04" name="bmrg_1" class="col07 row04 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_08_04" name="bmrg_1" class="col08 row04 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_09_04" name="bmrg_1" class="col09 row04 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_10_04" name="bmrg_1" class="col10 row04 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_01_05" name="bmrg_1" class="col01 row05 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_02_05" name="bmrg_1" class="col02 row05 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_03_05" name="bmrg_1" class="col03 row05 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_04_05" name="bmrg_1" class="col04 row05 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_05_05" name="bmrg_1" class="col05 row05 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_06_05" name="bmrg_1" class="col06 row05 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_07_05" name="bmrg_1" class="col07 row05 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_08_05" name="bmrg_1" class="col08 row05 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_09_05" name="bmrg_1" class="col09 row05 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_10_05" name="bmrg_1" class="col10 row05 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_01_06" name="bmrg_1" class="col01 row06 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_02_06" name="bmrg_1" class="col02 row06 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_03_06" name="bmrg_1" class="col03 row06 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_04_06" name="bmrg_1" class="col04 row06 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_05_06" name="bmrg_1" class="col05 row06 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_06_06" name="bmrg_1" class="col06 row06 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_07_06" name="bmrg_1" class="col07 row06 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_08_06" name="bmrg_1" class="col08 row06 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_09_06" name="bmrg_1" class="col09 row06 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_10_06" name="bmrg_1" class="col10 row06 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_01_07" name="bmrg_1" class="col01 row07 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_02_07" name="bmrg_1" class="col02 row07 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_03_07" name="bmrg_1" class="col03 row07 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_04_07" name="bmrg_1" class="col04 row07 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_05_07" name="bmrg_1" class="col05 row07 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_06_07" name="bmrg_1" class="col06 row07 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_07_07" name="bmrg_1" class="col07 row07 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_08_07" name="bmrg_1" class="col08 row07 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_09_07" name="bmrg_1" class="col09 row07 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_10_07" name="bmrg_1" class="col10 row07 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_01_08" name="bmrg_1" class="col01 row08 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_02_08" name="bmrg_1" class="col02 row08 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_03_08" name="bmrg_1" class="col03 row08 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_04_08" name="bmrg_1" class="col04 row08 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_05_08" name="bmrg_1" class="col05 row08 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_06_08" name="bmrg_1" class="col06 row08 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_07_08" name="bmrg_1" class="col07 row08 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_08_08" name="bmrg_1" class="col08 row08 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_09_08" name="bmrg_1" class="col09 row08 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_10_08" name="bmrg_1" class="col10 row08 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_01_09" name="bmrg_1" class="col01 row09 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_02_09" name="bmrg_1" class="col02 row09 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_03_09" name="bmrg_1" class="col03 row09 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_04_09" name="bmrg_1" class="col04 row09 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_05_09" name="bmrg_1" class="col05 row09 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_06_09" name="bmrg_1" class="col06 row09 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_07_09" name="bmrg_1" class="col07 row09 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_08_09" name="bmrg_1" class="col08 row09 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_09_09" name="bmrg_1" class="col09 row09 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_10_09" name="bmrg_1" class="col10 row09 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_01_10" name="bmrg_1" class="col01 row10 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_02_10" name="bmrg_1" class="col02 row10 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_03_10" name="bmrg_1" class="col03 row10 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_04_10" name="bmrg_1" class="col04 row10 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_05_10" name="bmrg_1" class="col05 row10 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_06_10" name="bmrg_1" class="col06 row10 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_07_10" name="bmrg_1" class="col07 row10 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_08_10" name="bmrg_1" class="col08 row10 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_09_10" name="bmrg_1" class="col09 row10 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_aim_lctn"><input type="radio" id="bmrg_10_10" name="bmrg_1" class="col10 row10 radio_sngl_chc_hide"></label>
+                      </div>
+                      <div class="bmrg_crv_lyr">
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_01_01" name="bmrg_crv_1" class="col01 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_02_01" name="bmrg_crv_1" class="col02 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_03_01" name="bmrg_crv_1" class="col03 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_04_01" name="bmrg_crv_1" class="col04 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_05_01" name="bmrg_crv_1" class="col05 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_06_01" name="bmrg_crv_1" class="col06 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_07_01" name="bmrg_crv_1" class="col07 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_08_01" name="bmrg_crv_1" class="col08 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_09_01" name="bmrg_crv_1" class="col09 row01 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_01_02" name="bmrg_crv_1" class="col01 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_02_02" name="bmrg_crv_1" class="col02 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_03_02" name="bmrg_crv_1" class="col03 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_04_02" name="bmrg_crv_1" class="col04 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_05_02" name="bmrg_crv_1" class="col05 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_06_02" name="bmrg_crv_1" class="col06 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_07_02" name="bmrg_crv_1" class="col07 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_08_02" name="bmrg_crv_1" class="col08 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_09_02" name="bmrg_crv_1" class="col09 row02 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_01_03" name="bmrg_crv_1" class="col01 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_02_03" name="bmrg_crv_1" class="col02 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_03_03" name="bmrg_crv_1" class="col03 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_04_03" name="bmrg_crv_1" class="col04 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_05_03" name="bmrg_crv_1" class="col05 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_06_03" name="bmrg_crv_1" class="col06 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_07_03" name="bmrg_crv_1" class="col07 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_08_03" name="bmrg_crv_1" class="col08 row03 radio_sngl_chc_hide"></label>
+                        <label class="bmrg_crv_lctn"><input type="radio" id="bmrg_crv_09_03" name="bmrg_crv_1" class="col09 row03 radio_sngl_chc_hide"></label>
+                      </div>
+                    </div>
+                  </div>
                 </details>
               </div>
               
