@@ -2167,7 +2167,13 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
   --pull_width_rtn_1: 0deg;
   --pull_width_rtn_2: 0deg;
   --pull_width_rtn_3: 0deg;
+  pointer-events: none;
 }
+
+body:has( #item_use_9:checked  ):has( .item_chc_9_chk:checked  ) .projectile_aim { pointer-events: auto; }
+body:has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .projectile_aim { pointer-events: auto; }
+body:has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .projectile_aim { pointer-events: auto; }
+body:has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .projectile_aim { pointer-events: auto; }
 
 .aim_cntnr {
   position: absolute;
@@ -2188,6 +2194,7 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
   top: 0px;
   display: none;
   z-index: 2;
+  pointer-events: auto;
 }
 
 .projectile_fire_reset {
@@ -2218,9 +2225,13 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
   display: block;
 }
 
-.aim_layr1 { width: 100px; height: 100px; display: flex; flex-wrap: wrap; }
+.aim_layr1 { width: 100px; height: 100px; display: none; }
 .aim_layr2 { width:  50px; height:  50px; display: none; }
 .aim_layr3 { width:  25px; height:  25px; display: none; }
+
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .aim_layr1 { display: flex; flex-wrap: wrap; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .aim_layr1 { display: flex; flex-wrap: wrap; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .aim_layr1 { display: flex; flex-wrap: wrap; }
 
 .aim_layr1:hover { background: blue; opacity: 0.5; }
 .aim_layr2:hover { background: #009CFF; opacity: 0.5; }
@@ -2254,6 +2265,7 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
   will-change: transform;
   transform: translateZ(0);
   pointer-events: none;
+  display: none;
 }
 
 .pull_line_right {
@@ -2266,7 +2278,15 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
   will-change: transform;
   transform: translateZ(0);
   pointer-events: none;
+  display: none;
 }
+
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .pull_line_left { display: initial; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .pull_line_left { display: initial; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .pull_line_left { display: initial; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .pull_line_right { display: initial; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .pull_line_right { display: initial; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .pull_line_right { display: initial; }
 
 .pull_line_width_rtn {
   transform-origin: 100% 0;
@@ -2390,6 +2410,15 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
    Stacks of cos / sin may be a possibility.  Side to side especially may be acceptable.
    Cumulative distribution function style functions may also be a possiblity */
 
+.prj_fld_cntnr {
+  display: none;
+  pointer-events: none;
+}
+
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .prj_fld_cntnr { display: initial; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .prj_fld_cntnr { display: initial; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .prj_fld_cntnr { display: initial; }
+
 @property --width_fld_1 {
   syntax: '<length>';
   inherits: false;
@@ -2488,6 +2517,7 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
   position: absolute;
   top: 0px;
   right: 0px;
+  pointer-events: auto;
 }
 
 .projectile_rwd {
@@ -2498,6 +2528,7 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
   height: calc( 48px * ( 1 - var(--hit_trg) ) );
   background-image: url('../items/chest_anim_sng_img.png');
   background-position: 0px 0;
+  pointer-events: auto;
 }
 
 .projectile_rwd:hover {
@@ -2521,8 +2552,17 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
   display: none;
 }
 
-.projectile_aim:has( .rd_prj_opn:checked ):has( .rd_layr3:checked ) .proj_arrow {
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .projectile_aim:has( .rd_prj_opn:checked ):has( .rd_layr3:checked ) .proj_arrow {
   display: block;
+}
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .projectile_aim:has( .rd_prj_opn:checked ):has( .rd_layr3:checked ) .proj_arrow {
+  display: block;
+}
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .projectile_aim:has( .rd_prj_opn:checked ):has( .rd_layr3:checked ) .proj_arrow {
+  display: block;
+}
+
+.projectile_aim:has( .rd_prj_opn:checked ):has( .rd_layr3:checked ) .proj_arrow {
   transform: translate( var( --arrow_bit_m ), var( --arrow_bit_n ) ) rotate( calc( var( --pull_rtn ) + 180deg ) );
 }
 
@@ -2539,13 +2579,21 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
 }
 
 .prj_fire_slct  { display: none; }
-.prj_reset_slct { display: none; }
+.prj_reset_slct { display: none; pointer-events: auto; }
 
 .projectile_fire_reset:has( .rd_prj_fire:checked ) .prj_reset_slct {
   display: initial;
 }
 
-.projectile_fire_reset:has( .rd_prj_reset:checked ) .prj_fire_slct {
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .projectile_fire_reset:has( .rd_prj_reset:checked ) .prj_fire_slct {
+  display: initial;
+}
+
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .projectile_fire_reset:has( .rd_prj_reset:checked ) .prj_fire_slct {
+  display: initial;
+}
+
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .projectile_fire_reset:has( .rd_prj_reset:checked ) .prj_fire_slct {
   display: initial;
 }
 
@@ -4820,6 +4868,781 @@ body:has( #item_use_7:checked ):has( .item_chc_7_chk:checked ):has( #bottle_lqd_
   clip-path: polygon(26.1% 57.0%, 10.1% 56.2%, 6.2% 53.6%, 3.5% 51.4%, 8.4% 51.0%, 18.2% 46.7%, 29.6% 48.7%, 27.8% 49.3%, 25.8% 49.6%, 24.6% 49.9%, 29.1% 50.1%, 29.1% 51.5%, 22.1% 52.2%, 19.5% 53.0%, 27.5% 53.3%);
 }
 
+@property --crv_lyr_angle {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+
+.bmrng_cntnr {
+  position: relative;
+  --min_dist_trg1: 1000px;
+  --min_dist_trg2: 1000px;
+  --min_dist_trg3: 1000px;
+}
+
+.bmrg_open {
+  position: relative;
+  display: inline-block;
+  pointer-events: none;
+}
+
+body:has( #item_use_10:checked ):has( .item_chc_10_chk:checked ) .bmrg_open { pointer-events: auto; }
+
+.bmrg_close {
+  position: absolute;
+  left: 374px;
+  top: -48px;
+  display: none;
+  z-index: 2;
+}
+
+.bmrg_throw_reset {
+  position: absolute;
+  left: 374px;
+  top: 0px;
+  display: none;
+  z-index: 2;
+}
+
+.bmrg_throw_slct { display: inline-block; }
+.bmrg_reset_slct { display: none; }
+.bmrg_pause      { display: none; }
+.bmrg_pause_play { display: none; }
+
+.bmrg_aim_cntnr:has( .bmrg_throw_rd:checked ) .bmrg_pause { display: block; }
+.bmrg_aim_cntnr:has( .bmrg_pause_rd:checked ) .bmrg_pause_pause { display: none; }
+.bmrg_aim_cntnr:has( .bmrg_pause_rd:checked ) .bmrg_pause_play { display: block; }
+
+.bmrg_throw_lctn_pad {
+  position: absolute;
+  left: 460px;
+  top: 275px;
+  width: 72px;
+  height: 72px;
+  display: none;
+  z-index: 2;
+}
+
+.bmrg_throw_lctn_L { position: absolute; left:  0px; top:   24px; display: none; }
+.bmrg_throw_lctn_R { position: absolute; right: 0px; top:   24px; display: none; }
+.bmrg_throw_lctn_U { position: absolute; left: 24px; top:    0px; display: none; }
+.bmrg_throw_lctn_D { position: absolute; left: 24px; bottom: 0px; display: none; }
+
+.bmrng_cntnr:has( .bmrg_opn_rd:checked ) .bmrg_aim_cntnr      { display: block; }
+.bmrng_cntnr:has( .bmrg_opn_rd:checked ) .bmrg_close          { display: block; }
+.bmrng_cntnr:has( .bmrg_opn_rd:checked ) .bmrg_throw_reset    { display: block; }
+body:has( #item_use_10:checked ):has( .item_chc_10_chk:checked ) .bmrng_cntnr:has( .bmrg_opn_rd:checked ) .bmrg_throw_lctn_pad { display: block; }
+
+.bmrng_cntnr:has( .bmrg_throw_m_1_rd:checked ) .bmrg_lctn_mR_2 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_2_rd:checked ) .bmrg_lctn_mL_1 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_2_rd:checked ) .bmrg_lctn_mR_3 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_3_rd:checked ) .bmrg_lctn_mL_2 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_3_rd:checked ) .bmrg_lctn_mR_4 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_4_rd:checked ) .bmrg_lctn_mL_3 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_4_rd:checked ) .bmrg_lctn_mR_5 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_5_rd:checked ) .bmrg_lctn_mL_4 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_5_rd:checked ) .bmrg_lctn_mR_6 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_6_rd:checked ) .bmrg_lctn_mL_5 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_6_rd:checked ) .bmrg_lctn_mR_7 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_7_rd:checked ) .bmrg_lctn_mL_6 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_7_rd:checked ) .bmrg_lctn_mR_8 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_8_rd:checked ) .bmrg_lctn_mL_7 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_8_rd:checked ) .bmrg_lctn_mR_9 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_9_rd:checked ) .bmrg_lctn_mL_8 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_9_rd:checked ) .bmrg_lctn_mR_10 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_m_10_rd:checked ) .bmrg_lctn_mL_9 { display: block; }
+
+.bmrng_cntnr:has( .bmrg_throw_n_1_rd:checked ) .bmrg_lctn_mD_2 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_2_rd:checked ) .bmrg_lctn_mU_1 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_2_rd:checked ) .bmrg_lctn_mD_3 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_3_rd:checked ) .bmrg_lctn_mU_2 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_3_rd:checked ) .bmrg_lctn_mD_4 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_4_rd:checked ) .bmrg_lctn_mU_3 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_4_rd:checked ) .bmrg_lctn_mD_5 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_5_rd:checked ) .bmrg_lctn_mU_4 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_5_rd:checked ) .bmrg_lctn_mD_6 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_6_rd:checked ) .bmrg_lctn_mU_5 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_6_rd:checked ) .bmrg_lctn_mD_7 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_7_rd:checked ) .bmrg_lctn_mU_6 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_7_rd:checked ) .bmrg_lctn_mD_8 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_8_rd:checked ) .bmrg_lctn_mU_7 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_8_rd:checked ) .bmrg_lctn_mD_9 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_9_rd:checked ) .bmrg_lctn_mU_8 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_9_rd:checked ) .bmrg_lctn_mD_10 { display: block; }
+.bmrng_cntnr:has( .bmrg_throw_n_10_rd:checked ) .bmrg_lctn_mU_9 { display: block; }
+
+@property --anim_var_bmrg   { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --aim_dst_m       { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --aim_dst_n       { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --crv_symbl_angle { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+@property --bmrg_path_dst_m { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --bmrg_path_dst_n { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --bmrg_path_angle { syntax: '<angle>';  inherits: true; initial-value: 0deg; }
+@property --cos_path_rtn    { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --sin_path_rtn    { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --aim_path_m      { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --aim_path_cent_n { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --cos_m_rtn       { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --sin_n_rtn       { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --sin_crcl        { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --bmrg_path_dst   { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --bmrg_path_ht    { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --bmrg_pos_angle  { syntax: '<angle>';  inherits: true; initial-value: 0rad; }
+@property --ratio_ln        { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --swth_mag        { syntax: '<angle>'; inherits: true; initial-value: 0rad; }
+@property --swth_lean       { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --bmrg_angle_shift { syntax: '<angle>';  inherits: true; initial-value: 0rad; }
+@property --bmrg_pos_angle_shifted { syntax: '<angle>';  inherits: true; initial-value: 0rad; }
+@property --sign_w_zero    { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --is_zero        { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --sign_crv_dst_m { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --bmrg_x         { syntax: '<length>'; inherits: true; initial-value: 0px; }
+@property --bmrg_y         { syntax: '<length>'; inherits: true; initial-value: 0px; }
+@property --bmrg_path_ratio_sq { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_m_st { syntax: '<length>'; inherits: true; initial-value: 0px; }
+@property --trg1_n_st { syntax: '<length>'; inherits: true; initial-value: 0px; }
+@property --trg2_m_st { syntax: '<length>'; inherits: true; initial-value: 0px; }
+@property --trg2_n_st { syntax: '<length>'; inherits: true; initial-value: 0px; }
+@property --trg3_m_st { syntax: '<length>'; inherits: true; initial-value: 0px; }
+@property --trg3_n_st { syntax: '<length>'; inherits: true; initial-value: 0px; }
+@property --trg1_m_no_px { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_n_no_px { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_m_no_px { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_n_no_px { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_m_no_px { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_n_no_px { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_m_sign { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_n_sign { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_m_sign { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_n_sign { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_m_sign { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_n_sign { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_m_no_rtn_sm { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_n_no_rtn_sm { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_m_no_rtn_sm { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_n_no_rtn_sm { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_m_no_rtn_sm { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_n_no_rtn_sm { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_path_ht   { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_path_dst  { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_path_ht   { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_path_dst  { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_path_ht   { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_path_dst  { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_slope     { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_slope     { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_slope     { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_slope_inv { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_slope_inv { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_slope_inv { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_x_qrdtc_A { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_x_qrdtc_B { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_x_qrdtc_C { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_x_qrdtc_A { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_x_qrdtc_B { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_x_qrdtc_C { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_x_qrdtc_A { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_x_qrdtc_B { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_x_qrdtc_C { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_x_qrdtc_term { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_x_qrdtc_term { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_x_qrdtc_term { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_x_qrdtc_sqrt { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_x_qrdtc_sqrt { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_x_qrdtc_sqrt { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_x_near_intsct { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_x_near_intsct { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_x_near_intsct { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_y_near_intsct { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_y_near_intsct { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_y_near_intsct { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_intsct_angle { syntax: '<angle>';  inherits: true; initial-value: 0rad; }
+@property --trg2_intsct_angle { syntax: '<angle>';  inherits: true; initial-value: 0rad; }
+@property --trg3_intsct_angle { syntax: '<angle>';  inherits: true; initial-value: 0rad; }
+@property --bmrg_dst_cos { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_dst_cos { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_dst_cos { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_dst_cos { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_dst_para { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_dst_para { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_dst_para { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_hit_para { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_hit_para { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_hit_para { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg1_hit_perp    { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg2_hit_perp    { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --trg3_hit_perp    { syntax: '<number>'; inherits: true; initial-value: 0; }
+
+.bmrg_aim_cntnr {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 350px;
+  height: 350px;
+  background: var( --ifc-popover-color );
+  /*background-color: hsl( calc( var(--anim_var_bmrg) * 360 ), 100%, 50%);*/
+  --st_m: 1;
+  --st_n: 5;
+  --aim_m: 1;
+  --aim_n: 1;
+  --crv_m: 5;
+  --crv_n: 2;
+  
+  /* Calculate curvature of the throw based on selection location relative to '0 curvature' selection location (center) */
+  --crv_dst_m: calc( var( --crv_m ) - 5 );
+  --crv_dst_n: calc( var( --crv_n ) - 2 );
+  --sign_w_zero: min( 1, max( -1, var(--crv_dst_m) ) );
+  --is_zero: calc(1 - abs( var(--sign_w_zero) ) );
+  --sign_crv_dst_m: calc( var(--sign_w_zero) + var(--is_zero) );
+  /* Rotate those vectors into the base coordinate frame */
+  --crv_dst_m_rtn: calc( var( --crv_dst_m ) * cos( var( --crv_lyr_angle ) ) - var( --crv_dst_n ) * sin( var( --crv_lyr_angle ) ) );
+  --crv_dst_n_rtn: calc( var( --crv_dst_m ) * sin( var( --crv_lyr_angle ) ) + var( --crv_dst_n ) * cos( var( --crv_lyr_angle ) ) );
+  /* Calculate the boomerang path centerline (angle and distance) from the final curve choice points */
+  --bmrg_path_dst_m: calc( var( --aim_m ) - var( --st_m ) + var( --crv_dst_m_rtn ) );
+  --bmrg_path_dst_n: calc( var( --aim_n ) - var( --st_n ) + var( --crv_dst_n_rtn ) );
+  --bmrg_path_angle: calc( atan2( var( --bmrg_path_dst_n ), var( --bmrg_path_dst_m ) ) );
+  --bmrg_path_angle_ngtv: calc( -1 * var(--bmrg_path_angle) );
+  --bmrg_path_dst: sqrt( var(--bmrg_path_dst_m) * var(--bmrg_path_dst_m) + var(--bmrg_path_dst_n) * var(--bmrg_path_dst_n) );
+  /* Calculate the boomerang path width by finding the aim location intersection with the resulting ellipse
+     and then scaling the ellipse relative to a circle that would have passed through the start location around the centroid */
+  /* Find the lateral location of the aim target and the vertical offset from the path centroid */
+  --cos_path_rtn: cos( var( --bmrg_path_angle ) );
+  --sin_path_rtn: sin( var( --bmrg_path_angle ) );
+  --cos_path_rtn_ngtv: cos( var( --bmrg_path_angle_ngtv ) );
+  --sin_path_rtn_ngtv: sin( var( --bmrg_path_angle_ngtv ) );
+  --aim_path_m: calc( var( --aim_dst_m ) * var(--cos_path_rtn) + var( --aim_dst_n ) * var(--sin_path_rtn) );
+  --aim_path_cent_n: calc( (var( --aim_dst_m ) - var(--bmrg_path_dst_m)) * var(--sin_path_rtn) - (var( --aim_dst_n ) - var(--bmrg_path_dst_n)) * var(--cos_path_rtn) );
+  /* Calculate the cosine of the aim location, then the resulting sine value, and scale relative to an undistorted circle */
+  --cos_m_rtn: calc( ( var(--bmrg_path_dst) - var(--aim_path_m) * 0.5 ) / var(--bmrg_path_dst) );
+  --sin_n_rtn: calc( var(--aim_path_cent_n) / var(--bmrg_path_dst) );
+  --sin_crcl: max( sin( acos( var(--cos_m_rtn) ) ), 0.17 );
+  --bmrg_path_ht: calc( max( 0.5, abs( var(--sin_n_rtn) ) / var(--sin_crcl) * var(--bmrg_path_dst) * 0.5 ) );
+  
+  --bmrg_path_dst_scld:     calc( var(--bmrg_path_dst) * 70 );
+  --bmrg_path_ht_scld:      calc( var(--bmrg_path_ht) * 70 );
+  --bmrg_path_ht_scld_ngtv: calc( var(--bmrg_path_ht) * -70 );
+  --bmrg_path_dst_px:     calc( var(--bmrg_path_dst_scld) * 1px );
+  --bmrg_path_ht_px:      calc( var(--bmrg_path_ht_scld) * 1px );
+  --bmrg_path_ht_px_ngtv: calc( var(--bmrg_path_ht_scld_ngtv) * 1px );
+  --bmrg_path_w_px:       calc( 2 * var(--bmrg_path_dst_px) );
+  --bmrg_path_h_px:       calc( 2 * var(--bmrg_path_ht_px) );
+  --st_m_px: calc( ( var(--st_m) - 1 ) * 35px );
+  --st_n_px: calc( ( var(--st_n) - 1 ) * 35px );
+  
+  /* Timing for how long the boomerang animation takes */
+  --bmrg_flight_time: calc( ( var(--bmrg_path_dst) + var(--bmrg_path_dst) + var(--bmrg_path_ht) + var(--bmrg_path_ht) ) * 0.4s );
+  
+  /* Calculate the actual boomerang position with time */
+  --bmrg_path_ratio: calc( var(--bmrg_path_dst) / var(--bmrg_path_ht) );
+  --bmrg_path_ratio_sq: calc( var(--bmrg_path_ratio) * var(--bmrg_path_ratio) );
+  --bmrg_pos_angle: calc( var(--anim_var_bmrg) * 6.283185307rad );
+  
+  /* Calculate a "sawtooth" angle modification to the standard circular rotation for ellipse */
+  --ratio_ln: log( var(--bmrg_path_ratio) );
+  --swth_mag:  calc( ( ( 0.01201048 * var(--ratio_ln) - 0.10267178 ) * var(--ratio_ln) + 0.29323838 ) * var(--ratio_ln) * 1rad );
+  --swth_lean: calc( ( ( 0.02018883 * var(--ratio_ln) - 0.20585582 ) * var(--ratio_ln) + 0.71209664 ) * var(--ratio_ln) );
+  --bmrg_angle_shift: calc( var(--swth_mag)/var(--swth_lean) * atan2( ( var(--swth_lean)*sin( 2*var(--bmrg_pos_angle) ) ), ( 1 - var(--swth_lean)*cos( 2*var(--bmrg_pos_angle) ) ) ) );
+  --bmrg_pos_angle_shifted: calc( var(--bmrg_pos_angle) + var(--bmrg_angle_shift) );
+  --bmrg_x_no_rtn: calc( (1 - cos( var(--bmrg_pos_angle_shifted) )) * var(--bmrg_path_dst_px) );
+  --bmrg_y_no_rtn: calc( sin( var(--bmrg_pos_angle_shifted) ) * var(--sign_crv_dst_m) * var(--bmrg_path_ht_px_ngtv) );
+  --bmrg_x: calc( var( --bmrg_x_no_rtn ) * var(--cos_path_rtn) - var( --bmrg_y_no_rtn ) * var(--sin_path_rtn) );
+  --bmrg_y: calc( var( --bmrg_x_no_rtn ) * var(--sin_path_rtn) + var( --bmrg_y_no_rtn ) * var(--cos_path_rtn) );
+  
+  /* The points that are the actual targets being aimed at */
+  --trg1_m:   45vw;
+  --trg1_n: -150px;
+  
+  --trg2_m:   55vw;
+  --trg2_n:  -50px;
+  
+  --trg3_m:   65vw;
+  --trg3_n:   50px;
+  
+  /* The target points relative to the throw start location */
+  --trg1_m_st: calc( var( --trg1_m ) - var(--st_m_px) - 37.5px );
+  --trg1_n_st: calc( var( --trg1_n ) - var(--st_n_px) + 6.5px );
+  
+  --trg2_m_st: calc( var( --trg2_m ) - var(--st_m_px) - 37.5px );
+  --trg2_n_st: calc( var( --trg2_n ) - var(--st_n_px) + 6.5px );
+  
+  --trg3_m_st: calc( var( --trg3_m ) - var(--st_m_px) - 37.5px );
+  --trg3_n_st: calc( var( --trg3_n ) - var(--st_n_px) + 6.5px );
+  
+  /* The points rotated into a flat (zero rotation) ellipse */
+  --trg1_m_no_rtn: calc( var( --trg1_m_st ) * var(--cos_path_rtn_ngtv) - var( --trg1_n_st ) * var(--sin_path_rtn_ngtv) - var(--bmrg_path_dst_px) );
+  --trg1_n_no_rtn: calc( var( --trg1_m_st ) * var(--sin_path_rtn_ngtv) + var( --trg1_n_st ) * var(--cos_path_rtn_ngtv) );
+  
+  --trg2_m_no_rtn: calc( var( --trg2_m_st ) * var(--cos_path_rtn_ngtv) - var( --trg2_n_st ) * var(--sin_path_rtn_ngtv) - var(--bmrg_path_dst_px) );
+  --trg2_n_no_rtn: calc( var( --trg2_m_st ) * var(--sin_path_rtn_ngtv) + var( --trg2_n_st ) * var(--cos_path_rtn_ngtv) );
+  
+  --trg3_m_no_rtn: calc( var( --trg3_m_st ) * var(--cos_path_rtn_ngtv) - var( --trg3_n_st ) * var(--sin_path_rtn_ngtv) - var(--bmrg_path_dst_px) );
+  --trg3_n_no_rtn: calc( var( --trg3_m_st ) * var(--sin_path_rtn_ngtv) + var( --trg3_n_st ) * var(--cos_path_rtn_ngtv) );
+  
+  /* Remove px units from all the numbers */
+  --trg1_m_no_px: calc( tan( atan2( var(--trg1_m_no_rtn), 1px ) ) );
+  --trg1_n_no_px: calc( tan( atan2( var(--trg1_n_no_rtn), 1px ) ) );
+  
+  --trg2_m_no_px: calc( tan( atan2( var(--trg2_m_no_rtn), 1px ) ) );
+  --trg2_n_no_px: calc( tan( atan2( var(--trg2_n_no_rtn), 1px ) ) );
+  
+  --trg3_m_no_px: calc( tan( atan2( var(--trg3_m_no_rtn), 1px ) ) );
+  --trg3_n_no_px: calc( tan( atan2( var(--trg3_n_no_rtn), 1px ) ) );
+  
+  /* Signs of the x component of each target location */
+  --trg1_m_sign_w_zero: sign( var(--trg1_m_no_px) );
+  --trg1_m_is_zero: calc(1 - abs( var(--trg1_m_sign_w_zero) ) );
+  --trg1_m_sign: calc( var(--trg1_m_sign_w_zero) + var(--trg1_m_is_zero) );
+  --trg1_n_sign_w_zero: sign( var(--trg1_n_no_px) );
+  --trg1_n_is_zero: calc(1 - abs( var(--trg1_n_sign_w_zero) ) );
+  --trg1_n_sign: calc( var(--trg1_n_sign_w_zero) + var(--trg1_n_is_zero) );
+  
+  --trg2_m_sign_w_zero: sign( var(--trg2_m_no_px) );
+  --trg2_m_is_zero: calc(1 - abs( var(--trg2_m_sign_w_zero) ) );
+  --trg2_m_sign: calc( var(--trg2_m_sign_w_zero) + var(--trg2_m_is_zero) );
+  --trg2_n_sign_w_zero: sign( var(--trg2_n_no_px) );
+  --trg2_n_is_zero: calc(1 - abs( var(--trg2_n_sign_w_zero) ) );
+  --trg2_n_sign: calc( var(--trg2_n_sign_w_zero) + var(--trg2_n_is_zero) );
+  
+  --trg3_m_sign_w_zero: sign( var(--trg3_m_no_px) );
+  --trg3_m_is_zero: calc(1 - abs( var(--trg3_m_sign_w_zero) ) );
+  --trg3_m_sign: calc( var(--trg3_m_sign_w_zero) + var(--trg3_m_is_zero) );
+  --trg3_n_sign_w_zero: sign( var(--trg3_n_no_px) );
+  --trg3_n_is_zero: calc(1 - abs( var(--trg3_n_sign_w_zero) ) );
+  --trg3_n_sign: calc( var(--trg3_n_sign_w_zero) + var(--trg3_n_is_zero) );
+  
+  /* The points with checking for small number issues */
+  --trg1_m_no_rtn_sm: calc( var(--trg1_m_sign) * max( abs( var(--trg1_m_no_px) ), 0.01 ) );
+  --trg1_n_no_rtn_sm: calc( var(--trg1_n_sign) * max( abs( var(--trg1_n_no_px) ), 0.01 ) );
+  
+  --trg2_m_no_rtn_sm: calc( var(--trg2_m_sign) * max( abs( var(--trg2_m_no_px) ), 0.01 ) );
+  --trg2_n_no_rtn_sm: calc( var(--trg2_n_sign) * max( abs( var(--trg2_n_no_px) ), 0.01 ) );
+  
+  --trg3_m_no_rtn_sm: calc( var(--trg3_m_sign) * max( abs( var(--trg3_m_no_px) ), 0.01 ) );
+  --trg3_n_no_rtn_sm: calc( var(--trg3_n_sign) * max( abs( var(--trg3_n_no_px) ), 0.01 ) );
+  
+  /* Squares of their locations */
+  --trg1_m_sq: calc( var(--trg1_m_no_rtn_sm) * var(--trg1_m_no_rtn_sm) );
+  --trg1_n_sq: calc( var(--trg1_n_no_rtn_sm) * var(--trg1_n_no_rtn_sm) );
+  
+  --trg2_m_sq: calc( var(--trg2_m_no_rtn_sm) * var(--trg2_m_no_rtn_sm) );
+  --trg2_n_sq: calc( var(--trg2_n_no_rtn_sm) * var(--trg2_n_no_rtn_sm) );
+  
+  --trg3_m_sq: calc( var(--trg3_m_no_rtn_sm) * var(--trg3_m_no_rtn_sm) );
+  --trg3_n_sq: calc( var(--trg3_n_no_rtn_sm) * var(--trg3_n_no_rtn_sm) );
+  
+  /* The major and minor axis of the ellipse (a and b, dst and ht) */
+  --trg1_path_ht:  sqrt( var(--trg1_m_sq) / var(--bmrg_path_ratio_sq) + var(--trg1_n_sq) );
+  --trg1_path_dst: calc( var(--bmrg_path_ratio) * var(--trg1_path_ht) );
+  
+  --trg2_path_ht:  sqrt( var(--trg2_m_sq) / var(--bmrg_path_ratio_sq) + var(--trg2_n_sq) );
+  --trg2_path_dst: calc( var(--bmrg_path_ratio) * var(--trg2_path_ht) );
+  
+  --trg3_path_ht:  sqrt( var(--trg3_m_sq) / var(--bmrg_path_ratio_sq) + var(--trg3_n_sq) );
+  --trg3_path_dst: calc( var(--bmrg_path_ratio) * var(--trg3_path_ht) );
+  
+  /* Major and minor axis squared */
+  --trg1_asq: calc( var(--trg1_path_dst) * var(--trg1_path_dst) );
+  --trg1_bsq: calc( var(--trg1_path_ht)  * var(--trg1_path_ht) );
+  
+  --trg2_asq: calc( var(--trg2_path_dst) * var(--trg2_path_dst) );
+  --trg2_bsq: calc( var(--trg2_path_ht)  * var(--trg2_path_ht) );
+  
+  --trg3_asq: calc( var(--trg3_path_dst) * var(--trg3_path_dst) );
+  --trg3_bsq: calc( var(--trg3_path_ht)  * var(--trg3_path_ht) );
+  
+  /* Slope of each target on their intersecting ellipse */
+  --trg1_slope: calc( -1 * var(--trg1_m_no_rtn_sm) / var(--trg1_n_no_rtn_sm) * var(--trg1_bsq) / var(--trg1_asq) );
+  --trg2_slope: calc( -1 * var(--trg2_m_no_rtn_sm) / var(--trg2_n_no_rtn_sm) * var(--trg2_bsq) / var(--trg2_asq) );
+  --trg3_slope: calc( -1 * var(--trg3_m_no_rtn_sm) / var(--trg3_n_no_rtn_sm) * var(--trg3_bsq) / var(--trg3_asq) );
+  
+  /* Inverse slope */
+  --trg1_slope_inv: calc( 1 / var(--trg1_slope) );
+  --trg2_slope_inv: calc( 1 / var(--trg2_slope) );
+  --trg3_slope_inv: calc( 1 / var(--trg3_slope) );
+  
+  /* Perpedicular line from target point ellipse to boomerange ellipse zero crossing intercept */
+  --trg1_prp_zr_crs: calc( var(--trg1_slope_inv) * var(--trg1_m_no_rtn_sm) + var(--trg1_n_no_rtn_sm) );
+  --trg2_prp_zr_crs: calc( var(--trg2_slope_inv) * var(--trg2_m_no_rtn_sm) + var(--trg2_n_no_rtn_sm) );
+  --trg3_prp_zr_crs: calc( var(--trg3_slope_inv) * var(--trg3_m_no_rtn_sm) + var(--trg3_n_no_rtn_sm) );
+  
+  /* Boomerange path width and height squared */
+  --bmrg_path_dst_sq: calc( var(--bmrg_path_dst_scld) * var(--bmrg_path_dst_scld) );
+  --bmrg_path_ht_sq:  calc( var(--bmrg_path_ht_scld)  * var(--bmrg_path_ht_scld) );
+  
+  /* Quadratic equation coefficients */
+  --trg1_x_qrdtc_A: calc( var(--bmrg_path_ht_sq) / var(--bmrg_path_dst_sq) + var(--trg1_slope_inv) * var(--trg1_slope_inv) );
+  --trg1_x_qrdtc_B: calc( -2 * var(--trg1_slope_inv) * var(--trg1_prp_zr_crs) );
+  --trg1_x_qrdtc_C: calc( var(--trg1_prp_zr_crs) * var(--trg1_prp_zr_crs) - var(--bmrg_path_ht_sq) );
+  --trg2_x_qrdtc_A: calc( var(--bmrg_path_ht_sq) / var(--bmrg_path_dst_sq) + var(--trg2_slope_inv) * var(--trg2_slope_inv) );
+  --trg2_x_qrdtc_B: calc( -2 * var(--trg2_slope_inv) * var(--trg2_prp_zr_crs) );
+  --trg2_x_qrdtc_C: calc( var(--trg2_prp_zr_crs) * var(--trg2_prp_zr_crs) - var(--bmrg_path_ht_sq) );
+  --trg3_x_qrdtc_A: calc( var(--bmrg_path_ht_sq) / var(--bmrg_path_dst_sq) + var(--trg3_slope_inv) * var(--trg3_slope_inv) );
+  --trg3_x_qrdtc_B: calc( -2 * var(--trg3_slope_inv) * var(--trg3_prp_zr_crs) );
+  --trg3_x_qrdtc_C: calc( var(--trg3_prp_zr_crs) * var(--trg3_prp_zr_crs) - var(--bmrg_path_ht_sq) );
+  
+  --trg1_x_qrdtc_term: calc( var(--trg1_x_qrdtc_B) * var(--trg1_x_qrdtc_B) - 4 * var(--trg1_x_qrdtc_A) * var(--trg1_x_qrdtc_C) );
+  --trg2_x_qrdtc_term: calc( var(--trg2_x_qrdtc_B) * var(--trg2_x_qrdtc_B) - 4 * var(--trg2_x_qrdtc_A) * var(--trg2_x_qrdtc_C) );
+  --trg3_x_qrdtc_term: calc( var(--trg3_x_qrdtc_B) * var(--trg3_x_qrdtc_B) - 4 * var(--trg3_x_qrdtc_A) * var(--trg3_x_qrdtc_C) );
+  
+  /* Detect whether the quadratic square root internal term is going to be negative and result in imaginary number results */
+  --trg1_qterm_is_ngtv: max( 0, -1 * sign( var(--trg1_x_qrdtc_term) ) );
+  --trg2_qterm_is_ngtv: max( 0, -1 * sign( var(--trg2_x_qrdtc_term) ) );
+  --trg3_qterm_is_ngtv: max( 0, -1 * sign( var(--trg3_x_qrdtc_term) ) );
+  
+  --trg1_x_qrdtc_sqrt: calc( sqrt( var(--trg1_x_qrdtc_term) ) );
+  --trg2_x_qrdtc_sqrt: calc( sqrt( var(--trg2_x_qrdtc_term) ) );
+  --trg3_x_qrdtc_sqrt: calc( sqrt( var(--trg3_x_qrdtc_term) ) );
+  
+  --trg1_x_qrdtc_sqrt_w_ngtv: calc( var(--trg1_x_qrdtc_sqrt) + var(--trg1_qterm_is_ngtv) * 100000 );
+  --trg2_x_qrdtc_sqrt_w_ngtv: calc( var(--trg2_x_qrdtc_sqrt) + var(--trg2_qterm_is_ngtv) * 100000 );
+  --trg3_x_qrdtc_sqrt_w_ngtv: calc( var(--trg3_x_qrdtc_sqrt) + var(--trg3_qterm_is_ngtv) * 100000 );
+  
+  /* Nearest x intersection in the boomerang path */
+  --trg1_x_near_intsct: calc( ( -1 * var(--trg1_x_qrdtc_B) + var(--trg1_m_sign) * var(--trg1_x_qrdtc_sqrt_w_ngtv) )/( 2 * var(--trg1_x_qrdtc_A) ) );
+  --trg2_x_near_intsct: calc( ( -1 * var(--trg2_x_qrdtc_B) + var(--trg2_m_sign) * var(--trg2_x_qrdtc_sqrt_w_ngtv) )/( 2 * var(--trg2_x_qrdtc_A) ) );
+  --trg3_x_near_intsct: calc( ( -1 * var(--trg3_x_qrdtc_B) + var(--trg3_m_sign) * var(--trg3_x_qrdtc_sqrt_w_ngtv) )/( 2 * var(--trg3_x_qrdtc_A) ) );
+  
+  /* Nearest y intersection in the boomerang path */
+  --trg1_y_near_intsct: calc( var(--trg1_prp_zr_crs) - var(--trg1_x_near_intsct) * var(--trg1_slope_inv) );
+  --trg2_y_near_intsct: calc( var(--trg2_prp_zr_crs) - var(--trg2_x_near_intsct) * var(--trg2_slope_inv) );
+  --trg3_y_near_intsct: calc( var(--trg3_prp_zr_crs) - var(--trg3_x_near_intsct) * var(--trg3_slope_inv) );
+  
+  /* Angle of x, y intersection location */
+  --trg1_intsct_angle: calc( atan2( ( -1 * var(--sign_crv_dst_m) * var(--trg1_y_near_intsct) * var(--bmrg_path_ratio ) ), (-1 * var(--trg1_x_near_intsct) ) ) );
+  --trg2_intsct_angle: calc( atan2( ( -1 * var(--sign_crv_dst_m) * var(--trg2_y_near_intsct) * var(--bmrg_path_ratio ) ), (-1 * var(--trg2_x_near_intsct) ) ) );
+  --trg3_intsct_angle: calc( atan2( ( -1 * var(--sign_crv_dst_m) * var(--trg3_y_near_intsct) * var(--bmrg_path_ratio ) ), (-1 * var(--trg3_x_near_intsct) ) ) );
+  
+  /* Transform the boomerang angle into a approximately linearly increasing function */
+  --bmrg_dst_cos: calc( ( 1 - cos( 0.5 * var(--bmrg_pos_angle_shifted) ) )/2 );
+  
+  /* Transform the trg location angle into a approximately linearly increasing function (minus the bmrg distance along the same metric) */
+  --trg1_dst_cos: calc( ( 1 - cos( 0.5 * var(--trg1_intsct_angle) ) )/2 );
+  --trg2_dst_cos: calc( ( 1 - cos( 0.5 * var(--trg2_intsct_angle) ) )/2 );
+  --trg3_dst_cos: calc( ( 1 - cos( 0.5 * var(--trg3_intsct_angle) ) )/2 );
+  
+  --trg1_dst_para: calc( 360 * ( var(--trg1_dst_cos) - var(--bmrg_dst_cos) ) );
+  --trg2_dst_para: calc( 360 * ( var(--trg2_dst_cos) - var(--bmrg_dst_cos) ) );
+  --trg3_dst_para: calc( 360 * ( var(--trg3_dst_cos) - var(--bmrg_dst_cos) ) );
+  
+  /* Detecting boomerang nearness to the target (angular) along the flight path.  (mostly just a switch for the object being displayed */
+  --trg1_hit_para: calc( ( var(--trg1_dst_para)/sqrt( 1 + var(--trg1_dst_para) * var(--trg1_dst_para) ) + 1 )/2 );
+  --trg2_hit_para: calc( ( var(--trg2_dst_para)/sqrt( 1 + var(--trg2_dst_para) * var(--trg2_dst_para) ) + 1 )/2 );
+  --trg3_hit_para: calc( ( var(--trg3_dst_para)/sqrt( 1 + var(--trg3_dst_para) * var(--trg3_dst_para) ) + 1 )/2 );
+  
+  /* Distance to the nearest boomerang approach */
+  --trg1_x_near_dst: calc( var(--trg1_x_near_intsct) - var(--trg1_m_no_rtn_sm) );
+  --trg1_y_near_dst: calc( var(--trg1_y_near_intsct) - var(--trg1_n_no_rtn_sm) );
+  --trg2_x_near_dst: calc( var(--trg2_x_near_intsct) - var(--trg2_m_no_rtn_sm) );
+  --trg2_y_near_dst: calc( var(--trg2_y_near_intsct) - var(--trg2_n_no_rtn_sm) );
+  --trg3_x_near_dst: calc( var(--trg3_x_near_intsct) - var(--trg3_m_no_rtn_sm) );
+  --trg3_y_near_dst: calc( var(--trg3_y_near_intsct) - var(--trg3_n_no_rtn_sm) );
+  
+  --trg1_dist_prp: calc( sqrt( var(--trg1_x_near_dst) * var(--trg1_x_near_dst) + var(--trg1_y_near_dst) * var(--trg1_y_near_dst) ) - 24 );
+  --trg2_dist_prp: calc( sqrt( var(--trg2_x_near_dst) * var(--trg2_x_near_dst) + var(--trg2_y_near_dst) * var(--trg2_y_near_dst) ) - 24 );
+  --trg3_dist_prp: calc( sqrt( var(--trg3_x_near_dst) * var(--trg3_x_near_dst) + var(--trg3_y_near_dst) * var(--trg3_y_near_dst) ) - 24 );
+  
+  /* Detecting whether the boomerang will actually hit the target based on the perpendicular distance of the flight path */
+  --trg1_hit_perp: calc( ( var(--trg1_dist_prp)/sqrt( 1 + var(--trg1_dist_prp) * var(--trg1_dist_prp) ) + 1 )/2 );
+  --trg2_hit_perp: calc( ( var(--trg2_dist_prp)/sqrt( 1 + var(--trg2_dist_prp) * var(--trg2_dist_prp) ) + 1 )/2 );
+  --trg3_hit_perp: calc( ( var(--trg3_dist_prp)/sqrt( 1 + var(--trg3_dist_prp) * var(--trg3_dist_prp) ) + 1 )/2 );
+  
+  /* Actual hit calculations moved to the bmrg_fld class objects to use same format as arrow calculations
+  --trg1_hit: calc( var(--trg1_hit_angle) + var(--trg1_hit_perp) );
+  --trg2_hit: calc( var(--trg2_hit_angle) + var(--trg2_hit_perp) );
+  --trg3_hit: calc( var(--trg3_hit_angle) + var(--trg3_hit_perp) );
+  */
+  
+  /* Ellipse equations for finding the width and height of the ellipse from a target point
+  x * x_trg / a^2 + y * y_trg / b^2 = 1
+  b^2 = x_trg * x_trg * b^2 / a^2 + y_trg * y_trg
+  */
+  
+  /* Tangets and perpendicular lines to the ellipse at the target point
+  x * x_trg / a^2 + y * y_trg / b^2 = 1
+  x * x_trg * b^2 + y * y_trg * a^2 = (ab)^2
+  x * x_trg/y_trg * b_trg^2/a_trg^2 + y = b_trg^2/y_trg
+  -m_tng * x + y = b_trg^2/y_trg
+  
+  m_tng = -x_trg/y_trg * b_trg^2/a_trg^2
+  1/m_tng = -y_trg/x_trg * a_trg^2/b_trg^2
+  */
+   
+  /* Invert the slope
+  m_prp = -1/m_tng
+  */
+  
+  /* Find the perpendicular line equation
+  y = -1/m_tng * x + c
+  y_trg = -1/m_tng * x_trg + c
+  c = y_trg + 1/m_tng * x_trg
+  
+  y = -1/m_tng * x + y_trg + 1/m_tng * x_trg
+  y - y_trg = -1/m_tng * ( x - x_trg )
+  1/m_tng * x + y = y_trg + 1/m_tng * x_trg
+  
+  y = -1/m_tng * ( x - x_trg ) + y_trg
+  y = -1/m_tng * x + ( 1/m_tng * x_trg + y_trg )
+  */
+  
+  /* Find the intersection point with the boomerang path
+  x * x / a_bmrg^2 + y * y / b_bmrg^2 = 1
+  x * x / a_bmrg^2 + (-1/m_tng * ( x - x_trg ) + y_trg)^2 / b_bmrg^2 = 1
+  
+  y^2 = 1/m_tng^2 * x^2 - 2/m_tng * x * ( 1/m_tng * x_trg + y_trg ) + ( 1/m_tng * x_trg + y_trg )^2
+  x^2 * ( b_bmrg^2/a_bmrg^2 + 1/m_tng^2 ) +  x * ( -2/m_tng * ( 1/m_tng * x_trg + y_trg ) ) + ( ( 1/m_tng * x_trg + y_trg )^2 - b_bmrg^2 ) = 0
+  x^2 * A + x * B + C = 0;
+  A = ( b_bmrg^2/a_bmrg^2 + 1/m_tng^2 )
+  B = ( -2/m_tng * ( 1/m_tng * x_trg + y_trg ) )
+  C = ( ( 1/m_tng * x_trg + y_trg )^2 - b_bmrg^2 )
+  x_intsct = ( -B + SIGN(x_trg) * sqrt(B^2-4*A*C) ) / (2*A);
+  y = y_trg + 1/m_tng * x_trg - 1/m_tng * x_intsct
+  */
+  
+  display: none;
+}
+
+.bmrng_cntnr:has( .bmrg_throw_m_1_rd:checked  ) .bmrg_aim_cntnr { --st_m: 1; }
+.bmrng_cntnr:has( .bmrg_throw_m_2_rd:checked  ) .bmrg_aim_cntnr { --st_m: 2; }
+.bmrng_cntnr:has( .bmrg_throw_m_3_rd:checked  ) .bmrg_aim_cntnr { --st_m: 3; }
+.bmrng_cntnr:has( .bmrg_throw_m_4_rd:checked  ) .bmrg_aim_cntnr { --st_m: 4; }
+.bmrng_cntnr:has( .bmrg_throw_m_5_rd:checked  ) .bmrg_aim_cntnr { --st_m: 5; }
+.bmrng_cntnr:has( .bmrg_throw_m_6_rd:checked  ) .bmrg_aim_cntnr { --st_m: 6; }
+.bmrng_cntnr:has( .bmrg_throw_m_7_rd:checked  ) .bmrg_aim_cntnr { --st_m: 7; }
+.bmrng_cntnr:has( .bmrg_throw_m_8_rd:checked  ) .bmrg_aim_cntnr { --st_m: 8; }
+.bmrng_cntnr:has( .bmrg_throw_m_9_rd:checked  ) .bmrg_aim_cntnr { --st_m: 9; }
+.bmrng_cntnr:has( .bmrg_throw_m_10_rd:checked ) .bmrg_aim_cntnr { --st_m: 10; }
+
+.bmrng_cntnr:has( .bmrg_throw_n_1_rd:checked  ) .bmrg_aim_cntnr { --st_n: 1; }
+.bmrng_cntnr:has( .bmrg_throw_n_2_rd:checked  ) .bmrg_aim_cntnr { --st_n: 2; }
+.bmrng_cntnr:has( .bmrg_throw_n_3_rd:checked  ) .bmrg_aim_cntnr { --st_n: 3; }
+.bmrng_cntnr:has( .bmrg_throw_n_4_rd:checked  ) .bmrg_aim_cntnr { --st_n: 4; }
+.bmrng_cntnr:has( .bmrg_throw_n_5_rd:checked  ) .bmrg_aim_cntnr { --st_n: 5; }
+.bmrng_cntnr:has( .bmrg_throw_n_6_rd:checked  ) .bmrg_aim_cntnr { --st_n: 6; }
+.bmrng_cntnr:has( .bmrg_throw_n_7_rd:checked  ) .bmrg_aim_cntnr { --st_n: 7; }
+.bmrng_cntnr:has( .bmrg_throw_n_8_rd:checked  ) .bmrg_aim_cntnr { --st_n: 8; }
+.bmrng_cntnr:has( .bmrg_throw_n_9_rd:checked  ) .bmrg_aim_cntnr { --st_n: 9; }
+.bmrng_cntnr:has( .bmrg_throw_n_10_rd:checked ) .bmrg_aim_cntnr { --st_n: 10; }
+
+.bmrg_st_lctn {
+  position: absolute;
+  left: var(--st_m_px);
+  top:  var(--st_n_px);
+  width: 35px;
+  height: 35px;
+  display: none;
+}
+
+body:has( #item_use_10:checked ):has( .item_chc_10_chk:checked ) .bmrg_st_lctn { display: initial; }
+
+.bmrg_st_lctn::after {
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  font-family: 'Material Symbols Rounded';
+  font-size: 29px;
+  content: "\e3a8";
+}
+
+.bmrg_aim_lyr {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  grid-auto-rows: 35px;
+}
+
+.bmrg_aim_lctn {
+  position: relative;
+  border: 1px dashed var( --fnt-lgt-color );
+  pointer-events: none;
+}
+
+body:has( #item_use_10:checked ):has( .item_chc_10_chk:checked ) .bmrg_aim_lctn { pointer-events: auto; }
+
+body:has( #item_use_10:checked ):has( .item_chc_10_chk:checked ) .bmrg_aim_lctn:has( input:checked )::after {
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  font-family: 'Material Symbols Rounded';
+  font-size: 29px;
+  content: "\e1b7";
+}
+
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .col01:checked ){ --aim_m: 1; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .col02:checked ){ --aim_m: 2; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .col03:checked ){ --aim_m: 3; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .col04:checked ){ --aim_m: 4; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .col05:checked ){ --aim_m: 5; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .col06:checked ){ --aim_m: 6; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .col07:checked ){ --aim_m: 7; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .col08:checked ){ --aim_m: 8; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .col09:checked ){ --aim_m: 9; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .col10:checked ){ --aim_m: 10; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .row01:checked ){ --aim_n: 1; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .row02:checked ){ --aim_n: 2; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .row03:checked ){ --aim_n: 3; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .row04:checked ){ --aim_n: 4; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .row05:checked ){ --aim_n: 5; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .row06:checked ){ --aim_n: 6; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .row07:checked ){ --aim_n: 7; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .row08:checked ){ --aim_n: 8; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .row09:checked ){ --aim_n: 9; }
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr .row10:checked ){ --aim_n: 10; }
+
+.bmrg_crv_lyr {
+  position: absolute;
+  width: 315px;
+  height: 105px;
+  left: calc( var( --aim_m ) * 35px - 175px );
+  top: calc( var( --aim_n ) * 35px - 70px );
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  grid-auto-rows: 35px;
+  background: var( --prm-color );
+  opacity: 0.75;
+  display: none;
+}
+
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr input:checked ) {
+  --aim_dst_m: calc( var( --aim_m ) - var( --st_m ) );
+  --aim_dst_n: calc( var( --aim_n ) - var( --st_n ) );
+  --crv_lyr_angle: calc( ( atan2( var( --aim_dst_n ), var( --aim_dst_m ) ) + 90deg ) );
+}
+
+body:has( #item_use_10:checked ):has( .item_chc_10_chk:checked ) .bmrg_aim_cntnr:has( .bmrg_aim_lyr input:checked ) .bmrg_crv_lyr {
+  display: grid;
+  transform: rotate( var( --crv_lyr_angle ) );
+}
+
+.bmrg_crv_lctn {
+  position: relative;
+  border: 1px dashed var( --fnt-lgt-color );
+}
+
+.bmrg_aim_cntnr:has( .bmrg_crv_lyr .col01:checked ){ --crv_m: 1; }
+.bmrg_aim_cntnr:has( .bmrg_crv_lyr .col02:checked ){ --crv_m: 2; }
+.bmrg_aim_cntnr:has( .bmrg_crv_lyr .col03:checked ){ --crv_m: 3; }
+.bmrg_aim_cntnr:has( .bmrg_crv_lyr .col04:checked ){ --crv_m: 4; }
+.bmrg_aim_cntnr:has( .bmrg_crv_lyr .col05:checked ){ --crv_m: 5; }
+.bmrg_aim_cntnr:has( .bmrg_crv_lyr .col06:checked ){ --crv_m: 6; }
+.bmrg_aim_cntnr:has( .bmrg_crv_lyr .col07:checked ){ --crv_m: 7; }
+.bmrg_aim_cntnr:has( .bmrg_crv_lyr .col08:checked ){ --crv_m: 8; }
+.bmrg_aim_cntnr:has( .bmrg_crv_lyr .col09:checked ){ --crv_m: 9; }
+.bmrg_aim_cntnr:has( .bmrg_crv_lyr .col10:checked ){ --crv_m: 10; }
+.bmrg_aim_cntnr:has( .bmrg_crv_lyr .row01:checked ){ --crv_n: 1; }
+.bmrg_aim_cntnr:has( .bmrg_crv_lyr .row02:checked ){ --crv_n: 2; }
+.bmrg_aim_cntnr:has( .bmrg_crv_lyr .row03:checked ){ --crv_n: 3; }
+
+.bmrg_crv_lctn:has( input:checked )::after {
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  font-family: 'Material Symbols Rounded';
+  font-size: 29px;
+  --crv_symbl_angle: calc( ( atan2( ( var( --crv_n ) - 2 ), ( var( --crv_m ) - 5 ) ) ) + 90deg );
+  content: "\f4b5";
+  transform: rotate( var( --crv_symbl_angle ) );
+}
+
+.bmrg_path {
+  position: absolute;
+  width: calc(  var(--bmrg_path_w_px) );
+  height: calc( var(--bmrg_path_h_px) );
+  left: calc( 17.5px );
+  top:  calc( 17.5px + var(--bmrg_path_ht_px_ngtv) );
+  border-radius: 50%;
+  border: 1px dashed var( --fnt-lgt-color );
+  transform-origin: 0% 50%;
+  transform: rotate( var( --bmrg_path_angle ) );
+  pointer-events: none;
+  display: none;
+}
+
+.bmrg_aim_cntnr:has( .bmrg_aim_lyr input:checked ):has( .bmrg_crv_lctn input:checked ) .bmrg_path {
+  display: initial;
+}
+
+.bmrg_throw_cntnr {
+  width: 100%;
+  height: 100%;
+  transform: rotate( 180deg );
+}
+
+.bmrg_throw_slct { display: none; }
+
+.boomerang {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: var( --bmrg_y );
+  left: var( --bmrg_x );
+  display: none;
+}
+
+.boomerang_img {
+  width: 35px;
+  height: 35px;
+  background-image: url('../items/item_boomerang_icn.png');
+  background-position: 0px 0px;
+  animation: rotate360 0.5s linear infinite;
+}
+
+@keyframes rotate360 {
+  from { transform: rotate(0deg);   }
+  to { transform:   rotate(360deg); }
+}
+
+.bmrg_aim_cntnr:has( .bmrg_throw_rd:checked ) {
+  animation: boomerangThrow var(--bmrg_flight_time) cubic-bezier(0.25, 0.1, 0.5, 1.0) forwards;
+}
+.bmrg_aim_cntnr:has( .bmrg_throw_rd:checked ) .boomerang {
+  display: block;
+}
+
+body:has( #item_use_10:checked ):has( .item_chc_10_chk:checked ) .bmrg_aim_cntnr:has( .bmrg_reset_rd:checked ) .bmrg_throw_slct { display: initial; }
+.bmrg_aim_cntnr:has( .bmrg_throw_rd:checked ) .bmrg_reset_slct { display: inline-block; }
+
+.bmrg_pause {
+  --anim_pause: paused;
+  --anim_running: running;
+}
+
+.bmrg_aim_cntnr:has( .bmrg_pause_rd:checked ){
+  animation-play-state: paused;
+}
+
+@keyframes boomerangThrow {
+  0%   { --anim_var_bmrg: 0; }
+  100% { --anim_var_bmrg: 1; }
+}
+
+.bmrg_fld {
+  position: absolute;
+  pointer-events: none;
+  display: none;
+}
+
+body:has( #item_use_10:checked ):has( .item_chc_10_chk:checked ) .bmrg_fld { display: initial; }
+
+.bmrg_fld_1 {
+  left: calc( var(--trg1_m) );
+  top:  calc( var(--trg1_n) );
+  --hit_trg: calc( var(--trg1_hit_para) + var(--trg1_hit_perp) );
+}
+
+.bmrg_fld_2 {
+  left: calc( var(--trg2_m) );
+  top:  calc( var(--trg2_n) );
+  --hit_trg: calc( var(--trg2_hit_para) + var(--trg2_hit_perp) );
+}
+
+.bmrg_fld_3 {
+  left: calc( var(--trg3_m) );
+  top:  calc( var(--trg3_n) );
+  --hit_trg: calc( var(--trg3_hit_para) + var(--trg3_hit_perp) );
+}
+
 body:has( .item_lctn_1_chk:checked ) {   
   --item_chc_1_checked: 1;
 }
@@ -4873,6 +5696,102 @@ body:has( .item_lctn_1_chk:checked ) #item_1_switch {
 
 #anim_var_test {
   background-color: hsl( calc( var( --anim_var_test_mult ) * 250 ), 100%, 50% ); /* Uses the animated variable */
+}
+
+.hover_cyclic_var_test {
+  transition: transform 0.3s ease-out;
+}
+
+.hover_cyclic_var_test:hover {
+  animation-name: moveForward;
+  animation-duration: 1s; /* Adjust duration as needed */
+  animation-fill-mode: forwards; /* Crucial for retaining the final state */
+  animation-timing-function: ease-in-out; /* Optional timing function */
+}
+
+.hover_cyclic_var_test::after {
+  content: 'Element hovered: ' counter(hover-count) ' times';
+}
+
+@keyframes moveForward {
+  0% {
+    transform: translateX(0); /* Starting position */
+  }
+  50% {
+    transform: translateX(50px); /* Intermediate position */
+  }
+  100% {
+    transform: translateX(100px); /* Final position */
+  }
+}
+
+/* Indexed array numbers from: Rock Starwind at https://codepen.io/RockStarwind/pen/JjKoowe */
+@property --indexed_array_string_output {
+  syntax: '<string>';
+  inherits: false;
+  initial-value: '0';
+}
+
+@property --index_delay {
+  syntax: '<time>';
+  inherits: false;
+  initial-value: 0s;
+}
+
+@property --play_pause_switch {
+  syntax: "*";
+  inherits: true;
+  initial-value: running;
+}
+
+.indexed_array_test {
+  --index_option: 0;
+  --index_delay: calc( -1s * ( ( var(--index_option) + 0.5 ) / 5 ) );
+  --output_str: 'Variable result is: ' var(--indexed_array_string_output);
+  --background_clr: '';
+  
+  --conditional_clr: var(--play_pause_switch) green;
+  /* This seems broken for running / paused.
+     Values remain if the same value is clicked on.
+     However, switching to a new value requires shifting to a value, then shifting to another value
+     before the prior value will actually take effect
+     Works with input clicking, registers running / paused fine.
+     Animation variable changing works with colors and strings fine.
+     Just breaks with running / paused animation values.  */
+  animation: index_array_states 1s linear var(--index_delay) 1 normal paused,
+             play_pause_test_transform 2s linear infinite alternate var( --play_pause_switch, paused );
+  background: var(--background_clr);
+}
+
+.play_pause_test {
+  width: 50px;
+  height: 50px;
+  /* attempt to have the ' ' empty space vs 'initial' variable usable technique work. */
+  background: var( --conditional_clr, white );
+  animation: play_pause_test_transform 2s linear infinite alternate var( --play_pause_switch, paused );
+}
+
+.indexed_array_test:has( .sld_rd_00:checked ){ --index_option: 0;  }
+.indexed_array_test:has( .sld_rd_01:checked ){ --index_option: 1;  }
+.indexed_array_test:has( .sld_rd_02:checked ){ --index_option: 2;  }
+.indexed_array_test:has( .sld_rd_03:checked ){ --index_option: 3;  }
+.indexed_array_test:has( .sld_rd_04:checked ){ --index_option: 4;  }
+
+.indexed_array_test::after {
+  content: var(--output_str);
+}
+
+@keyframes index_array_states {
+  0%  { --indexed_array_string_output: 'state 0'; --background_clr: red;    --play_pause_switch: running; }
+  20% { --indexed_array_string_output: 'state 1'; --background_clr: purple; --play_pause_switch: paused; }
+  40% { --indexed_array_string_output: 'state 2'; --background_clr: blue;   --play_pause_switch: running; }
+  60% { --indexed_array_string_output: 'state 3'; --background_clr: teal;   --play_pause_switch: paused; }
+  80% { --indexed_array_string_output: 'state 4'; --background_clr: green;  --play_pause_switch: running; }
+}
+
+@keyframes play_pause_test_transform {
+  from { transform: translateX(0); }
+  to { transform: translateX(100px); }
 }
 
 @property --timing_test_sec {
