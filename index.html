@@ -1553,8 +1553,6 @@
                 <a href="#prj_sftwr_trg"><div class="bttn lg"><span class="material-symbols-rounded icn_bttn">kid_star</span>&nbsp;Projects</div></a>
               </div>
               <div id="item_1_var_status_cntnr">
-                <button id="item_1_switch_1" popovertarget="mypopover_1">switch 1</button><div id="mypopover_1" popover="manual">Popover content</div>
-                <button id="item_1_switch_2" popovertarget="mypopover_2" >switch 2</button><div id="mypopover_2" popover="manual">Popover content</div>
                 <span id="item_1_var_status">Item Choice 1 Variable is: </span></div><flbr></flbr>
               <span>
                 <label for="item_cntnr_none"><span class="material-symbols-rounded icn_sng">radio_button_unchecked</span></label>
@@ -1720,13 +1718,26 @@
               <div class="webpage_tests_menu">
                 <details name="general_tests_menu">
                   <summary>General Tests Menu</summary>
+                  <div>Overlapping Popovers (that also change status display visibility depending on state)</div>
+                  <div>
+                    <button id="item_1_switch_1" popovertarget="mypopover_1">open popover 1</button>
+                    <div id="mypopover_1" popover="manual">
+                      <div>Popover content 1</div>
+                      <div>Larger size so it will be seen behind popover 2</div>
+                    </div>
+                    <button id="item_1_switch_2" popovertarget="mypopover_2" >open popover 2</button><div id="mypopover_2" popover="manual">Popover content 2</div>
+                  </div>
+                  <div>SVG Icons with filtering modes to test out illumination (brighten local area) transparency (place them on top of font areas)</div>
                   <button popovertarget="svg_filter_test">SVG Filter Test</button>
                   <div popover id="svg_filter_test" style="background: transparent; border: none;">
                     <img src="items/Color_Multiply_Attempt.png">
                     <img src="items/Color_Multiply_Cursor_Attempt_3.png">
                   </div>
+                  <div>Testing animating a variable ( background-color: hsl( calc( var( --anim_var_test_mult ) * 250 ), 100%, 50% ) )
                   <div id="anim_var_test"></div>
+                  <div>Testing out changing variables with hover state and retaining the numbers (nope)</div>
                   <div class="hover_cyclic_var_test"></div>
+                  <div>Testing out crazy hack for indexed array numbers using animation index states. (kind of works, super glitchy)</div>
                   <div class="indexed_array_test">
                     <input type="radio" id="sld_rd_00" name="indexed_array" value="00" class="sld_rd_00" checked>
                     <input type="radio" id="sld_rd_01" name="indexed_array" value="01" class="sld_rd_01">
@@ -3422,181 +3433,185 @@
                 <details name="bow_arrow_tests_menu">
                   <summary>Bow and Arrow Tests Menu</summary>
                   <div class="prj_spcr"></div>
-                  <label for="prj_opn" class="projectile_aim">
-                    <input type="radio" id="prj_opn"   name="projectile_sight" class="rd_prj_opn radio_sngl_chc_hide">
-                    <input type="radio" id="prj_close" name="projectile_sight" class="rd_prj_close radio_sngl_chc_hide" checked>
-                    <input type="radio" id="prj_layr1_00" name="projectile_layr1" class="rd_prj_layr1_00 radio_sngl_chc_hide">
-                    <input type="radio" id="prj_layr1_10" name="projectile_layr1" class="rd_prj_layr1_10 radio_sngl_chc_hide">
-                    <input type="radio" id="prj_layr1_01" name="projectile_layr1" class="rd_prj_layr1_01 radio_sngl_chc_hide">
-                    <input type="radio" id="prj_layr1_11" name="projectile_layr1" class="rd_prj_layr1_11 radio_sngl_chc_hide">
+                  <label for="arw_opn" class="projectile_aim arrow_aim">
+                    <input type="radio" id="arw_opn"   name="arrow_sight" class="rd_prj_opn radio_sngl_chc_hide">
+                    <input type="radio" id="arw_close" name="arrow_sight" class="rd_prj_close radio_sngl_chc_hide" checked>
+                    <input type="radio" id="arw_layr1_00" name="arrow_layr1" class="rd_prj_layr1_00 radio_sngl_chc_hide">
+                    <input type="radio" id="arw_layr1_10" name="arrow_layr1" class="rd_prj_layr1_10 radio_sngl_chc_hide">
+                    <input type="radio" id="arw_layr1_01" name="arrow_layr1" class="rd_prj_layr1_01 radio_sngl_chc_hide">
+                    <input type="radio" id="arw_layr1_11" name="arrow_layr1" class="rd_prj_layr1_11 radio_sngl_chc_hide">
                     <span class="material-symbols-rounded clsl">location_searching</span>
                     <div class="aim_cntnr">
-                      <label for="prj_layr1_11" class="aim_layr1 aim_11">
-                        <input type="radio" id="prj_layr2_11_00" name="projectile_layr2" class="rd_prj_layr2_00 radio_sngl_chc_hide">
-                        <input type="radio" id="prj_layr2_11_10" name="projectile_layr2" class="rd_prj_layr2_10 radio_sngl_chc_hide">
-                        <input type="radio" id="prj_layr2_11_01" name="projectile_layr2" class="rd_prj_layr2_01 radio_sngl_chc_hide">
-                        <input type="radio" id="prj_layr2_11_11" name="projectile_layr2" class="rd_prj_layr2_11 radio_sngl_chc_hide">
-                        <label for="prj_layr2_11_10" class="aim_layr2 aim_10">
-                          <input type="radio" id="prj_layr3_11_10_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_11_10_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_11_10_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_11_10_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_11_10_10" class="aim_layr3 aim_10"></label><label for="prj_layr3_11_10_00" class="aim_layr3 aim_00"></label>
-                          <label for="prj_layr3_11_10_11" class="aim_layr3 aim_11"></label><label for="prj_layr3_11_10_01" class="aim_layr3 aim_01"></label>
+                      <div class="arw_aim_layr_cntnr">
+                        <label for="arw_layr1_11" class="aim_layr1 aim_11">
+                          <input type="radio" id="arw_layr2_11_00" name="arrow_layr2" class="rd_prj_layr2_00 radio_sngl_chc_hide">
+                          <input type="radio" id="arw_layr2_11_10" name="arrow_layr2" class="rd_prj_layr2_10 radio_sngl_chc_hide">
+                          <input type="radio" id="arw_layr2_11_01" name="arrow_layr2" class="rd_prj_layr2_01 radio_sngl_chc_hide">
+                          <input type="radio" id="arw_layr2_11_11" name="arrow_layr2" class="rd_prj_layr2_11 radio_sngl_chc_hide">
+                          <label for="arw_layr2_11_10" class="aim_layr2 aim_10">
+                            <input type="radio" id="arw_layr3_11_10_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_11_10_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_11_10_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_11_10_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_11_10_10" class="aim_layr3 aim_10"></label><label for="arw_layr3_11_10_00" class="aim_layr3 aim_00"></label>
+                            <label for="arw_layr3_11_10_11" class="aim_layr3 aim_11"></label><label for="arw_layr3_11_10_01" class="aim_layr3 aim_01"></label>
+                          </label>
+                          <label for="arw_layr2_11_00" class="aim_layr2 aim_00">
+                            <input type="radio" id="arw_layr3_11_00_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_11_00_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_11_00_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_11_00_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_11_00_00" class="aim_layr3 aim_00"></label><label for="arw_layr3_11_00_10" class="aim_layr3 aim_10"></label>
+                            <label for="arw_layr3_11_00_01" class="aim_layr3 aim_01"></label><label for="arw_layr3_11_00_11" class="aim_layr3 aim_11"></label>
+                          </label>
+                          <label for="arw_layr2_11_11" class="aim_layr2 aim_11">
+                            <input type="radio" id="arw_layr3_11_11_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_11_11_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_11_11_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_11_11_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_11_11_00" class="aim_layr3 aim_00"></label><label for="arw_layr3_11_11_01" class="aim_layr3 aim_01"></label>
+                            <label for="arw_layr3_11_11_10" class="aim_layr3 aim_10"></label><label for="arw_layr3_11_11_11" class="aim_layr3 aim_11"></label>
+                          </label>
+                          <label for="arw_layr2_11_01" class="aim_layr2 aim_01">
+                            <input type="radio" id="arw_layr3_11_01_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_11_01_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_11_01_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_11_01_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_11_01_10" class="aim_layr3 aim_10"></label><label for="arw_layr3_11_01_00" class="aim_layr3 aim_00"></label>
+                            <label for="arw_layr3_11_01_11" class="aim_layr3 aim_11"></label><label for="arw_layr3_11_01_01" class="aim_layr3 aim_01"></label>
+                          </label>
                         </label>
-                        <label for="prj_layr2_11_00" class="aim_layr2 aim_00">
-                          <input type="radio" id="prj_layr3_11_00_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_11_00_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_11_00_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_11_00_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_11_00_00" class="aim_layr3 aim_00"></label><label for="prj_layr3_11_00_10" class="aim_layr3 aim_10"></label>
-                          <label for="prj_layr3_11_00_01" class="aim_layr3 aim_01"></label><label for="prj_layr3_11_00_11" class="aim_layr3 aim_11"></label>
+                        <label for="arw_layr1_10" class="aim_layr1 aim_10">
+                          <input type="radio" id="arw_layr2_10_00" name="arrow_layr2" class="rd_prj_layr2_00 radio_sngl_chc_hide">
+                          <input type="radio" id="arw_layr2_10_10" name="arrow_layr2" class="rd_prj_layr2_10 radio_sngl_chc_hide">
+                          <input type="radio" id="arw_layr2_10_01" name="arrow_layr2" class="rd_prj_layr2_01 radio_sngl_chc_hide">
+                          <input type="radio" id="arw_layr2_10_11" name="arrow_layr2" class="rd_prj_layr2_11 radio_sngl_chc_hide">
+                          <label for="arw_layr2_10_11" class="aim_layr2 aim_11">
+                            <input type="radio" id="arw_layr3_10_11_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_10_11_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_10_11_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_10_11_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_10_11_10" class="aim_layr3 aim_10"></label><label for="arw_layr3_10_11_00" class="aim_layr3 aim_00"></label>
+                            <label for="arw_layr3_10_11_11" class="aim_layr3 aim_11"></label><label for="arw_layr3_10_11_01" class="aim_layr3 aim_01"></label>
+                          </label>
+                          <label for="arw_layr2_10_10" class="aim_layr2 aim_10">
+                            <input type="radio" id="arw_layr3_10_10_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_10_10_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_10_10_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_10_10_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_10_10_11" class="aim_layr3 aim_11"></label><label for="arw_layr3_10_10_10" class="aim_layr3 aim_10"></label>
+                            <label for="arw_layr3_10_10_01" class="aim_layr3 aim_01"></label><label for="arw_layr3_10_10_00" class="aim_layr3 aim_00"></label>
+                          </label>
+                          <label for="arw_layr2_10_01" class="aim_layr2 aim_01">
+                            <input type="radio" id="arw_layr3_10_01_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_10_01_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_10_01_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_10_01_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_10_01_11" class="aim_layr3 aim_11"></label><label for="arw_layr3_10_01_10" class="aim_layr3 aim_10"></label>
+                            <label for="arw_layr3_10_01_01" class="aim_layr3 aim_01"></label><label for="arw_layr3_10_01_00" class="aim_layr3 aim_00"></label>
+                          </label>
+                          <label for="arw_layr2_10_00" class="aim_layr2 aim_00">
+                            <input type="radio" id="arw_layr3_10_00_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_10_00_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_10_00_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_10_00_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_10_00_01" class="aim_layr3 aim_01"></label><label for="arw_layr3_10_00_00" class="aim_layr3 aim_00"></label>
+                            <label for="arw_layr3_10_00_11" class="aim_layr3 aim_11"></label><label for="arw_layr3_10_00_10" class="aim_layr3 aim_10"></label>
+                          </label>
                         </label>
-                        <label for="prj_layr2_11_11" class="aim_layr2 aim_11">
-                          <input type="radio" id="prj_layr3_11_11_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_11_11_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_11_11_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_11_11_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_11_11_00" class="aim_layr3 aim_00"></label><label for="prj_layr3_11_11_01" class="aim_layr3 aim_01"></label>
-                          <label for="prj_layr3_11_11_10" class="aim_layr3 aim_10"></label><label for="prj_layr3_11_11_11" class="aim_layr3 aim_11"></label>
+                        <label for="arw_layr1_01" class="aim_layr1 aim_01">
+                          <input type="radio" id="arw_layr2_01_00" name="arrow_layr2" class="rd_prj_layr2_00 radio_sngl_chc_hide">
+                          <input type="radio" id="arw_layr2_01_10" name="arrow_layr2" class="rd_prj_layr2_10 radio_sngl_chc_hide">
+                          <input type="radio" id="arw_layr2_01_01" name="arrow_layr2" class="rd_prj_layr2_01 radio_sngl_chc_hide">
+                          <input type="radio" id="arw_layr2_01_11" name="arrow_layr2" class="rd_prj_layr2_11 radio_sngl_chc_hide">
+                          <label for="arw_layr2_01_00" class="aim_layr2 aim_00">
+                            <input type="radio" id="arw_layr3_01_00_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_01_00_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_01_00_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_01_00_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_01_00_10" class="aim_layr3 aim_10"></label><label for="arw_layr3_01_00_11" class="aim_layr3 aim_11"></label>
+                            <label for="arw_layr3_01_00_00" class="aim_layr3 aim_00"></label><label for="arw_layr3_01_00_01" class="aim_layr3 aim_01"></label>
+                          </label>
+                          <label for="arw_layr2_01_01" class="aim_layr2 aim_01">
+                            <input type="radio" id="arw_layr3_01_01_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_01_01_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_01_01_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_01_01_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_01_01_00" class="aim_layr3 aim_00"></label><label for="arw_layr3_01_01_01" class="aim_layr3 aim_01"></label>
+                            <label for="arw_layr3_01_01_10" class="aim_layr3 aim_10"></label><label for="arw_layr3_01_01_11" class="aim_layr3 aim_11"></label>
+                          </label>
+                          <label for="arw_layr2_01_10" class="aim_layr2 aim_10">
+                            <input type="radio" id="arw_layr3_01_10_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_01_10_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_01_10_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_01_10_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_01_10_00" class="aim_layr3 aim_00"></label><label for="arw_layr3_01_10_01" class="aim_layr3 aim_01"></label>
+                            <label for="arw_layr3_01_10_10" class="aim_layr3 aim_10"></label><label for="arw_layr3_01_10_11" class="aim_layr3 aim_11"></label>
+                          </label>
+                          <label for="arw_layr2_01_11" class="aim_layr2 aim_11">
+                            <input type="radio" id="arw_layr3_01_11_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_01_11_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_01_11_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_01_11_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_01_11_01" class="aim_layr3 aim_01"></label><label for="arw_layr3_01_11_11" class="aim_layr3 aim_11"></label>
+                            <label for="arw_layr3_01_11_00" class="aim_layr3 aim_00"></label><label for="arw_layr3_01_11_10" class="aim_layr3 aim_10"></label>
+                          </label>
                         </label>
-                        <label for="prj_layr2_11_01" class="aim_layr2 aim_01">
-                          <input type="radio" id="prj_layr3_11_01_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_11_01_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_11_01_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_11_01_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_11_01_10" class="aim_layr3 aim_10"></label><label for="prj_layr3_11_01_00" class="aim_layr3 aim_00"></label>
-                          <label for="prj_layr3_11_01_11" class="aim_layr3 aim_11"></label><label for="prj_layr3_11_01_01" class="aim_layr3 aim_01"></label>
+                        <label for="arw_layr1_00" class="aim_layr1 aim_00">
+                          <input type="radio" id="arw_layr2_00_00" name="arrow_layr2" class="rd_prj_layr2_00 radio_sngl_chc_hide">
+                          <input type="radio" id="arw_layr2_00_10" name="arrow_layr2" class="rd_prj_layr2_10 radio_sngl_chc_hide">
+                          <input type="radio" id="arw_layr2_00_01" name="arrow_layr2" class="rd_prj_layr2_01 radio_sngl_chc_hide">
+                          <input type="radio" id="arw_layr2_00_11" name="arrow_layr2" class="rd_prj_layr2_11 radio_sngl_chc_hide">
+                          <label for="arw_layr2_00_01" class="aim_layr2 aim_01">
+                            <input type="radio" id="arw_layr3_00_01_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_00_01_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_00_01_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_00_01_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_00_01_01" class="aim_layr3 aim_01"></label><label for="arw_layr3_00_01_11" class="aim_layr3 aim_11"></label>
+                            <label for="arw_layr3_00_01_00" class="aim_layr3 aim_00"></label><label for="arw_layr3_00_01_10" class="aim_layr3 aim_10"></label>
+                          </label>
+                          <label for="arw_layr2_00_11" class="aim_layr2 aim_11">
+                            <input type="radio" id="arw_layr3_00_11_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_00_11_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_00_11_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_00_11_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_00_11_11" class="aim_layr3 aim_11"></label><label for="arw_layr3_00_11_10" class="aim_layr3 aim_10"></label>
+                            <label for="arw_layr3_00_11_01" class="aim_layr3 aim_01"></label><label for="arw_layr3_00_11_00" class="aim_layr3 aim_00"></label>
+                          </label>
+                          <label for="arw_layr2_00_00" class="aim_layr2 aim_00">
+                            <input type="radio" id="arw_layr3_00_00_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_00_00_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_00_00_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_00_00_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_00_00_11" class="aim_layr3 aim_11"></label><label for="arw_layr3_00_00_01" class="aim_layr3 aim_01"></label>
+                            <label for="arw_layr3_00_00_10" class="aim_layr3 aim_10"></label><label for="arw_layr3_00_00_00" class="aim_layr3 aim_00"></label>
+                          </label>
+                          <label for="arw_layr2_00_10" class="aim_layr2 aim_10">
+                            <input type="radio" id="arw_layr3_00_10_00" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_00_10_01" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_00_10_10" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="arw_layr3_00_10_11" name="arrow_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="arw_layr3_00_10_01" class="aim_layr3 aim_01"></label><label for="arw_layr3_00_10_11" class="aim_layr3 aim_11"></label>
+                            <label for="arw_layr3_00_10_00" class="aim_layr3 aim_00"></label><label for="arw_layr3_00_10_10" class="aim_layr3 aim_10"></label>
+                          </label>
                         </label>
-                      </label>
-                      <label for="prj_layr1_10" class="aim_layr1 aim_10">
-                        <input type="radio" id="prj_layr2_10_00" name="projectile_layr2" class="rd_prj_layr2_00 radio_sngl_chc_hide">
-                        <input type="radio" id="prj_layr2_10_10" name="projectile_layr2" class="rd_prj_layr2_10 radio_sngl_chc_hide">
-                        <input type="radio" id="prj_layr2_10_01" name="projectile_layr2" class="rd_prj_layr2_01 radio_sngl_chc_hide">
-                        <input type="radio" id="prj_layr2_10_11" name="projectile_layr2" class="rd_prj_layr2_11 radio_sngl_chc_hide">
-                        <label for="prj_layr2_10_11" class="aim_layr2 aim_11">
-                          <input type="radio" id="prj_layr3_10_11_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_10_11_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_10_11_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_10_11_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_10_11_10" class="aim_layr3 aim_10"></label><label for="prj_layr3_10_11_00" class="aim_layr3 aim_00"></label>
-                          <label for="prj_layr3_10_11_11" class="aim_layr3 aim_11"></label><label for="prj_layr3_10_11_01" class="aim_layr3 aim_01"></label>
-                        </label>
-                        <label for="prj_layr2_10_10" class="aim_layr2 aim_10">
-                          <input type="radio" id="prj_layr3_10_10_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_10_10_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_10_10_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_10_10_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_10_10_11" class="aim_layr3 aim_11"></label><label for="prj_layr3_10_10_10" class="aim_layr3 aim_10"></label>
-                          <label for="prj_layr3_10_10_01" class="aim_layr3 aim_01"></label><label for="prj_layr3_10_10_00" class="aim_layr3 aim_00"></label>
-                        </label>
-                        <label for="prj_layr2_10_01" class="aim_layr2 aim_01">
-                          <input type="radio" id="prj_layr3_10_01_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_10_01_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_10_01_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_10_01_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_10_01_11" class="aim_layr3 aim_11"></label><label for="prj_layr3_10_01_10" class="aim_layr3 aim_10"></label>
-                          <label for="prj_layr3_10_01_01" class="aim_layr3 aim_01"></label><label for="prj_layr3_10_01_00" class="aim_layr3 aim_00"></label>
-                        </label>
-                        <label for="prj_layr2_10_00" class="aim_layr2 aim_00">
-                          <input type="radio" id="prj_layr3_10_00_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_10_00_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_10_00_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_10_00_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_10_00_01" class="aim_layr3 aim_01"></label><label for="prj_layr3_10_00_00" class="aim_layr3 aim_00"></label>
-                          <label for="prj_layr3_10_00_11" class="aim_layr3 aim_11"></label><label for="prj_layr3_10_00_10" class="aim_layr3 aim_10"></label>
-                        </label>
-                      </label>
-                      <label for="prj_layr1_01" class="aim_layr1 aim_01">
-                        <input type="radio" id="prj_layr2_01_00" name="projectile_layr2" class="rd_prj_layr2_00 radio_sngl_chc_hide">
-                        <input type="radio" id="prj_layr2_01_10" name="projectile_layr2" class="rd_prj_layr2_10 radio_sngl_chc_hide">
-                        <input type="radio" id="prj_layr2_01_01" name="projectile_layr2" class="rd_prj_layr2_01 radio_sngl_chc_hide">
-                        <input type="radio" id="prj_layr2_01_11" name="projectile_layr2" class="rd_prj_layr2_11 radio_sngl_chc_hide">
-                        <label for="prj_layr2_01_00" class="aim_layr2 aim_00">
-                          <input type="radio" id="prj_layr3_01_00_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_01_00_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_01_00_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_01_00_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_01_00_10" class="aim_layr3 aim_10"></label><label for="prj_layr3_01_00_11" class="aim_layr3 aim_11"></label>
-                          <label for="prj_layr3_01_00_00" class="aim_layr3 aim_00"></label><label for="prj_layr3_01_00_01" class="aim_layr3 aim_01"></label>
-                        </label>
-                        <label for="prj_layr2_01_01" class="aim_layr2 aim_01">
-                          <input type="radio" id="prj_layr3_01_01_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_01_01_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_01_01_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_01_01_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_01_01_00" class="aim_layr3 aim_00"></label><label for="prj_layr3_01_01_01" class="aim_layr3 aim_01"></label>
-                          <label for="prj_layr3_01_01_10" class="aim_layr3 aim_10"></label><label for="prj_layr3_01_01_11" class="aim_layr3 aim_11"></label>
-                        </label>
-                        <label for="prj_layr2_01_10" class="aim_layr2 aim_10">
-                          <input type="radio" id="prj_layr3_01_10_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_01_10_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_01_10_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_01_10_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_01_10_00" class="aim_layr3 aim_00"></label><label for="prj_layr3_01_10_01" class="aim_layr3 aim_01"></label>
-                          <label for="prj_layr3_01_10_10" class="aim_layr3 aim_10"></label><label for="prj_layr3_01_10_11" class="aim_layr3 aim_11"></label>
-                        </label>
-                        <label for="prj_layr2_01_11" class="aim_layr2 aim_11">
-                          <input type="radio" id="prj_layr3_01_11_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_01_11_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_01_11_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_01_11_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_01_11_01" class="aim_layr3 aim_01"></label><label for="prj_layr3_01_11_11" class="aim_layr3 aim_11"></label>
-                          <label for="prj_layr3_01_11_00" class="aim_layr3 aim_00"></label><label for="prj_layr3_01_11_10" class="aim_layr3 aim_10"></label>
-                        </label>
-                      </label>
-                      <label for="prj_layr1_00" class="aim_layr1 aim_00">
-                        <input type="radio" id="prj_layr2_00_00" name="projectile_layr2" class="rd_prj_layr2_00 radio_sngl_chc_hide">
-                        <input type="radio" id="prj_layr2_00_10" name="projectile_layr2" class="rd_prj_layr2_10 radio_sngl_chc_hide">
-                        <input type="radio" id="prj_layr2_00_01" name="projectile_layr2" class="rd_prj_layr2_01 radio_sngl_chc_hide">
-                        <input type="radio" id="prj_layr2_00_11" name="projectile_layr2" class="rd_prj_layr2_11 radio_sngl_chc_hide">
-                        <label for="prj_layr2_00_01" class="aim_layr2 aim_01">
-                          <input type="radio" id="prj_layr3_00_01_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_00_01_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_00_01_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_00_01_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_00_01_01" class="aim_layr3 aim_01"></label><label for="prj_layr3_00_01_11" class="aim_layr3 aim_11"></label>
-                          <label for="prj_layr3_00_01_00" class="aim_layr3 aim_00"></label><label for="prj_layr3_00_01_10" class="aim_layr3 aim_10"></label>
-                        </label>
-                        <label for="prj_layr2_00_11" class="aim_layr2 aim_11">
-                          <input type="radio" id="prj_layr3_00_11_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_00_11_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_00_11_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_00_11_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_00_11_11" class="aim_layr3 aim_11"></label><label for="prj_layr3_00_11_10" class="aim_layr3 aim_10"></label>
-                          <label for="prj_layr3_00_11_01" class="aim_layr3 aim_01"></label><label for="prj_layr3_00_11_00" class="aim_layr3 aim_00"></label>
-                        </label>
-                        <label for="prj_layr2_00_00" class="aim_layr2 aim_00">
-                          <input type="radio" id="prj_layr3_00_00_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_00_00_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_00_00_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_00_00_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_00_00_11" class="aim_layr3 aim_11"></label><label for="prj_layr3_00_00_01" class="aim_layr3 aim_01"></label>
-                          <label for="prj_layr3_00_00_10" class="aim_layr3 aim_10"></label><label for="prj_layr3_00_00_00" class="aim_layr3 aim_00"></label>
-                        </label>
-                        <label for="prj_layr2_00_10" class="aim_layr2 aim_10">
-                          <input type="radio" id="prj_layr3_00_10_00" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_00_10_01" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_00_10_10" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
-                          <input type="radio" id="prj_layr3_00_10_11" name="projectile_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
-                          <label for="prj_layr3_00_10_01" class="aim_layr3 aim_01"></label><label for="prj_layr3_00_10_11" class="aim_layr3 aim_11"></label>
-                          <label for="prj_layr3_00_10_00" class="aim_layr3 aim_00"></label><label for="prj_layr3_00_10_10" class="aim_layr3 aim_10"></label>
-                        </label>
-                      </label>
-                      <div class="bow_riser_limbs"></div>
-                      <div class="pull_line_left"><div class="pull_line_width_rtn"></div></div>
-                      <div class="pull_line_right"><div class="pull_line_width_rtn"></div></div>
+                      </div>
+                      <div class="arw_pull_line_cntnr">
+                        <div class="bow_riser_limbs"></div>
+                        <div class="pull_line_left"><div class="pull_line_width_rtn"></div></div>
+                        <div class="pull_line_right"><div class="pull_line_width_rtn"></div></div>
+                      </div>
                     </div>
-                    <label for="prj_close" class="projectile_close">
+                    <label for="arw_close" class="projectile_close">
                       <span class="material-symbols-rounded ggtn">grid_off</span>
                     </label>
                     <div class="projectile_fire_reset">
-                      <input type="radio" id="prj_fire"  name="prj_fire_reset" class="rd_prj_fire radio_sngl_chc_hide">
-                      <input type="radio" id="prj_reset"  name="prj_fire_reset" class="rd_prj_reset radio_sngl_chc_hide" checked>
-                      <label for="prj_fire"><span class="prj_fire_slct material-symbols-rounded ggtn">web_traffic</span></label>
-                      <label for="prj_reset"><span class="prj_reset_slct material-symbols-rounded ggtn">refresh</span></label>
+                      <input type="radio" id="arw_fire"  name="arw_fire_reset" class="rd_prj_fire radio_sngl_chc_hide">
+                      <input type="radio" id="arw_reset"  name="arw_fire_reset" class="rd_prj_reset radio_sngl_chc_hide" checked>
+                      <label for="arw_fire"><span class="arw_fire_slct prj_fire_slct material-symbols-rounded ggtn">web_traffic</span></label>
+                      <label for="arw_reset"><span class="prj_reset_slct material-symbols-rounded ggtn">refresh</span></label>
                     </div>
-                    <div class="prj_fld_cntnr">
+                    <div class="arw_fld_cntnr">
                       <div class="projectile_field proj_fld_1">
                         <div class="projectile_trg"><span class="material-symbols-rounded clsl">target</span></div>
                         <div class="projectile_rwd"></div>
@@ -3610,7 +3625,9 @@
                         <div class="projectile_rwd"></div>
                       </div>
                     </div>
-                    <img class="proj_arrow" src="items/item_arrow_icn.png">
+                    <img class="proj_ammunition arrow_normal" src="items/item_arrow_icn.png">
+                    <img class="proj_ammunition arrow_fire" src="items/item_arrow_fire_icn.png">
+                    <img class="proj_ammunition arrow_lightning" src="items/item_arrow_lightning_icn.png">
                   </label>
                 </details>
                 <details name="boomerang_tests_menu">
@@ -3846,6 +3863,207 @@
                       </div>
                     </div>
                   </div>
+                </details>
+                <details name="slingshot_tests_menu">
+                  <summary>Slingshot Tests Menu</summary>
+                  <div class="prj_spcr"></div>
+                  <label for="slgst_opn" class="projectile_aim slingshot_aim">
+                    <input type="radio" id="slgst_opn"   name="slingshot_sight" class="rd_prj_opn radio_sngl_chc_hide">
+                    <input type="radio" id="slgst_close" name="slingshot_sight" class="rd_prj_close radio_sngl_chc_hide" checked>
+                    <input type="radio" id="slgst_layr1_00" name="slingshot_layr1" class="rd_prj_layr1_00 radio_sngl_chc_hide">
+                    <input type="radio" id="slgst_layr1_10" name="slingshot_layr1" class="rd_prj_layr1_10 radio_sngl_chc_hide">
+                    <input type="radio" id="slgst_layr1_01" name="slingshot_layr1" class="rd_prj_layr1_01 radio_sngl_chc_hide">
+                    <input type="radio" id="slgst_layr1_11" name="slingshot_layr1" class="rd_prj_layr1_11 radio_sngl_chc_hide">
+                    <span class="material-symbols-rounded clsl">location_searching</span>
+                    <div class="aim_cntnr">
+                      <div class="slgst_aim_layr_cntnr">
+                        <label for="slgst_layr1_11" class="aim_layr1 aim_11">
+                          <input type="radio" id="slgst_layr2_11_00" name="slingshot_layr2" class="rd_prj_layr2_00 radio_sngl_chc_hide">
+                          <input type="radio" id="slgst_layr2_11_10" name="slingshot_layr2" class="rd_prj_layr2_10 radio_sngl_chc_hide">
+                          <input type="radio" id="slgst_layr2_11_01" name="slingshot_layr2" class="rd_prj_layr2_01 radio_sngl_chc_hide">
+                          <input type="radio" id="slgst_layr2_11_11" name="slingshot_layr2" class="rd_prj_layr2_11 radio_sngl_chc_hide">
+                          <label for="slgst_layr2_11_10" class="aim_layr2 aim_10">
+                            <input type="radio" id="slgst_layr3_11_10_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_11_10_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_11_10_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_11_10_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_11_10_10" class="aim_layr3 aim_10"></label><label for="slgst_layr3_11_10_00" class="aim_layr3 aim_00"></label>
+                            <label for="slgst_layr3_11_10_11" class="aim_layr3 aim_11"></label><label for="slgst_layr3_11_10_01" class="aim_layr3 aim_01"></label>
+                          </label>
+                          <label for="slgst_layr2_11_00" class="aim_layr2 aim_00">
+                            <input type="radio" id="slgst_layr3_11_00_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_11_00_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_11_00_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_11_00_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_11_00_00" class="aim_layr3 aim_00"></label><label for="slgst_layr3_11_00_10" class="aim_layr3 aim_10"></label>
+                            <label for="slgst_layr3_11_00_01" class="aim_layr3 aim_01"></label><label for="slgst_layr3_11_00_11" class="aim_layr3 aim_11"></label>
+                          </label>
+                          <label for="slgst_layr2_11_11" class="aim_layr2 aim_11">
+                            <input type="radio" id="slgst_layr3_11_11_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_11_11_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_11_11_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_11_11_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_11_11_00" class="aim_layr3 aim_00"></label><label for="slgst_layr3_11_11_01" class="aim_layr3 aim_01"></label>
+                            <label for="slgst_layr3_11_11_10" class="aim_layr3 aim_10"></label><label for="slgst_layr3_11_11_11" class="aim_layr3 aim_11"></label>
+                          </label>
+                          <label for="slgst_layr2_11_01" class="aim_layr2 aim_01">
+                            <input type="radio" id="slgst_layr3_11_01_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_11_01_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_11_01_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_11_01_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_11_01_10" class="aim_layr3 aim_10"></label><label for="slgst_layr3_11_01_00" class="aim_layr3 aim_00"></label>
+                            <label for="slgst_layr3_11_01_11" class="aim_layr3 aim_11"></label><label for="slgst_layr3_11_01_01" class="aim_layr3 aim_01"></label>
+                          </label>
+                        </label>
+                        <label for="slgst_layr1_10" class="aim_layr1 aim_10">
+                          <input type="radio" id="slgst_layr2_10_00" name="slingshot_layr2" class="rd_prj_layr2_00 radio_sngl_chc_hide">
+                          <input type="radio" id="slgst_layr2_10_10" name="slingshot_layr2" class="rd_prj_layr2_10 radio_sngl_chc_hide">
+                          <input type="radio" id="slgst_layr2_10_01" name="slingshot_layr2" class="rd_prj_layr2_01 radio_sngl_chc_hide">
+                          <input type="radio" id="slgst_layr2_10_11" name="slingshot_layr2" class="rd_prj_layr2_11 radio_sngl_chc_hide">
+                          <label for="slgst_layr2_10_11" class="aim_layr2 aim_11">
+                            <input type="radio" id="slgst_layr3_10_11_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_10_11_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_10_11_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_10_11_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_10_11_10" class="aim_layr3 aim_10"></label><label for="slgst_layr3_10_11_00" class="aim_layr3 aim_00"></label>
+                            <label for="slgst_layr3_10_11_11" class="aim_layr3 aim_11"></label><label for="slgst_layr3_10_11_01" class="aim_layr3 aim_01"></label>
+                          </label>
+                          <label for="slgst_layr2_10_10" class="aim_layr2 aim_10">
+                            <input type="radio" id="slgst_layr3_10_10_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_10_10_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_10_10_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_10_10_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_10_10_11" class="aim_layr3 aim_11"></label><label for="slgst_layr3_10_10_10" class="aim_layr3 aim_10"></label>
+                            <label for="slgst_layr3_10_10_01" class="aim_layr3 aim_01"></label><label for="slgst_layr3_10_10_00" class="aim_layr3 aim_00"></label>
+                          </label>
+                          <label for="slgst_layr2_10_01" class="aim_layr2 aim_01">
+                            <input type="radio" id="slgst_layr3_10_01_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_10_01_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_10_01_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_10_01_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_10_01_11" class="aim_layr3 aim_11"></label><label for="slgst_layr3_10_01_10" class="aim_layr3 aim_10"></label>
+                            <label for="slgst_layr3_10_01_01" class="aim_layr3 aim_01"></label><label for="slgst_layr3_10_01_00" class="aim_layr3 aim_00"></label>
+                          </label>
+                          <label for="slgst_layr2_10_00" class="aim_layr2 aim_00">
+                            <input type="radio" id="slgst_layr3_10_00_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_10_00_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_10_00_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_10_00_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_10_00_01" class="aim_layr3 aim_01"></label><label for="slgst_layr3_10_00_00" class="aim_layr3 aim_00"></label>
+                            <label for="slgst_layr3_10_00_11" class="aim_layr3 aim_11"></label><label for="slgst_layr3_10_00_10" class="aim_layr3 aim_10"></label>
+                          </label>
+                        </label>
+                        <label for="slgst_layr1_01" class="aim_layr1 aim_01">
+                          <input type="radio" id="slgst_layr2_01_00" name="slingshot_layr2" class="rd_prj_layr2_00 radio_sngl_chc_hide">
+                          <input type="radio" id="slgst_layr2_01_10" name="slingshot_layr2" class="rd_prj_layr2_10 radio_sngl_chc_hide">
+                          <input type="radio" id="slgst_layr2_01_01" name="slingshot_layr2" class="rd_prj_layr2_01 radio_sngl_chc_hide">
+                          <input type="radio" id="slgst_layr2_01_11" name="slingshot_layr2" class="rd_prj_layr2_11 radio_sngl_chc_hide">
+                          <label for="slgst_layr2_01_00" class="aim_layr2 aim_00">
+                            <input type="radio" id="slgst_layr3_01_00_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_01_00_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_01_00_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_01_00_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_01_00_10" class="aim_layr3 aim_10"></label><label for="slgst_layr3_01_00_11" class="aim_layr3 aim_11"></label>
+                            <label for="slgst_layr3_01_00_00" class="aim_layr3 aim_00"></label><label for="slgst_layr3_01_00_01" class="aim_layr3 aim_01"></label>
+                          </label>
+                          <label for="slgst_layr2_01_01" class="aim_layr2 aim_01">
+                            <input type="radio" id="slgst_layr3_01_01_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_01_01_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_01_01_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_01_01_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_01_01_00" class="aim_layr3 aim_00"></label><label for="slgst_layr3_01_01_01" class="aim_layr3 aim_01"></label>
+                            <label for="slgst_layr3_01_01_10" class="aim_layr3 aim_10"></label><label for="slgst_layr3_01_01_11" class="aim_layr3 aim_11"></label>
+                          </label>
+                          <label for="slgst_layr2_01_10" class="aim_layr2 aim_10">
+                            <input type="radio" id="slgst_layr3_01_10_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_01_10_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_01_10_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_01_10_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_01_10_00" class="aim_layr3 aim_00"></label><label for="slgst_layr3_01_10_01" class="aim_layr3 aim_01"></label>
+                            <label for="slgst_layr3_01_10_10" class="aim_layr3 aim_10"></label><label for="slgst_layr3_01_10_11" class="aim_layr3 aim_11"></label>
+                          </label>
+                          <label for="slgst_layr2_01_11" class="aim_layr2 aim_11">
+                            <input type="radio" id="slgst_layr3_01_11_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_01_11_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_01_11_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_01_11_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_01_11_01" class="aim_layr3 aim_01"></label><label for="slgst_layr3_01_11_11" class="aim_layr3 aim_11"></label>
+                            <label for="slgst_layr3_01_11_00" class="aim_layr3 aim_00"></label><label for="slgst_layr3_01_11_10" class="aim_layr3 aim_10"></label>
+                          </label>
+                        </label>
+                        <label for="slgst_layr1_00" class="aim_layr1 aim_00">
+                          <input type="radio" id="slgst_layr2_00_00" name="slingshot_layr2" class="rd_prj_layr2_00 radio_sngl_chc_hide">
+                          <input type="radio" id="slgst_layr2_00_10" name="slingshot_layr2" class="rd_prj_layr2_10 radio_sngl_chc_hide">
+                          <input type="radio" id="slgst_layr2_00_01" name="slingshot_layr2" class="rd_prj_layr2_01 radio_sngl_chc_hide">
+                          <input type="radio" id="slgst_layr2_00_11" name="slingshot_layr2" class="rd_prj_layr2_11 radio_sngl_chc_hide">
+                          <label for="slgst_layr2_00_01" class="aim_layr2 aim_01">
+                            <input type="radio" id="slgst_layr3_00_01_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_00_01_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_00_01_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_00_01_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_00_01_01" class="aim_layr3 aim_01"></label><label for="slgst_layr3_00_01_11" class="aim_layr3 aim_11"></label>
+                            <label for="slgst_layr3_00_01_00" class="aim_layr3 aim_00"></label><label for="slgst_layr3_00_01_10" class="aim_layr3 aim_10"></label>
+                          </label>
+                          <label for="slgst_layr2_00_11" class="aim_layr2 aim_11">
+                            <input type="radio" id="slgst_layr3_00_11_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_00_11_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_00_11_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_00_11_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_00_11_11" class="aim_layr3 aim_11"></label><label for="slgst_layr3_00_11_10" class="aim_layr3 aim_10"></label>
+                            <label for="slgst_layr3_00_11_01" class="aim_layr3 aim_01"></label><label for="slgst_layr3_00_11_00" class="aim_layr3 aim_00"></label>
+                          </label>
+                          <label for="slgst_layr2_00_00" class="aim_layr2 aim_00">
+                            <input type="radio" id="slgst_layr3_00_00_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_00_00_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_00_00_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_00_00_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_00_00_11" class="aim_layr3 aim_11"></label><label for="slgst_layr3_00_00_01" class="aim_layr3 aim_01"></label>
+                            <label for="slgst_layr3_00_00_10" class="aim_layr3 aim_10"></label><label for="slgst_layr3_00_00_00" class="aim_layr3 aim_00"></label>
+                          </label>
+                          <label for="slgst_layr2_00_10" class="aim_layr2 aim_10">
+                            <input type="radio" id="slgst_layr3_00_10_00" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_00 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_00_10_01" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_01 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_00_10_10" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_10 radio_sngl_chc_hide">
+                            <input type="radio" id="slgst_layr3_00_10_11" name="slingshot_layr3" class="rd_layr3 rd_prj_layr3_11 radio_sngl_chc_hide">
+                            <label for="slgst_layr3_00_10_01" class="aim_layr3 aim_01"></label><label for="slgst_layr3_00_10_11" class="aim_layr3 aim_11"></label>
+                            <label for="slgst_layr3_00_10_00" class="aim_layr3 aim_00"></label><label for="slgst_layr3_00_10_10" class="aim_layr3 aim_10"></label>
+                          </label>
+                        </label>
+                      </div>
+                      <div class="slgst_pull_line_cntnr">
+                        <div class="bow_riser_limbs"></div>
+                        <div class="pull_line_left"><div class="pull_line_width_rtn"></div></div>
+                        <div class="pull_line_right"><div class="pull_line_width_rtn"></div></div>
+                      </div>
+                    </div>
+                    <label for="slgst_close" class="projectile_close">
+                      <span class="material-symbols-rounded ggtn">grid_off</span>
+                    </label>
+                    <div class="projectile_fire_reset">
+                      <input type="radio" id="slgst_fire"  name="slingshot_fire_reset" class="rd_prj_fire radio_sngl_chc_hide">
+                      <input type="radio" id="slgst_reset"  name="slingshot_fire_reset" class="rd_prj_reset radio_sngl_chc_hide" checked>
+                      <label for="slgst_fire"><span class="slgst_fire_slct prj_fire_slct material-symbols-rounded ggtn">web_traffic</span></label>
+                      <label for="slgst_reset"><span class="prj_reset_slct material-symbols-rounded ggtn">refresh</span></label>
+                    </div>
+                    <div class="slgst_fld_cntnr">
+                      <div class="projectile_field proj_fld_1">
+                        <div class="projectile_trg"><span class="material-symbols-rounded clsl">target</span></div>
+                        <div class="projectile_rwd"></div>
+                      </div>
+                      <div class="projectile_field proj_fld_2">
+                        <div class="projectile_trg"><span class="material-symbols-rounded clsl">target</span></div>
+                        <div class="projectile_rwd"></div>
+                      </div>
+                      <div class="projectile_field proj_fld_3">
+                        <div class="projectile_trg"><span class="material-symbols-rounded clsl">target</span></div>
+                        <div class="projectile_rwd"></div>
+                      </div>
+                    </div>
+                    <img class="proj_ammunition slingshot_deku" src="items/item_seed_deku_icn.png">
+                    <img class="proj_ammunition slingshot_gale" src="items/item_seed_gale_icn.png">
+                    <img class="proj_ammunition slingshot_ember" src="items/item_seed_ember_icn.png">
+                    <img class="proj_ammunition slingshot_ice_cube" src="items/item_ice_cube_png.png">
+                  </label>
                 </details>
               </div>
               
