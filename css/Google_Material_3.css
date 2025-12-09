@@ -2153,8 +2153,8 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
   width: 50px;
   height: 50px;
   display: inline-block;
-  --arrow_m: 0px;
-  --arrow_n: 0px;
+  --prj_m: 0px;
+  --prj_n: 0px;
   --pull_len: 0px;
   --pull_rtn: 0deg;
   --pull_width_rtn: 0deg;
@@ -2170,10 +2170,10 @@ body:has( #item_chc_1:checked ) .item_chc_1 { background-image: linear-gradient(
   pointer-events: none;
 }
 
-body:has( #item_use_9:checked  ):has( .item_chc_9_chk:checked  ) .projectile_aim { pointer-events: auto; }
-body:has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .projectile_aim { pointer-events: auto; }
-body:has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .projectile_aim { pointer-events: auto; }
-body:has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .projectile_aim { pointer-events: auto; }
+body:has( #item_use_9:checked  ):has( .item_chc_9_chk:checked  ) .arrow_aim { pointer-events: auto; }
+body:has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .arrow_aim { pointer-events: auto; }
+body:has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .arrow_aim { pointer-events: auto; }
+body:has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .arrow_aim { pointer-events: auto; }
 
 .aim_cntnr {
   position: absolute;
@@ -2205,11 +2205,6 @@ body:has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .projectile_aim
   z-index: 2;
 }
 
-.projectile_field {
-  display: none;
-  position: absolute;
-}
-
 .projectile_aim:has( .rd_prj_opn:checked ) .aim_cntnr {
   display: flex;
   flex-wrap: wrap;
@@ -2221,17 +2216,14 @@ body:has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .projectile_aim
   font-variation-settings: 'FILL' 1;
 }
 
-.projectile_aim:has( .rd_prj_opn:checked ) .projectile_field {
-  display: block;
-}
-
-.aim_layr1 { width: 100px; height: 100px; display: none; }
+.arw_aim_layr_cntnr { display: none; }
+.aim_layr1 { width: 100px; height: 100px; display: flex; flex-wrap: wrap; }
 .aim_layr2 { width:  50px; height:  50px; display: none; }
 .aim_layr3 { width:  25px; height:  25px; display: none; }
 
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .aim_layr1 { display: flex; flex-wrap: wrap; }
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .aim_layr1 { display: flex; flex-wrap: wrap; }
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .aim_layr1 { display: flex; flex-wrap: wrap; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .arw_aim_layr_cntnr { display: flex; flex-wrap: wrap }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .arw_aim_layr_cntnr { display: flex; flex-wrap: wrap; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .arw_aim_layr_cntnr { display: flex; flex-wrap: wrap; }
 
 .aim_layr1:hover { background: blue; opacity: 0.5; }
 .aim_layr2:hover { background: #009CFF; opacity: 0.5; }
@@ -2255,8 +2247,11 @@ body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13
 .aim_layr1:has( .rd_prj_layr2_01:checked ) .aim_layr2.aim_01 .aim_layr3 { display: initial; }
 .aim_layr1:has( .rd_prj_layr2_11:checked ) .aim_layr2.aim_11 .aim_layr3 { display: initial; }
 
-.pull_line_left {
+.arw_pull_line_cntnr {
   display: none;
+}
+
+.pull_line_left {
   position: absolute;
   top:  100px;
   left: 100px;
@@ -2265,11 +2260,9 @@ body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13
   will-change: transform;
   transform: translateZ(0);
   pointer-events: none;
-  display: none;
 }
 
 .pull_line_right {
-  display: none;
   position: absolute;
   top:  100px;
   left: 100px;
@@ -2278,15 +2271,11 @@ body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13
   will-change: transform;
   transform: translateZ(0);
   pointer-events: none;
-  display: none;
 }
 
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .pull_line_left { display: initial; }
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .pull_line_left { display: initial; }
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .pull_line_left { display: initial; }
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .pull_line_right { display: initial; }
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .pull_line_right { display: initial; }
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .pull_line_right { display: initial; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .aim_cntnr:has( .rd_layr3:checked ) .arw_pull_line_cntnr { display: block; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .aim_cntnr:has( .rd_layr3:checked ) .arw_pull_line_cntnr { display: block; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .aim_cntnr:has( .rd_layr3:checked ) .arw_pull_line_cntnr { display: block; }
 
 .pull_line_width_rtn {
   transform-origin: 100% 0;
@@ -2338,48 +2327,39 @@ body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13
 .projectile_aim:has( .rd_prj_layr2_11:checked ):has( .aim_11 > .rd_prj_layr3_01:checked ){ --pull_len_3: -5.9px; --pull_rtn_3: 12.5deg; --pull_width_rtn_3: 0.36deg; }
 .projectile_aim:has( .rd_prj_layr2_11:checked ):has( .aim_11 > .rd_prj_layr3_11:checked ){ --pull_len_3: -17px; --pull_rtn_3: -7deg; --pull_width_rtn_3: 1.58deg; }
 
-@property --pull_rtn_cos {
-  syntax: '<number>';
-  inherits: false;
-  initial-value: 0;
-}
-
-@property --pull_rtn_sin {
-  syntax: '<number>';
-  inherits: false;
-  initial-value: 0;
-}
+@property --pull_rtn_cos { syntax: '<number>'; inherits: false; initial-value: 0; }
+@property --pull_rtn_sin { syntax: '<number>'; inherits: false; initial-value: 0; }
+@property --prj_m { syntax: '<length>'; inherits: true; initial-value: 0px; }
+@property --prj_n { syntax: '<length>'; inherits: true; initial-value: 0px; }
 
 .projectile_aim:has( .rd_layr3:checked ){ --pull_rtn:       calc( var( --pull_rtn_1 )       + var( --pull_rtn_2 )       + var( --pull_rtn_3 ) );
                                          --pull_len:       calc( var( --pull_len_1 )       + var( --pull_len_2 )       + var( --pull_len_3 ) );
                                          --pull_width_rtn: calc( var( --pull_width_rtn_1 ) + var( --pull_width_rtn_2 ) + var( --pull_width_rtn_3 ) );
                                          --pull_rtn_cos: calc( cos( var( --pull_rtn ) ) );
                                          --pull_rtn_sin: calc( sin( var( --pull_rtn ) ) );
-                                         --arrow_m: calc( var( --pull_rtn_cos ) * ( var( --pull_len ) - 17px ) );
-                                         --arrow_n: calc( var( --pull_rtn_sin ) * ( var( --pull_len ) - 17px ) );
-                                         --arrow_bit_m: var( --arrow_m );
-                                         --arrow_bit_n: var( --arrow_n );
+                                         --prj_m: calc( var( --pull_rtn_cos ) * ( var( --pull_len ) - 17px ) );
+                                         --prj_n: calc( var( --pull_rtn_sin ) * ( var( --pull_len ) - 17px ) );
+                                         --prj_bit_m: var( --prj_m );
+                                         --prj_bit_n: var( --prj_n );
 }
 
-.aim_cntnr:has( .aim_layr3:hover ) .pull_line_left {
-  display: block;
+.aim_cntnr:has( .rd_layr3:checked ) .pull_line_left {
   transform: rotate( var( --pull_rtn ) );
 }
 
-.aim_cntnr:has( .aim_layr3:hover ) .pull_line_left > .pull_line_width_rtn {
+.aim_cntnr:has( .rd_layr3:checked ) .pull_line_left > .pull_line_width_rtn {
   transform: rotate( var( --pull_width_rtn ) );
-  width: var( --pull_len );
+  width: calc( var( --pull_len ) * max( 0, ( 1 - var( --anim_var_projectile ) ) ) );
   height: 3px;
 }
 
-.aim_cntnr:has( .aim_layr3:hover ) .pull_line_right {
-  display: block;
+.aim_cntnr:has( .rd_layr3:checked ) .pull_line_right {
   transform: rotate( var( --pull_rtn ) );
 }
 
-.aim_cntnr:has( .aim_layr3:hover ) .pull_line_right > .pull_line_width_rtn {
+.aim_cntnr:has( .rd_layr3:checked ) .pull_line_right > .pull_line_width_rtn {
   transform: rotate( calc( -1 * var( --pull_width_rtn ) ) );
-  width: var( --pull_len );
+  width: calc( var( --pull_len ) * max( 0, ( 1 - var( --anim_var_projectile ) ) ) );
   height: 3px;
 }
 
@@ -2410,14 +2390,38 @@ body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13
    Stacks of cos / sin may be a possibility.  Side to side especially may be acceptable.
    Cumulative distribution function style functions may also be a possiblity */
 
-.prj_fld_cntnr {
+.arw_fld_cntnr {
   display: none;
   pointer-events: none;
 }
 
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .prj_fld_cntnr { display: initial; }
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .prj_fld_cntnr { display: initial; }
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .prj_fld_cntnr { display: initial; }
+.projectile_field {
+  display: none;
+  position: absolute;
+  --width_pos_track_st:  calc( var( --width_fld  ) - var( --prj_m )     - 25px );
+  --height_pos_track_st: calc( var( --height_fld ) + var( --prj_n )     - 25px );
+  --width_pos_track:     calc( var( --width_fld  ) - var( --prj_bit_m ) - 25px );
+  --height_pos_track:    calc( var( --height_fld ) + var( --prj_bit_n ) - 25px );
+  --width_pos_track_no_unit:  calc( tan( atan2( var( --width_pos_track  ), 1px ) ) );
+  --height_pos_track_no_unit: calc( tan( atan2( var( --height_pos_track ), 1px ) ) );
+  
+  --rtn_to_st: calc( atan2( ( var( --height_pos_track_st ) ), var( --width_pos_track_st ) ) );
+  
+  --dist_trg_para: calc(      var( --width_pos_track_no_unit ) * cos( var( --rtn_to_st ) ) + var( --height_pos_track_no_unit ) * sin( var( --rtn_to_st ) ) - 24 );
+  --dist_trg_perp: calc( abs( var( --width_pos_track_no_unit ) * sin( var( --rtn_to_st ) ) - var( --height_pos_track_no_unit ) * cos( var( --rtn_to_st ) ) ) - 24 );
+  
+  --hit_para: calc( ( var(--dist_trg_para)/sqrt( 1 + var(--dist_trg_para) * var(--dist_trg_para) ) + 1 )/2 );
+  --hit_perp: calc( ( var(--dist_trg_perp)/sqrt( 1 + var(--dist_trg_perp) * var(--dist_trg_perp) ) + 1 )/2 );
+  --hit_trg: calc( var(--hit_para) + var(--hit_perp) );
+}
+
+.projectile_aim:has( .rd_prj_opn:checked ) .projectile_field {
+  display: block;
+}
+
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .arw_fld_cntnr { display: initial; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .arw_fld_cntnr { display: initial; }
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .arw_fld_cntnr { display: initial; }
 
 @property --width_fld_1 {
   syntax: '<length>';
@@ -2426,58 +2430,22 @@ body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13
 }
 
 .proj_fld_1 {
-  --width_fld_1: calc( 100vw - 500px );
-  --height_fld_1: 198px;
-  --width_fld_1_w_arw:  calc( var( --width_fld_1  ) - var( --arrow_m ) );
-  --height_fld_1_w_arw: calc( var( --height_fld_1 ) + var( --arrow_n ) );
-  --width_pos_track_st:  calc( var( --width_fld_1_w_arw ) - 48px );
-  --height_pos_track_st: calc( var( --height_fld_1_w_arw ) - 48px );
-  --width_pos_track_st_no_unit:  calc( tan( atan2( var( --width_pos_track_st  ), 1px ) ) );
-  --height_pos_track_st_no_unit: calc( tan( atan2( var( --height_pos_track_st ), 1px ) ) );
-  --width_pos_track:  calc( var( --width_fld_1  ) - var( --arrow_bit_m ) - 48px );
-  --height_pos_track: calc( var( --height_fld_1 ) + var( --arrow_bit_n ) - 48px );
-  --width_pos_track_no_unit:  calc( tan( atan2( var( --width_pos_track  ), 1px ) ) );
-  --height_pos_track_no_unit: calc( tan( atan2( var( --height_pos_track ), 1px ) ) );
-  --rtn_to_st: calc( atan2( ( var( --height_fld_1_w_arw ) - 48px ), ( var( --width_fld_1_w_arw ) - 48px ) ) );
-  /*--dist_trg:      calc( sqrt( var(--width_pos_track_no_unit) * var(--width_pos_track_no_unit) + var(--height_pos_track_no_unit) * var(--height_pos_track_no_unit) ) );*/
-  /*--dist_trg_st:   calc( sqrt( var(--width_pos_track_st_no_unit) * var(--width_pos_track_st_no_unit) + var(--height_pos_track_st_no_unit) * var(--height_pos_track_st_no_unit) ) );*/
-  --dist_trg_para: calc(      var( --width_pos_track_no_unit ) * cos( var( --rtn_to_st ) ) + var( --height_pos_track_no_unit ) * sin( var( --rtn_to_st ) ) - 24 );
-  --dist_trg_perp: calc( abs( var( --width_pos_track_no_unit ) * sin( var( --rtn_to_st ) ) - var( --height_pos_track_no_unit ) * cos( var( --rtn_to_st ) ) ) - 24 );
-  --hit_para: calc( ( var(--dist_trg_para)/sqrt( 1 + var(--dist_trg_para) * var(--dist_trg_para) ) + 1 )/2 );
-  --hit_perp: calc( ( var(--dist_trg_perp)/sqrt( 1 + var(--dist_trg_perp) * var(--dist_trg_perp) ) + 1 )/2 );
-  --hit_trg: calc( var(--hit_para) + var(--hit_perp) );
-  right: calc( 548px - 100vw );
-  top: -150px;
-  width:  var( --width_fld_1_w_arw );
-  height: var( --height_fld_1_w_arw );
+  --width_fld_1: calc( 100vw - 525px );
+  --height_fld_1: -50px;
+  --width_fld: var( --width_fld_1 );
+  --height_fld: var( --height_fld_1 );
+  right: calc( -1 * var(--width_fld_1) + 25px );
+  top: calc( -1 * var(--height_fld_1) + 25px );
 }
 
 
 .proj_fld_2 {
-  --width_fld_2: 148px;
-  --height_fld_2: 498px;
-  --width_fld_2_w_arw:  calc( var( --width_fld_2  ) - var( --arrow_m ) );
-  --height_fld_2_w_arw: calc( var( --height_fld_2 ) + var( --arrow_n ) );
-  --width_pos_track_st:  calc( var( --width_fld_2_w_arw ) - 48px );
-  --height_pos_track_st: calc( var( --height_fld_2_w_arw ) - 48px );
-  --width_pos_track_st_no_unit:  calc( tan( atan2( var( --width_pos_track_st  ), 1px ) ) );
-  --height_pos_track_st_no_unit: calc( tan( atan2( var( --height_pos_track_st ), 1px ) ) );
-  --width_pos_track:  calc( var( --width_fld_2  ) - var( --arrow_bit_m ) - 48px );
-  --height_pos_track: calc( var( --height_fld_2 ) + var( --arrow_bit_n ) - 48px );
-  --width_pos_track_no_unit:  calc( tan( atan2( var( --width_pos_track  ), 1px ) ) );
-  --height_pos_track_no_unit: calc( tan( atan2( var( --height_pos_track ), 1px ) ) );
-  --rtn_to_st: calc( atan2( ( var( --height_fld_2_w_arw ) - 48px ), ( var( --width_fld_2_w_arw ) - 48px ) ) );
-  /*--dist_trg:      calc( sqrt( var(--width_pos_track_no_unit) * var(--width_pos_track_no_unit) + var(--height_pos_track_no_unit) * var(--height_pos_track_no_unit) ) );*/
-  /*--dist_trg_st:   calc( sqrt( var(--width_pos_track_st_no_unit) * var(--width_pos_track_st_no_unit) + var(--height_pos_track_st_no_unit) * var(--height_pos_track_st_no_unit) ) );*/
-  --dist_trg_para: calc(      var( --width_pos_track_no_unit ) * cos( var( --rtn_to_st ) ) + var( --height_pos_track_no_unit ) * sin( var( --rtn_to_st ) ) - 24 );
-  --dist_trg_perp: calc( abs( var( --width_pos_track_no_unit ) * sin( var( --rtn_to_st ) ) - var( --height_pos_track_no_unit ) * cos( var( --rtn_to_st ) ) ) - 24 );
-  --hit_para: calc( ( var(--dist_trg_para)/sqrt( 1 + var(--dist_trg_para) * var(--dist_trg_para) ) + 1 )/2 );
-  --hit_perp: calc( ( var(--dist_trg_perp)/sqrt( 1 + var(--dist_trg_perp) * var(--dist_trg_perp) ) + 1 )/2 );
-  --hit_trg: calc( var(--hit_para) + var(--hit_perp) );
-  right: -100px;
-  top: -450px;
-  width:  var( --width_fld_2_w_arw );
-  height: var( --height_fld_2_w_arw );
+  --width_fld_2: 125px;
+  --height_fld_2: 475px;
+  --width_fld: var( --width_fld_2 );
+  --height_fld: var( --height_fld_2 );
+  right: calc( -1 * var(--width_fld_2) + 25px );
+  top: calc( -1 * var(--height_fld_2) + 25px );
 }
 
 @property --width_fld_3 {
@@ -2487,30 +2455,12 @@ body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13
 }
 
 .proj_fld_3 {
-  --width_fld_3: calc( 35vw + 48px );
-  --height_fld_3: 298px;
-  --width_fld_3_w_arw:  calc( var( --width_fld_3  ) - var( --arrow_m ) );
-  --height_fld_3_w_arw: calc( var( --height_fld_3 ) + var( --arrow_n ) );
-  --width_pos_track_st:  calc( var( --width_fld_3_w_arw ) - 48px );
-  --height_pos_track_st: calc( var( --height_fld_3_w_arw ) - 48px );
-  --width_pos_track_st_no_unit:  calc( tan( atan2( var( --width_pos_track_st  ), 1px ) ) );
-  --height_pos_track_st_no_unit: calc( tan( atan2( var( --height_pos_track_st ), 1px ) ) );
-  --width_pos_track:  calc( var( --width_fld_3  ) - var( --arrow_bit_m ) - 48px );
-  --height_pos_track: calc( var( --height_fld_3 ) + var( --arrow_bit_n ) - 48px );
-  --width_pos_track_no_unit:  calc( tan( atan2( var( --width_pos_track  ), 1px ) ) );
-  --height_pos_track_no_unit: calc( tan( atan2( var( --height_pos_track ), 1px ) ) );
-  --rtn_to_st: calc( atan2( ( var( --height_fld_3_w_arw ) - 48px ), ( var( --width_fld_3_w_arw ) - 48px ) ) );
-  /*--dist_trg:      calc( sqrt( var(--width_pos_track_no_unit) * var(--width_pos_track_no_unit) + var(--height_pos_track_no_unit) * var(--height_pos_track_no_unit) ) );*/
-  /*--dist_trg_st:   calc( sqrt( var(--width_pos_track_st_no_unit) * var(--width_pos_track_st_no_unit) + var(--height_pos_track_st_no_unit) * var(--height_pos_track_st_no_unit) ) );*/
-  --dist_trg_para: calc(      var( --width_pos_track_no_unit ) * cos( var( --rtn_to_st ) ) + var( --height_pos_track_no_unit ) * sin( var( --rtn_to_st ) ) - 24 );
-  --dist_trg_perp: calc( abs( var( --width_pos_track_no_unit ) * sin( var( --rtn_to_st ) ) - var( --height_pos_track_no_unit ) * cos( var( --rtn_to_st ) ) ) - 24 );
-  --hit_para: calc( ( var(--dist_trg_para)/sqrt( 1 + var(--dist_trg_para) * var(--dist_trg_para) ) + 1 )/2 );
-  --hit_perp: calc( ( var(--dist_trg_perp)/sqrt( 1 + var(--dist_trg_perp) * var(--dist_trg_perp) ) + 1 )/2 );
-  --hit_trg: calc( var(--hit_para) + var(--hit_perp) );
-  right: -35vw;
-  top: -250px;
-  width:  var( --width_fld_3_w_arw );
-  height: var( --height_fld_3_w_arw );
+  --width_fld_3: calc( 35vw + 25px );
+  --height_fld_3: 275px;
+  --width_fld: var( --width_fld_3 );
+  --height_fld: var( --height_fld_3 );
+  right: calc( -1 * var(--width_fld_3) + 25px );
+  top: calc( -1 * var(--height_fld_3) + 25px );
 }
 
 .projectile_trg {
@@ -2540,11 +2490,9 @@ body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13
   to { background-position: -432px 0; /* (frame_width * number_of_frames - frame_width) */ }
 }
 
-.proj_arrow {
+.proj_ammunition {
   position: absolute;
   z-index: 3;
-  left: 6px;
-  top: 22px;
   transform-origin: 50% 50%;
   will-change: transform;
   transform: translateZ(0);
@@ -2552,23 +2500,27 @@ body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13
   display: none;
 }
 
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .projectile_aim:has( .rd_prj_opn:checked ):has( .rd_layr3:checked ) .proj_arrow {
+.arrow_normal    { left: 7px; top: 22px; }
+.arrow_fire      { left: 7px; top: 18px; }
+.arrow_lightning { left: 7px; top: 18px; }
+
+body:has(#item_use_9:checked):has(.item_chc_9_chk:checked):has(#item_use_11:checked):has(.item_chc_11_chk:checked) .projectile_aim:has(.rd_prj_opn:checked):has(.rd_layr3:checked) .arrow_normal {
   display: block;
 }
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .projectile_aim:has( .rd_prj_opn:checked ):has( .rd_layr3:checked ) .proj_arrow {
+body:has(#item_use_9:checked):has(.item_chc_9_chk:checked):has(#item_use_12:checked):has(.item_chc_12_chk:checked) .projectile_aim:has(.rd_prj_opn:checked):has(.rd_layr3:checked) .arrow_fire {
   display: block;
 }
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .projectile_aim:has( .rd_prj_opn:checked ):has( .rd_layr3:checked ) .proj_arrow {
+body:has(#item_use_9:checked):has(.item_chc_9_chk:checked):has(#item_use_13:checked):has(.item_chc_13_chk:checked) .projectile_aim:has(.rd_prj_opn:checked):has(.rd_layr3:checked) .arrow_lightning {
   display: block;
 }
 
-.projectile_aim:has( .rd_prj_opn:checked ):has( .rd_layr3:checked ) .proj_arrow {
-  transform: translate( var( --arrow_bit_m ), var( --arrow_bit_n ) ) rotate( calc( var( --pull_rtn ) + 180deg ) );
+.projectile_aim:has( .rd_prj_opn:checked ):has( .rd_layr3:checked ) .proj_ammunition {
+  transform: translate( var( --prj_bit_m ), var( --prj_bit_n ) ) rotate( calc( var( --pull_rtn ) + 180deg ) );
 }
 
-@property --anim_var_arrow {
+@property --anim_var_projectile {
   syntax: '<number>';
-  inherits: false;
+  inherits: true;
   initial-value: 0;
 }
 
@@ -2585,27 +2537,27 @@ body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13
   display: initial;
 }
 
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .projectile_fire_reset:has( .rd_prj_reset:checked ) .prj_fire_slct {
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_11:checked ):has( .item_chc_11_chk:checked ) .projectile_fire_reset:has( .rd_prj_reset:checked ) .arw_fire_slct {
   display: initial;
 }
 
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .projectile_fire_reset:has( .rd_prj_reset:checked ) .prj_fire_slct {
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_12:checked ):has( .item_chc_12_chk:checked ) .projectile_fire_reset:has( .rd_prj_reset:checked ) .arw_fire_slct {
   display: initial;
 }
 
-body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .projectile_fire_reset:has( .rd_prj_reset:checked ) .prj_fire_slct {
+body:has( #item_use_9:checked ):has( .item_chc_9_chk:checked ):has( #item_use_13:checked ):has( .item_chc_13_chk:checked ) .projectile_fire_reset:has( .rd_prj_reset:checked ) .arw_fire_slct {
   display: initial;
 }
 
 .projectile_aim:has( .rd_prj_fire:checked ) {
-  animation: anim_var_arrow 1s linear 0s 1 forwards;
-  --arrow_bit_m: calc( var( --pull_rtn_cos ) * ( 1 - var( --anim_var_arrow ) ) * ( var( --pull_len ) - 17px ) );
-  --arrow_bit_n: calc( var( --pull_rtn_sin ) * ( 1 - var( --anim_var_arrow ) ) * ( var( --pull_len ) - 17px ) );
+  animation: anim_var_projectile 1s linear 0s 1 forwards;
+  --prj_bit_m: calc( var( --pull_rtn_cos ) * ( 1 - var( --anim_var_projectile ) ) * ( var( --pull_len ) - 17px ) );
+  --prj_bit_n: calc( var( --pull_rtn_sin ) * ( 1 - var( --anim_var_projectile ) ) * ( var( --pull_len ) - 17px ) );
 }
 
-@keyframes anim_var_arrow {
-  0%   { --anim_var_arrow: 0; }
-  100% { --anim_var_arrow: 10; }
+@keyframes anim_var_projectile {
+  0%   { --anim_var_projectile: 0; }
+  100% { --anim_var_projectile: 10; }
 }
 
 .fire_anim {
@@ -5643,8 +5595,86 @@ body:has( #item_use_10:checked ):has( .item_chc_10_chk:checked ) .bmrg_fld { dis
   --hit_trg: calc( var(--trg3_hit_para) + var(--trg3_hit_perp) );
 }
 
+body:has( #item_use_8:checked  ):has( .item_chc_8_chk:checked  ) .slingshot_aim { pointer-events: auto; }
+body:has( #item_use_14:checked ):has( .item_chc_14_chk:checked ) .slingshot_aim { pointer-events: auto; }
+body:has( #item_use_15:checked ):has( .item_chc_15_chk:checked ) .slingshot_aim { pointer-events: auto; }
+body:has( #item_use_16:checked ):has( .item_chc_16_chk:checked ) .slingshot_aim { pointer-events: auto; }
+body:has( #item_use_17:checked ):has( .item_chc_17_chk:checked ) .slingshot_aim { pointer-events: auto; }
+
+.slgst_aim_layr_cntnr { display: none; }
+
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_14:checked ):has( .item_chc_14_chk:checked ) .slgst_aim_layr_cntnr { display: flex; flex-wrap: wrap }
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_15:checked ):has( .item_chc_15_chk:checked ) .slgst_aim_layr_cntnr { display: flex; flex-wrap: wrap; }
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_16:checked ):has( .item_chc_16_chk:checked ) .slgst_aim_layr_cntnr { display: flex; flex-wrap: wrap; }
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_17:checked ):has( .item_chc_17_chk:checked ) .slgst_aim_layr_cntnr { display: flex; flex-wrap: wrap; }
+
+.slgst_pull_line_cntnr { display: none; }
+
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_14:checked ):has( .item_chc_14_chk:checked ) .aim_cntnr:has( .rd_layr3:checked ) .slgst_pull_line_cntnr { display: block; }
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_15:checked ):has( .item_chc_15_chk:checked ) .aim_cntnr:has( .rd_layr3:checked ) .slgst_pull_line_cntnr { display: block; }
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_16:checked ):has( .item_chc_16_chk:checked ) .aim_cntnr:has( .rd_layr3:checked ) .slgst_pull_line_cntnr { display: block; }
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_17:checked ):has( .item_chc_17_chk:checked ) .aim_cntnr:has( .rd_layr3:checked ) .slgst_pull_line_cntnr { display: block; }
+
+.slgst_fld_cntnr { display: none; }
+
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_14:checked ):has( .item_chc_14_chk:checked ) .slgst_fld_cntnr { display: initial; }
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_15:checked ):has( .item_chc_15_chk:checked ) .slgst_fld_cntnr { display: initial; }
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_16:checked ):has( .item_chc_16_chk:checked ) .slgst_fld_cntnr { display: initial; }
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_17:checked ):has( .item_chc_17_chk:checked ) .slgst_fld_cntnr { display: initial; }
+
+.projectile_field {
+  /* Gets calculated individually for each of the projectile fields */
+  /* Needs something that will effectively calculate the same for multiple trajectory segments */
+  /* Maybe the easiest is having multiple segment classes that calculate the intersections */
+  /* Then each will have to calculate the the opacity, whether they're active, and then further hits and reflections */
+  /* Other option would just be calculating the all the segments in the projectile field with an extension to the normal method for arrows */
+  /* Might still use additional classes anyways, since the slingshot objects will have to be redrawn with different animations */
+  /* Animations could probably be handled with delay calculations for when they get played */
+  /* Start locations will have to cslculated rather than just calculating hit / not */
+  /* Needs to handle arbitrary rotations on the reflection plane */
+  /* Probably some reasonable limit on the number of secondary reflections */
+  /* Pretty severe limits on secondaries because CSS can't really optimize on calculating */
+  /* Everything needs to be calculated for every single target */
+  /* Maybe add a little dotted line that follows the slingshot object around */
+}
+
+.slingshot_deku     { width: 20px; height: 20px; left: 15px; top: 15px; }
+.slingshot_gale     { width: 20px; height: 20px; left: 15px; top: 15px; }
+.slingshot_ember    { width: 20px; height: 20px; left: 15px; top: 15px; }
+.slingshot_ice_cube { width: 20px; height: 20px; left: 15px; top: 15px; }
+
+body:has(#item_use_8:checked):has(.item_chc_8_chk:checked):has(#item_use_14:checked):has(.item_chc_14_chk:checked) .projectile_aim:has(.rd_prj_opn:checked):has(.rd_layr3:checked) .slingshot_deku {
+  display: block;
+}
+body:has(#item_use_8:checked):has(.item_chc_8_chk:checked):has(#item_use_15:checked):has(.item_chc_15_chk:checked) .projectile_aim:has(.rd_prj_opn:checked):has(.rd_layr3:checked) .slingshot_gale {
+  display: block;
+}
+body:has(#item_use_8:checked):has(.item_chc_8_chk:checked):has(#item_use_16:checked):has(.item_chc_16_chk:checked) .projectile_aim:has(.rd_prj_opn:checked):has(.rd_layr3:checked) .slingshot_ember {
+  display: block;
+}
+body:has(#item_use_8:checked):has(.item_chc_8_chk:checked):has(#item_use_17:checked):has(.item_chc_17_chk:checked) .projectile_aim:has(.rd_prj_opn:checked):has(.rd_layr3:checked) .slingshot_ice_cube {
+  display: block;
+}
+
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_14:checked ):has( .item_chc_14_chk:checked ) .projectile_fire_reset:has( .rd_prj_reset:checked ) .slgst_fire_slct {
+  display: initial;
+}
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_15:checked ):has( .item_chc_15_chk:checked ) .projectile_fire_reset:has( .rd_prj_reset:checked ) .slgst_fire_slct {
+  display: initial;
+}
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_16:checked ):has( .item_chc_16_chk:checked ) .projectile_fire_reset:has( .rd_prj_reset:checked ) .slgst_fire_slct {
+  display: initial;
+}
+body:has( #item_use_8:checked ):has( .item_chc_8_chk:checked ):has( #item_use_17:checked ):has( .item_chc_17_chk:checked ) .projectile_fire_reset:has( .rd_prj_reset:checked ) .slgst_fire_slct {
+  display: initial;
+}
+
 body:has( .item_lctn_1_chk:checked ) {   
   --item_chc_1_checked: 1;
+}
+
+body:has( .item_lctn_1_chk:checked ) #item_1_var_status::after {   
+  content: counter(item-status);
 }
 
 body:has( .item_lctn_1_chk:checked ) #item_1_switch {
@@ -5658,19 +5688,18 @@ body:has( .item_lctn_1_chk:checked ) #item_1_switch {
 }
 
 #item_1_var_status {
+  counter-reset: item-status var(--item_chc_1_checked);
   --color_status: hsl( calc( var( --item_chc_1_checked ) * 250 ), 100%, 50% );
   color: var(--color_status, green);
 }
 
 #mypopover_1 {
-  visibility: hidden;
 }
 
 #mypopover_2 {
-  visibility: hidden;
 }
 
-#item_1_var_status_cntnr:has( #mypopover_1:popover-open ):has( #mypopover_2:popover-open ) #item_1_var_status {
+body:has( #mypopover_1:popover-open ):has( #mypopover_2:popover-open ) #item_1_var_status {
   display:none;
 }
 
@@ -10197,7 +10226,7 @@ footer {
     margin: 0px 0px 0px -195px;
   }
   
-  .proj_fld_1 { --width_fld_1: calc( 100vw - 323px ); right: calc( 371px - 100vw ); }
+  .proj_fld_1 { --width_fld_1: calc( 100vw - 348px ); }
 }
 
 @media screen and (max-width: 1000px){
@@ -10242,7 +10271,7 @@ footer {
     display: inline-block;
   }
   
-  .proj_fld_1 { --width_fld_1: calc( 100vw - 245px ); right: calc( 293px - 100vw ); }
+  .proj_fld_1 { --width_fld_1: calc( 100vw - 270px ); }
 }
 
 @media screen and (max-width: 1000px) and (orientation: landscape) {
