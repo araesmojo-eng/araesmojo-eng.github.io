@@ -1,3 +1,934 @@
+■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■
+▪
+▫  Main [01]
+□                                                                                         ⣀⣠⣤⣴⣶⣶⣶⣦⣤⣄⣀
+▫ ┌﴾─♦ Gabriel Putnam ﴿──                                                             ⢀⠴⢜⡻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄
+▪ └┬─────◊─□────────────────────────────◊─□────────────────────────────□─◊         ⣒⣓⣪⣬⡫⡚⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀
+■  ├──♦: Email: gabriel putnam at gmail                                         ⣀⠈⣙⡛⠿⠿⣥⡯⠅⠉⠉⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆
+▪  ├─┬♦: Google Scholar: G. C. Putnam                                         ⡐⢉⠥⡔⣮⠀⠀⠐⡀⠀⢤⣴⣶⣦⡀⠘⣿⣿⣿⣿⡟⣿⣿⣿⣿⠛⣿⣆
+▫  │ └───🔗: https://scholar.google.com/citations?user=dkY4WRcAAAAJ&hl=en   ⢠⠁⠀⣰⠃⠸⡅⢷⣼⡄⠀⠀⠙⠛⠻⢧⢀⣛⣭⣽⠶⠚⠛⢛⡏⢶⣵⣜⢿⡄
+□  ├─┬♦: Wikipedia: Araesmojo                                                ⣸⣸⣇⡌⠧⣵⡁⠬⣰⡇⠀⠀⠀⠧⠀⣴⣰⣤⣴⣦⡻⣶⣶⣻⣤⣸⣿⣿⣎⢧
+▫  │ └───🔗: https://en.wikipedia.org/wiki/User:Araesmojo                   ⣏⡘⣟⣧⡘⣬⣃⣰⣏⡓⡄⠀⠀⢨⣵⠊⠀⠉⢿⣿⣿⣿⣝⣿⣿⣿⣿⣿⣿⣿
+▪  ├─────◊─□────────────────────────────◊─□────────────────────────────□─◊  ⢹⡯⣽⣿⣿⣯⣽⡾⣍⠻⣿⠀⠀⠈⢀⣆⠹⣷⣇⢻⣯⣼⡿⣿⣿⣿⣿⣿⣿⡟
+■  ├─┬♦: Stack Overflow: G. Putnam                                          ⠘⣿⣿⣿⣻⣿⣿⠿⠟⠋⠀⠀⠀⡀⠿⢟⣫⣶⡪⣬⣭⣈⠺⡎⣎⢻⣽⣿⣿⠃
+▪  │ └───🔗: https://stackexchange.com/users/15219472/g-putnam               ⢹⠀⢰⠟⠋⡀⡀⠀⣀⣀⣠⣶⣶⣾⣿⣿⣿⣷⢣⠙⢹⠿⣶⣍⠢⠹⡟⡎
+▫  ├─┬♦: Hacker News: araes                                                    ⠳⡈⠂⢂⠛⠗⠬⣾⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⠀⠀⠈⠵⣿⢟⣶⠁
+□  │ └───🔗: https://news.ycombinator.com/user?id=araes                         ⠘⢲⣄⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡂⠀⠀⠀⠀⡰⠁
+▫  └┬┬♦: Github: araesmojo-eng                                                     ⠈⠠⣀⠀⠉⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣴⣿⠆⠊
+▪   │└───🔗: https://github.com/araesmojo-eng                                          ⠁⠊⠙⠿⠿⠿⠿⠿⡿⠿⠟⠛⠐⠉
+▫   └───◊─□─────────────────────────────◊─□────────────────────────────□─◊
+▪
+■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■
+▪
+▫  This website is a variation of my original website that avoids using HTML, CSS, and JS entirely for even further simplification.
+□  Original website at: https://araesmojo-eng.github.io/ (HTML, CSS) or https://araesmojo-eng.github.io/araesmojo-html/ (HTML only)
+▪
+■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■
+▫
+□  📄: Resume  [02]
+▫  ⭐: Project [03]
+▪
+■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■
+•
+● ┌﴾─♦ Resume [02] ﴿──
+• └┬─────◊─□──────────────────◊─□────□─◊
+◦  ├──🤵: Skills              [02SKLS]
+○  ├──💼: Work Experience     [02WRK]
+◦  ├──📜: Publications        [02PUB]
+•  ├──🎓: Education           [02EDU]
+●  ├──🏆: Professional Awards [02PRAWD]
+•  ├──🥇: Academic Awards     [02ACAWD]
+◦  └─┬💬: Languages           [02LNG]
+○    └───◊─□──────────────────◊─□────□─◊
+◦
+•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○
+●
+•  🤵 Skills [02SKLS]
+◦
+○•●•◦○◦•●•◦○◦•●•◦○◦•●
+◦
+• ┌╫─◁ 🤵 Management - Contract Leadership, Project Leadership, Contract Board Seat ╟──
+● └┬─────◍─◩──────────────────────────────────────────────────────────────────────◪─◍
+•  ├──🏢: NASA MSFC Contractor Lead, 30+ person contract
+◦  ├──📋: NASA Project Lead, 2-50+ person, Liftoff Debris Risk
+○  ├──💼: Board seat on ESTS and ESSSA contracts (NASA MSFC, 1500-2000 employees)
+◦  ├──🤝: Headed NASA working groups
+•  ├──🚀: Shuttle and SLS management briefings on vehicle risk
+●  ├──❗ : Systems Engineering and risk assessment / management / buyoff
+•  ├──🕵🏻: Employee Hire / Fire
+◦  ├──🗊: Multi-layer .gov projects (Agency / Program / Project / Team interactions)
+○  ├──🏛: US .gov Bid / Proposals
+◦  └─┬🗃: US .gov Grants / Proposals / SAM.gov / UEI
+•    └───◍─◩──────────────────────────────────────────────────────────────────────◪─◍
+●
+• ┌╫─◁ 💻 Software - Open GL, HTML/CSS, Javascript, Perl, Java, C++, Fortran ╟──
+◦ └┬─────◍─◩──────────────────────────────────────────────────────────────────────◪─◍
+○  ├──🚀: NASA CFD Codes (OVERFLOW, Loci/CHEM (with multi-phase lagrangian particles) )
+◦  ├──☾:  OpenGL / GLSL / Shaders / DirectX / HLSL
+•  ├──⛉:  HTML / CSS
+●  ├──{}: Javascript
+•  ├──🐪: Perl
+◦  ├──☕: Java
+○  ├──📱:  Android (SDK/NDK) / Google Play / Billing Client
+◦  ├──🗔:  C++ / WinRT / C
+•  ├──F:   Fortran
+●  ├──🖴:  Linux Mainframe (HPC/Supercomputing, PBS, Map/Reduce, qsub)
+•  ├──🖳:  Linux Workstation (Ubuntu / Redhat)
+◦  ├──🗔:  Awk
+○  ├──$_:  (c|tc|ba)sh
+◦  ├──🐍:  Python
+•  ├──🐘:  PHP
+●  ├──📈:  Matlab
+•  ├──{;}: JQuery
+◦  ├──ASM: Assembly
+○  ├──🗎:   SQL
+◦  ├──🗗:  LabView
+•  ├──⛮:  G-Code
+●  ├──💎: Ruby
+•  └─┬∰: LaTeX
+◦    └───◍─◩────────────────────────────────────────────────────────────────────────────────────────────────────◪─◍
+○
+◦ ┌╫─◁ 🌈 Disciplines - CFD, Acoustics, Aerospace, Graphics, Supercomputing, USGov., Procedural Content ╟──
+• └┬─────◍─◩────────────────────────────────────────────────────────────────────────────────────────────────────◪─◍
+●  ├┼─◁ Competent ├──
+•  ├─────◍─◩────────────────────────────────────────────────────────────────────────────────────────────────────◪─◍
+◦  ├─┬🌊: Computational Fluid Dynamics (CFD)
+○  │ ├────⚒: Components (Coding, CAD, Setup, Distributed Supercomputer Execution, Visualization)
+◦  │ └────🧰: Techniques (Mixed-Phase, Reactive Chemistry, Small to Multi-Mile Scales)
+•  ├─┬🎵: Acoustics
+●  │ ├────🔊: Fields (Engineering, Non-linear, CAA, High Intensity (launch vehicles), Noise, Architectural)
+•  │ └────🧰: Techniques (Acoustic Photogrammetry, Particle Velocimetry, Laser Vis)
+◦  ├─┬🚀: Aerospace (NASA/Space Shuttle/SLS)
+○  │ ├────📆: Phases (Planning, Design, Contracting, Assembly, Test, Validation, Ops)
+◦  │ ├────✈: Fields (Propulsion / Acoustics / Vibrations / Aerodynamics / Thermal, In-Space)
+•  │ └────🚀: Propulsion: (Chemical, Electrical, Nuclear, Solar, Micro)
+●  ├──🎲: Graphics Rendering (OpenGL/GLSL/WebGL/DirectX)
+•  ├──🗔: Unix/Linux
+◦  ├──🖴: HPC/Supercomputing (including SC11 and SC12 NASA Booth Demos)
+○  ├─┬🗑: Big Data / Data Vis (Full STS Launch Pad CFD / Acoustics Simulations)
+◦  │ ├────◈: Scale (100 Million Cell, 1,000 million+ particle)
+•  │ └────🚀: Complexity: (Reactive Chemistry, Moving Vehicles)
+●  ├──🔢: Math, Statistics, and Visualization
+•  ├──◍: Interferometry
+◦  ├──🖉: 3D printing (PP/PLA/ABS extrude, StereoLitho, Grain Bed Laser Sinter)
+○  ├──Ꮬ: Procedural Content Generation
+◦  ├──🗃: Hardware (Selection, Purchase, Assembly, Manufacture, Test, Validate)
+•  ├──🧮: Micro-controllers (Arduino)
+●  ├──🖇: Control Systems (Linear, Arms, Walking, Ballistics)
+•  ├──Ⓤ: Unreal Engine
+◦  ├─────◍─◩────────────────────────────────────────────────────────────────────────────────────────────────────◪─◍
+○  ├┼─◁ Familiar ├──
+◦  ├─────◍─◩────────────────────────────────────────────────────────────────────────────────────────────────────◪─◍
+•  ├──🎥: After Effects / Imagery and Video Post-Processing
+●  ├──🎲: Probabilistic Learning (Super/unsuper, tiered, NN, distributed N-body analogs)
+•  └─┬🔒: Crypto (One Time, Integer Factor, Discrete Log, Elliptic Curve)
+◦    ├────⚔: Attacks (brute force, various plaintexts, side-channel)
+○    ├────🩺: Methods (machine power/computation statistics, leaks, metadata, pattern recognition)
+◦    └───◍─◩────────────────────────────────────────────────────────────────────────────────────────────────────◪─◍
+•
+● ┌╫─◁ Tech - Imagery, CFD, Video, Office, CAD/CAM, OS ╟──
+• └┬─────◍─◩────────────────────────────────────────────────────────────────────────────────────────────────────◪─◍
+◦  ├──👁: Photoshop (5.0-CS5)
+○  ├──🚀: Loci/CHEM
+◦  ├──🎥: FFMpeg
+•  ├──▦: Office Suite (Word/Excel/PPT)
+●  ├──📊: MSProject/Sharepoint
+•  ├──📐: Solidworks
+◦  ├──📐: Pro/E
+○  ├──📐: Autocad
+◦  ├──🗔: Ubuntu / Redhat Linux
+•  ├──🪟: Windows
+●  ├──🎥: Flash (AS 1.0-3.0)
+•  └─┬📈: MATLAB
+◦    └───◍─◩────────────────────────────────────────────────────────────────────────────────────────────────────◪─◍
+○
+◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○
+●
+•  💼 Work Experience [02WRK]
+◦
+○•●•◦○◦•●•◦○◦•●•◦○◦•●
+•
+● ┌☼─⮘ 💼 Forsako, 10/2020 - Present ⮚──
+• └┬─────⛯─⚡──────────────────────────────────────────────────────────────────────────────────────────────────⚡─⛯
+◦  ├─┬💻: Developed three Android Apps from concept to production deployment on the Google Play store
+○  │ ├────⚒: Coding, deployment, billing, subscriptions, all with advertising videos, and promotional materials.
+◦  │ ├───┬🏠: Retro style (Gameboy) tile based rendering engine city builder.
+•  │ │   ├───☕/☾: Java / OpenGL with GPU accelerated user interface.
+●  │ │   ├───🧰: Pan, zoom, multi-touch map interaction, and million+ citizen simulations.
+•  │ │   ├───💸: Google Play Billing 4.1 integration with InApp and Subscription purchases.
+◦  │ │   └───🔗: https://araesmojo-eng.github.io/images/Work/work_forsako_Citimaton_Composite.jpg
+○  │ ├───┬📱: Photo editor and accessory visualizer built using Google’s ML Kit technology.
+◦  │ │   ├───🧔: Feature recognition, automatic accessory positioning using machine learning.
+•  │ │   ├───🖉: Skin tone editing, makeup editing, effects, and stickers. 
+●  │ │   └───🔗: https://araesmojo-eng.github.io/images/Work/work_forsako_Selfie_Fashion_Composite.jpg
+•  │ └───┬🎵: Metronome, flash, and frequency pulse source generator with continuous flashlight.
+◦  │     ├───⏱: Metronomes of sound, light, or vibration.
+○  │     ├───🎲: Randomized sources of variable distribution functions.
+◦  │     ├───◍: Doppler strobes with adjustable delay and phase amplitude.
+•  │     ├───┇: Morse code pulses in ITU standard with variable speed.
+●  │     └───🔗: https://araesmojo-eng.github.io/images/Work/work_forsako_FlashMetronome_Composite.jpg
+•  ├─┬🏛: Library of Congress Friends' Choice Civics Video Game Challenge - American Cities.
+◦  │ ├────🎲: Combination match-3 game, and society simulation, such as the Civilization series.
+○  │ ├───┬▦: 8x15 grid, with 8 block subtypes over a range of city attributes
+◦  │ │   └───🌾: Food, Industry, Health, Coins, Culture, Science, Religion, Civics.
+•  │ ├────Ꮬ: Simulate the development of a city using match-3 mechanics to qualify for building purchases.
+●  │ └────🔗: https://forsako.rf.gd/AmericanCities/LibOfCongressGame.html?i=1
+•  ├─┬🌄: USDA Proposal, Vertical Farming, partnership with the University of Idaho.
+◦  │ ├────🌾: Implement a low-tech, low-cost, vertical system for growing food crops.
+○  │ ├────🏛: USDA Urban, Indoor, and Emerging Agricultural Initiative (UIE).
+◦  │ ├────📈: Identify and promote horticultural, social, and economic contributions to outdoor vertical farming.
+•  │ └────☑: Applicability to rooftop farms, outdoor vertical production, and green walls.
+●  ├─┬⭐: Army Proposal - Ground Penetrating Radar, proposal to Army xTechSearch 8.
+•  │ ├────🥾: Shoe based Ground Penetrating Radar that detects buried threats to warfighters.
+◦  │ └────💥: Mines, IEDs, and unexploded ordnance.
+○  ├─┬🚀: NASA Proposal - Plant Growth in Lunar Regolith.
+◦  │ ├────📋: Response to NASA solicitation "E.9 Space Biology Research Studies".
+•  │ ├────▨: Effects exposure to lunar simulant have on plant biology, physiology, growth, and development.
+●  │ ├────🌾: Five crops (lettuce, cabbage, tomatoes, mizuna, kale).
+•  │ └────🌄: Effects of space-relevant radiation, and altered light spectra.
+◦  ├─┬🚀: NASA Proposal - Antenna Balloons.
+○  │ └────📋: Response to NASA Innovative Advanced Concepts for cubesat inflatable satellites.
+◦  └─┬🚀: NASA Proposal - Cubesat Thrusters.
+•    ├────📋: Response to NASA Innovative Advanced Concepts for cubesats with innovative propulsion.
+●    └───⛯─⚡──────────────────────────────────────────────────────────────────────────────────────────────────⚡─⛯
+•
+◦ ┌☼─⮘ 💼 NASA Innovative Advanced Concepts (NIAC), 8/2020 - 10/2021 ⮚──
+○ └┬─────⛯─⚡──────────────────────────────────────────────────────────────────────────────────────────────────⚡─⛯
+◦  ├─┬🏛: Created and submitted seven proposals for consideration to NIAC.
+•  │ └────📋: Digital contacts, actuatorless avionics, gas gun cargo transport, and variable frame rate DSP.
+●  ├──📝: Based on the proposals, selected as concept evaluator for further NIAC phases.
+•  ├─┬📑: Reviewed and evaluated proposals for the NASA Innovative Advanced Concepts (NIAC).
+◦  │ └────📋: Determine innovation, credibility, eligibility, feasibility, and value to the government.
+○  ├─┬🤝: Participated in working groups to downselect proposals for funding.
+◦  │ └────💸: Determine recipients of $175,000 funding grants.
+•  └─┬📋: Wrote full length reviews as primary reviewer for multiple proposals.
+●    ├────📋: Contributed as secondary author and review panelist to numerous further proposals.
+•    └───⛯─⚡──────────────────────────────────────────────────────────────────────────────────────────────────⚡─⛯
+◦
+○ ┌☼─⮘ 🤝 Project Hope (Nablus Palestine), Sabbatical, 10/2015 - 03/2019 ⮚──
+◦ └┬─────⛯─⚡──────────────────────────────────────────────────────────────────────────────────────────────────⚡─⛯
+•  ├─┬📚: Taught six classes in business, engineering, photography, computer programming, economics, and drawing
+●  │ ├────📋: Included preparing coursework, lesson plans, daily activities, & learning questions.
+•  │ ├────🌐: Students at Project Hope in Nablus, Palestine to 
+◦  │ └────🖉: Classes of between 5-20 students 
+○  ├─┬👐: Volunteered in Palestine, Jordan, and the nearby refugee areas
+◦  │ └────⚒: Community outreach, repairs, cleaning, beautifying.
+•  └─┬🕺: Engaged in solo walk across 
+●    ├────🌐: Northern Africa, Europe, the Middle East, India, Nepal, S. America, C. America, and N. America.
+•    └───⛯─⚡──────────────────────────────────────────────────────────────────────────────────────────────────⚡─⛯
+◦
+○ ┌☼─⮘ 💼 All Points Logistics / NASA, 09/2007 - 10/2014 ⮚──
+◦ └┬─────⛯─⚡──────────────────────────────────────────────────────────────────────────────────────────────────⚡─⛯
+•  ├─┬🏢: Program manager for engineering services contract.
+●  │ ├────: Worth approx. $5 million / year. 
+•  │ ├────: Established policy, objectives, labor / budget estimates, and task priorities.
+◦  │ ├────: Team of thirty on-site engineers.
+○  │ ├────: Support of NASA mission at Marshall Space Flight Center (MFSC). 
+◦  │ ├────: Negotiated resource allocation, contract goals / objectives, and performance timeframes. 
+•  │ └────: Analyzed contract performance, recruited workforce, and developed proposals for future work.
+●  ├─┬💼: Board seat on larger umbrella contracts.
+•  │ ├────: Engineering and technical services worth approx. $150,000,000 / year. 
+◦  │ ├────: Engineering, Science and Technical Services [ESTS,NNM05AB50C].
+○  │ ├────: Engineering and Science Services and Skills Augmentation [ESSSA, NNM12AA41C].
+◦  │ ├────: Worked with multi-corporate team to establish yearly, monthly and weekly contract objectives.
+•  │ ├────: Negotiated with teammates for labor, budget, and support efforts.
+●  │ └────: Directly worked integrated onsite with federal customer at NASA MSFC.
+•  ├─┬🚀: Lead engineer for NASA’s debris analysis team.
+◦  │ ├────: Head of the debris working group for the Space Launch System (SLS). 
+○  │ ├───┬: Guided the technical efforts of 10 immediate representatives.
+◦  │ │   ├────: SLS elements (Boosters, Core, Orion, Main Engines, ect...).
+•  │ │   ├────: Linked programs (Ground Systems/KSC, Orion/MPCV).
+●  │ │   └────: Work of their associated support teams. 
+•  │ ├────: Identified, tracked, and mitigated debris risks to the new vehicle (SLS).
+◦  │ ├────: Guiding analysis, tests, and redesigns of affected hardware. 
+○  │ └────: Briefed status and plans to all levels of management including SLS program head and chief engineer.
+◦  ├─┬🕵🏻: Principal Investigator for supercomputing and analysis tasks for fluid dynamics & acoustics.
+•  │ ├────: Supported the Space Launch System program for compute resources worth $5 million / year. 
+●  │ ├────: Integrated with users, computing administrators, and NASA customers.
+•  │ ├────: Prioritized investigations, planed usage, administrated resource access, and negotiated conflicts.
+◦  │ ├────: Analyzed performance, and developed projections for future allocations & work. 
+○  │ └────: Coordinated release of results and user participation in relevant conferences to distribute results.
+◦  ├─┬💻: Lead developer and liaison to external contractors to improve modeling and simulation capabilities.
+•  │ ├────: Fluid dynamics, debris, and acoustics modeling software for SLS and Space Shuttle support. 
+●  │ ├────: Guided efforts to research new methods of simulation.
+•  │ ├────: Disseminated those methods to scientific community with publications / conferences.
+◦  │ └───┬: Incorporated those improved methods into production code.
+○  │     └────: Constant use on Space Launch System and Space Shuttle programs for risk on Day of Launch.
+◦  ├──📜: Authored eight (8) publications for NASA and journals / conferences related to our work [02PUB].
+•  ├─┬🎥: Four (4) demos of NASA work and simulations at Supercomputing (SC11 and SC12)
+●  │ ├────🔗: https://www.nas.nasa.gov/SC11/demos/demo44.html
+•  │ ├────🔗: https://www.nas.nasa.gov/SC12/demos/demo8.html
+◦  │ ├────🔗: https://www.nas.nasa.gov/SC12/demos/demo36.html
+○  │ ├────🔗: https://www.nas.nasa.gov/SC12/Putnam_Orbit_Backgrounder.html
+◦  │ └────🔗: https://araesmojo-eng.github.io/images/NASA/NASA_SC11_ASMAT_Pressure_Contours_Putnam.mp4
+•  └─┬🧧: Honored eight (8) times with performance awards.
+●    ├────Two (2) agency level awards for reduction of real risk to the Space Shuttle vehicle.
+•    ├────🔗: https://araesmojo-eng.github.io/images/Awards/Agency_Honor_brochure_2009.pdf
+◦    ├────🔗: https://araesmojo-eng.github.io/images/Awards/Agency_Honor_brochure_2008.pdf
+○    └───⛯─⚡──────────────────────────────────────────────────────────────────────────────────────────────────⚡─⛯
+◦
+• ┌☼─⮘ 💼 Forsako Studio, 08/2006 - 08/2007 ⮚──
+● └┬─────⛯─⚡──────────────────────────────────────────────────────────────────────────────────────────────────⚡─⛯
+•  ├─┬Ꮬ: Founded a small business venture and created a software product.
+◦  │ └────: Procedurally generate 3D content for use in digital entertainment and mapping applications. 
+○  ├──: Researched requirements of potential market, established architecture, planned development effort.
+◦  └─┬: Created software to generate procedural landscapes or recreate terrain from known map coordinates in 3D.
+•    └───⛯─⚡──────────────────────────────────────────────────────────────────────────────────────────────────⚡─⛯
+●
+• ┌☼─⮘ 🏫 Georgia Tech Lorraine, France, 08/2004 - 08/2006 ⮚──
+◦ └┬─────⛯─⚡──────────────────────────────────────────────────────────────────────────────────────────────────⚡─⛯
+○  ├─┬∰: Formed analytical models to represent new breeds of electrostatic foam transducers.
+◦  │ └────Created from experimental vibration mode and audio data collection. 
+•  ├──🔬: Set research goals, planned experiments, and coordinated activities of undergraduate associates.
+●  └─┬🚚: Coordinated international delivery and purchasing.
+•    ├────Research equipment and supplies for creation of an acoustics research laboratory.
+◦    ├────🔗: https://europe.gatech.edu/en
+○    └───⛯─⚡──────────────────────────────────────────────────────────────────────────────────────────────────⚡─⛯
+◦
+• ┌☼─⮘ 💼 Manning Applied Technologies, 10/1999 - 08/2002 ⮚──
+● └┬─────⛯─⚡──────────────────────────────────────────────────────────────────────────────────────────────────⚡─⛯
+•  ├─┬🤝: Managed teams of up to five to fulfill project goals.
+◦  │ └────Fields of electronics, software, production, quality testing, and advertising.
+○  ├─┬◍: Led effort which developed successful prototype of high precision bio-agent detection system.
+◦  │ └────US military customer utilizing standoff infrared spectrometry and integrated digital signal processing.
+•  └─┬🖇: Created polymer modulation and testing system for use in thermal extremes.
+●    ├────Incorporated adaptive temperature control, sample modulation, and tensioning. 
+•    ├────Collaborated with the Department of Defense, industry customers, and external vendors.
+◦    ├────Established product goals, assured final deliverable quality, and generated lead time projections.
+○    ├────🔗: https://www.appl-tech.com/
+◦    └───⛯─⚡──────────────────────────────────────────────────────────────────────────────────────────────────⚡─⛯
+•
+●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○
+•
+◦  📜 Publications and Conference Demos [02PUB], Publications
+○
+◦•●•◦○◦•●•◦○◦•●•◦○◦•●
+•
+● ┌📈─⦖ 2012 ⦕──
+• │  📜 Development of modeling capabilities for launch pad acoustics 
+◦ │      and ignition transient environment prediction
+○ └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+◦  ├──🕵🏻: J. S. West, L. L. Strutzenberg, G. C. Putnam, P. Liever, and B. Williams.
+•  ├──📚: 18th AIAA/CEAS Aeroacoustics Conference (33rd AIAA Aeroacoustics Conference)
+●  ├──📖: p. 2094.
+•  ├──📆: June 4th, 2012
+◦  └─┬📜: This paper presents the development effort to establish modeling capabilities for launch vehicle 
+○    │    liftoff acoustics and ignition transient environment predictions. Peak acoustic loads experienced 
+◦    │    by the launch vehicle occur during liftoff with strong interaction between the vehicle and the launch 
+•    │    facility. Acoustic prediction engineering tools based on empirical models are of limited value in 
+●    │    efforts to proactively design and optimize launch vehicles and launch facility configurations for 
+•    │    liftoff acoustics. Modeling approaches are needed that capture the important details of the plume flow 
+◦    │    environment including the ignition transient, identify the noise generation sources and allow 
+○    │    assessment of the effects of launch pad geometric details and acoustic mitigation measures such as 
+◦    │    water injection. This paper will present a status of the CFD tools developed by the Marshall Space 
+•    │    Flight Center (MSFC) Fluid Dynamics Branch featuring relevant advanced multi-physics modeling 
+●    │    capabilities and related efforts to establish a hybrid acoustic environment modeling capability 
+•    │    combining CFD with a Boundary Element Method (BEM) acoustic field propagation model.
+◦    ├────🔗: https://araesmojo-eng.github.io/publications/20120015223_Development_of_Modeling_Capabilities.pdf
+○    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+◦
+• ┌📈─⦖ 2012 ⦕──
+● │  📜 Numerical modeling of solid rocket motor plumes
+• └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+◦  ├──🕵🏻: M. Mehta, B. Williams, G. C. Putnam, S. D. Smith
+○  ├──📚: 2012 Thermal and Fluids Workshop, Pasadena, CA
+◦  ├──📖: p. 38
+•  ├──📆: August 2012
+●  └─┬📜: In support of prediction of the launch pad plume deflector environments during solid rocket booster 
+•    │    derived NASA STS (Space Shuttle) vehicle ascent, the solid rocket motor plumes have been successfully 
+◦    │    modeled and analyzed with the Loci-CHEM Navier-Stokes computational fluid dynamics (CFD) code - 
+○    │    Lagrangian Model at a steady-state approximation. Three main areas have been addressed in this 
+◦    │    paper: (1) sensitivity study of the Loci-CHEM-Lagrangian model with various other Loci-CHEM 
+•    │    modeling approaches; (2) in-depth analysis of the aerophysics associated with solid rocket motor 
+●    │    plumes; (3) comparison studies between the CFD numerical simulations and flight data and an 
+•    │    independent engineering code, Reacting and Multi-Phase Program (RAMP2). The reusable solid rocket 
+◦    │    motor plumes are a multi-phase flow which contains both plume gases and ~16% solid aluminum oxide 
+○    │    particles by mass. This contribution of solid particles is shown to have a large impact on the 
+◦    │    aerophysics of the plume gases and the environments of the launch pad plume deflector. The 
+•    │    Loci-CHEM–Lagrangian model shows the best overall agreement with plume deflector flight data and 
+●    │    the RAMP2 engineering code. These modeling approaches are being implemented to conduct higher 
+•    │    fidelity numerical simulations for the Space Launch System ascent and launch pad environments.
+◦    ├────🔗: https://araesmojo-eng.github.io/publications/TFAWS_2012_Aerothermal_Paper_Session_Abstracts.pdf
+○    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+◦
+• ┌📈─⦖ 2012 ⦕──
+● │  📜 Curved Waveguide Based Nuclear Fission for Small, Lightweight Reactors
+• └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+◦  ├──🕵🏻: R. Coker, G. C. Putnam
+○  ├──📚: 19th Advanced Space Propulsion Workshop
+◦  ├──📖: no. M12-2257.
+•  ├──📆: November 27th, 2012
+●  └─┬📜: The focus of the presented work is on the creation of a system of grazing incidence, supermirror 
+•    │    waveguides for the capture and reuse of fission sourced neutrons. Within research reactors, neutron 
+◦    │    guides are a well known tool for directing neutrons from the confined and hazardous central core to 
+○    │    a more accessible testing or measurement location. Typical neutron guides have rectangular, hollow 
+◦    │    cross sections, which are crafted as thin, mirrored waveguides plated with metal (commonly nickel). 
+•    │    Under glancing angles with incoming neutrons, these waveguides can achieve nearly lossless transport 
+●    │    of neutrons to distant instruments. Furthermore, recent developments have created supermirror surfaces 
+•    │    which can accommodate neutron grazing angles up to four times as steep as nickel. A completed system 
+◦    │    will form an enclosing ring or spherical resonator system to a coupled neutron source for the purpose 
+○    │    of capturing and reusing free neutrons to sustain and/or accelerate fission. While grazing incidence 
+◦    │    mirrors are a known method of directing and safely using neutrons, no method has been disclosed for 
+•    │    capture and reuse of neutrons or sustainment of fission using a circular waveguide structure. The 
+●    │    presented work is in the process of fabricating a functional, highly curved, neutron supermirror using 
+•    │    known methods of Ni-Ti layering capable of achieving incident reflection angles up to four times 
+◦    │    steeper than nickel alone. Parallel work is analytically investigating future geometries, mirror 
+○    │    compositions, and sources for enabling sustained fission with applicability to the propulsion and 
+◦    │    energy goals of NASA and other agencies. Should research into this concept prove feasible, it would 
+•    │    lead to development of a high energy density, low mass power source potentially capable of sustaining 
+●    │    fission with a fraction of the standard critical mass for a given material and a broadening of 
+•    │    feasible materials due to reduced rates of release, absorption, and non-fission for neutrons. This 
+◦    │    advance could be applied to direct propulsion through guided fission products or as a secondary 
+○    │    energy source for high impulse electric propulsion. It would help meet national needs for highly 
+◦    │    efficient energy sources with limited dependence on fossil fuels or conflict materials, and it would 
+•    │    improve the use of low grade fissile materials which would help reduce national stockpiles and waste.
+●    ├────🔗: https://araesmojo-eng.github.io/publications/20130001750_Curved_Waveguide.pdf
+•    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+◦
+○ ┌📈─⦖ 2011 ⦕──
+◦ │  📜 Validation and Simulation of ARES I Scale Model Acoustic Test - 1 - Pathfinder Development
+• └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+●  ├──🕵🏻: G. C. Putnam
+•  ├──📚: JANNAF 8th Modeling and Simulation Subcommittee Meeting
+◦  ├──📖: no. M11-0635.
+○  ├──📆: December 5th, 2011
+◦  └─┬📜: The Ares I Scale Model Acoustics Test (ASMAT) is a series of live-fire tests of scaled rocket motors 
+•    │    meant to simulate the conditions of the Ares I launch configuration. These tests have provided a well 
+●    │    documented set of high fidelity measurements useful for validation including data taken over a range 
+•    │    of test conditions and containing phenomena like Ignition Over-Pressure and water suppression of 
+◦    │    acoustics. To take advantage of this data, a digital representation of the ASMAT test setup has been 
+○    │    constructed and test firings of the motor have been simulated using the Loci/CHEM computational fluid 
+◦    │    dynamics software. Within this first of a series of papers, results from ASMAT simulations with the 
+•    │    rocket in a held down configuration and without water suppression have then been compared to acoustic 
+●    │    data collected from similar live-fire tests to assess the accuracy of the simulations. Detailed 
+•    │    evaluations of the mesh features, mesh length scales relative to acoustic signals, Courant-Friedrichs-
+◦    │    Lewy numbers, and spatial residual sources have been performed to support this assessment. Results of 
+○    │    acoustic comparisons have shown good correlation with the amplitude and temporal shape of pressure 
+◦    │    features and reasonable spectral accuracy up to approximately 1000 Hz. Major plume and acoustic 
+•    │    features have been well captured including the plume shock structure, the igniter pulse transient, 
+●    │    and the ignition overpressure. Finally, acoustic propagation patterns illustrated a previously 
+•    │    unconsidered issue of tower placement inline with the high intensity overpressure propagation path.
+◦    ├────🔗: https://araesmojo-eng.github.io/publications/20120002894_Validation_And_Simulation_Of_ASMAT.pdf
+○    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+◦
+• ┌📈─⦖ 2011 ⦕──
+● │  📜 Validation and Simulation of Ares I Scale Model Acoustic Test - 2 - 
+• │      Simulations at 5 Foot Elevation for Evaluation of Launch Mount Effects
+◦ └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+○  ├──🕵🏻: L. L. Strutzenberg, G. C. Putnam
+◦  ├──📚: JANNAF 5th Spacecraft Propulsion Subcommittee Meeting
+•  ├──📖: no. M11-0653.
+●  ├──📆: December 5th, 2011
+•  └─┬📜: The Ares I Scale Model Acoustics Test (ASMAT) is a series of live-fire tests of scaled rocket motors 
+◦    │    meant to simulate the conditions of the Ares I launch configuration. These tests have provided a well 
+○    │    documented set of high fidelity measurements useful for validation including data taken over a range 
+◦    │    of test conditions and containing phenomena like Ignition Over-Pressure and water suppression of 
+•    │    acoustics. Expanding from initial simulations of the ASMAT setup in a held down configuration, 
+●    │    simulations have been performed using the Loci/CHEM computational fluid dynamics software for ASMAT 
+•    │    tests of the vehicle at 5 ft. elevation (100 ft. real vehicle elevation) with worst case drift in the 
+◦    │    direction of the launch tower. These tests have been performed without water suppression and have 
+○    │    compared the acoustic emissions for launch structures with and without launch mounts. In addition, 
+◦    │    simulation results have also been compared to acoustic and imagery data collected from similar 
+•    │    live-fire tests to assess the accuracy of the simulations. Simulations have shown a marked change in 
+●    │    the pattern of emissions after removal of the launch mount with a reduction in the overall acoustic 
+•    │    environment experienced by the vehicle and the formation of highly directed acoustic waves moving 
+◦    │    across the platform deck. Comparisons of simulation results to live-fire test data showed good 
+○    │    amplitude and temporal correlation and imagery comparisons over the visible and infrared wavelengths 
+◦    │    showed qualitative capture of all plume and pressure wave evolution features.
+•    ├────🔗: https://araesmojo-eng.github.io/publications/20120002818_Validation_And_Simulation_Of_ASMAT_2.pdf
+●    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+•
+◦ ┌📈─⦖ 2011 ⦕──
+○ │  📜 Validation and Simulation of Ares I Scale Model Acoustic Test - 3 - 
+◦ │      Modeling and Evaluating the Effect of Rainbird Water Deluge Inclusion
+• └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+●  ├──🕵🏻: L. L. Strutzenberg, G. C. Putnam
+•  ├──📚: JANNAF 8th Modeling and Simulation Subcommittee Meeting
+◦  ├──📖: no. M11-0657.
+○  ├──📆: December 5th, 2011
+◦  └─┬📜: The Ares I Scale Model Acoustics Test (ASMAT) is a series of live-fire tests of scaled rocket motors 
+•    │    meant to simulate the conditions of the Ares I launch configuration. These tests have provided a well 
+●    │    documented set of high fidelity measurements useful for validation including data taken over a range 
+•    │    of test conditions and containing phenomena like Ignition Over-Pressure and water suppression of 
+◦    │    acoustics. Building on dry simulations of the ASMAT tests with the vehicle at 5 ft. elevation 
+○    │    (100 ft. real vehicle elevation), wet simulations of the ASMAT test setup have been performed using 
+◦    │    the Loci/CHEM computational fluid dynamics software to explore the effect of rainbird water suppression 
+•    │    inclusion on the launch platform deck. Two-phase water simulation has been performed using an energy 
+●    │    and mass coupled lagrangian particle system module where liquid phase emissions are segregated into 
+•    │    clouds of virtual particles and gas phase mass transfer is accomplished through simple Weber number 
+◦    │    controlled breakup and boiling models. Comparisons have been performed to the dry 5 ft. elevation 
+○    │    cases, using configurations with and without launch mounts. These cases have been used to explore the 
+◦    │    interaction between rainbird spray patterns and launch mount geometry and evaluate the acoustic sound 
+•    │    pressure level knockdown achieved through above-deck rainbird deluge inclusion. This comparison has 
+●    │    been anchored with validation from live-fire test data which showed a reduction in rainbird 
+•    │    effectiveness with the presence of a launch mount.
+◦    ├────🔗: https://araesmojo-eng.github.io/publications/20120002822_Validation_And_Simulation_Of_ASMAT_3.pdf
+○    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+◦
+• ┌📈─⦖ 2011 ⦕──
+● │  📜 Simulation of Ares Scale Model Acoustic Test Overpressure Transients Using Computational Fluid Dynamics
+• └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+◦  ├──🕵🏻: G. C. Putnam
+○  ├──📚: 162nd Acoustical Society of America (ASA) Meeting, San Diego, CA
+◦  ├──📖: Paper M11, Volume 1226
+•  ├──📆: November 3rd, 2011
+●  └─┬📜: Outline
+•    │    Introduction 
+◦    │     – Overview of the Ares Scale Model Acoustic Test (ASMAT) 
+○    │     – Simulation goal and procedure
+◦    │    Case Progression 
+•    │     – Initial Attempt at Elevation 0’ (Pathfinder) 
+●    │     – Ignition Transient and Throat Plug Release 
+•    │     – Model Refinement
+◦    │    Conclusions / Future Work
+○    ├────🔗: https://araesmojo-eng.github.io/publications/20120001764_Simulation_of_ASMAT_Overpressure.pdf
+◦    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+•
+● ┌📈─⦖ 2011 ⦕──
+• │  📜 To Profit or Not: Economic Considerations of Long Term Organizations
+◦ └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+○  ├──🕵🏻: G. C. Putnam
+◦  ├──📚: Defense Advanced Research Projects Agency: 100 Year Starship Symposium
+•  ├──📖: Education, Society, Legal and Economic Panel, 2:45
+●  ├──📆: October 1st, 2011
+•  └─┬📜: ESELC Summary: Education as a mission, Who goes, who stays, To profit or not, Economies in space, 
+◦    │    Communications back to Earth, Political ramifications, Round-trip legacy investments, Assets left behind
+○    ├────🔗: https://araesmojo-eng.github.io/publications/100YSSAgenda_0902__Putnam_Publication_pg6.pdf
+◦    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+•
+● ┌📈─⦖ 2011 ⦕──
+• │  📜 Simulation of acoustics for Ares I scale model acoustic tests
+◦ └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+○  ├──🕵🏻: G. C. Putnam, L. L. Strutzenburg
+◦  ├──📚: The Journal of the Acoustical Society of America
+•  ├──📖: Volume 130, Issue 4, p. 2543-2543
+●  ├──📆: October, 2011
+•  └─┬📜: The Ares I scale model acoustics test (ASMAT) is a series of live-fire tests of scaled rocket motors 
+◦    │    meant to simulate the conditions of the Ares I launch configuration. These tests have provided a well 
+○    │    documented set of high fidelity acoustic measurements useful for validation including data taken over 
+◦    │    a range of test conditions and containing phenomena like ignition over-pressure and water suppression 
+•    │    of acoustics. To take advantage of this data, a digital representation of the ASMAT test setup has 
+●    │    been constructed and test firings of the motor have been simulated using the Loci/CHEM computational 
+•    │    fluid dynamics software. Results from ASMAT simulations with the rocket in both held down and elevated 
+◦    │    configurations, as well as with and without water suppression have been compared to acoustic data 
+○    │    collected from similar live-fire tests. Results of acoustic comparisons have shown good correlation 
+◦    │    with the amplitude and temporal shape of pressure features and reasonable spectral accuracy up to 
+•    │    approximately 1000 Hz. Major plume and acoustic features have been well captured including the plume 
+●    │    shock structure, the igniter pulse transient, and the ignition overpressure.
+•    ├────🔗: https://araesmojo-eng.github.io/publications/10565829_Simulation_ASMAT_Acoustics_Abstract.pdf
+◦    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+○
+◦ ┌📈─⦖ 2010 ⦕──
+• │  📜 Ultrasonic particle size fractionation in a moving air stream
+● └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+•  ├──🕵🏻: R. S. Budwig, M. J. Anderson, G. C. Putnam, C. Manning
+◦  ├──📚: Ultrasonics
+○  ├──📖: Volume 50, Issue 1, p. 26-31
+◦  ├──📆: January 1st, 2010
+•  └─┬📜: Identification of bio-aerosol particles may be enhanced by size sorting before applying analytical 
+●    │    techniques. In this paper, the use of ultrasonic acoustic radiation pressure to continuously size 
+•    │    fractionate particles in a moving air stream is described. Separate particle-laden and clean air 
+◦    │    streams are introduced into a channel and merged under laminar flow conditions. An ultrasonic 
+○    │    transducer, mounted flush to one wall of the channel, excites a standing ultrasonic wave 
+◦    │    perpendicular to the flow of the combined air stream. Acoustic radiation forces on the particles 
+•    │    cause them to move transverse to the flow direction. Since the radiation force is dependent upon 
+●    │    the particle size, larger particles move a greater transverse distance as they pass through the 
+•    │    standing wave. The outlet flow is then separated into streams, each containing a range of particle 
+◦    │    sizes. Experiments were performed with air streams containing glass microspheres with a size 
+○    │    distribution from 2–22 μm, using a centerline air stream velocity of approximately 20 cm/s. An 
+◦    │    electrostatic transducer operating at a nominal frequency of 50 kHz was used to drive an ultrasonic 
+•    │    standing wave of 150 dB in pressure amplitude. The microsphere size distributions measured at the 
+●    │    outlet were compared with the predictions of a theoretical model. Experiments and theory show 
+•    │    reasonable correspondence. The theoretical model also indicates an optimal partitioning of the 
+◦    │    particle-laden and clean air inlet streams.
+○    ├────🔗: https://www.sciencedirect.com/science/article/abs/pii/S0041624X09000791?via%3Dihub
+◦    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+•
+● ┌📈─⦖ 2005 ⦕──
+• │  📜 Use of a curved reflector to amplify ultrasonic standing waves in an air-filled channel
+◦ └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+○  ├──🕵🏻: M. J. Anderson, A. C. Cluff, E. C. Lemmon, G. C. Putnam
+◦  ├──📚: The Journal of the Acoustical Society of America
+•  ├──📖: Volume 117, Issue 3, p. 1122-1128
+●  ├──📆: March, 2005
+•  └─┬📜: The application of a slightly curved reflector to increase the amplitude of an ultrasonic standing 
+◦    │    wave in a semi-infinite rectangular channel was explored. Air was assumed to be the acoustic medium 
+○    │    in the channel. Excitation of the standing wave was assumed to be provided by a square transducer 
+◦    │    flush-mounted to one wall of the channel. A slight curvature was placed in the reflecting wall of 
+•    │    the channel. A finite element analysis was used to predict the amplitude of the standing wave that 
+●    │    would be excited in the channel. A perfectly matched layer was used to model the semi-infinite 
+•    │    channel geometry. At frequencies near 50 kHz, for source ranging from 6.6 to 26.6, and channel 
+◦    │    depths necessary to excite standing waves at one-half and one wavelength resonance, the computations 
+○    │    predicted that an increase in acoustic pressure amplitude from 2 to 11 dB could be achieved with a 
+◦    │    reflector whose depth of curvature was 16% of the channel depth. Much of this increase could be 
+•    │    obtained with curvatures of smaller depth. Experiments with a channel and reflector of representative 
+●    │    geometry gave a measured increase in acoustic pressure amplitude of 4.86 dB.
+•    ├────🔗: https://pubs.aip.org/asa/jasa/article-pdf/117/3/1122/12249900/1122_1_online.pdf
+◦    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+○
+◦ ┌📈─⦖ 2004 ⦕──
+• │  📜 Use of a slightly curved reflector to enhance an airborne ultrasonic standing wave 
+● │      in a semi‐infinite rectangular channel 
+• └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+◦  ├──🕵🏻: M. J. Anderson, A. C. Cluff, E. C. Lemmon, G. C. Putnam
+○  ├──📚: The Journal of the Acoustical Society of America
+◦  ├──📖: Volume 116, Issue 4, p. 2598-2598
+•  ├──📆: October, 2004
+●  └─┬📜: One way to separate small particles from a moving air stream is to pass the stream through an intense 
+•    │    ultrasonic standing wave. If the standing wave propagates perpendicular to the fluid flow direction, 
+◦    │    acoustic radiation pressure will move the particles to specific locations in the stream, where they 
+○    │    can be collected at the stream outlet. Of primary importance is to achieve very high pressure 
+◦    │    amplitude in the standing wave, in spite of the presence of openings for fluid flow. In this 
+•    │    presentation, the use of a slightly curved reflector within a flow channel to increase the amplitude 
+●    │    of an ultrasonic standing wave is discussed. A finite element analysis was used to predict the 
+•    │    amplitude of the standing wave that would be excited in a semi‐infinite channel. A perfectly matched 
+◦    │    layer was used to account for the semi‐infinite geometry. The finite element analysis showed that a 
+○    │    significant gain in amplification within the channel could be achieved with a surprisingly small 
+◦    │    amount of reflector curvature. Experiments show that much of this gain can be obtained in practice.
+•    ├────🔗: https://pubs.aip.org/asa/jasa/article/116/4_Supplement/2598/543498
+●    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+•
+◦ ┌📈─⦖ 2004 ⦕──
+○ │  📜 An Optimization Study for the Separation of Particles in Air Using Acoustic Resonance [02PUBTHS]
+◦ └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+•  ├──🕵🏻: G. C. Putnam
+●  ├──📚: University of Idaho
+•  ├──📖: Master's Thesis
+◦  ├──📆: June, 2004
+○  └─┬📜: Acoustic amplification within a partially enclosed cavity has a number of uses in applications where 
+◦    │    mass must enter and leave the cavity. This work describes an optimization process, which was used 
+•    │    to maximize the performance of such a cavity for use in separation of airborne particulates. The 
+●    │    acoustic source of the cavity, the shape of the reflector used within the cavity, and the paths of 
+•    │    particles flowing through the cavity were all investigated. It was found that for frequencies in the 
+◦    │    vicinity of 50 kHz, electrostatic transducers can be designed which provide significant gains in 
+○    │    acoustic resonant pressure and quality factor over conventional Polaroid and piezoelectric 
+◦    │    technologies. It was also noted that for curved reflector technologies, the presence of a curved 
+•    │    reflector did improve both pressure and quality factors. However, the achievable experimental gains 
+●    │    were significantly less than those predicted through theoretical models. Finally, it was found that 
+•    │    when implemented within a model resonator, the presence of a curved reflector induced little unwanted 
+◦    │    particle motion within the flow and significantly improved separation performance.
+○    ├────🔗: https://www.researchgate.net/publication/3471691
+◦    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+•
+● ┌📈─⦖ 2003 ⦕──
+• │  📜 The physics and technology of ultrasonic particle separation in air
+◦ └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+○  ├──🕵🏻: M. J. Anderson, R. S. Budwig, A. C. Cluff, E. C. Lemmon, G. C. Putnam
+◦  ├──📚: Proceedings of the 2003 World Congress on Ultrasonics, Paris
+•  ├──📖: p. 1615-1621
+●  ├──📆: September 7th-10th, 2003
+•  └─┬📜: A potential application of ultrasound is the separation of small particles from a moving airborne 
+◦    │    aerosol. Previous studies have shown that it is feasible to extract small particles from a moving 
+○    │    stream of water. The thermodynamic and transport properties of the suspension fluid control the 
+◦    │    mechanisms available for separation, the forces that can be exerted, and the practical dimensions 
+•    │    of ultrasonic airborne particle separators. Fundamental models exist that allow comparison of 
+●    │    electrostatic and piezoelectric transduction in general for ultrasonic particle separation. Finite 
+•    │    element studies show that allowance for slight curvatures in flow channel geometry can increase 
+◦    │    achievable acoustic pressures. We describe analyses and experiments that consider these factors for 
+○    │    ultrasonic particle separation in air. The potential performance of ultrasonic separation in air is 
+◦    │    then compared to competing inertial technologies.
+•    ├────🔗: https://araesmojo-eng.github.io/publications/000229_Physics_And_Technology_Of_Ultrasonic.pdf
+●    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+•
+◦○◦•●•◦○◦•●•◦○◦•●•◦○
+○
+◦  📜 Publications and Conference Demos [02PUB], Conference Demos
+•
+●•◦○◦•●•◦○◦•●•◦○◦•●
+•
+◦ ┌📈─⦖ 2012 ⦕──
+○ │  🎪 SC12, Reaching Beyond Low Earth Orbit
+◦ └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+•  ├──🕵🏻: G. C. Putnam, B. Williams, P. Davis
+●  ├──📚: Supercomputing 12, Salt Lake City, Utah ( https://sc12.supercomputing.org/ )
+•  ├──📖: NASA@SC12 Booth
+◦  ├──📆: November 10th-16th, 2012
+○  └─┬📜: Using thousands of processors on the Pleiades supercomputer at the NASA Advanced Supercomputing 
+◦    │    Division (NAS) at Ames Research Center, Moffett Field, Calif., the MSFC Fluid Dynamics team ran more 
+•    │    than 40 CFD simulations, each spanning several weeks and requiring multiple terabytes of storage to 
+●    │    process hundreds of individual gigabyte-scale files for visualization, post-processing, and data 
+•    │    analysis. These simulations capture the sources of the acoustic waves and follow the action to track 
+◦    │    their effects throughout the launch environment. Validated results are provided to SLS engineers so 
+○    │    they can optimize the design of the vehicle and launch components.
+◦    ├────🔗: https://araesmojo-eng.github.io/images/NASA/NASA_SC_12_Reaching_Beyond_LEO.pdf
+•    ├────🔗: https://www.nas.nasa.gov/SC12/Putnam_Orbit_Backgrounder.html
+●    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+•
+◦ ┌📈─⦖ 2012 ⦕──
+○ │  🎪 SC12, Simulating Rocket Ignition and Launch Environments for NASA's Space Launch System
+◦ └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+•  ├──🕵🏻: G. C. Putnam
+●  ├──📚: Supercomputing 12, Salt Lake City, Utah ( https://sc12.supercomputing.org/ )
+•  ├──📖: NASA@SC12 Booth
+◦  ├──📆: November 10th-16th, 2012
+○  └─┬📜: During liftoff, the Space Launch System's (SLS) solid rocket boosters (SRBs) send large amplitude 
+◦    │    pressure waves into the confined space of the launch structure. These ignition overpressure (IOP) 
+•    │    waves, which radiate throughout the launch environment, can cause damage to the launch structure, 
+●    │    the vehicle, and the payload, and must be well understood during the design process. Rocket plume gas 
+•    │    and evaporating suppression water interact as the ignition overpressure (IOP) wave propagates through 
+◦    │    the launch tower. The validation provided confidence that CFD methods could accurately predict 
+○    │    phenomena such as IOP in the full-scale SLS launch environment. The full-scale analysis was decoupled 
+◦    │    into component problems that could be simulated and validated independently, then used to inform 
+•    │    simulations of the full-scale integrated vehicle. The first component problem examined the propagation 
+●    │    of acoustic waves through the launch environment. The simulations tracked the propagation of acoustic 
+•    │    waves in both dry launch pad conditions and in conditions with water-based sound suppression systems 
+◦    │    activated. The second component performed time-accurate, fully 3D simulations of the SRB ignition 
+○    │    transient and was used to create a time-dependent profile the rocket internal dynamics as an input to 
+◦    │    further simulations for SLS launch-induced environments. Finally, using the results of the sub-scale 
+•    │    and SRB simulations, full-scale simulations were performed of the SLS launch environment with the 
+●    │    goal of resolving tool uncertainties that could not account for differences from the Shuttle to 
+•    │    SLS configuration.
+◦    ├────🔗: https://araesmojo-eng.github.io/images/NASA/NASA_SC_12_Simulating_SLS_Launch_Environments.pdf
+○    ├────🔗: https://www.nas.nasa.gov/SC12/demos/demo36.html
+◦    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+•
+● ┌📈─⦖ 2012 ⦕──
+• │  🎪 SC12, Validating Water Spray Simulation Models for the SLS Launch Environment
+◦ └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+○  ├──🕵🏻: G. C. Putnam
+◦  ├──📚: Supercomputing 12, Salt Lake City, Utah ( https://sc12.supercomputing.org/ )
+•  ├──📖: NASA@SC12 Booth
+●  ├──📆: November 10th-16th, 2012
+•  └─┬📜: Validations against recent NASA test data have shown that modern Computational Fluid Dynamics (CFD) 
+◦    │    codes can make meaningful pressure predictions over the full launch pad for frequencies up to 150 Hz, 
+○    │    high enough that significant phenomena such as the transient startup and overpressure pulse of rockets 
+◦    │    can be modeled. These validations have provided confidence in the results of CFD simulations, allowing 
+•    │    them to make immediate impacts on the design of NASA's new Space Launch System (SLS). Modifications 
+●    │    to the mobile launcher, flame deflector, vehicle base, and liftoff design have all been influenced 
+•    │    by this work. However, simulations have been limited in their validation and use to dry launch pads. 
+◦    │    To examine the full range of designs, multi-phase capability has been developed in partnership with 
+○    │    Mississippi State University and used to simulate the effects of water suppression for a wet launch 
+◦    │    pad validation case. Emission, flight, and evaporation of water spray systems have been simulated on 
+•    │    an active launch pad by using a two-phase approach that includes Lagrangian water particles and gas 
+●    │    phase CFD elements. The simulation was based on a test case from the Ares I Scale Model Acoustic Test 
+•    │    so that pressure predictions from across the launch pad could be validated against real data. 
+◦    │    Approximately 200 million grid cells were used to capture the fine detail and geometry of the pad, 
+○    │    and millions of particles were tracked to capture the dynamics of a water cascade. This work was 
+◦    │    performed using a density-based, finite-volume CFD code called Loci/CHEM.
+•    ├────🔗: https://araesmojo-eng.github.io/images/NASA/NASA_SC_12_Validating_Water_Spray_Models_for_SLS.pdf
+●    ├────🔗: https://www.nas.nasa.gov/SC12/demos/demo8.html
+•    ├────🔗: https://araesmojo-eng.github.io/images/NASA/NASA_SC12_ASMAT_Water_Suppression_Putnam.mp4
+◦    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+○
+◦ ┌📈─⦖ 2011 ⦕──
+• │  🎪 SC11, Simulating the Ares I Scale Model Acoustic Test Using CFD
+● └┬─────🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+•  ├──🕵🏻: G. C. Putnam
+◦  ├──📚: Supercomputing 11, Seattle, Washington ( https://sc11.supercomputing.org/ )
+○  ├──📖: NASA@SC11 Booth
+◦  ├──📆: November 12th-18th, 2011
+•  └─┬📜: NASA regularly uses computational fluid dynamics (CFD) simulations to assess the loads and risks for 
+●    │    space vehicles at liftoff. To have confidence in the results from these simulations, however, their 
+•    │    accuracy must be anchored to real-world measurements. Recently, such validations have been performed 
+◦    │    using data from Ares I scaled rocket tests at Marshall Space Flight Center. The Ares I Scale Model 
+○    │    Acoustics Test (ASMAT) was a series of live-fire tests of a scaled rocket motor intended to simulate 
+◦    │    the acoustic conditions of the full Ares I vehicle at launch. The test's primary goals were to 
+•    │    validate the acoustic environment and loads of the vehicle. Simulations of the ASMAT motor firings 
+●    │    were performed before live-fire tests to predict the rocket performance and the startup environment 
+•    │    at liftoff. Results from the simulations have been compared to a range of pressure measurements from 
+◦    │    the physical test setup, as well as to visible and infrared imagery of the tests, and have shown 
+○    │    excellent correlation to real-world results. These initial findings have helped provide the 
+◦    │    confidence to move forward with full-scale simulations of liftoff environments for future launch 
+•    │    vehicles, such as the Space Launch System.
+●    ├────🔗: https://araesmojo-eng.github.io/images/NASA/NASA_SC_11_ASMAT_Acoustics.pdf
+•    ├────🔗: https://www.nas.nasa.gov/SC11/demos/demo44.html
+◦    ├────🔗: https://araesmojo-eng.github.io/images/NASA/NASA_SC11_ASMAT_Pressure_Contours_Putnam.mp4
+○    └───🗎─∰──────────────────────────────────────────────────────────────────────────────────────────────────∰─🗎
+◦
+•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●
+●
+•  🎓 Education [02EDU]
+◦
+○•●•◦○◦•●•◦○◦•●•◦○◦•●
+◦
+• ┌🏫─⸎ 🎓 Masters, 2004 ⸎──
+● └┬─────📚─📓──────────────────────────────────────────────────────────────────────────────────────────────────📓─📚
+•  ├──🕵🏻: G. C. Putnam
+◦  ├──🎓: Master's Degree with Thesis - Thesis [02PUBTHS]
+○  ├──📚: University of Idaho
+◦  ├──🖃: Mechanical Engineering / Spec. Acoustics and Fluid Dynamics
+•  ├──🏫: Moscow, ID, USA
+●  ├──📆: May 2004
+•  └─┬🥇: GPA 3.84 / 4.0
+◦    └───📚─📓──────────────────────────────────────────────────────────────────────────────────────────────────📓─📚
+○
+◦ ┌🏫─⸎ 🎓 Bachelors, 2001 ⸎──
+• └┬─────📚─📓──────────────────────────────────────────────────────────────────────────────────────────────────📓─📚
+●  ├──🕵🏻: G. C. Putnam
+•  ├──🎓: Bachelor's Degree
+◦  ├──📚: University of Idaho
+○  ├──🖃: Mechanical Engineering
+◦  ├──🏫: Moscow, ID, USA
+•  ├──📆: December 2001
+●  └─┬🥇: GPA 3.56 / 4.0
+•    └───📚─📓──────────────────────────────────────────────────────────────────────────────────────────────────📓─📚
+◦
+○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○
+◦
+•  🏆 Professional Awards [02PRAWD]
+●
+•◦○◦•●•◦○◦•●•◦○◦•●•◦○
+◦
+○ ┌◈─⮘ 🧧 Agency Award, NASA, 2009 ⮚──
+◦ │         "Exemplary improvements to Liftoff Debris task"
+• └┬─────🔆─📝─────────────────────────────────────────────────────────────────────────────────────────────────📝─🔆
+●  ├──🕵🏻: L. L. Strutzenburg, G. C. Putnam
+•  ├──📚: NASA
+◦  ├──📆: 2009
+○  ├──🔗: https://araesmojo-eng.github.io/images/Awards/Agency_Honor_brochure_2009.pdf
+◦  └─────🔆─📝─────────────────────────────────────────────────────────────────────────────────────────────────📝─🔆
+•
+● ┌◈─⮘ 🧧 Agency Award, NASA, 2008 ⮚──
+• │         "Exceptional analysis of Shuttle Flame Trench debris risk"
+◦ └┬─────🔆─📝─────────────────────────────────────────────────────────────────────────────────────────────────📝─🔆
+○  ├──🕵🏻: L. L. Strutzenburg, J. S. West, G. C. Putnam
+◦  ├──📚: NASA
+•  ├──📆: 2008
+●  ├──🔗: https://araesmojo-eng.github.io/images/Awards/Agency_Honor_brochure_2008.pdf
+•  ├──🔗: https://araesmojo-eng.github.io/images/Flame_Trench/STS124_infrared_bricks.gif
+◦  └─────🔆─📝─────────────────────────────────────────────────────────────────────────────────────────────────📝─🔆
+○
+◦ ┌◈─⮘ 🏆 Edwin F. Connors Contract Award, Jacobs, ESTS ⮚──
+• │         "Exceptional improvements to Engineering, Science and Technical Services (ESTS) contract performance"
+● └┬─────🔆─📝─────────────────────────────────────────────────────────────────────────────────────────────────📝─🔆
+•  ├──🕵🏻: G. C. Putnam
+◦  ├──📚: Jacobs
+○  ├──📝: NASA MSFC Engineering, Science and Technical Services (ESTS)[NNM05AB50C]
+◦  └─────🔆─📝─────────────────────────────────────────────────────────────────────────────────────────────────📝─🔆
+•
+● ┌◈─⮘ 🏆🏆🏆 (3) Outstanding Task Awards, Jacobs, ESTS ⮚──
+• │         "Liftoff Analysis and Launch Vehicle Simulation Tasks"
+◦ │         for Engineering, Science and Technical Services (ESTS) contract 
+○ │         in support of NASA Fluid Dynamics Branch (ER42)
+◦ └┬─────🔆─📝─────────────────────────────────────────────────────────────────────────────────────────────────📝─🔆
+•  ├──🕵🏻: G. C. Putnam and task team members
+●  ├──📚: Jacobs
+•  ├──📝: NASA MSFC Engineering, Science and Technical Services (ESTS)[NNM05AB50C]
+◦  └─────🔆─📝─────────────────────────────────────────────────────────────────────────────────────────────────📝─🔆
+○
+◦ ┌◈─⮘ 🏆🏆🏆 (3) Continuous Improvement Contract Awards, Jacobs, ESTS ⮚──
+• │         "Process improvements with significant monetary customer savings" 
+● │         for Engineering, Science and Technical Services (ESTS) contract 
+• │         in support of NASA Fluid Dynamics Branch (ER42)
+◦ └┬─────🔆─📝─────────────────────────────────────────────────────────────────────────────────────────────────📝─🔆
+○  ├──🕵🏻: G. C. Putnam
+◦  ├──📚: Jacobs
+•  ├──📝: NASA MSFC Engineering, Science and Technical Services (ESTS)[NNM05AB50C]
+●  └─────🔆─📝─────────────────────────────────────────────────────────────────────────────────────────────────📝─🔆
+•
+◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○
+○
+◦  🥇 Academic Awards [02ACAWD]
+•
+●•◦○◦•●•◦○◦•●•◦○◦•●•◦○
+•
+◦ ┌🞕─⸎ 🥇 National and University of Idaho Dean’s Lists, 1997 - 2001 ⸎──
+○ └┬─────🞼─◧──────────────────────────────────────────────────────────────────────────────────────────────────◨─🞼
+◦  ├──🕵🏻: G. C. Putnam
+•  ├──📚: University of Idaho
+●  ├──🖃: Mechanical Engineering
+•  └─────🞼─◧──────────────────────────────────────────────────────────────────────────────────────────────────◨─🞼
+◦
+○ ┌🞕─⸎ 🥇 Phi Eta Sigma Honor Society, 1997 - 2001 ⸎──
+◦ └┬─────🞼─◧──────────────────────────────────────────────────────────────────────────────────────────────────◨─🞼
+•  ├──🕵🏻: G. C. Putnam
+●  ├──📚: Phi Eta Sigma Honor Society
+•  ├──🖃: University of Idaho Chapter
+◦  ├──🔗: https://www.phietasigma.org/
+○  └─────🞼─◧──────────────────────────────────────────────────────────────────────────────────────────────────◨─🞼
+◦
+• ┌🞕─⸎ 🥇 Golden Key Honor Society, 1997 - 2001 ⸎──
+● └┬─────🞼─◧──────────────────────────────────────────────────────────────────────────────────────────────────◨─🞼
+•  ├──🕵🏻: G. C. Putnam
+◦  ├──📚: Golden Key Honor Society
+○  ├──🖃: University of Idaho Chapter
+◦  ├──🔗: https://www.goldenkey.org/
+•  └─────🞼─◧──────────────────────────────────────────────────────────────────────────────────────────────────◨─🞼
+●
+• ┌🞕─⸎ 📝 Grade Qualified Full Honors Tuition Coverage, 1997 - 2001 ⸎──
+◦ └┬─────🞼─◧──────────────────────────────────────────────────────────────────────────────────────────────────◨─🞼
+○  ├──🕵🏻: G. C. Putnam
+◦  ├──📚: University of Idaho
+•  ├──🖃: Mechanical Engineering
+●  └─────🞼─◧──────────────────────────────────────────────────────────────────────────────────────────────────◨─🞼
+•
+◦ ┌🞕─⸎ 🥇 Undergraduate Honors Certificate and Cum Laude Graduation, 1997 - 2001 ⸎──
+○ └┬─────🞼─◧──────────────────────────────────────────────────────────────────────────────────────────────────◨─🞼
+◦  ├──🕵🏻: G. C. Putnam
+•  ├──📚: University of Idaho
+●  ├──🖃: Mechanical Engineering
+•  ├──🔗: https://www.uidaho.edu/campus-communities/honors
+◦  └─────🞼─◧──────────────────────────────────────────────────────────────────────────────────────────────────◨─🞼
+○
+◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●
+•
+●  💬 Languages [02LNG]
+•
+◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●
+○
+◦ ┌🗣─⸨ 💬 English, Native ⸩──
+• └──────本─ç──────────────────────────────────────────────────────────────────────────────────────────────────ç─本
+●
+• ┌🗣─⸨ 💬 French / Français, Intermediate ⸩──
+◦ └──────本─ç──────────────────────────────────────────────────────────────────────────────────────────────────ç─本
+○
+◦ ┌🗣─⸨ 💬 Japanese / Nihongo / 日本語, Novice ⸩──
+• └──────本─ç──────────────────────────────────────────────────────────────────────────────────────────────────ç─本
+●
+• ┌🗣─⸨ 💬 Arabic / al-ʿarabiyyatu l-fuṣḥā / اَلعَرَبِيَّةُ ٱلْفُصْحَىٰ, Novice ⸩──
+◦ └──────本─ç──────────────────────────────────────────────────────────────────────────────────────────────────ç─本
+○
+◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○◦•●•◦○
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣴⣶⣶⣶⣦⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⠴⢜⡻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣒⣓⣪⣬⡫⡚⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀
+⠀⠀⠀⣀⠈⣙⡛⠿⠿⣥⡯⠅⠉⠉⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀
+⠀⡐⢉⠥⡔⣮⠀⠀⠐⡀⠀⢤⣴⣶⣦⡀⠘⣿⣿⣿⣿⡟⣿⣿⣿⣿⠛⣿⣆⠀
+⢠⠁⠀⣰⠃⠸⡅⢷⣼⡄⠀⠀⠙⠛⠻⢧⢀⣛⣭⣽⠶⠚⠛⢛⡏⢶⣵⣜⢿⡄
+⣸⣸⣇⡌⠧⣵⡁⠬⣰⡇⠀⠀⠀⠧⠀⣴⣰⣤⣴⣦⡻⣶⣶⣻⣤⣸⣿⣿⣎⢧
+⣏⡘⣟⣧⡘⣬⣃⣰⣏⡓⡄⠀⠀⢨⣵⠊⠀⠉⢿⣿⣿⣿⣝⣿⣿⣿⣿⣿⣿⣿
+⢹⡯⣽⣿⣿⣯⣽⡾⣍⠻⣿⠀⠀⠈⢀⣆⠹⣷⣇⢻⣯⣼⡿⣿⣿⣿⣿⣿⣿⡟
+⠘⣿⣿⣿⣻⣿⣿⠿⠟⠋⠀⠀⠀⡀⠿⢟⣫⣶⡪⣬⣭⣈⠺⡎⣎⢻⣽⣿⣿⠃
+⠀⢹⠀⢰⠟⠋⡀⡀⠀⣀⣀⣠⣶⣶⣾⣿⣿⣿⣷⢣⠙⢹⠿⣶⣍⠢⠹⡟⡎⠀
+⠀⠀⠳⡈⠂⢂⠛⠗⠬⣾⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⠀⠀⠈⠵⣿⢟⣶⠁⠀⠀
+⠀⠀⠀⠘⢲⣄⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡂⠀⠀⠀⠀⡰⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠈⠠⣀⠀⠉⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣴⣿⠆⠊⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠁⠊⠙⠿⠿⠿⠿⠿⡿⠿⠟⠛⠐⠉⠀⠀⠀⠀⠀⠀⠀⠀
+
+            ............            
+        ..-----------------.        
+      ....#+-+++##-##+--------      
+    ..-####+-++############+----    
+   ... +#####+.---##########+##++   
+  +...... .  ..-+. --++++#######++  
+ . ........   -+##+------+####+--## 
+. ..........   -  -.+##+..-.-++--.+ 
+-.-....----. . .-.########+-##++--.#
+-....... -.-    ---.-#####+#####++--
+-..---.......     +...-##########+-+
+-----------..    +##---###+-#..+-.-.
+ --+-...-      .--+###-###+..-.-..- 
+  .... ..  .--###+####+++-+###-.+.  
+   ..---+-+####+#+++#++++ --++##-   
+    -..  --+++#+++++++++-     .+    
+      #    --+++++++++++  .. .      
+        +.  ---+++-+---+ ---        
+            +++++++++++.            
+
                                    ,,╓╓▄▄@████▓▓▓▓▓▓▓▒▒███▌▄▄╖╓,,
                               ,╓▄██▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▄╖,
                          ,╓▄█▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█@╓,
@@ -339,94 +1270,6 @@ tzvjxj/txrxvjtf/|<;",:IrObB$Y/ttz@$zm11O[){X}|{}xh
              pj-tYJYCC0QmXnnzzvJ0!-0o             
                  dOdkdpdw00pdpkBB                 
 
-
-                                                   ⣀⣠⣤⣴⣶⣶⣶⣦⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                                               ⢀⠴⢜⡻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⠀⠀⠀⠀⠀⠀
-┌﴾-♦-Gabriel Putnam-﴿--                        ⣒⣓⣪⣬⡫⡚⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀
-└┐                                          ⣀⠈⣙⡛⠿⠿⣥⡯⠅⠉⠉⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀
-•|--♦﹕Email: gabriel putnam at gmail     ⡐⢉⠥⡔⣮⠀⠀⠐⡀⠀⢤⣴⣶⣦⡀⠘⣿⣿⣿⣿⡟⣿⣿⣿⣿⠛⣿⣆⠀
-•|--♦﹕Google Scholar: G. C. Putnam      ⢠⠁⠀⣰⠃⠸⡅⢷⣼⡄⠀⠀⠙⠛⠻⢧⢀⣛⣭⣽⠶⠚⠛⢛⡏⢶⣵⣜⢿⡄
-•└--♦﹕Wikipedia: Araesmojo              ⣸⣸⣇⡌⠧⣵⡁⠬⣰⡇⠀⠀⠀⠧⠀⣴⣰⣤⣴⣦⡻⣶⣶⣻⣤⣸⣿⣿⣎⢧
- ┌-┴---------◊-□----------               ⣏⡘⣟⣧⡘⣬⣃⣰⣏⡓⡄⠀⠀⢨⣵⠊⠀⠉⢿⣿⣿⣿⣝⣿⣿⣿⣿⣿⣿⣿
-•|--♦﹕Stack Overflow: G. Putnam         ⢹⡯⣽⣿⣿⣯⣽⡾⣍⠻⣿⠀⠀⠈⢀⣆⠹⣷⣇⢻⣯⣼⡿⣿⣿⣿⣿⣿⣿⡟
-•|--♦﹕Hacker News: araes                ⠘⣿⣿⣿⣻⣿⣿⠿⠟⠋⠀⠀⠀⡀⠿⢟⣫⣶⡪⣬⣭⣈⠺⡎⣎⢻⣽⣿⣿⠃
-•└-┐♦﹕Github: araesmojo-eng              ⢹⠀⢰⠟⠋⡀⡀⠀⣀⣀⣠⣶⣶⣾⣿⣿⣿⣷⢣⠙⢹⠿⣶⣍⠢⠹⡟⡎⠀
-   └---------◊-□----------                 ⠳⡈⠂⢂⠛⠗⠬⣾⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⠀⠀⠈⠵⣿⢟⣶⠁⠀⠀
-                                            ⠘⢲⣄⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡂⠀⠀⠀⠀⡰⠁⠀⠀⠀
-                                             ⠈⠠⣀⠀⠉⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣴⣿⠆⠊⠀⠀⠀⠀⠀
-                                                ⠁⠊⠙⠿⠿⠿⠿⠿⡿⠿⠟⠛⠐⠉⠀⠀⠀⠀⠀⠀⠀⠀
-
-
-
-
-
-
-╭【 ✦・Gabriel Putnam 】  ・・
-╰╮
-・|┈ ✦﹕ Email: gabriel putnam at gmail
-・|┈ ✦﹕ Google Scholar: G. C. Putnam
-・╰━╮✦﹕ Wikipedia: Araesmojo
- ╭⎯┴⎯⎯⎯⎯⎯⎯⎯⎯⎯・ ✧・ ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
-・|┈ ✦﹕ Stack Overflow: G. Putnam
-・|┈ ✦﹕ Hacker News: araes
-・╰━╮✦﹕ Github: araesmojo-eng
-   ╰⎯⎯⎯⎯⎯⎯⎯⎯⎯・ ✧・ ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
-
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣴⣶⣶⣶⣦⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⢀⠴⢜⡻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⣒⣓⣪⣬⡫⡚⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀
-⠀⠀⠀⣀⠈⣙⡛⠿⠿⣥⡯⠅⠉⠉⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀
-⠀⡐⢉⠥⡔⣮⠀⠀⠐⡀⠀⢤⣴⣶⣦⡀⠘⣿⣿⣿⣿⡟⣿⣿⣿⣿⠛⣿⣆⠀
-⢠⠁⠀⣰⠃⠸⡅⢷⣼⡄⠀⠀⠙⠛⠻⢧⢀⣛⣭⣽⠶⠚⠛⢛⡏⢶⣵⣜⢿⡄
-⣸⣸⣇⡌⠧⣵⡁⠬⣰⡇⠀⠀⠀⠧⠀⣴⣰⣤⣴⣦⡻⣶⣶⣻⣤⣸⣿⣿⣎⢧
-⣏⡘⣟⣧⡘⣬⣃⣰⣏⡓⡄⠀⠀⢨⣵⠊⠀⠉⢿⣿⣿⣿⣝⣿⣿⣿⣿⣿⣿⣿
-⢹⡯⣽⣿⣿⣯⣽⡾⣍⠻⣿⠀⠀⠈⢀⣆⠹⣷⣇⢻⣯⣼⡿⣿⣿⣿⣿⣿⣿⡟
-⠘⣿⣿⣿⣻⣿⣿⠿⠟⠋⠀⠀⠀⡀⠿⢟⣫⣶⡪⣬⣭⣈⠺⡎⣎⢻⣽⣿⣿⠃
-⠀⢹⠀⢰⠟⠋⡀⡀⠀⣀⣀⣠⣶⣶⣾⣿⣿⣿⣷⢣⠙⢹⠿⣶⣍⠢⠹⡟⡎⠀
-⠀⠀⠳⡈⠂⢂⠛⠗⠬⣾⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⠀⠀⠈⠵⣿⢟⣶⠁⠀⠀
-⠀⠀⠀⠘⢲⣄⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡂⠀⠀⠀⠀⡰⠁⠀⠀⠀
-⠀⠀⠀⠀⠀⠈⠠⣀⠀⠉⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣴⣿⠆⠊⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠁⠊⠙⠿⠿⠿⠿⠿⡿⠿⠟⠛⠐⠉⠀⠀⠀⠀⠀⠀⠀⠀
-
-            ............            
-        ..-----------------.        
-      ....#+-+++##-##+--------      
-    ..-####+-++############+----    
-   ... +#####+.---##########+##++   
-  +...... .  ..-+. --++++#######++  
- . ........   -+##+------+####+--## 
-. ..........   -  -.+##+..-.-++--.+ 
--.-....----. . .-.########+-##++--.#
--....... -.-    ---.-#####+#####++--
--..---.......     +...-##########+-+
------------..    +##---###+-#..+-.-.
- --+-...-      .--+###-###+..-.-..- 
-  .... ..  .--###+####+++-+###-.+.  
-   ..---+-+####+#+++#++++ --++##-   
-    -..  --+++#+++++++++-     .+    
-      #    --+++++++++++  .. .      
-        +.  ---+++-+---+ ---        
-            +++++++++++.            
-
-╭【 ✦・your name here 】  ・・
-╰╮
-・|┈ ✦﹕ age:
-・|┈ ✦﹕ gender:
-・╰━╮✦﹕ pronouns:
- ╭⎯┴⎯⎯⎯⎯⎯⎯⎯⎯⎯・ ✧・ ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
-・|┈ ✦﹕ role:
-・|┈ ✦﹕ species:
-・|┈ ✦﹕ other kins/theriotypes:
-・╰━╮✦﹕ source:
- ╭⎯┴⎯⎯⎯⎯⎯⎯⎯⎯⎯・ ✧・ ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
-・|┈  ✦﹕touch text:
-・|┈  ✦﹕pda:
-・|┈ ✦﹕nicknames:
-・╰━╮✦﹕ source talk:
-   ╰⎯⎯⎯⎯⎯⎯⎯⎯⎯・ ✧・ ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
-
-
-
 ╭───────────────
 ┆જ⁀➴ Name:
 ┆જ⁀➴ Age:
@@ -461,8 +1304,10 @@ _   ("-._   ("-._   ("-._   ("-._   ("-._   ("-._   ("-._   ("-._   ("-.
  "    "    "    "    "    "    "    "    "    "    "
 ˙⁰O⁰˙⁰O⁰˙⁰O⁰˙⁰O⁰˙⁰O⁰˙⁰O⁰˙
 .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.°ºᴏ○օס•ₒ⁰ⱺ◌●ᴼ▪▫■□
+•●•◦○◦•●•◦○◦
 □▫□▫□▫□▫□▫□
 ■▪■▪■▪■▪■▪■
+■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■
 ﴾﴿
 
    /= = = = = = = = = = =\
