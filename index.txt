@@ -20,8 +20,8 @@
 ▪
 ■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■
 ▪
-▫  This website is a variation of my original website that avoids using HTML, CSS, and JS entirely for even further simplification.
-□  Original website at: https://araesmojo-eng.github.io/ (HTML, CSS) or https://araesmojo-eng.github.io/araesmojo-html/ (HTML only)
+▫  Variation of my original website that avoids using HTML, CSS, and JS entirely for even further simplification.
+□  Original website at: https://araesmojo-eng.github.io/ or https://araesmojo-eng.github.io/araesmojo-html/ (noCSS)
 ▪
 ■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■▪▫□▫▪■
 ▫
